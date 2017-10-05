@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="queries_action_maketable" xml:lang="en-US">
+    <title>Task: Make Table query</title>
+    <shortdesc>Creating a new table with the Make Table query.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Query<indexterm>make table</indexterm></indexterm>
+                <indexterm>Make Table query</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>INFORMATION NEEDS</p>
+            <p>The marketing department has a special offer for all customers in Friesland. For this
+                they need a table with only the customer data for customers in the province
+                Friesland.</p>
+            <p>ANALYSIS</p>
+            <p>All necessary data is in table Customers. Selecting for Friesland can be done with a
+                criterion in the query. First you need to create this select query and then change
+                the query type to Make Table.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <stepsection>Creating Select query</stepsection>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Create</uicontrol>
+                        <uicontrol>Query Design (group Queries)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>Access creates a new blank query window and displays the dialog box
+                        <wintitle>Show Table</wintitle>.<fig>
+                        <title>Dialog box <wintitle>Show Table</wintitle></title>
+                        <image keyref="q_show_table">
+                            <alt>Dialog box show table</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+            <step>
+                <cmd>Add table <varname>Customers</varname> and then click
+                        <uicontrol>Close</uicontrol>.</cmd>
+                <stepresult>The table has been added to the query window.</stepresult>
+            </step>
+            <step>
+                <cmd>Add all fields by double-clicking on the asterisk (*) and then add separate
+                    again the field Province.</cmd>
+            </step>
+            <step>
+                <cmd>Enter as criterion "FR" for the field Province and don't show this extra field,
+                    because it is in fact already shown by Customers.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Design Make Table query</title>
+                        <image keyref="q_customers_friesland_design">
+                            <alt>Design Make Table query</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Check the output of the query with the <uicontrol>Datasheet
+                    View</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Save the query with name <userinput>Customers Friesland</userinput>.</cmd>
+            </step>
+            <stepsection>Change query type</stepsection>
+            <step>
+                <cmd>Open query in Design View and click <uicontrol>Make Table (group Query
+                        Type)</uicontrol> .</cmd>
+                <stepresult>The dialog box <wintitle>Make Table</wintitle> is
+                    displayed.</stepresult>
+            </step>
+            <step>
+                <cmd>Name the new table <userinput>Friesland customers</userinput> and select that
+                    this table should come in the current database.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Specify name and location of the new database</title>
+                        <image keyref="q_maketable_dialogbox">
+                            <alt>Specify name and location of the new database</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Click <menucascade>
+                        <uicontrol>tab Design</uicontrol>
+                        <uicontrol><image keyref="button_run"/>Run (group Results)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>A dialog appears asking for confirmation.</stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Yes</uicontrol>.</cmd>
+                <stepresult>The new table is created.</stepresult>
+            </step>
+            <step>
+                <cmd>Close query</cmd>
+                <stepresult>A dialog box asking whether the changes should be saved.<note
+                        type="notice">This is because the query type has been changed. This is also
+                        seen in the navigation pane under Queries. The query icon indicates an
+                        action query: <image keyref="q_maketable_icon"/></note></stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Yes</uicontrol>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

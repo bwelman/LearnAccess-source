@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tools" xml:lang="en-US">
+    <title>Tools</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Tools in Access to analyze the database, to detect and correct problems.</p>
+    </conbody>
+</concept>

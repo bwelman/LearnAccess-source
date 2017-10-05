@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="explore_search_records" xml:lang="en-US">
+    <title>Task: Searching a record</title>
+    <shortdesc>How you can find a record through a part of a name.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Record<indexterm>search</indexterm></indexterm>
+                <indexterm>Find<indexterm>record</indexterm></indexterm>
+                <indexterm>Search<indexterm>record</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>A form may also be used to search for a record. In the following steps you will
+                search for a box with <q>autumn</q> in the name.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Open the form <varname>Boxes</varname>.</cmd>
+            </step>
+            <step>
+                <cmd>Click in the field <varname>Box name</varname> and choose on the ribbon <menucascade>
+                        <uicontrol>tab Home</uicontrol>
+                        <uicontrol><image keyref="button_find"/> Find (group Find)</uicontrol>
+                    </menucascade></cmd>
+                <stepresult>The dialog box <wintitle>Find and Replace</wintitle> is
+                    displayed.</stepresult>
+            </step>
+            <step>
+                <cmd>Type <userinput>autumn</userinput> in the text box <uicontrol>Find
+                        What</uicontrol> and select <option>Any Part of Field</option> in the text
+                    box <uicontrol>Match</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Dialog box <wintitle>Find and Replace</wintitle></title>
+                        <image keyref="find_replace_dialogbox">
+                            <alt>Dialog box find and replace</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Find Next</uicontrol>.</cmd>
+                <stepresult>The content of the box <wintitle>Autumn Surprise</wintitle> is
+                    displayed.</stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Cancel</uicontrol> to close the search window.</cmd>
+            </step>
+            <step>
+                <cmd>Close the form.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

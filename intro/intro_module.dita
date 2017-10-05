@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="intro_module" xml:lang="en-US">
+    <title>Modules</title>
+    <shortdesc>What are modules?</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Modules</indexterm>
+                <indexterm>VBA</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Access has a built-in programming language,Visual Basic for Applications (VBA). A module
+            is a collection of VBA procedures which allows you to automate complex database tasks.
+            To create a VBA module you need some programming experience.</p>
+    </conbody>
+</concept>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tables_fields_names" xml:lang="en-US">
+    <title> Field names</title>
+    <shortdesc>The requirements for field names. </shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Field<indexterm>name</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>The design of the database determines what kind of data has to be stored in the field.
+            Usually the fields in the design have already been given a name and you are using that
+            name. Always use meaningful names. Of course you can give the field a description, but a
+            clear name still works best.</p>
+        <p>Field names must meet the following requirements: <ul>
+                <li>name must be unique within the table</li>
+                <li>name may not start with a space</li>
+                <li>name may not contain the following characters: point, exclamation mark and
+                    brackets [ and ]</li>
+            </ul></p>
+    </conbody>
+</concept>

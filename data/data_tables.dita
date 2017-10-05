@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="data_tables" xml:lang="en-US">
+    <title>Table operations</title>
+    <shortdesc>General instructions how to edit records in a table, adding new records and deleting
+        records.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Record<indexterm>editing</indexterm><indexterm>adding</indexterm><indexterm>deleting</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>You can perform the most important data operations directly in the table, like editing,
+            adding and deleting records. You can type in the fields, but also the known ways to copy
+            and paste are supported.</p>
+        <dl>
+            <dlentry>
+                <dt>Record editing</dt>
+                <dd>Open the table and then use the mouse or the arrow keys to go to the field to be
+                    changed. Click in the field and make the changes. Once you make a change, an
+                    icon with a pencil appears on the left side of the record: <image
+                        keyref="icon_edit"/>. This is a indication that the record is in
+                        <term>edit mode</term>. Once you leave the record, the icon disappears and
+                    the changes have been saved.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>Record adding</dt>
+                <dd>Go to the bottom of the table, to the row marked with an asterisk: <image
+                        keyref="asterisk"/>. In reality, this row doesn't consist, but is
+                    created when you start entering data. The asterisk moves a row down. The new
+                    record is automatically saved.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>Record deleting</dt>
+                <dd>There are several ways to delete records. The two easiest ways are:<ul>
+                        <li>Select the record, then press the key
+                            <uicontrol>Delete</uicontrol>.</li>
+                        <li>Right mouse-click in the margin at the beginning of the record. Then
+                            choose <uicontrol>Delete Record</uicontrol>.</li>
+                    </ul>Access asks for a confirmation of the delete operation.</dd>
+            </dlentry>
+        </dl>
+        <note type="attention">Access doesn't have a undo button or function for delete
+            actions!.</note>
+    </conbody>
+</concept>

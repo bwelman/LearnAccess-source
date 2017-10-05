@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="intro_database_saveas" xml:lang="en-US">
+    <title>Task: Database save as</title>
+    <shortdesc>Instructions on how to save a database with a new name in an older file
+        format.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Database<indexterm>save as</indexterm><indexterm>file
+                    format</indexterm></indexterm>
+                <indexterm>File format</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>Sometimes it may be desirable to have multiple versions of a file. In that case you
+                can use <uicontrol>Save As</uicontrol> to save the file with a new name. And if you
+                want to save the file in an older Access format you can also use <uicontrol>Save
+                    As</uicontrol>.</p>
+            <p>In this course a database with the name <filepath><keyword keyref="example_db_file"
+                    /></filepath> will be used. Because all changes you make will be saved
+                immediately without asking, you soon don't have the original database. It is
+                therefore recommended to start with making a copy of the original database
+                        <filepath><keyword keyref="example_db_file"/></filepath>, before you are going
+                to work with this database. You can do that at the file level with the Windows
+                explorer, but you can also use the <uicontrol>Save As</uicontrol> command in
+                Access.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open database <filepath><keyword keyref="example_db_file"/></filepath>.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>File</uicontrol>
+                        <uicontrol>Save As</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult><fig>
+                        <title>Window Save As</title>
+                        <image keyref="saveas">
+                            <alt>Window save As</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+            <step>
+                <cmd>Select <option>Access Database (*.accdb</option>and click <uicontrol>Save
+                        As</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Browse in the dialog window to the storage location, specify the name of the
+                    new file and click <uicontrol>Save</uicontrol>.</cmd>
+            </step>
+        </steps>
+        <example><title>Backup</title>A backup is nothing more than a copy of a database that you
+            have created at a certain moment. In fact it is the same process as with the
+                <uicontrol>Save As</uicontrol> command. Nevertheless Access provides in a Backup
+                function.<p>Choose <menucascade>
+                    <uicontrol>File</uicontrol>
+                    <uicontrol>Save As</uicontrol>
+                </menucascade>. Select in the window <option>Back Up Database</option> and click
+                    <wintitle>Save As</wintitle>. Afterthat you can specify the storage location and
+                file name. Defeault the proposed name is the name of the original database file
+                supplemented with the current date.</p><note type="tip"> When you restore data or
+                objects from a backup, you want to know which database the backup came from and when
+                the backup was created. Therefore, it is usually a good idea to use the proposed
+                default file name. </note></example>
+    </taskbody>
+</task>

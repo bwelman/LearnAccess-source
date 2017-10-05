@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="intro_access_fileformats" xml:lang="en-US">
+  <title>File formats of Access</title>
+  <shortdesc>An overview of the new and old file formats of Access.</shortdesc>
+  <prolog>
+    <critdates>
+        <created date="2017-10-05"/>
+        <revised modified="2017-10-05"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <indexterm>File format</indexterm>
+        <indexterm>ACCDB</indexterm>
+        <indexterm>MDB</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <refbody>
+    <properties>
+      <property>
+        <proptype>ACCDB</proptype>
+        <propdesc>This is the default format for files created with Access 2007, 2010, 2013 and
+                        2016.<note type="attention">Because the file formats are the same, you can
+                        for example open a database in Access 2007 that was created with Access
+                        2016. However, new features which are not available in the older versions
+                        will not work. This can cause problems.</note></propdesc>
+      </property>
+      <property>
+        <proptype>MDB</proptype>
+        <propdesc>This is the format for files created with Access 2003 and earlier. Such a file can
+                    be opened by Access 2007, 2010, 2013 and 2016. And Access 2016 can also store a
+                    database in this older file format.</propdesc>
+      </property>
+    </properties>
+  </refbody>
+</reference>

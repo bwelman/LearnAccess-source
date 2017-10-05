@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="explore_filtering" xml:lang="en-US">
+    <title>Task: Filtering</title>
+    <shortdesc>Apply a filter to view only the records you want.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Filter<indexterm>text</indexterm><indexterm>numbers</indexterm></indexterm>
+                <indexterm>Text Filters</indexterm>
+                <indexterm>Number Filters</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>Filtering is a useful way to see only the data that you want displayed. You can use
+                filters to display specific records in a form, report, query or table. For example
+                you can easily create a filter to show all of pralines with the chocolate type Milk
+                and filling type Marzipan. There are several ways to filter a table. A few methods
+                come in the next steps.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Open the table <wintitle>Pralines</wintitle>.</cmd>
+                <stepresult>The table Pralines is displayed in Datasheet View.</stepresult>
+            </step>
+            <step>
+                <cmd>Click in the column <varname>ChocolateType</varname> on a value
+                        <varname>White</varname>.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Home</uicontrol>
+                        <uicontrol>button Selection (group Sort &amp; Filter)</uicontrol>
+                        <uicontrol>Equals "White"</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <p>Access shows now the records (4 records ) whose chocolate type is white.</p>
+                    <p>Further to the right of the column heading ChocolateType there is now a small
+                        symbol of a filter (<image keyref="button_arrow_down_filter"/>) to indicate
+                        that the table is filtered. Also on the status bar you can see that the
+                        table is filtered. <image keyref="statusbar_filtered"/></p>
+                </stepresult>
+            </step>
+            <stepsection>In the next steps the selection of chocolate type will be changed from
+                    <varname>White</varname> in <varname>Milk</varname>.</stepsection>
+            <step>
+                <cmd>Click on the filter symbol at the right of the column head
+                        <varname>ChocolateType</varname>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Dialog box filter</title>
+                        <image keyref="filter_chocolatetype">
+                            <alt>Dialog box filter</alt>
+                        </image>
+                    </fig>
+                    <note type="important">The options shown here depend on the type of field. With
+                        a text field, there is a submenu <uicontrol>Text Filters</uicontrol> and
+                        with a numeric field there is a submenu <uicontrol>Number
+                            Filters</uicontrol>.</note>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Select in the dialog box <option>Milk</option> and deselect
+                        <option>White</option>. Click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>There are now 18 records shown, all with chocolate type
+                    Milk.</stepresult>
+            </step>
+            <stepsection>Add a second selection criterion with <varname>Marzipan</varname> as
+                    <varname>FillingType</varname>.</stepsection>
+            <step>
+                <cmd>Click in column <varname>FillingType</varname> on a value
+                        <varname>Marzipan</varname>.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Home</uicontrol>
+                        <uicontrol>Button Selection (group Sort &amp; Filter)</uicontrol>
+                        <uicontrol>Equals "Marzipan"</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>Now 3 records are displayed with chocolate type Milk and with filling
+                    type Marzipan.</stepresult>
+            </step>
+            <stepsection>Undo filtering</stepsection>
+            <step>
+                <cmd>Click <menucascade>
+                        <uicontrol>tab Home</uicontrol>
+                        <uicontrol>button <image keyref="button_filter_toggle"/> (group Sort &amp;
+                            Filter)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>Filtering is removed and all records are displayed again.<note
+                        type="tip">Another way to remove the filter is by clicking on the button
+                            <uicontrol>Filtered</uicontrol> in the status bar. The text on the
+                        button will turn into <uicontrol>Unfiltered</uicontrol>. Clicking again
+                        applies the last used filter.</note></stepresult>
+            </step>
+            <stepsection>Use of Number Filters</stepsection>
+            <step>
+                <cmd>Click the arrow tip at the right in column head
+                    <varname>PralineCosts</varname>, choose <menucascade>
+                        <uicontrol>Number Filters</uicontrol>
+                        <uicontrol>Between...</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Dialog box <wintitle>Between Numbers</wintitle></title>
+                        <image keyref="filter_number_between">
+                            <alt>Dialog box between numbers</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Enter at <varname>Smallest</varname>
+                    <userinput>0.25</userinput> and at <varname>Largest</varname>
+                    <userinput>0.35</userinput> and click <uicontrol>OK</uicontrol>. </cmd>
+                <stepresult>There are now 22 records shown with bonbon costs from $0.25 to
+                    $0.35.</stepresult>
+            </step>
+            <step>
+                <cmd>Close the table <wintitle>Pralines</wintitle> and
+                        choose<uicontrol>No</uicontrol> on the question to save the changes.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

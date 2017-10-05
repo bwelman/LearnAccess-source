@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="queries" xml:lang="en-US">
+    <title>Queries</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Retrieving information from a database is the most common action from end users. To
+            deliver the required information queries are necessary. Simple queries can be created by
+            the end user themselves, for more complex queries help of a professional is usually
+            desired.</p>
+    </conbody>
+</concept>

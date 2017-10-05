@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="tables_new_import_excel" xml:lang="en-US">
+    <title>Task: New table with Excel import</title>
+    <shortdesc>How to import an Excel worksheet as a new Access table.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Table<indexterm>import</indexterm></indexterm>
+                <indexterm>Import<indexterm>Excel</indexterm></indexterm>
+                <indexterm>Excel<indexterm>import</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>Access works well with Excel. So you can import an entire worksheet in a new or an
+            existing table.</context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab External Data</uicontrol>
+                        <uicontrol>New Data Source (group Import &amp; Link)</uicontrol>
+                        <uicontrol>From File</uicontrol>
+                        <uicontrol>Excel </uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Dialog box <wintitle>Get External Data - Excel
+                            Spreadsheet</wintitle></title>
+                        <image keyref="import_excel_dialogbox">
+                            <alt>Dialog box Get External Data - Excel Spreadsheet.</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Navigate with the button <uicontrol>Browse</uicontrol> to the file
+                        <filepath>transport.xlsx</filepath>.</cmd>
+            </step>
+            <step>
+                <cmd>Select the first option <uicontrol>Import the source data into a new table in
+                        the current database</uicontrol> and click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>The Import Spreadsheet Wizard appears.</stepresult>
+            </step>
+            <step>
+                <cmd>Select the option <uicontrol>First Row Contains Column Headings</uicontrol> and
+                    click <uicontrol>Next</uicontrol>.</cmd>
+                <stepresult>In the wizard screen that appears now, several characteristics of the
+                    fields can be changed.</stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Next</uicontrol>.</cmd>
+                <stepresult>The wizard asks now what should be used as a key for the new
+                    table.</stepresult>
+            </step>
+            <step>
+                <cmd>Select<uicontrol>No primary key</uicontrol> and click
+                        <uicontrol>Next</uicontrol>.</cmd>
+                <stepresult>The wizard then asks for the name of the table.</stepresult>
+            </step>
+            <step>
+                <cmd>Specify as name for the table <userinput>Transport</userinput> and click
+                        <uicontrol>Finish</uicontrol>.</cmd>
+                <stepresult>The wizard now shows that the data is imported from Excel.</stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Close</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Open the table, look at the result and close the table.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

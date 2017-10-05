@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="analyse_tables" xml:lang="en-US">
+	<title>Task: Analyze table</title>
+	<shortdesc>Investigation of inconsistency in tables.</shortdesc>
+	<prolog>
+		<critdates>
+		    <created date="2017-10-05"/>
+		    <revised modified="2017-10-05"/>
+		</critdates>
+		<metadata>
+			<keywords>
+				<indexterm>Tools<indexterm>analyse table</indexterm></indexterm>
+				<indexterm>Analyse table</indexterm>
+				<indexterm>Redundancy</indexterm>
+			</keywords>
+		</metadata>
+	</prolog>
+	<taskbody>
+		<context>
+			<p>When the same information is stored more than once in different tables, this is called
+                    <term>redundancy</term>. That is undesirable, because when the information
+                changes, you need to change this on all those places. If you don't then the database
+                is inconsistent, the information on these sites is contradictory.</p>
+			<p>Access has a tool<wintitle>Analyze Table</wintitle> to detect redundant data and to split a
+                table with redundant data in multiple, related tables, so that the information is
+                stored more efficiently. This process is called <term>normalization</term>. </p>
+			<p>You can specify which tables you want to the wizard creates for yoy or you can let the wizard
+                normalize your table. After this the wizard helps to sanitize the data in the
+                original table. In the last step, you can create a query that returns all
+                information in the splitted tables, displayed in a single datasheet that matches the
+                original table.</p>
+			<p>In the image below you can see an example of a table <wintitle>Contacts</wintitle> with many
+                duplicated data in it. So, this table is not normalized. Access this table split
+                into two tables so that duplicatedis stored as little as possible.</p>
+			<fig>
+                <title>Table Contacts</title>
+                <image keyref="table_contacts">
+                    <alt>Table Contacts</alt>
+                </image>
+            </fig>
+		</context>
+		<steps>
+			<step>
+                <cmd>Open practise file <filepath>tools.accdb</filepath>.</cmd>
+            </step>
+			<step>
+                <cmd>Select table <wintitle>Contacts</wintitle>.</cmd>
+            </step>
+			<step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Database Tools</uicontrol>
+                        <uicontrol>Analyze Table (group Analyze)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <p>The wizard <wintitle>Table Analyzer</wintitle> appears with some general
+                        explanation of duplicate information.</p>
+                </stepresult>
+            </step>
+			<step>
+                <cmd>Click <uicontrol>Next</uicontrol>.</cmd>
+                <stepresult>
+                    <p>A new screen of the Table Analyzer wizard appears with general explanation
+                        about how this problem can be solved.</p>
+                </stepresult>
+            </step>
+			<step>
+                <cmd>Click <uicontrol>Next</uicontrol>.</cmd>
+                <stepresult>
+                    <p>Now the wizard asks you which table has redundant data.</p>
+                </stepresult>
+            </step>
+			<step>
+                <cmd>Select table <option>Contacts</option> and click
+                    <uicontrol>Next</uicontrol>.</cmd>
+                <stepresult>
+                    <p>Now you can specify who decides about the choice for the fields, the wizard
+                        or you.</p>
+                </stepresult>
+            </step>
+			<step>
+                <cmd>Select that you want to make the decisions. Then click
+                        <uicontrol>Next</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Table Analyzer Wizard</title>
+                        <image keyref="table_analyzer_wizard">
+                            <alt>Table Analyzer Wizard</alt>
+                        </image>
+                    </fig>
+                    <note type="notice">In this step, you can create new tables and add
+                        fields.</note>
+                </stepresult>
+            </step>
+			<step>
+                <cmd>Select field <varname>ContactName</varname> and drag it out of the table.</cmd>
+                <stepresult>
+                    <p>A new table is created that contains the field name
+                            <varname>ContactName</varname>. The wizard asks now for the name of the
+                        new table.</p>
+                </stepresult>
+            </step>
+			<step>
+                <cmd>Enter <userinput>Contactpersons</userinput> as name for the new table and click
+                        <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Generated table Contactpersons</title>
+                        <image keyref="table_generated">
+                            <alt>Generated table Contactpersons</alt>
+                        </image>
+                    </fig>
+                    <note type="notice">There is also a relationship created between the two
+                        tables.</note>
+                    <note type="tip">The location and dimensions of the displayed tables can be
+                        modified by dragging the table itself or the edges.</note>
+                </stepresult>
+            </step>
+			<step>
+                <cmd>Drag now the fields <varname>CompanyName</varname> and <varname>Tel</varname>
+                    to the table <wintitle>Contactpersons</wintitle>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Final result table Contactpersons</title>
+                        <image keyref="tables_splitted">
+                            <alt>Definitieve tabel contactpersoon</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+			<step>
+                <cmd>Click <uicontrol>Next</uicontrol>.</cmd>
+                <stepresult>
+                    <p>The wizard asks now if you want to create query.</p>
+                </stepresult>
+            </step>
+			<step>
+                <cmd>Select that no query should be created and click
+                    <uicontrol>Finish</uicontrol>.</cmd>
+                <stepresult>There are now 3 tables: <wintitle>Contacts</wintitle> (the original
+                    table), <wintitle>Contactpersons</wintitle> (new table),
+                        <wintitle>Tabel1</wintitle> (new table)<note type="attention">There may be a
+                        warning window stating that the command or action
+                            <uicontrol>TileHorizontally</uicontrol> isn't available. If so, click
+                            <uicontrol>OK</uicontrol>.</note></stepresult>
+            </step>
+			<step>
+                <cmd>Close the tables and when prompted, then save the modified designs.</cmd>
+            </step>
+			<step>
+                <cmd>Remove the original table <wintitle>Contacts</wintitle>.</cmd>
+            </step>
+			<step>
+                <cmd>Rename <wintitle>Tabel1</wintitle> in <wintitle>Contacts</wintitle>.</cmd>
+            </step>
+		</steps>
+	</taskbody>
+</task>

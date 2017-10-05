@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="intro" xml:lang="en-US">
+    <title>Starting with Access</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Access is a program from the Microsoft Office package and it allows you to create
+                <term>databases</term> and work with them. And with databases, you can store, manage
+            and analyze data.</p>
+        <p>The data includes for example, detailed information about customers, orders, products,
+            suppliers, etc. These data are saved ordered.This allows you to get answers to questions
+            like</p>
+        <ul>
+            <li>What was the revenue per customer in the past six months?</li>
+            <li>Which articles provide for the bulk of sales?</li>
+        </ul>
+        <p>Access is seen as the most difficult program from the Microsoft Office package. That is
+            caused by the way databases are structured and work. So you can start Excel, PowerPoint
+            and Word and then immediately entering data. That is not possible in Access. Before you
+            can enter data, you must first invent and create a structure for the database. For
+            larger and more complex databases it will be work for database specialists.</p>
+    </conbody>
+</concept>

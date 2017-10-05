@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="integration_about" xml:lang="en-US">
+    <title>About integration of Office applications</title>
+    <shortdesc>Possibilities for exchanging data between Office applications.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Integration<indexterm>access</indexterm><indexterm>excel</indexterm><indexterm>word</indexterm></indexterm>
+                <indexterm>Access</indexterm>
+                <indexterm>Excel</indexterm>
+                <indexterm>Word</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>The individual programs within the Microsoft Office package can work well together so
+            that integration within processes is possible. However, for many users, Access, Excel,
+            and Word are separate programs, each with their strong and weak sides. Access for
+            databases, Excel for the calculations and Word for word processing.</p>
+        <p>Access can export data from tables, queries, and forms to Excel, so you can do there the
+            calculations that are not possible in Access. In addition, Acess can import data from
+            Excel worksheets.</p>
+        <p>Access can also export from tables, queries and forms to a Word RTF file. Additionally,
+            an Access database can serve as a data source when creating default letters and labels
+            in Word through the wizard. This wizard can be started from both Access and Word.</p>
+    </conbody>
+</concept>

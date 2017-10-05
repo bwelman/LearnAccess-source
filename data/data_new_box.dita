@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="data_new_box" xml:lang="en-US">
+    <title>Task: Add new box</title>
+    <shortdesc>Adding a new record with a main form and a subform.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Record<indexterm>add</indexterm></indexterm>
+                <indexterm>Form<indexterm>main
+                    form</indexterm><indexterm>subform</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context/>
+        <context>The form <varname>Boxes</varname> contains a subform. The main form with the name
+                <varname>Boxes</varname> provides the following information: BoxName, BoxCode,
+            BoxDescription, Weight, BoxPrice and Stock. These data are stored in the table
+                <varname>Boxes</varname>. Furthermore, this form has an additional field BoxCosts,
+            by calculating the sum of (PralineCosts * Quantity) for all pralines in the box. The
+            subform with the name <varname>Boxes subform</varname> has the following editable
+            fields: PralineCode and Quantity. These data and the BoxCode are stored in the table
+                <varname>BoxDetails</varname>. In the following step a new box is added through the
+            form <varname>Boxes</varname>.</context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Open form <varname>Boxes</varname>.</cmd>
+            </step>
+            <step>
+                <cmd>Click in the status bar on button <uicontrol>New (empty) record <image
+                            keyref="button_record_new"/></uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the following data:</cmd>
+                <tutorialinfo>
+                    <simpletable frame="all">
+                        <strow>
+                            <stentry>BoxName</stentry>
+                            <stentry>Winter Surprise</stentry>
+                        </strow>
+                        <strow>
+                            <stentry>BoxCode</stentry>
+                            <stentry>WINT</stentry>
+                        </strow>
+                        <strow>
+                            <stentry>BoxDescription</stentry>
+                            <stentry>Nuts and berries, covered with chocolate and toffee, ideal for
+                                long winter evenings by the fire.</stentry>
+                        </strow>
+                        <strow>
+                            <stentry>Weight</stentry>
+                            <stentry>300 gram</stentry>
+                        </strow>
+                    </simpletable>
+                </tutorialinfo>
+            </step>
+            <step>
+                <cmd>Click below Content in field <varname>Code</varname> on the selection arrow and
+                    select PralineCode <userinput>B02 Butterscotch Blueberry</userinput>.</cmd>
+                <stepresult>The remaining praline data as PralineName, ChocolateType, NutType,
+                    FillingType and PralineCosts are filled in automatically. You only need to fill
+                    the data for Quantity (Nr.).</stepresult>
+            </step>
+            <step>
+                <cmd>Enter <userinput>3</userinput> at <varname>Nr.</varname>.</cmd>
+            </step>
+            <step>
+                <cmd>Add the same way the following pralines to the box:</cmd>
+                <tutorialinfo>
+                    <simpletable frame="all">
+                        <sthead>
+                            <stentry>Code</stentry>
+                            <stentry>PralineName</stentry>
+                            <stentry>Nr.</stentry>
+                        </sthead>
+                        <strow>
+                            <stentry>B05</stentry>
+                            <stentry>Butterscotch Raspberry</stentry>
+                            <stentry>3</stentry>
+                        </strow>
+                        <strow>
+                            <stentry>P03</stentry>
+                            <stentry>Cashew Perfect</stentry>
+                            <stentry>3</stentry>
+                        </strow>
+                        <strow>
+                            <stentry>F01</stentry>
+                            <stentry>Walnut Mocha Toffee</stentry>
+                            <stentry>3</stentry>
+                        </strow>
+                        <strow>
+                            <stentry>F02</stentry>
+                            <stentry>Pistachio Mocha Toffee</stentry>
+                            <stentry>3</stentry>
+                        </strow>
+                        <strow>
+                            <stentry>P07</stentry>
+                            <stentry>Classic Cherry</stentry>
+                            <stentry>3</stentry>
+                        </strow>
+                    </simpletable>
+                </tutorialinfo>
+                <stepresult>The BoxCosts of $4.53 is calculated automatically .</stepresult>
+            </step>
+            <step>
+                <cmd>Enter at <varname>BoxPrice</varname>
+                    <userinput>25.00</userinput> and at <varname>Stock</varname>
+                    <userinput>120</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Close form <varname>Boxes</varname>.</cmd>
+            </step>
+            <step>
+                <cmd>Check in the table <varname>Boxes</varname> that the new box has been
+                    added.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="explore_forms" xml:lang="en-US">
+    <title>Task: Exploring Forms</title>
+    <shortdesc>The two main views of forms: datasheet and design.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Form<indexterm>form view</indexterm><indexterm>design
+                    view</indexterm></indexterm>
+                <indexterm>Form View<indexterm>form</indexterm></indexterm>
+                <indexterm>Design View<indexterm>form</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>Forms are especially important in displaying, adding and editing data.</p>
+            <p>The most important views of a form are:<ul>
+                    <li><uicontrol>Form View</uicontrol>. In this view, the information is
+                        displayed, you can edit it and enter new data.</li>
+                    <li><uicontrol>Datasheet View</uicontrol>. A view similar to that of the
+                        table.</li>
+                    <li><uicontrol>Design View</uicontrol>. In this view you can see the design of
+                        the form and customize it.</li>
+                </ul></p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Open the form <varname>Pralines</varname>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Form View of form <wintitle>Pralines</wintitle></title>
+                        <image keyref="form_pralines_form_view">
+                            <alt>Form View of form Pralines</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Put the form <varname>Pralines</varname> in <uicontrol>Design View</uicontrol>
+                    on one of the following ways:</cmd>
+                <choices>
+                    <choice>Click the button <uicontrol>Design View</uicontrol>
+                        <image keyref="button_design_view"/> on bottom right of the program
+                        window</choice>
+                    <choice><menucascade>
+                            <uicontrol>tab Home</uicontrol>
+                            <uicontrol>View (group Views)</uicontrol>
+                            <uicontrol>Design View</uicontrol>
+                        </menucascade>.</choice>
+                </choices>
+                <info>
+                    <note type="tip">You can open a form directly in the Design View by right
+                        clicking on the form name in the navigation pane and then choose
+                            <uicontrol>Design View</uicontrol> from the shortcut menu.</note>
+                </info>
+                <stepresult>
+                    <fig>
+                        <title>Design View of form <wintitle>Pralines</wintitle></title>
+                        <image keyref="form_pralines_design_view">
+                            <alt>Design view of form Pralines</alt>
+                        </image>
+                    </fig>
+                    <p>In the design view you can change the layout of the form and add controls
+                        like text boxes, labels, list boxes, check boxes, etc.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Put the form <varname>Pralines</varname> in the <uicontrol>Form
+                    View</uicontrol> <image keyref="button_form_view"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Browse through the records with the navigation buttons on the left bottom of
+                    the document window.</cmd>
+                <tutorialinfo>Using navigation buttons:<dl>
+                        <dlentry>
+                            <dt><image keyref="button_record_first"/></dt>
+                            <dd>First record</dd>
+                        </dlentry>
+                        <dlentry>
+                            <dt><image keyref="button_record_previous"/></dt>
+                            <dd>Previous record</dd>
+                        </dlentry>
+                        <dlentry>
+                            <dt><image keyref="button_record_next"/></dt>
+                            <dd>Next record</dd>
+                        </dlentry>
+                        <dlentry>
+                            <dt><image keyref="button_record_last"/></dt>
+                            <dd>Last record</dd>
+                        </dlentry>
+                        <dlentry>
+                            <dt><image keyref="button_record_new"/></dt>
+                            <dd>New (empty) record</dd>
+                        </dlentry>
+                    </dl></tutorialinfo>
+            </step>
+            <step>
+                <cmd>Close the form.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

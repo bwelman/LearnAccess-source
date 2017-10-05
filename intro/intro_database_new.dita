@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="intro_database_new" xml:lang="en-US">
+    <title>New database</title>
+    <shortdesc>Instructions on how to create a new database.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Database<indexterm>new</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Before creating a new database you should mostly do a thorough information analysis,
+            followed by a normalization process. Then the structure of the database is determined
+            and you know which tables with which fields should be created. Therefore, creating a new
+            database is not a subject in this course. When you know what has to be created, the
+            creation of the database is not so difficult. Hereafter a few guidelines how you might
+            proceed.</p>
+        <p>The starting point is the initial screen of Access. In the left part (under Recent) are
+            the last opened files and the right part contains some available templates for creating
+            new databases.</p>
+        <p>First, you can instruct Access to create a new empty database by clicking on the template
+                <uicontrol>Blank database</uicontrol>. In the following screen you must specify the
+            name and storage location of the new database. Then Access creates this database with a
+            new empty table. Creating Tables is discussed later in this course.</p>
+        <p>Access provides a number of templates for common types of databases, see the buttons on
+            the start-up screen. When the newly created database comes close to one of these
+            templates you can use this template. When clicking on a template, a database including
+            tables with fields and mostly a number of queries, forms and reports are created. Then
+            you can adjust the designs. This is sometimes convenient and faster than manually start
+            from scratch.</p>
+    </conbody>
+</concept>

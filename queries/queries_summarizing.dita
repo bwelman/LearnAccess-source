@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="queries_summarizing" xml:lang="en-US">
+	<title>Summarizing and Calculations</title>
+	<shortdesc>Explanation about grouping data and making calculations in a query.</shortdesc>
+	<prolog>
+		<critdates>
+			<created date="2017-10-05"/>
+			<revised modified="2017-10-05"/>
+		</critdates>
+		<metadata>
+			<keywords>
+				<indexterm>Query<indexterm>grouping</indexterm><indexterm>group
+						by</indexterm><indexterm>totals</indexterm></indexterm>
+			</keywords>
+		</metadata>
+	</prolog>
+	<conbody>
+		<p>The simple select queries work with individual records. When you select certain customers
+			from the Customers table with a query, then you will see a record for each customer that
+			meets the requirements. It is also possible to group your records and then perform
+			calculations on the subgroups. That can be compared with the calculation of totals and
+			subtotals.</p>
+		<p>When a query is displayed in design view you see on the ribbon <menucascade>
+                <uicontrol>tab Design</uicontrol>
+                <uicontrol>Totals (group Show/Hide)</uicontrol>
+            </menucascade>
+            <fig>
+                <title>Button Totals</title>
+                <image keyref="button_totals">
+                    <alt>Button totals</alt>
+                </image>
+            </fig></p>
+		<p>With this button you can show or hide a row Total in the design grid. Access adds a Total
+			box for each field, just under the table box.</p>
+		<fig>
+			<title>Example with Total in query design</title>
+		    <image keyref="q_pralines_box_design">
+				<alt>Example with row total in query grid</alt>
+			</image>
+		</fig>
+        <draft-comment author="benw">query: Pralines per box</draft-comment>
+		<p>For each added box you can choose an option from the drop down list. This option
+			determines whether the field is used in a calculation or used for grouping or filtering.
+			The available options can be divided into three categories:</p>
+		<dl>
+			<dlentry>
+				<dt>Grouping</dt>
+				<dd>The choice is then: <userinput>Group By</userinput>. The field is used to get
+					smaller groups on which you can perform calculations. This choice is also the
+					default option.</dd>
+			</dlentry>
+			<dlentry>
+				<dt>Filtering</dt>
+				<dd>The choice is then: <userinput>Where</userinput>. The check mark in the Show box
+					is also cleared and should remain so. In the box Criteria you can specify the
+					value or expression for filtering.</dd>
+			</dlentry>
+			<dlentry>
+				<dt>Calculations</dt>
+				<dd>The options are: <userinput>Sum, Avg, Min, Max, Count, StDev,
+						Var, First, Last, Expression</userinput>. The selected calculation is then
+					performed for the field.</dd>
+			</dlentry>
+		</dl>
+		<p>
+			<table frame="all" rowsep="1" colsep="1">
+				<title>Options for summarizing data</title>
+				<tgroup cols="2">
+					<colspec colname="c1" colnum="1" colwidth="1*"/>
+					<colspec colname="c2" colnum="2" colwidth="3.44*"/>
+					<thead>
+						<row>
+							<entry>Choice in Total box</entry>
+							<entry>Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>Group By</entry>
+							<entry>Subgroups records based on the values in this field.</entry>
+						</row>
+						<row>
+							<entry>Sum</entry>
+							<entry>Adds together the values in this field.</entry>
+						</row>
+						<row>
+							<entry>Avg</entry>
+							<entry>Averages the values in this field.</entry>
+						</row>
+						<row>
+							<entry>Min</entry>
+							<entry>Retains the smallest value in this field.</entry>
+						</row>
+						<row>
+							<entry>Max</entry>
+							<entry>Retains the largest value in this field.</entry>
+						</row>
+						<row>
+							<entry>Count</entry>
+							<entry>Counts the number of records (no matter which field you
+								use).</entry>
+						</row>
+						<row>
+							<entry>StDev</entry>
+							<entry>Calculates the standard deviation of the values in this
+								field.</entry>
+						</row>
+						<row>
+							<entry>Var</entry>
+							<entry>Calculates the variance of the values in this field.</entry>
+						</row>
+						<row>
+							<entry>First</entry>
+							<entry>Retains the first value n this field.</entry>
+						</row>
+						<row>
+							<entry>Last</entry>
+							<entry>Retains the last value in this field.</entry>
+						</row>
+						<row>
+							<entry>Expression</entry>
+							<entry>Calculates a user defined expression for the values in this
+								field.</entry>
+						</row>
+						<row>
+							<entry>Where</entry>
+							<entry>For filtering only on values in this field.</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</p>
+		<section>
+			<title>Calculated Field</title>
+			<p>A calculated field takes data from one or more fields and performs some arithmetic to
+				produce new information. You can perform simple arithmetic, like addition and
+				multiplication, or use Access's built-in functions, such as Sum and Avg. You can
+				only use fields that are added tot the query. To create a calculated field</p>
+			<ol id="ol_qrp_vfh_zs">
+				<li>Click in an empty column in the field row.</li>
+				<li>Enter a name for the calculation (result) followed by a colon (:).</li>
+				<li>Enter the expression for the calculation.</li>
+			</ol>
+			<note type="attention">You can use field names in the expression. Field names must be
+				surrounded by square brackets. If the field name contains no spaces, then Access
+				puts the square brackets in for you after entering the name. If a field name
+				contains spaces, you have to type in the square brackets yourself.</note>
+			<note type="tip">When using one of the calculation options for summarizing, it is recommended to
+				also add a new name in front of the field name, otherwise Access generates a name
+				for the result in the datasheet view. This new name must also be followed by a
+				colon.</note>
+			<p>Here are some examples. Study them well. Create and experiment with them.</p>
+		</section>
+		<example>
+			<title>Example 1: Average praline costs per chocolate type</title>
+			<p>In this example the field ChocolateType is used for grouping, creating a group for
+				each chocolate type. The field PralineCosts is used for the calculation of the
+				average praline costs for each group. The result is a record for each chocolate type
+				containing the average price.</p>
+			<fig>
+                <title>Design query average praline costs per chocolate type</title>
+                <image keyref="q_pralinecosts_chocolatetype_design">
+                    <alt>Design query average praline costs per chocolate type</alt>
+                </image>
+            </fig>
+			<fig>
+                <title>Result query average praline costs per chocolate type</title>
+                <image keyref="q_pralinecosts_chocolatetype_result">
+                    <alt>Result query average praline costs per chocolate type</alt>
+                </image>
+            </fig>
+			<p>Because the column for the averages didn't get a new name, Access generates as name
+					<systemoutput>AvgOfPralineCosts</systemoutput></p>
+			<note conref="../common/reusable_topic_parts.dita#reusable_topic_parts/reservation"/>
+		</example>
+		<example>
+			<title>Example 2: Box price statistics</title>
+			<p>In this example, the BoxPrice field is used 4 times with different calculations. Each column
+                was given a new name. The result of the query is a single record containing the 4
+                results of the calculations.</p>
+			<fig>
+                <title>Design query  box price statistics</title>
+                <image keyref="q_boxprice_statistics_design">
+                    <alt>Design query box price statistics</alt>
+                </image>
+            </fig>
+			<fig>
+                <title>Result query box price statistics</title>
+                <image keyref="q_boxprice_statistics_result">
+                    <alt>Result query box price statistics</alt>
+                </image>
+            </fig>
+			<note conref="../common/reusable_topic_parts.dita#reusable_topic_parts/reservation"/>
+		</example>
+		<example>
+			<title>Example 3: Average box price for boxes of more than 200 grams</title>
+			<p>Calculate the average price of boxes of more than 200 gram. The field Weight is used
+				for filtering on boxes of more than 200 gram.</p>
+			<fig>
+                <title>Design query average box price</title>
+                <image keyref="q_boxprice_200g_design">
+                    <alt>Design query average box price</alt>
+                </image>
+            </fig>
+			<fig>
+                <title>Result query average box price</title>
+                <image keyref="q_boxprice_200g_result">
+                    <alt>Result query average box price</alt>
+                </image>
+            </fig>
+			<note conref="../common/reusable_topic_parts.dita#reusable_topic_parts/reservation"/>
+		</example>
+	</conbody>
+</concept>

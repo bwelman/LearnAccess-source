@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="queries_about" xml:lang="en-US" >
+	<title>About creating queries</title>
+	<shortdesc>Query types and their use.</shortdesc>
+	<prolog>
+		<critdates>
+			<created date="2017-10-05"/>
+			<revised modified="2017-10-05"/>
+		</critdates>
+		<metadata>
+			<keywords>
+				<indexterm>Query<indexterm>select</indexterm><indexterm>parameter</indexterm><indexterm>update</indexterm></indexterm>
+				<indexterm>Select query</indexterm>
+				<indexterm>Parameter query</indexterm>
+				<indexterm>Update query</indexterm>
+			</keywords>
+		</metadata>
+	</prolog>
+	<conbody>
+		<p>The most familiar form of a query is the select query, which is a sort of question to the
+			database to a particular set of data. However, a query can produce more than a list of
+			records. So there may be functions in a query that perform calculations (sum,
+			average,...) on the data. And there are various types of queries. In this course are
+			discussed the types:</p>
+		<dl>
+			<dlentry>
+				<dt>Select query</dt>
+				<dd>Retrieves data from one or more tables and displays the results in a datasheet view. You can
+					use this query to execute records and calculations groups such as sum, average,
+					count,... This is the most common type of query.</dd>
+			</dlentry>
+			<dlentry>
+				<dt>Parameter query</dt>
+				<dd>The user should first give a value for one or more fields. Thereafter, the value is used to
+					carry out a select query. An example is a list of orders from a certain
+					date.</dd>
+			</dlentry>
+			<dlentry>
+				<dt>Update query</dt>
+				<dd>Hereby it is possible to make one or more changes to records that meet certain conditions
+					with one action. An example is a 10% price increase for a series of
+					products.</dd>
+			</dlentry>
+		</dl>
+		<p>To create a query, it is necessary that you first specify well the information needs. After
+			this you can start to create the query.</p>
+	</conbody>
+</concept>

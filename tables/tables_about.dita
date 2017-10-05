@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tables_about" xml:lang="en-US">
+    <title>About tables</title>
+    <shortdesc>Tables, fields and relationships between tables.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Tables</indexterm>
+                <indexterm>Information analysis</indexterm>
+                <indexterm>Normalization</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>In a database data is stored in tables. The tables themselves consists of fields for
+            different kind of data. So there could be a field for the last name of a person and
+            another field for the first name. Data can be displayed in different ways, but is always
+            stored in tables. In practice, you first make an <term>information analysis</term> to
+            determine which tables and fields you need. For larger databases this is done through a
+            process called<term>normalizing</term>. Mostly you also need to establish relationships
+            between the tables, so data from one table can be linked to data in another table.</p>
+        <p>With empty tables, you can't do anything. So data has to be entered in tables. When these
+            data are already available in other files, such as an Excel worksheet, then import from
+            Excel is also an option.</p>
+    </conbody>
+</concept>

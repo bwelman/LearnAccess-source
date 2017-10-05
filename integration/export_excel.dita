@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="export_excel" xml:lang="en-US">
+    <title>Task: Export to Excel</title>
+    <shortdesc>How to export an Access table to a new Excel document.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Access<indexterm>export excel</indexterm></indexterm>
+                <indexterm>Excel<indexterm>integratie access</indexterm></indexterm>
+                <indexterm>Export<indexterm>tabel naar excel</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>Je kunt eenvoudig een tabel vanuit Access naar Excel exporteren.</context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Select table <wintitle>Boxes</wintitle>.</cmd>
+            </step>
+            <step>
+                <cmd>Right click on the table name and choose <menucascade>
+                        <uicontrol>Export</uicontrol>
+                        <uicontrol>Excel</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>The dialog box <wintitle>Export - Excel Spreadsheet</wintitle> is
+                    displayed.</stepresult>
+            </step>
+            <step>
+                <cmd>Specify file name and path, select option <uicontrol>Export data with
+                        formatting and layout</uicontrol> and click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>The dialog box <wintitle>Save Export Steps</wintitle> is
+                    displayed.</stepresult>
+            </step>
+            <step>
+                <cmd>It's not necessary to save the export steps. Click
+                    <uicontrol>Close</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Check the export by opening the file in Excel.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="reports_grouping" xml:lang="en-US">
+    <title>Task: Report with grouping</title>
+    <shortdesc>Creation of a grouped and summary report based on a query with the Report
+        Wizard.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Report<indexterm>grouping</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>INFORMATION NEEDS</p>
+            <p>Create a report which shows over a specified period of time the sales per box, as
+                well as the details of each order.As an example look at the figure where you see
+                part of the report of November 2009.</p>
+            <fig>
+                <title>Report November 2009</title>
+                <image keyref="group_report_result">
+                    <alt> Report November 2009</alt>
+                </image>
+            </fig>
+            <p>ANALYSIS</p>
+            <p>The required data are <varname>BoxName</varname>, <varname>OrderCode</varname>,
+                    <varname>OrderDate</varname>, <varname>Quantity</varname> and a calculated field
+                    <varname>Sales</varname> from the expression
+                    <codeph>[Quantity]*[BoxPrice]</codeph>. A query for this data is already
+                available with the name <uicontrol>Sales per box per order per
+                period</uicontrol>.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Select query <uicontrol>Sales per box per order per period</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Create</uicontrol>
+                        <uicontrol>Report Wizard (group Reports)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Specifying fields</title>
+                        <image keyref="group_wizard_fields">
+                            <alt>Specifying fields</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Add all fields of the query. Click <uicontrol>Next</uicontrol>.</cmd>
+                <stepresult>
+                    <p>In the screen that is displayed now you can specify if you want to add
+                        grouping levels.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Remove existing grouping levels (OrderCode) and add <varname>BoxName</varname>
+                    as grouping level</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Specifying grouping levels</title>
+                        <image keyref="group_wizard_levels">
+                            <alt>Specifying grouping levels</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Next</uicontrol>.</cmd>
+                <stepresult>
+                    <p>In the screen that is displayed now you can specify the sort order.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Specify to sort ascending on <option>OrderCode</option>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Specifying sort order and summary information</title>
+                        <image keyref="group_wizard_sort">
+                            <alt>Specifying sort order and summary information</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click button <uicontrol>Summary Options...</uicontrol> and select that the Sum
+                    should be calculated for the fields <varname>Quantity</varname> and
+                        <varname>Sales</varname>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Specifying calculated summary values</title>
+                        <image keyref="group_wizard_summary">
+                            <alt>Specifying calculated summary values</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>OK</uicontrol> and after that
+                    <uicontrol>Next</uicontrol>.</cmd>
+                <stepresult>
+                    <p>Now you can specify the lay out of the report.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Select <uicontrol>Outline</uicontrol> layout.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Layout report</title>
+                        <image keyref="group_wizard_layout">
+                            <alt>layout report</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Next</uicontrol>.</cmd>
+                <stepresult>
+                    <p>The last screen of the Wizard is displayed now. Here you can specify the name
+                        for the report.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Name the report <userinput>Sales per box per order per period</userinput> and
+                    click <uicontrol>Finish</uicontrol>.</cmd>
+                <stepresult>The report is created and displayed in Print Preview. Because the query
+                    has parameters for the start and end date, you should enter values for these
+                    parameters.</stepresult>
+            </step>
+            <step>
+                <cmd>Test with Start date <userinput>11/1/2009</userinput> and End date
+                        <userinput>11/30/2009</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Close the report.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="forms_boxes_data_entry" xml:lang="en-US">
+    <title>Task: Data entry form Boxes</title>
+    <shortdesc>In an existing subform text box is replaced by a combo box with a query as data
+        source.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Form</indexterm>
+                <indexterm>Control<indexterm>combo box</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>In the existing form Boxes, you can only select pralines with the PralineCode. The
+                goal is to make it possible that you can also choose by the name of the praline.</p>
+            <p>Form <wintitle>Boxes</wintitle> consists of the main form <wintitle>Boxes</wintitle>
+                and the subform <wintitle>Boxes subform</wintitle>. The praline choice occurs in the
+                subform. So only the subform should be changed, the text box
+                    <uicontrol>PralineName</uicontrol> must be replaced by a <uicontrol>Combo
+                    Box</uicontrol>.</p>
+            <p>But <wintitle>Boxes subform</wintitle> is based on table
+                    <wintitle>BoxDetails</wintitle> and there is no field PralineName in this table.
+                Therefore a query should be created, based on table <wintitle>Pralines</wintitle>,
+                with as result the columns PralineName and PralineCode and sorted on PralineName.
+                This new query is the data source for the combo box.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Create</uicontrol>
+                        <uicontrol>Query Design (group Queries)</uicontrol>
+                    </menucascade>. Add table <uicontrol>Pralines</uicontrol> and from this table
+                    the fields <uicontrol>PralineName</uicontrol> and
+                        <uicontrol>PralineCode</uicontrol>. Sort ascending on
+                        <uicontrol>PralineName</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Design query for praline choice</title>
+                        <image keyref="q_choose_praline_design">
+                            <alt>Design query for praline choice</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Close the query and save it with name <userinput>Choose
+                    praline</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Open form <wintitle>Boxes subform</wintitle> in <uicontrol>Design
+                        View</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Remove field <uicontrol>PralineName</uicontrol> in section Detail.</cmd>
+            </step>
+            <step>
+                <cmd>Select <menucascade>
+                        <uicontrol>tab Design</uicontrol>
+                        <uicontrol>Combo Box (group Controls)</uicontrol>
+                    </menucascade> and draw a rectangle on the same location as the removed field
+                    PralineName.</cmd>
+                <stepresult>After drawing the rectangle, the <wintitle>Combo Box Wizard</wintitle>
+                    is started.</stepresult>
+            </step>
+            <step>
+                <cmd>Answer the Wizard questions as follows:</cmd>
+                <info><ul>
+                        <li>The values for the combo box comes from a table or query.</li>
+                        <li>The values are provided by query <uicontrol>Choose
+                            praline</uicontrol>.</li>
+                        <li>The selected fields are PralineName and PralineCode.</li>
+                        <li>Sort order is Ascending on PralineName.</li>
+                        <li>Adjust column widths by a double-click on the right edge of the column
+                            head.</li>
+                        <li>The value in column PralineCode should be stored.</li>
+                        <li>The value should be stored in field Code.</li>
+                        <li>Accept the default text for the label. This label will be removed in the
+                            next step because the label text already exists in the form header.</li>
+                    </ul></info>
+            </step>
+            <step>
+                <cmd>Remove the combo box label created in the previous step.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Combo Box on subform Boxes</title>
+                        <image keyref="f_boxes_subform">
+                            <alt>Combo Box on subform Boxes</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Select the <uicontrol>Combo Box</uicontrol> and check in <wintitle>Property
+                        Sheet (tab Data)</wintitle> if property <uicontrol>Limit To List</uicontrol>
+                    has the value <option>Yes</option>. If not, change it in
+                    <option>Yes</option>.</cmd>
+                <info>
+                    <note>With this setting, you can only choose praline names from the list and you
+                        can't add new bonbon names.</note>
+                </info>
+            </step>
+            <step>
+                <cmd>Close form <wintitle>Boxes subform</wintitle> and save the changes.</cmd>
+            </step>
+            <step>
+                <cmd>Test the combo box with form Boxes.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

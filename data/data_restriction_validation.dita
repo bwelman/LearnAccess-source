@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="data_restriction_validation" xml:lang="en-US">
+    <title>Restriction and validation of data</title>
+    <shortdesc>Possibilities to enforce proper and desired data entry.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>data<indexterm>restrictions</indexterm><indexterm>validation</indexterm></indexterm>
+                <indexterm>Restrictions<indexterm>data</indexterm></indexterm>
+                <indexterm>Validation<indexterm>data</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>You have various options in Access to control the way data is entered into the database.
+            For example, you can limit the data that can be entered in a field by defining a
+            validation rule for that field. If the entered data doesn't satisfy the rule, an error
+            message informs you what kind of input is permitted. Another method for controlling data
+            input is using an input mask, which is a format for data entry in a field by using
+            characters and symbols.</p>
+        <p>You can apply these simple methods of validation and restriction by setting properties
+            for fields in tables or properties for controls on forms.</p>
+        <p>It is recommended to define validation and restriction of data in the design of the table
+            by setting field properties. This saves time, because every time you use the field in a
+            form, the rules for field validation and other properties are also used on the form.</p>
+        <p>If the data entered through a control on a form is not dependent of a table field, then
+            you need to define properties on the form for validating and restriction of data.</p>
+        <example>
+            <title>Example</title>
+            <p>A memo from the marketing department of Snoopy reports that the price of the box
+                Butterscotch should be changed in $7.75.</p>
+            <ol>
+                <li>Open form <varname>Boxes</varname> and navigate to box
+                        <varname>Butterscotch</varname>.</li>
+                <li>Change BoxPrice from $27.75 to $7.75 and press the TAB key. A validation message
+                    appears stating that this price is not right and how you can fix it.<simpletable
+                        frame="all" relcolwidth="1.0*">
+                        <strow>
+                            <stentry>Box price too low, should be minimal 2*BoxCosts. Contact
+                                marketing department for further information.</stentry>
+                        </strow>
+                    </simpletable>Because a validation rule is linked to the field BoxPrice, the
+                    price of 7.50 was rejected.</li>
+                <li>Click <uicontrol>OK</uicontrol>.</li>
+                <li>Change the price back in $27.75 and press the TAB key. After that close the
+                    form.</li>
+            </ol>
+        </example>
+    </conbody>
+</concept>

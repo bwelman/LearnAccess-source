@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="queries_criteria" xml:lang="en-US" >
+	<title>Criteria in queries</title>
+	<shortdesc>Explanation of conditions in a query, Like operator and wild cards.</shortdesc>
+	<prolog>
+		<critdates>
+			<created date="2017-10-05"/>
+			<revised modified="2017-10-05"/>
+		</critdates>
+		<metadata>
+			<keywords>
+				<indexterm>Query<indexterm>criteria</indexterm><indexterm>operators</indexterm><indexterm>wild card</indexterm><indexterm>like</indexterm></indexterm>
+			</keywords>
+		</metadata>
+	</prolog>
+	<conbody>
+		<p>In a query you can define conditions, so that only those records which meet these conditions
+			are displayed. In the design grid the row <varname>Criteria</varname> is available for
+			this purpose.</p>
+		<p>A criterion is similar to a formula. It is a string that may consist of field references,
+			operators, and constants (values that are always the same). Query criteria are also
+			called expressions. What may be formulated in a criterion depends on the data type of
+			the field (text, numeric, date / time, yes / no).</p>
+		<simpletable frame="all" relcolwidth="1.0* 1.0*">
+			<sthead>
+				<stentry>Category</stentry>
+				<stentry>Operators</stentry>
+			</sthead>
+			<strow>
+				<stentry>Arithmetic</stentry>
+				<stentry>+, -, *, /, \, ^, Mod</stentry>
+			</strow>
+			<strow>
+				<stentry>Comparison</stentry>
+				<stentry>=, >, >=, &lt;, &lt;=, &lt;></stentry>
+			</strow>
+			<strow>
+				<stentry>Logical</stentry>
+				<stentry>And, Or, Not, Xor, Eqv</stentry>
+			</strow>
+			<strow>
+				<stentry>Aggregation</stentry>
+				<stentry> &amp;, +</stentry>
+			</strow>
+			<strow>
+				<stentry>Special</stentry>
+				<stentry>Is Null, Is Not Null, Like, Between, In</stentry>
+			</strow>
+		</simpletable>
+		<p>You can make simple criteria with this, but also very complicated.</p>
+		<p>A special role is for the <term>Like</term> operator. This compares a value with a certain
+			pattern. That pattern can be the literal string to compare with, such as <userinput>Like
+				"North"</userinput>. But the pattern may also contain wild cards, such as
+				<userinput>Like "He*"</userinput>. This allows the use of the operator
+				<term>Like</term> very powerful.</p>
+		<p>Date values must be surrounded by the symbol #. Some examples of date criteria: #12/5/2010#, >#9/1/2010#,
+			>#9/1/2010 and &lt;#9/15/2010#</p>
+		<p>Wild cards are placeholders for other characters, which you use when you don't know the entire
+			search pattern but only a part. The three most common wild cards are:</p>
+		<dl>
+			<dlentry>
+				<dt>*</dt>
+				<dd>For any number of characters. Examples: "A*", "*dam"</dd>
+			</dlentry>
+			<dlentry>
+				<dt>?</dt>
+				<dd>For any single character. Example: "b?k"</dd>
+			</dlentry>
+			<dlentry>
+				<dt>#</dt>
+				<dd>For any single digit. Example "1#5"</dd>
+			</dlentry>
+		</dl>
+	</conbody>
+</concept>

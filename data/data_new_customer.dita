@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="data_new_customer" xml:lang="en-US">
+    <title>Task: Add new customer</title>
+    <shortdesc>Adding a new record with a form that can only be used for data entry.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Record<indexterm>add</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>With the form Registration only new records can be added to the table
+                <varname>Customers</varname>. Browsing existing records has been disabled.</context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Open the form <varname>Registration</varname>.</cmd>
+                <stepresult>The form Registration contains blank fields where you enter the data.
+                    The insertion point indicates where the text appears you type. You can move the
+                    insertion point by clicking on another field or by repeatedly pressing the
+                    TAB.</stepresult>
+            </step>
+            <step>
+                <cmd>Enter the information appearing in the next picture.</cmd>
+                <stepresult><fig>
+                        <title>Data entry with form <wintitle>Registration</wintitle></title>
+                        <image keyref="form_registration">
+                            <alt>Data entry with form Registration</alt>
+                        </image>
+                    </fig>You see again a pencil, indicating that the form is in edit mode and the
+                    data has not saved yet.<note>The record is automatically saved when you close
+                        the form or go to another record.</note></stepresult>
+            </step>
+            <step>
+                <cmd>Close the form through the close button <uicontrol>X</uicontrol> in the upper
+                    right corner of the document window.</cmd>
+                <tutorialinfo>The records added through the form <varname>Registration</varname> are
+                    stored in the table <varname>Customers</varname>. You will check this in the
+                    following step.</tutorialinfo>
+            </step>
+            <step>
+                <cmd>Open table <varname>Customers</varname>, go to the last record and check
+                    whether this is the previously added record.</cmd>
+            </step>
+            <step>
+                <cmd>Close table <varname>Customers</varname>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="export_word" xml:lang="en-US">
+    <title>Task: Export to Word</title>
+    <shortdesc>How to export an Access table to a new RTF document.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Access<indexterm>export word</indexterm></indexterm>
+                <indexterm>Word<indexterm>integration access</indexterm></indexterm>
+                <indexterm>Export<indexterm>table to word</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>When you want to place the contents of a table or the result of a query into an
+            existing Word document, then copy and paste is the simplest method. But you can also
+            export the data to a new Word document. Then a document will be created in RTF format
+                (<term xml:lang="en-US">Rich Text Format</term>) that ca be opened in Word. </context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Select table <wintitle>Boxes</wintitle>.</cmd>
+            </step>
+            <step>
+                <cmd>Right click on the table name and choose <menucascade>
+                        <uicontrol>Export</uicontrol>
+                        <uicontrol>Word RTF File</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>The dialog box <wintitle>Export - RTF Tile</wintitle> is
+                    displayed.</stepresult>
+            </step>
+            <step>
+                <cmd>Specify file name and path, then click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>The dialog box <wintitle>Save Export Steps</wintitle> is
+                    displayed.</stepresult>
+            </step>
+            <step>
+                <cmd>It's not necessary to save the export steps. Click
+                    <uicontrol>Close</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Check the export by opening the file in Word.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="forms_about" xml:lang="en-US">
+    <title>About creating forms</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Form<indexterm>main
+                        form</indexterm><indexterm>subform</indexterm><indexterm>linking</indexterm></indexterm>
+                <indexterm>Main form</indexterm>
+                <indexterm>Subform</indexterm>
+                <indexterm>Control</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Data can be entered directly in the tables. In practice, this happens only in very simple
+            tables. Usually forms are used for data entry. Simple forms are often based on data from
+            one table or query. You also have advanced forms such as a <term>main-subform</term> or
+                <term>linking forms</term>, whose data come from related tables or queries.</p>
+        <p>Except that you can give your forms an attractive appearance, it is more important that
+            you have the opportunity to apply all kinds of checks (validations ) on data entry. And
+            then you can place so called <term>controls</term> on forms. Examples of controls are:
+            list boxes, check boxes, buttons, ...</p>
+        <p>You can build a form from scratch, but you can also let Access generate a form or use the
+            Form Wizard and then adjusting the resulting form manually.</p>
+    </conbody>
+</concept>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="tables_lookup_wizard" xml:lang="en-US">
+    <title>Task: Creating a List Box</title>
+    <shortdesc>How to create a list box in a field so that the values ​be selected from a
+        list.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>List box</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>When only a limited number of pre-defined values ​​should be entered in a field,
+            then the use of a list box can be very useful. For example, the Customers table has a
+            field Region in which only the values ​​North and South are allowed. In the following
+            steps the data type for this field will be changed in a list box.<note type="attention">
+                Unfortunately, the list box does not automatically update the forms that are based
+                on this table as the form Registration. To make the list box work in the form
+                Registration, you must in design view first remove the field Region and then added
+                again. That's not part of this task.</note>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Open table <wintitle>Customers</wintitle> in <uicontrol>Design
+                    View</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Click in the box <uicontrol>Data Type</uicontrol> of field
+                        <varname>Region</varname>.</cmd>
+            </step>
+            <step>
+                <cmd>Click the down arrow and select <uicontrol>Lookup Wizard...</uicontrol>.</cmd>
+                <stepresult>The first dialog box of the <wintitle>Lookup Wizard</wintitle>
+                    appears.</stepresult>
+            </step>
+            <step>
+                <cmd>Select the option <uicontrol>I will type in the values that I want.</uicontrol>
+                    and click <uicontrol>Next</uicontrol>.</cmd>
+                <stepresult>Now you can type in the values for the list.</stepresult>
+            </step>
+            <step>
+                <cmd>Type in the first cell<userinput>North</userinput> and in the second cell
+                        <userinput>South</userinput>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Dialog box <wintitle>Lookup Wizard</wintitle></title>
+                        <image keyref="lookup_wizard_region">
+                            <alt>Lookup Wizard.</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Finish</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Switch to <uicontrol>Datasheet View</uicontrol> and answer the question to save
+                    the table with <uicontrol>Yes</uicontrol>.</cmd>
+            </step>
+            <stepsection>Checking the operation of the list box.</stepsection>
+            <step>
+                <cmd>Click at some customer in the field <uicontrol>Region</uicontrol> and make sure
+                    the list box is present and works.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>List box Region</title>
+                        <image keyref="listbox_region">
+                            <alt>List box region</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>

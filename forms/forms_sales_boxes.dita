@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="forms_sales_boxes" xml:lang="en-US">
+    <title>Task: Form with Chart</title>
+    <shortdesc>How to create a form with a chart..</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Form<indexterm>chart</indexterm></indexterm>
+                <indexterm>Chart</indexterm>
+                <indexterm>Functions</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>In this task you are going to create a form with a column chart for 2010 showing the
+                sales per box per month.</p>
+            <fig>
+                <title>Form with column chart</title>
+                <image keyref="f_sales_boxes_chart">
+                    <alt>Form with column chart</alt>
+                </image>
+            </fig>
+            <p>The various components in the graph can be extracted or calculated from certain
+                tables. The BoxName is in table Boxes. The Sales must be calculated from the
+                expression <codeph>[Quantity]*[BoxPrice]</codeph>. The field BoxPrice is also in
+                table Boxes and the field Quantity is in table OrderDetails. The Month and Year can
+                respectively be calculated with the functions <term>Month([OrderDate])</term> and
+                    <term>Year([OrderDate])</term>.The field OrderDate is in table Orders.
+                Furthermore grouping on BoxName and then on Month and filtering on year 2010.</p>
+            <p>You need to create a query which provide the necessary data ( BoxName, Sales, Month
+                and Year). Grouping and filtering via the <uicontrol>Total</uicontrol> row in the
+                design grid. For grouping you choose the option <option>Group By</option> and for
+                filtering the option <option>Where</option>, with <userinput>2010</userinput> as
+                value for <uicontrol>Criteria</uicontrol>.</p>
+            <p>The work consists of two parts. First, the query must be made and then the form with
+                the chart.</p>
+        </context>
+        <steps>
+            <stepsection>Query creation</stepsection>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Create</uicontrol>
+                        <uicontrol>Query Design (group Queries)</uicontrol>
+                    </menucascade>. Add the tables <wintitle>Boxes</wintitle>,
+                        <wintitle>OrderDetails</wintitle> and <wintitle>Orders</wintitle>.</cmd>
+            </step>
+            <step>
+                <cmd>Add field BoxName (table Boxes) and create the following calculated fields
+                        <userinput>Month:Month([OrderDate])</userinput>,
+                        <userinput>Sales:[Quantity]*[BoxPrice]</userinput> en
+                        <userinput>Year:Year([OrderDate])</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Design</uicontrol>
+                        <uicontrol>Total (group Show/Hide)</uicontrol>
+                    </menucascade>.</cmd>
+            </step>
+            <step>
+                <cmd>Change in the column <varname>Sales</varname> the <option>Group By</option>
+                    operator in <option>Sum</option> and in the column <varname>Year</varname> in
+                        <option>Where</option>. Add <userinput>2010</userinput> as criteria for
+                        <varname>Year</varname>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Design query sales per box per month in 2010</title>
+                        <image keyref="q_sales_box_month_design">
+                            <alt>Design query sales per box per month in 2010</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Close the query and save it with the name <userinput>Sales per box per month in
+                        2010</userinput>.</cmd>
+                <tutorialinfo>
+                    <note type="attention">
+                        <p>When you open the query again in Design View after closing it, Access has
+                            made some changes for the column Sales:<ul>
+                                <li>Value in row field is now <systemoutput>Sales:
+                                        Sum([Quantity]*[BoxPrice])</systemoutput></li>
+                                <li>Value in row total is now
+                                        <systemoutput>Expression</systemoutput></li>
+                            </ul></p>
+                    </note>
+                </tutorialinfo>
+            </step>
+            <stepsection>Form creation</stepsection>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Create</uicontrol>
+                        <uicontrol>Form Wizard</uicontrol>
+                    </menucascade>. Add <uicontrol>table Boxes</uicontrol> and from this table field
+                        <uicontrol>BoxName</uicontrol>. Click <uicontrol>Next</uicontrol>. </cmd>
+            </step>
+            <step>
+                <cmd>Answer the Wizard questions as follows:</cmd>
+                <info><ul>
+                        <li>Form layout Datasheet.</li>
+                        <li>Title <userinput>Sales per box per month in 2010</userinput>.</li>
+                        <li>Save the form with the same name as the title.</li>
+                    </ul></info>
+            </step>
+            <step>
+                <cmd>Open the form in Design View. Create some space for the chart in section Detail
+                    by dragging down the underside.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Design</uicontrol>
+                        <uicontrol>Chart <image keyref="control_chart"/> (group Controls</uicontrol>
+                    </menucascade> and draw on the form a rectangular frame for the chart.</cmd>
+                <stepresult>The <wintitle>Chart Wizard</wintitle> is started.</stepresult>
+            </step>
+            <step>
+                <cmd>Answer the first three Wizard questions as follows:</cmd>
+                <info>
+                    <ul id="ul_t4q_pcc_bt">
+                        <li>Use query <wintitle>Sales per box per month in 2010</wintitle></li>
+                        <li>Fields for the chart: <varname>Month</varname> and
+                                <varname>Sales</varname>.</li>
+                        <li>Choose <option>Column Chart</option> as type.</li>
+                    </ul>
+                </info>
+                <stepresult>
+                    <p>The Wizard displays a layout of the chart. You need to modify it.</p>
+                    <fig>
+                        <title>Generated layout chart</title>
+                        <image keyref="chartwizard_layout_default">
+                            <alt>Generated layout chart</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Drag the field <uicontrol>SumOfMonth</uicontrol> out of the box at the vertical
+                    axis to the box at the horizontal axis. It is now displayed at the horizontal
+                    axis as <systemoutput>Month</systemoutput>.</cmd>
+            </step>
+            <step>
+                <cmd>Drag the field <uicontrol>Sales</uicontrol> to the box at the vertical axis.
+                    The display along the horizontal axis, then changes in
+                        <systemoutput>SumOfSales</systemoutput>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Final layout chart</title>
+                        <image keyref="chartwizard_layout_data">
+                            <alt>Final layout chart</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Next</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Linking fields form and chart</title>
+                        <image keyref="chartwizard_linking_fields">
+                            <alt>Linking fields form and chart</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Next</uicontrol>. Enter for the title of the chart
+                        <userinput>Sales per box per month in 2010</userinput> and choose not to
+                    display a legend. Then click <uicontrol>Finish</uicontrol>.</cmd>
+                <stepresult>
+                    <note type="attention">The Design View shows an example graph and not the chart
+                        of real data.</note>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Close the form and save the changes</cmd>
+            </step>
+            <step>
+                <cmd>Open the form and switch to <uicontrol>Form View</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Browse through the records and after that close the form.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

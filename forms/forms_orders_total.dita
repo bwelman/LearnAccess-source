@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="forms_orders_total" xml:lang="en-US">
+    <title>Task: Total order amount</title>
+    <shortdesc>Calculation of the total order amount on a form.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Form<indexterm>main form</indexterm><indexterm>sub
+                    form</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>Change the form that is created in <xref
+                    href="forms_orders_data_entry.dita#forms_orders_data_entry"/> so that the total
+                order amount is calculated and displayed.</p>
+            <fig>
+                <title>Orders with total amount</title>
+                <image keyref="f_orderdata_entry_totals">
+                    <alt>Orders with total amount</alt>
+                </image>
+            </fig>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Open form <uicontrol>Orderdata sub</uicontrol> in Design View.</cmd>
+            </step>
+            <step>
+                <cmd>Select in the <uicontrol>Property Sheet</uicontrol> the type
+                        <option>Form</option> and then set the <uicontrol>Default View</uicontrol>
+                    on <option>Continuous Forms</option>.</cmd>
+                <info>This setting is necessary because otherwise the total cannot be
+                    calculated.</info>
+                <stepresult>
+                    <fig>
+                        <title>Default view of subform</title>
+                        <image keyref="f_orderdatasub_properties">
+                            <alt>Default view of subform</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Make the vertical space for the form footer larger by dragging the bottom
+                    down.</cmd>
+            </step>
+            <step>
+                <cmd>Select <menucascade>
+                        <uicontrol>tab Design</uicontrol>
+                        <uicontrol>Text Box (group Controls)</uicontrol>
+                    </menucascade> and draw a rectangle in the form footer on the place where the
+                    total amount should come.</cmd>
+            </step>
+            <step>
+                <cmd>Modify property <uicontrol>Control Source</uicontrol> of the text box in
+                        <codeph>=Sum([Total])</codeph> and the value of property
+                        <uicontrol>Format</uicontrol> on <option>Currency</option>.</cmd>
+            </step>
+            <step>
+                <cmd>Close the subform and save the changes.</cmd>
+            </step>
+            <step>
+                <cmd>Open form <wintitle>Orderdata main</wintitle> and check if everything is
+                    ok.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

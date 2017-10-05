@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="forms_pralines_data_entry" xml:lang="en-US">
+    <title>Task: Data entry form Pralines</title>
+    <shortdesc>Creation of a generated form based on one table with several manual adjustments, such
+        as replacing text boxes by combo boxes.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Form</indexterm>
+                <indexterm>Control<indexterm>combo
+                    box</indexterm><indexterm>line</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>In this task you are going to create a form for entering data of new pralines and
+                editing data of existing pralines. Furthermore three text boxes should be replaced
+                by a combo box control. The desired layout for the form is displayed in the
+                following figure.</p>
+            <fig>
+                <title>Data entry form pralines</title>
+                <image keyref="f_praline_entry">
+                    <alt>Data entry form pralines</alt>
+                </image>
+            </fig>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Select table <uicontrol>Pralines</uicontrol>. It's not necessary to open the
+                    table.</cmd>
+            </step>
+            <step>
+                <cmd>Click <menucascade>
+                        <uicontrol>tab Create</uicontrol>
+                        <uicontrol>Form (group Forms)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>The form is created and displayed in <uicontrol>Layout
+                    View</uicontrol>.</stepresult>
+            </step>
+            <step>
+                <cmd>Switch to <uicontrol>Design View</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Delete table <uicontrol>BoxDetails</uicontrol> in the lower part of the
+                    form.</cmd>
+            </step>
+            <step>
+                <cmd>Remove the form logo in the form header by selecting them first and then press
+                    the <uicontrol>Delete</uicontrol> key.</cmd>
+            </step>
+            <step>
+                <cmd>Save the form with as name <userinput>Praline information</userinput> with the
+                    button <uicontrol>Save <image keyref="button_save"/></uicontrol> in the
+                        <uicontrol>Quick Access Toolbar</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Change the format of the header text in: Calibri, 22 pt, bold, white color on a
+                    green background.</cmd>
+            </step>
+            <step>
+                <cmd>Select all <term>controls</term> in the section <uicontrol>Detail</uicontrol>
+                    and remove the (stacked) layout through <menucascade>
+                        <uicontrol>tab Arrange</uicontrol>
+                        <uicontrol>Remove Layout (group Table)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>You can now work with each control separately.</stepresult>
+            </step>
+            <step>
+                <cmd>Deselect the controls.</cmd>
+            </step>
+            <step>
+                <cmd>Remove the fields <varname>ChocolateType</varname>,
+                        <varname>FillingType</varname> and <varname>NutType</varname>. Move the
+                    remaining fields on the form to create a design that looks as good as possible
+                    on the desired format</cmd>
+            </step>
+            <step>
+                <cmd>Select <menucascade>
+                        <uicontrol>tab Design</uicontrol>
+                        <uicontrol>Line (group Controls)</uicontrol>
+                    </menucascade> and draw a horizontal line beneath the fields
+                        <varname>PralineCode</varname> and <varname>PralineName</varname>. Specify
+                    the line thickness of 2pt and the same color as the background of the
+                    header.</cmd>
+            </step>
+            <step>
+                <cmd>Select <menucascade>
+                        <uicontrol>tab Design</uicontrol>
+                        <uicontrol>Combo Box (group Controls)</uicontrol>
+                    </menucascade> and draw a rectangle for field
+                    <varname>ChocolateType</varname>.</cmd>
+                <stepresult>After drawing the rectangle, the <wintitle>Combo Box Wizard</wintitle>
+                    is started.</stepresult>
+            </step>
+            <step>
+                <cmd>Answer the Wizard questions as follows:</cmd>
+                <info>
+                    <ul>
+                        <li>The values will be typed.</li>
+                        <li>Number of columns 1. The values are: Butterscotch, Milk, Dark and
+                            Toffee.</li>
+                        <li>The value should be stored in field
+                            <varname>ChocolateType</varname>.</li>
+                        <li>Label text: <userinput>Chocolate type:</userinput></li>
+                    </ul>
+                </info>
+                <stepresult>After finishing of the Wizard you are returning to the Design
+                    View.</stepresult>
+            </step>
+            <step>
+                <cmd>Create in an analogous manner a <varname>Combo Box</varname> for
+                        <varname>FillingType</varname> with the values: Amaretto, Blueberry, Cherry
+                    cream, Coconut, Marzipan, Mocha cream, None.</cmd>
+            </step>
+            <step>
+                <cmd>Create in an analogous manner a <varname>Combo Box</varname> for
+                        <varname>NutType</varname> with the values: Almond, Cashew, Hazelnut,
+                    Macadamia, Paranut, Pecan, Pistachio, Walnut, None.</cmd>
+            </step>
+            <step>
+                <cmd>Switch to <uicontrol>Form View</uicontrol> and test the form.</cmd>
+            </step>
+            <step>
+                <cmd>Close the form and save the changes.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

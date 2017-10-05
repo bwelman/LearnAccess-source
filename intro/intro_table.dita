@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="intro_table" xml:lang="en-US">
+	<title>Tables</title>
+	<shortdesc>Explanation about <term>Tables</term> and their components.</shortdesc>
+	<prolog>
+		<critdates>
+		    <created date="2017-10-05"/>
+		    <revised modified="2017-10-05"/>
+		</critdates>
+		<metadata>
+			<keywords>
+				<indexterm>Tables</indexterm>
+				<indexterm>Record</indexterm>
+				<indexterm>Field</indexterm>
+				<indexterm>Normalization</indexterm>
+			</keywords>
+		</metadata>
+	</prolog>
+	<conbody>
+		<p>Data is stored in tables. For each type of data, there is usually a table. So you can have a
+			table Products that contains various information about the products. And a table
+			Suppliers contains information about the companies that supply those products. To know
+			which tables you need for what, you had to think thoroughly in advance about the
+			structure of the database. A well-designed database must meet certain criteria. In order
+			to get a well-designed database,  designers often use a process called
+				<term>normalization</term>.</p>
+		<p>The data in a table is arranged in columns  (<term>fields</term>) and rows
+				(<term>records</term>).</p>
+		<fig>
+			<title>Example of a table with 3 records and 5 fields</title>
+		    <image keyref="example_table">
+				<alt>Example of a table with 3 records and 5 fields.</alt>
+			</image>
+			<!-- bron: Candy2010, table suppliers-->
+		</fig>
+		<dl>
+			<dlentry>
+				<dt>Field</dt>
+				<dd>A field is a category of data, such as company name, contact person, phone number, unit
+					price, .... Each column in a table is a field.</dd>
+			</dlentry>
+			<dlentry>
+				<dt>Record</dt>
+				<dd>A record is a collection of data about a person, a product, a company, ... Each row in a t
+					able is a record.</dd>
+			</dlentry>
+		</dl>
+	</conbody>
+</concept>

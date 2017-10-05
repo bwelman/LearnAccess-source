@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="reports_about" xml:lang="en-US">
+    <title>About creating reports</title>
+    <shortdesc>The use of reports.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Report</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Reports are usually overviews and summaries of large amounts of information.</p>
+        <p>If you want to print a sales report in a clear way on paper, then you use a report. In a
+            report, you can also calculate subtotals and grand totals. You can create reports by
+            hand, but it's easier to use the Wizard.</p>
+        <p>Reports can be dynamically by using parameters. When generating the report you will be
+            prompted for additional information. As an example see report <uicontrol>Sales per
+                box</uicontrol>. When opening this report you are asked to enter a start date and
+            after that for an end date.</p>
+    </conbody>
+</concept>

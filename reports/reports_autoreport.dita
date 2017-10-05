@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="reports_autoreport" xml:lang="en-US">
+    <title>Task: Generated report</title>
+    <shortdesc>An automatically generated report with a manual adjustment.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Report<indexterm>generating</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>Access can automatically generate a report on the basis of a table or a query.
+            Sometimes the generated report is sufficient, but mostly you nee to made manual
+            adjustments.</context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Select query <uicontrol>Sales per region per box</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Click <menucascade>
+                        <uicontrol>tab Create</uicontrol>
+                        <uicontrol>Report (group Reports)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>The report is generated and opened in <uicontrol>Layout
+                    View</uicontrol>. Not beautiful is that the value of Region is repeated for each
+                    record and that the Sales values are not properly formatted. In the following
+                    steps this will be changed.</stepresult>
+            </step>
+            <step>
+                <cmd>Close the report and answer the question to save the changes with
+                        <uicontrol>Yes</uicontrol>.</cmd>
+                <stepresult>The dialog box <wintitle>Save As</wintitle> is displayed.</stepresult>
+            </step>
+            <step>
+                <cmd>Name the report <userinput>Sales per region per box</userinput> and click
+                        <uicontrol>OK</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Open the report <uicontrol>Sales per region per box</uicontrol> in
+                        <uicontrol>Design View</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Select in section Detail the field <uicontrol>Region</uicontrol>. In the
+                        <uicontrol>Property Sheet</uicontrol> change the value of property
+                        <varname>Hide Duplicates</varname> in <option>Yes</option>.</cmd>
+                <info>
+                    <note type="tip">The <wintitle>Property Sheet</wintitle> is on the right side of
+                        the screen and can be made visible and invisible by clicking on button
+                            <uicontrol>Property Sheet</uicontrol> or by using hotkey
+                            <uicontrol>F4</uicontrol>. </note>
+                </info>
+            </step>
+            <step>
+                <cmd>Select in section Detail the field <uicontrol>Sales</uicontrol>. In the
+                        <wintitle>Property Sheet</wintitle> set the value of property
+                        <varname>Format</varname> on <option>Currency</option>.</cmd>
+            </step>
+            <step>
+                <cmd>Switch to <uicontrol>Report View</uicontrol>.</cmd>
+                <stepresult>The value of the Region field is now displayed only once and the sales
+                    values are in currency format.</stepresult>
+            </step>
+            <step>
+                <cmd>Close the report and save the changes.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tables_relationships_edit" xml:lang="en-US">
+    <title>Relationships: creating, modifying and deleting</title>
+    <shortdesc>How to create a relationship and how to modify or delete an existing
+        relation.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Table<indexterm>relationship</indexterm></indexterm>
+                <indexterm>Relationships</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Relations between tables can be created in the window <wintitle>Relationships</wintitle>.
+            In this window you can also modify or delete a relation. The window can be made visible
+            by clicking on <menucascade>
+                <uicontrol>tab Database Tools</uicontrol>
+                <uicontrol>Relationships (group Relationships)</uicontrol>
+            </menucascade></p>
+        <fig>
+            <title>Window <wintitle>Relationships</wintitle></title>
+            <image keyref="relationships_window">
+                <alt>Window Relationships</alt>
+            </image>
+        </fig>
+        <p>The ribbon contains commands for editing the relationships.</p>
+        <fig>
+            <title>Ribbon Design relationships</title>
+            <image keyref="relationships_ribbon_design">
+                <alt>Ribbon design relationships</alt>
+            </image>
+        </fig>
+        <p>If there are no relations made earlier then the window Relationships is empty. Through
+            the button <uicontrol>Show Table</uicontrol> a window with tables ( and queries ) is
+            displayed with which you can adding tables.</p>
+        <p>A relation between two tables can be created by dragging the primary key from one table
+            to the foreign key in another table. Then the dialog box <wintitle>Edit
+                Relationships</wintitle> is displayed.</p>
+        <fig>
+            <title>Dialog box <wintitle>Edit Relationships</wintitle></title>
+            <image keyref="relationship_edit_boxes_boxdetails">
+                <alt>Dialog box Edit Relationships</alt>
+            </image>
+        </fig>
+        <p>If you want to enforce referential integrity for this relation then check the box
+                <uicontrol>Enforce Referential Integrity</uicontrol>.</p>
+        <p>A relationship can be modified by first selecting the relationship line. This line is
+            then displayed thicker. The double clicking will displayed the dialog box <wintitle>Edit
+                Relationships</wintitle>.</p>
+        <p>You can delete a relationship by selecting the relationship line and then press the
+                <uicontrol>DELETE</uicontrol> key.</p>
+    </conbody>
+</concept>

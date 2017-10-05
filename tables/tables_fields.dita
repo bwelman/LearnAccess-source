@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tables_fields" xml:lang="en-US">
+    <title>Fields in tables</title>
+    <shortdesc>Information about name and data type of a field.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata/>
+    </prolog>
+    <conbody>
+        <p>Fields are the design elements of a table. Data is stored in fields. The properties of a
+            field define the characteristics and behavior of the data that is stored in the field.
+            To create a field you need:<ul>
+                <li>Field name (required)</li>
+                <li>Data type (required</li>
+                <li>Description (optional)</li>
+            </ul>
+        </p>
+    </conbody>
+</concept>

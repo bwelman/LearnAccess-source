@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="intro_database_open" xml:lang="en-US">
+    <title>Task: Open database</title>
+    <shortdesc>How to open an existing database.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Database<indexterm>open</indexterm></indexterm>
+                <indexterm>Open<indexterm>database</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <prereq>To perform this task, the practice files must be on your computer or a USB
+            stick.</prereq>
+        <context><p>Commonly used methods for opening an existing Access database are:<ul>
+                    <li>Double click an Access file in the Windows explorer.</li>
+                    <li>Click in the initial screen of Access on a recently used file or choose
+                            <uicontrol>Open Other Files</uicontrol>.</li>
+                    <li>When Access is already open choose <menucascade>
+                            <uicontrol>File</uicontrol>
+                            <uicontrol>Open</uicontrol>
+                        </menucascade>.</li>
+                </ul></p></context>
+        <steps>
+            <step>
+                <cmd>Open the practice file <filepath><keyword keyref="example_db_file"/></filepath> by one of the methods
+                    mentioned above.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

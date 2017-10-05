@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="queries_calculated_field" xml:lang="en-US">
+    <title>Task: Calculated Field</title>
+    <shortdesc>A query with a formatted calculated field.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Query<indexterm>calculated field</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>INFORMATION NEEDS</p>
+            <p>Create a sorted list of order rows, showing per order: order code, box code, number
+                of boxes, box price and the amount for each row ( = each box).</p>
+            <p>ANALYSIS</p>
+            <p>For each order you can find the OrderCode, BoxCode and the number of boxes (Quantity)
+                in table OrderDetails. The BoxPrice is in the table Boxes. The row amount is not
+                present in any table, because this amount can be calculated from other data:
+                    <codeph>Amount = Quantity * BoxPrice</codeph>.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Create</uicontrol>
+                        <uicontrol>Query Design (group Queries)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>Access creates a new blank query window and displays the dialog box
+                        <wintitle>Show Table</wintitle>.<fig>
+                        <title>Dialog box <wintitle>Show Table</wintitle></title>
+                        <image keyref="q_show_table">
+                            <alt>Dialog box show table</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+            <step>
+                <cmd>Add successively the tables <varname>OrderDetails</varname> and
+                        <varname>Boxes</varname> and then click <uicontrol>Close</uicontrol>.</cmd>
+                <stepresult>The tables OrderDetails and Boxes have been added to the query
+                    window.</stepresult>
+            </step>
+            <step>
+                <cmd>Add successively the fields <varname>OrderCode</varname>,
+                        <varname>BoxCode</varname>, <varname>Quantity</varname> (from table
+                        <varname>OrderDetails</varname>) and <varname>BoxPrice</varname> (from table
+                        <varname>Boxes</varname>) to the grid by double clicking on the field.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Design with tables and fields</title>
+                        <image keyref="q_orderrow_amount_design1">
+                            <alt>Design with tables and fields</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Set the sorting order for fields <varname>OrderCode</varname> and
+                        <varname>BoxCode</varname> on <option>Ascending</option>. Click in the field
+                    row of the first empty column and enter <userinput>Amount:
+                        Quantity*BoxPrice</userinput>.</cmd>
+                <stepresult>Access surrounds the fields with square brackets:<fig>
+                        <title>Design expanded with calculated field</title>
+                        <image keyref="q_orderrow_amount_design2">
+                            <alt>Design expanded with calculated field </alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+            <step>
+                <cmd>Switch to <uicontrol>Datasheet View</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Result without formatting amount</title>
+                        <image keyref="q_orderrow_amount_result_unformatted">
+                            <alt>Result without formatting amount</alt>
+                        </image>
+                    </fig>
+                    <p>The amounts should be formatted as currencies.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Switch to <uicontrol>Design View</uicontrol>.</cmd>
+                <tutorialinfo>
+                    <p>All objects in Access have <term>properties</term>. These
+                            <term>properties</term> determine, among other things, the appearance of
+                        the object. The settings of the properties is possible in the
+                            <wintitle>Property Sheet</wintitle>. You can switching the visibility of
+                        the Property Sheet on and off with <menucascade>
+                            <uicontrol>tab Design</uicontrol>
+                            <uicontrol>Property Sheet (group Show/Hide)</uicontrol>
+                        </menucascade>. Faster is to using the keyboard shortcut
+                            <uicontrol>F4</uicontrol>.</p>
+                    <p>To format the amounts as currencies, you need to change the property
+                            <uicontrol>Format</uicontrol> of field <varname>Amount</varname>.</p>
+                </tutorialinfo>
+            </step>
+            <step>
+                <cmd>Make sure that the <wintitle>Property Sheet</wintitle> is visible. Click
+                    somewhere in field <varname>Amount</varname>. Click in the box
+                        <uicontrol>Format</uicontrol> and choose with the list box the setting
+                        <option>Currency</option></cmd>
+                <stepresult>
+                    <fig>
+                        <title>Properties of field Amount</title>
+                        <image keyref="field_format_currency">
+                            <alt>Properties of field Amount</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Switch to <uicontrol>Datasheet View</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Result with amounts formatted as currency</title>
+                        <image keyref="q_orderrow_amount_result_formatted">
+                            <alt>Result with amounts formatted as currency</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Close the query and answer the question to save the changes with
+                        <uicontrol>Yes</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Name the query <userinput>OrderRowAmount</userinput> and click
+                        <uicontrol>OK</uicontrol>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

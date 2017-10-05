@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="reports_pictures" xml:lang="en-US">
+    <title>Task: Praline Pictures</title>
+    <shortdesc>An example of a report with praline pictures on labels.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Report<indexterm>labels</indexterm></indexterm>
+                <indexterm>Labels</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>In this you create a report with pictures of the pralines and the code and name
+            above it. For that, labels are used and on each label the data of the praline.</context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Select table <uicontrol>Pralines</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Create</uicontrol>
+                        <uicontrol>Labels (group Reports)</uicontrol>
+                    </menucascade>.</cmd>
+            </step>
+            <step>
+                <cmd>Select measures <option>Metric</option>, manufacturer
+                        <option>Zweckform</option> and then product <option>Zweckform
+                    3415</option>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Label type</title>
+                        <image keyref="label_wizard_zweckform3415">
+                            <alt>Label type</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Next</uicontrol>.</cmd>
+                <stepresult>
+                    <p>In the screen that is displayed now you can change font and color for the
+                        text.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Accept the default settings and click <uicontrol>Next</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Create the following Prototype label:</cmd>
+                <info>
+                    <codeblock>{PralineCode} {PralineName}</codeblock>
+                    <p>Between the two fields is 1 space.</p>
+                </info>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Next</uicontrol>. Specify to sort by
+                        <varname>PralineCode</varname></cmd>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Next</uicontrol>. Name the report <userinput>Labels
+                        Pralines</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Finish</uicontrol>.</cmd>
+                <stepresult>The report is generated and displayed in <uicontrol>Print
+                        Preview</uicontrol>.</stepresult>
+            </step>
+            <step>
+                <cmd>Switch to <uicontrol>Design View</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Click op <menucascade>
+                        <uicontrol>tab Design</uicontrol>
+                        <uicontrol>Bound Object Frame<image keyref="control_bound_object_frame"/>
+                            (group Controls)</uicontrol>
+                    </menucascade> and draw a rectangle of approximately 1" by 1" in the Detail
+                    section.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Object frame</title>
+                        <image keyref="label_praline_objectframe">
+                            <alt>Object frame</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Make sure the frame remains selected, and then apply through the
+                        <wintitle>Property Sheet</wintitle> the following changes:</cmd>
+                <info>
+                    <ul>
+                        <li>In <wintitle>tab Format</wintitle>: set <varname>Width</varname> and
+                                <varname>Height</varname> on <userinput>1"</userinput>: <fig>
+                                <title>Frame dimensions</title>
+                                <image keyref="label_praline_dimensions" placement="break">
+                                    <alt>Frame dimensions</alt>
+                                </image>
+                            </fig><note type="attention">It is possible that Access adjusts the
+                                dimensions a little bit. That's no problem.</note></li>
+                        <li>In <wintitle>tab Data</wintitle>: select for property <varname>Control
+                                Source</varname> field <option>Picture</option>: <fig>
+                                <title>Control Source</title>
+                                <image keyref="label_praline_controlsource" placement="break">
+                                    <alt>Control Source</alt>
+                                </image>
+                            </fig>
+                        </li>
+                    </ul>
+                </info>
+            </step>
+            <step>
+                <cmd>Select the label which is located substantially behind the frame.</cmd>
+                <stepresult>
+                    <fig>
+                        <p>Selecting label</p>
+                        <image keyref="label_praline_label">
+                            <alt>Selecting label</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Remove the label with the <uicontrol>Delete</uicontrol> key.</cmd>
+            </step>
+            <step>
+                <cmd>Switch to <uicontrol>Print Preview</uicontrol>.</cmd>
+                <stepresult>It is now almost good. Only the images don't all start at the same
+                    height so that the representation is chaotic. The text of PralineCode and
+                    PralineName should get a fixed height so that all images are placed at the same
+                    height.</stepresult>
+            </step>
+            <step>
+                <cmd>Switch to <uicontrol>Design View</uicontrol>, select the text box and set
+                    property <varname>Height</varname> on <userinput>0.4"</userinput>. Set also the
+                    properties <varname>Can Grow</varname> and <varname>Can Shrink</varname> on
+                        <uicontrol>No</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Properties text box</title>
+                        <image keyref="label_praline_textbox">
+                            <alt>Properties text box</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Align text box and frame to the left.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Align controls</title>
+                        <image keyref="label_praline_alignment">
+                            <alt>Align controls</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Switch to <uicontrol>Print Preview</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Print preview pralines</title>
+                        <image keyref="report_pralines_result">
+                            <alt>Print preview pralines</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Close the report and save the changes.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

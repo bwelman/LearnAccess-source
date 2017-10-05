@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tables_fields_validationrules" xml:lang="en-US">
+    <title>Validation rule and text</title>
+    <shortdesc>Over</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Validation<indexterm>rule</indexterm><indexterm>text</indexterm></indexterm>
+                <indexterm>Expression<indexterm>operators</indexterm><indexterm>wild
+                        cards</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Validation rules can restrict what a user can enter in a particular field. This way you
+            can ensure that only values ​​can be entered that meet certain conditions. Does the
+            input not meet the conditions then a message appears on the screen.</p>
+        <dl>
+            <dlentry>
+                <dt>Validation rule</dt>
+                <dd>An expression that needs to be true for the entered data in the field. When you
+                    enter or change data in a field, Access checks if the expression is true. If
+                    not, a warning message with the value of the validation text is displayed. You
+                    then need to change the value until the validation rule is true.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>Validation text</dt>
+                <dd>The text that will be displayed when a value is entered which does not satisfy
+                    the expression in the validation rule.</dd>
+            </dlentry>
+        </dl>
+        <p>When creating expressions you should consider the following:<ul>
+                <li>Field names must be enclosed in square brackets, like [OrderDate].</li>
+                <li>Dates must be surrounded by #, like #12-31-2010#.</li>
+                <li>Text must be surrounded by double quotes, like "Amsterdam".</li>
+                <li>Wild cards are permitted. Most known are ? (one character), * (multiple
+                    characters) and # (one digit).</li>
+            </ul></p>
+        <p>The following table lists the most used operators.</p>
+        <table>
+            <title>Operators input mask</title>
+            <tgroup cols="3">
+                <thead>
+                    <row>
+                        <entry>Operator</entry>
+                        <entry>Function</entry>
+                        <entry>Example</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>&lt;</entry>
+                        <entry>Less than</entry>
+                        <entry>&lt;100</entry>
+                    </row>
+                    <row>
+                        <entry>&lt;=</entry>
+                        <entry>Less than or equal to</entry>
+                        <entry>&lt;=15</entry>
+                    </row>
+                    <row>
+                        <entry>></entry>
+                        <entry>Greater than</entry>
+                        <entry>>10</entry>
+                    </row>
+                    <row>
+                        <entry>>=</entry>
+                        <entry>Greater than or equal to</entry>
+                        <entry>>=0</entry>
+                    </row>
+                    <row>
+                        <entry>=</entry>
+                        <entry>Equal to</entry>
+                        <entry>=21</entry>
+                    </row>
+                    <row>
+                        <entry>&lt;></entry>
+                        <entry>Not equal to</entry>
+                        <entry>&lt;>0</entry>
+                    </row>
+                    <row>
+                        <entry>AND</entry>
+                        <entry>Logical AND</entry>
+                        <entry>>=1 AND &lt;=9</entry>
+                    </row>
+                    <row>
+                        <entry>OR</entry>
+                        <entry>Logical OR</entry>
+                        <entry>"m" OR "v"</entry>
+                    </row>
+                    <row>
+                        <entry>NOT</entry>
+                        <entry>Logical NOT</entry>
+                        <entry>NOT >10</entry>
+                    </row>
+                    <row>
+                        <entry>IN</entry>
+                        <entry>Should exist in a list</entry>
+                        <entry>IN ("Berlin","London","Paris")</entry>
+                    </row>
+                    <row>
+                        <entry>BETWEEN</entry>
+                        <entry>Should be between two values</entry>
+                        <entry>BETWEEN 1 AND 9</entry>
+                    </row>
+                    <row>
+                        <entry>LIKE</entry>
+                        <entry>Matches pattern string</entry>
+                        <entry>LIKE "Ams*"</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <example>
+            <title>Example: Date validation</title>
+            <p>Validation rule: <codeph>>=#1-1-2010#</codeph></p>
+            <p>Validation text: <codeph>Enter a date from January 1, 2010.</codeph></p>
+        </example>
+        <example>
+            <title>Example: Invoice number validation</title>
+            <p>Validation rule: <codeph>Like "[0-9][0-9][0-9][0-9]"</codeph></p>
+            <p>Validation text: <codeph>Invoice number must consist of 4 digits.</codeph></p>
+        </example>
+        <example>
+            <title>Example: Simple email address validation</title>
+            <p>Validation rule: <codeph>Like "*@*.???"</codeph></p>
+            <p>Validation text: <codeph>Not a valid email address.</codeph></p>
+        </example>
+    </conbody>
+</concept>

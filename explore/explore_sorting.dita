@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="explore_sorting" xml:lang="en-US">
+    <title>Task: Sorting</title>
+    <shortdesc>Sort records in ascending or descending order based on one or more
+        fields.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Sort<indexterm>table</indexterm></indexterm>
+                <indexterm>Table<indexterm>sort</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>You can sort the records in a table based on the values ​​in one or more fields.
+            Sorting can be in ascending and descending order. <p>In the next steps you need to
+                change the table <varname>Customers</varname> so that an overview is created of
+                first the city, then the last name and then first name. The records must also be
+                sorted in that order.<fig>
+                    <title>Table Customers sort on city, last name and first name</title>
+                    <image keyref="table_customers_sorted">
+                        <alt>Table Customers sort on city, last name and first name</alt>
+                    </image>
+                </fig></p></context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Open the table <wintitle>Customers</wintitle>.</cmd>
+                <stepresult>The table Customers is displayed in the Datasheet View.</stepresult>
+            </step>
+            <step>
+                <cmd>Select the column <varname>City</varname> by clicking on the column
+                    header.</cmd>
+            </step>
+            <step>
+                <cmd>Drag the column <varname>City</varname> to the left so this will be the first
+                    column in the table.</cmd>
+            </step>
+            <step>
+                <cmd>Same way, move the columns <varname>LastName</varname> and
+                        <varname>FirstName</varname> to, respectively the 2e and 3e position in the
+                    table.</cmd>
+            </step>
+            <stepsection>Sort on one field</stepsection>
+            <step>
+                <cmd>Click in column <varname>City</varname> on the arrow at the right side in the
+                    column header and select from the shortcut menu <uicontrol>Sort A to
+                        Z</uicontrol>.</cmd>
+                <stepresult>Access reorganizes the records in alphabetical order by city and shows a
+                    small upward pointing arrow (<image keyref="button_arrow_down_sortedup"/>) at
+                    the right side of the column head to indicate the sort order.</stepresult>
+            </step>
+            <step>
+                <cmd>Cancel the sorting through <menucascade>
+                        <uicontrol>tab Home</uicontrol>
+                        <uicontrol>Remove Sort (group Sort &amp; Filter)</uicontrol>
+                    </menucascade> . </cmd>
+            </step>
+            <stepsection>Sort on multiple fields</stepsection>
+            <step>
+                <cmd>Select the columns <varname>City</varname>, <varname>LastName</varname> and
+                        <varname>FirstName</varname>.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Home</uicontrol>
+                        <uicontrol>Ascending <image keyref="button_sort_ascending"/> (group Sort
+                            &amp; Filter)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>Access reorganizes the records in ascending alphabetical order, first by
+                    city, then by last name and then by first name. At the right side of each of
+                    heads of these three columns you can see the small upward pointing
+                    arrow.</stepresult>
+            </step>
+            <step>
+                <cmd>Close the table <wintitle>Customers</wintitle> and
+                        choose<uicontrol>No</uicontrol> on the question to save the changes.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

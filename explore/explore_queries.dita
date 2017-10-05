@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="explore_queries" xml:lang="en-US">
+    <title>Task: Exploring Queries</title>
+    <shortdesc>The two main views of queries: datasheet and design.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Query<indexterm>datasheet view</indexterm><indexterm>design
+                        view</indexterm></indexterm>
+                <indexterm>Datasheet View<indexterm>query</indexterm></indexterm>
+                <indexterm>Design View<indexterm>query</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>Queries are important if you want to select or summarize data from tables. A query is
+                actually a specified question to the database in order to provide certain
+                information.</p>
+            <p>The two most important views of a query are:<ul>
+                    <li><uicontrol>Datasheet View</uicontrol>. In this view you can see the result
+                        (data) of the query.</li>
+                    <li><uicontrol>Design View</uicontrol>. In this view you can see the design of
+                        the query and customize it.</li>
+                </ul></p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Open the query <wintitle>Pralines per box</wintitle>.</cmd>
+                <stepresult>Access executes the query and produces a data sheet containing the
+                    results of the query.<fig>
+                        <title>Datasheet of the query <wintitle>Pralines per box</wintitle></title>
+                        <image keyref="query_pralines_box_datasheet">
+                            <alt>Query pralines per box in datasheet view.</alt>
+                        </image>
+                    </fig><p>The results of this query are derived from multiple tables. To know
+                        which tables are used, you had to go to the design view of the
+                    query.</p></stepresult>
+            </step>
+            <step>
+                <cmd>Put the query <varname>Pralines per box</varname> in the <uicontrol>Design
+                        View</uicontrol> on one of the following ways:</cmd>
+                <choices>
+                    <choice>Click the button <uicontrol>Design View</uicontrol> on bottom right of
+                        the program window <image keyref="button_design_view"/></choice>
+                    <choice><menucascade>
+                            <uicontrol>tab Home</uicontrol>
+                            <uicontrol>View (group Views)</uicontrol>
+                            <uicontrol>Design View</uicontrol>
+                        </menucascade>.</choice>
+                </choices>
+                <info>
+                    <note type="tip">You can open a query directly in the Design View by right
+                        clicking on the query name in the navigation pane and then choose
+                            <uicontrol>Design View</uicontrol> from the shortcut menu.</note>
+                </info>
+                <stepresult><fig>
+                        <title>Design query <wintitle>Pralines per box</wintitle></title>
+                        <image keyref="query_pralines_box_design">
+                            <alt>Design query Pralines per box</alt>
+                        </image>
+                    </fig><p>The upper three rectangles represent the tables that are used for this
+                        query. The line with arrows connects the field names by which two tables are
+                        related to each other.</p>In the lower part of the window you will find in
+                    the first row the names of the used fields. In the third column is an
+                    expression, a kind of formula with operations on the fields. The expression
+                    formulated here is
+                        <codeph>Sum([Pralines].[PralineCosts]*[BoxDetails].[Quantity])</codeph>.
+                    Between the brackets you see the names of the tables and fields.<note type="tip"
+                        >To see the whole expression the column must be widened by dragging the
+                        column to the right edge.</note></stepresult>
+            </step>
+            <step>
+                <cmd>Put the query <uicontrol>Datasheet View</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Close the query</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

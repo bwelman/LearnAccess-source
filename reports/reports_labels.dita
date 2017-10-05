@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="reports_labels" xml:lang="en-US">
+    <title>Task: Creating Labels</title>
+    <shortdesc>How to create labels with the Wizard.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Report<indexterm>labels</indexterm></indexterm>
+                <indexterm>Labels<indexterm>wizard</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>In this task you are going to create address labels for the customers with the
+            Label Wizard. First you have to select the table with the necessary fields.</context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Select table <uicontrol>Customers</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Create</uicontrol>
+                        <uicontrol>Labels (group Reports</uicontrol>
+                    </menucascade>.</cmd>
+            </step>
+            <step>
+                <cmd>Select measures <option>Metric</option>, manufacturer <option>Avery</option>
+                    and then product <option>Avery L7160</option>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Selection label type Avery L7160</title>
+                        <image keyref="label_wizard_avery7160">
+                            <alt>Label types</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Next</uicontrol>.</cmd>
+                <stepresult>
+                    <p>In the screen that is displayed now you can change font and color for the
+                        text.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Accept the default settings and click <uicontrol>Next</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Data on the label</title>
+                        <image keyref="label_wizard_fields">
+                            <alt>Data on the label</alt>
+                        </image>
+                    </fig>By double clicking on a field name, the field is inserted at the cursor
+                    location. You can also use button<uicontrol>></uicontrol>. The field name
+                    appears between brackets on the prototype label. Also, text and spaces can be
+                    typed. With the Enter button you can create a new line.</stepresult>
+            </step>
+            <step>
+                <cmd>Create the following prototype label:</cmd>
+                <info>
+                    <codeblock>{FirstName} {LastName}
+{Address}
+{ZipCode}  {City}</codeblock>
+                    <p>Between first and last name is one space, and between zip code and city are
+                        two spaces.</p>
+                </info>
+            </step>
+            <step>
+                <cmd>Click op <uicontrol>Next</uicontrol>.</cmd>
+                <stepresult>
+                    <p>In the screen that is displayed now you can specify if the labels should be
+                        sorted, and if so, by which fields.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>There must be sorted by <varname>ZipCode</varname>. Add this field and click
+                        <uicontrol>Next</uicontrol>.</cmd>
+                <stepresult>
+                    <p>The last screen of the Wizard is displayed now. Here you can specify the name
+                        for the report.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Name the report <userinput>Labels Customers</userinput> and click
+                        <uicontrol>Finish</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Print Preview</title>
+                        <image keyref="report_customers_printpreview">
+                            <alt>Print preview</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Close the report.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

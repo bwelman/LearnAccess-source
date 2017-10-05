@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="forms_controls_layout" xml:lang="en-US">
+    <title>Controls and Layouts</title>
+    <shortdesc>How to work with controls.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Control <indexterm>bound</indexterm>
+                    <indexterm>unbound</indexterm>
+                    <indexterm>calculated</indexterm>
+                    <indexterm>properties</indexterm>
+                </indexterm>
+                <indexterm>Layout <indexterm>stacked</indexterm>
+                    <indexterm>tabular</indexterm>
+                </indexterm>
+                <indexterm>Stacked layout</indexterm>
+                <indexterm>Tabular layout</indexterm>
+                <indexterm>Property Sheet</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p><term>Controls</term> are parts of a form or a report that you use to enter, edit or
+            display data. So is the Text Box is the most used control for displaying data. Other
+            commonly used controls are command buttons, check boxes and combo boxes.</p>
+        <p>Controls can be bound, unbound or calculated: <dl>
+                <dlentry>
+                    <dt>Bound control</dt>
+                    <dd>A control whose source of data is a field in a table or query. You use bound
+                        controls to display values that com from fields.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Unbound control</dt>
+                    <dd>A control without a data source. You use unbound controls to display
+                        information, pictures, lines, ...</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Calculated control</dt>
+                    <dd>A control whose data source is an expression, rather than a field.</dd>
+                </dlentry>
+            </dl></p>
+        <p><term>Layouts</term> are guides that align your controls horizontally and vertically.
+            Layouts are optional and are mostly used to give your form a uniform appearance. Layouts
+            come in two varieties:</p>
+        <dl>
+            <dlentry>
+                <dt>Tabular layout</dt>
+                <dd>In tabular layouts, controls are arranged in rows and columns like a
+                    spreadsheet, with labels across the top.<fig>
+                        <title>Example tabular layout</title>
+                        <image keyref="layout_controls_tabular">
+                            <alt>Example tabular layout</alt>
+                        </image>
+                    </fig></dd>
+            </dlentry>
+            <dlentry>
+                <dt>Stacked layout</dt>
+                <dd>In stacked layouts, controls are arranged vertically, with a label to the left
+                    of each control.<fig>
+                        <title>Example stacked layout</title>
+                        <image keyref="layout_controls_stacked">
+                            <alt>Example stacked layout</alt>
+                        </image>
+                    </fig></dd>
+            </dlentry>
+        </dl>
+        <p>Because you often need to reorganize controls on forms, it is important to know how you
+            can change location and layout of these controls. Many operations you can perform on
+            multiple controls. To edit controls, you must always select them first. Also make sure
+            that the <wintitle>Property Sheet</wintitle> is visible.</p>
+        <dl>
+            <dlentry>
+                <dt>selecting</dt>
+                <dd>Click on the control.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>multiple selections</dt>
+                <dd>Click with pressed Shift key on the controls you want to select. Another
+                    possibility is to drag a rectangular frame with the mouse around the
+                    controls.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>deselecting</dt>
+                <dd>Click on an empty spot in the form.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>moving</dt>
+                <dd>Drag the control with the top left square. An exact location can be set with the
+                    properties <varname>Top</varname> and <varname>Left</varname> in the
+                        <wintitle>Property Sheet</wintitle>.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>dimensions</dt>
+                <dd>Drag one of the handles (in the middle or in the corner points of the selection
+                    rectangle). Exact dimensions can be set with the properties
+                        <varname>Width</varname> and <varname>Height</varname> in the
+                        <wintitle>Property Sheet</wintitle>.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>aligning</dt>
+                <dd>With the options at <menucascade>
+                        <uicontrol>tab Arrange</uicontrol>
+                        <uicontrol>Align (group Sizing &amp;Ordering)</uicontrol>
+                    </menucascade>.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>deleting</dt>
+                <dd><uicontrol>Delete</uicontrol> key.</dd>
+            </dlentry>
+        </dl>
+    </conbody>
+</concept>

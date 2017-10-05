@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tables_fields_datatypes" xml:lang="en-US">
+    <title>Data types</title>
+    <shortdesc>The different data types, the possible values ​​and use. </shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Field<indexterm>data type</indexterm></indexterm>
+                <indexterm>Data type</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>The main characteristic of a field is the data type, because it determines what type of
+            data can be in the field. Data types can sometimes be confusing. For example, a field 's
+            data type <term>Text</term> can contain both text and numbers (numeric data ), but a
+            field of data type <term>Number</term> can contain only numeric data. If you don't know
+            which of these two data types to use, think of the following rule of thumb. When you
+            have to make calculations with the content of the field, then use data type
+                <term>Number</term>. Thus, the field for the price of an article is a numeric field
+            and the field for an article number is a text field.</p>
+        <p>The data types in Access are:</p>
+        <simpletable>
+            <sthead>
+                <stentry>Data Types</stentry>
+                <stentry>Values</stentry>
+                <stentry>Explanation</stentry>
+            </sthead>
+            <strow>
+                <stentry>Short Text</stentry>
+                <stentry>Alphanumeric</stentry>
+                <stentry>Short, alphanumeric values with a maximum of 255 characters</stentry>
+            </strow>
+            <strow>
+                <stentry>Long Text</stentry>
+                <stentry>Alphanumeric</stentry>
+                <stentry>Long amounts of text, up to 1GB. In eralier versions named memo.</stentry>
+            </strow>
+            <strow>
+                <stentry>Number</stentry>
+                <stentry>Numeric</stentry>
+                <stentry>Range of -2^31 tot 2^31 - 1.</stentry>
+            </strow>
+            <strow>
+                <stentry>Large Number</stentry>
+                <stentry>Numeric</stentry>
+                <stentry>Range of -2^63 tot 2^63 - 1.</stentry>
+            </strow>
+            <strow>
+                <stentry>Date/Time</stentry>
+                <stentry>Dates and Times</stentry>
+                <stentry/>
+            </strow>
+            <strow>
+                <stentry>Currency</stentry>
+                <stentry>Monetary values</stentry>
+                <stentry>
+                    <p>Stored with 4 decimal places of precision.</p>
+                </stentry>
+            </strow>
+            <strow>
+                <stentry>AutoNumber</stentry>
+                <stentry>Numbers (unique)</stentry>
+                <stentry>Numbers that are automatically generated for each record. Default is the
+                    field length Long Integer. AutoNumber is often used as a key field.</stentry>
+            </strow>
+            <strow>
+                <stentry>Yes/No</stentry>
+                <stentry>Yes or No</stentry>
+                <stentry>Boolean values, only two values possible <userinput>Yes</userinput> or
+                        <userinput>No</userinput>. In the background Access uses the value -1 for
+                    all Yes-values and the value 0 for all No-values. You also use this field for
+                    values as TRUE / FALSE, or ON / OFF.</stentry>
+            </strow>
+            <strow>
+                <stentry>OLE Object</stentry>
+                <stentry>Objects from other Windows applications</stentry>
+                <stentry>Photo's, graphs, Excel worksheet, Word document, ...</stentry>
+            </strow>
+            <strow>
+                <stentry>Hyperlink</stentry>
+                <stentry>Hyperlink</stentry>
+                <stentry>Hyperlinks (also e-mail addresses)</stentry>
+            </strow>
+            <strow>
+                <stentry>Attachment</stentry>
+                <stentry>Path and name of a file</stentry>
+                <stentry>Files, such as digital photos. Multiple files can be attached per
+                    record.</stentry>
+            </strow>
+            <strow>
+                <stentry>Calculated</stentry>
+                <stentry>different</stentry>
+                <stentry>Expression that uses data from one or more fields.</stentry>
+            </strow>
+        </simpletable>
+        <note type="notice">In Access you can set a field's data type to <term>Lookup Wizard</term>.
+            Doing this starts the Lookup Wizard, which helps you create a Lookup field. A Lookup
+            field displays either a list of values that is retrieved from a table or query, or it
+            displays a static set of values that you specified when you created the field.</note>
+    </conbody>
+</concept>

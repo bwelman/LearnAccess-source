@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="queries_action_update" xml:lang="en-US">
+    <title>Task: Update query</title>
+    <shortdesc>An example of a simple update query that changes the values in a field for all
+        records which satisfy a certain condition.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Query<indexterm>update</indexterm></indexterm>
+                <indexterm>Update query</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>INFORMATION NEEDS</p>
+            <p>The costs of all pralines with chocolate type white should be increased by 10 %.</p>
+            <p>ANALYSIS</p>
+            <p>All necessary data is in table Pralines. You need the fields ChocolateType and
+                PralineCosts. Selecting the white chocolate types can be done by adding a criterion
+                to the query. You can increase the PralineCosts by 10% by multiplying the current
+                value with 1.1.</p>
+        </context>
+        <prereq>Make a backup (copy) of the table, so you can restore the original situation.
+            Another possibility is to backup (copy) the whole database.</prereq>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Create</uicontrol>
+                        <uicontrol>Query Design (group Queries)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>Access creates a new blank query window and displays the dialog box
+                        <wintitle>Show Table</wintitle>.<fig>
+                        <title>Dialog box <wintitle>Show Table</wintitle></title>
+                        <image keyref="q_show_table">
+                            <alt>Dialog box show table</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+            <step>
+                <cmd>Add table <varname>Pralines</varname> and then
+                        click<uicontrol>Close</uicontrol>.</cmd>
+                <stepresult>The table has been added to the query window.</stepresult>
+            </step>
+            <step>
+                <cmd>Add successively the fields <varname>ChocolateType</varname> and
+                        <varname>PralineCosts</varname> to the grid toe by double clicking on the
+                    field.</cmd>
+            </step>
+            <step>
+                <cmd>Change the query type with <menucascade>
+                        <uicontrol>tab Design</uicontrol>
+                        <uicontrol>Update (group Query Type)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>The <varname>Sort</varname> and <varname>Show</varname> rows disappear
+                    and there is a new row <varname>Update To</varname>. <fig>
+                        <title>Tables and fields for update query</title>
+                        <image keyref="q_increase_costs_design1">
+                            <alt>Tables and fields for update query</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click in the box <varname>Criteria</varname> under column
+                        <varname>ChocolateType</varname> and type
+                    <userinput>White</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Click in box <varname>Update To</varname> under column
+                        <varname>PralineCosts</varname>and type
+                        <userinput>[PralineCosts]*1.1</userinput>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Design update query</title>
+                        <image keyref="q_increase_costs_design2">
+                            <alt>Design update query</alt>
+                        </image>
+                    </fig><note type="attention">Access surrounds text with double quotes. Field
+                        names must be surrounded by square brackets.</note>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Save the query with button <uicontrol>Save</uicontrol> (<image
+                        keyref="button_save"/>) on the <uicontrol>Quick Access Toolbar</uicontrol>
+                    top left and name the query <userinput>Increase costs white chocolates with
+                        10%</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Click <menucascade>
+                        <uicontrol>tab Design</uicontrol>
+                        <uicontrol><image keyref="button_run"/>Run (group Results)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>A dialog appears asking for confirmation.</stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Yes</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Close the query.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

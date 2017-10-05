@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="tables_fields_size" xml:lang="en-US">
+    <title>Number field size property</title>
+    <shortdesc>Possible values for data type number.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <refbody>
+        <simpletable frame="all" relcolwidth="1.0* 5.25*">
+            <strow>
+                <stentry>Byte</stentry>
+                <stentry>For integers that range from 0 to 255.</stentry>
+            </strow>
+            <strow>
+                <stentry>Integer</stentry>
+                <stentry>
+                    <p>For integers that range from -32,768 to +32,767.</p>
+                </stentry>
+            </strow>
+            <strow>
+                <stentry>Long Integer</stentry>
+                <stentry>
+                    <p>For integers that range from -2,147,483,648 to +2,147,483,647.</p>
+                </stentry>
+            </strow>
+            <strow>
+                <stentry>Single</stentry>
+                <stentry>
+                    <p>For numeric floating point values that range from -3.4 x 10<sup>38</sup> to
+                        +3.4 x 10<sup>38</sup> and up to seven significant digits.</p>
+                </stentry>
+            </strow>
+            <strow>
+                <stentry>Double</stentry>
+                <stentry>
+                    <p>For numeric floating point values that range from -1.797 x 10<sup>308</sup>
+                        to +1.797 x 10<sup>308</sup> and up to 15 significant digits.</p>
+                </stentry>
+            </strow>
+            <strow>
+                <stentry>Decimal</stentry>
+                <stentry>For numeric values that range from -9,999... x 10<sup>27</sup> to 9,999...
+                    x 10<sup>27</sup>.</stentry>
+            </strow>
+        </simpletable>
+    </refbody>
+</reference>

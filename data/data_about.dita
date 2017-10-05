@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="data_about" xml:lang="en-US">
+    <title>About data entry</title>
+    <shortdesc>Why using a form for data entry.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Data<indexterm>entry</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Records can be edited directly in the table, but this is not a recommended method for
+            people who are not familiar with Access. You can easily make incorrect entries,
+            especially in tables that are related to other tables. The recommended method is to
+            perform data entry through a form. You can make a form user-friendly, provide
+            explanatory text and perform controls on the data in the background.</p>
+    </conbody>
+</concept>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="macros_customername" xml:lang="en-US">
+    <title>Task: Customer search by name</title>
+    <shortdesc>Searching a record with two combo boxes on a form.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Form<indexterm>combo box</indexterm></indexterm>
+                <indexterm>macro<indexterm>search record</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <prereq>To perform this task it is necessary that you have finished <xref
+                href="macros_customercode.dita#macros_customercode"/> where you created the form
+                <wintitle>Search customer by code</wintitle> that you will need in this
+            task.</prereq>
+        <context>
+            <p>There should be a form created with the data of a customer and with two combo boxes.
+                Through the first list a customer should be searched by the customer code and
+                through the second list by name. The second combo box should displayed a sorted list
+                of last names followed by first names. After making a choice through either list the
+                data of the customer in the form should be shown.</p>
+            <p>ANALYSIS</p>
+            <p>The basis of the new form is the previously created form <uicontrol>Search customer
+                    by code</uicontrol>. In Access you can create a copy of an object and save it
+                under a different name. On this you create the second combo box. And you need to
+                create a macro that will execute the actions. First go to the drop-down list box to
+                get the entered customer code and then find the corresponding record.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Right click on form <uicontrol>Search customer by code</uicontrol>, choose
+                        <uicontrol>Copy</uicontrol>. Then right click again and choose
+                        <uicontrol>Past</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Name the new form <uicontrol>Search customer by name</uicontrol> and open this
+                    form in <uicontrol>Design View</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Create more space for the form header. Position the mouse pointer over the top
+                    edge of Detail until it change as shown in the following illustration. Then
+                    press the left mouse button and drag the border down so that there is enough
+                    space for the second combo box.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Enlarging form header</title>
+                        <image keyref="customername_formheader">
+                            <alt>Enlarging form header</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Create a second Combo Box below the first one.</cmd>
+            </step>
+            <step>
+                <cmd>Answer the consecutive questions of the Wizard as follows:</cmd>
+                <info><ul>
+                        <li>The combo box should get the values from a table or a query.</li>
+                        <li>Table: Customers should provide the values for the combo box.</li>
+                        <li>Add in sequence the fields LastName, FirstName, CustomerCode.</li>
+                        <li>Sort records ascending on LastName and then FirstName.</li>
+                        <li>Accept the default width of the column and select to hide the key column
+                            (this is CustomerCode).</li>
+                        <li>Remember the selected value for later use.</li>
+                        <li>Label text: <userinput>Search on customer name:</userinput></li>
+                    </ul></info>
+                <stepresult>
+                    <p>After completing the wizard you are back in the Design View.</p></stepresult>
+            </step>
+            <step>
+                <cmd>Take care that labels and combo boxes are properly aligned.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Form with 2 combo boxes</title>
+                        <image keyref="customername_comboboxes">
+                            <alt>Form with 2 combo boxes</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Select second combo box and change in the <uicontrol>Property Sheet (tab
+                        Other)</uicontrol> the name in <userinput>searchname</userinput>. Click on
+                    the selection arrow in box <uicontrol>After Update</uicontrol> and type
+                        <userinput>Search customer by name</userinput>.</cmd>
+                <info>
+                    <note type="note">This macro does not exist yet and will be created in the next
+                        step.</note>
+                </info>
+            </step>
+            <step>
+                <cmd>Close the form and save the changes.</cmd>
+            </step>
+            <step conref="macros_customercode.dita#macros_customercode/macro_create">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Click on the selection arrow in the box <uicontrol>Add New Action</uicontrol>
+                    and select action <option>GoToControl</option> from the list</cmd>
+            </step>
+            <step>
+                <cmd>Enter <userinput>CustomerCode</userinput> in box <uicontrol>Control
+                        Name</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Action GoToControl CustomerCode</title>
+                        <image keyref="macro_customercode_gotocontrol">
+                            <alt>Action GoToControl CustomerCode</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click on the selection arrow in the box <uicontrol>Add New Action</uicontrol>
+                    and select action <option>FindRecord</option>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter value <userinput>=[searchname]</userinput> in box <uicontrol>Find
+                        What</uicontrol> in . The other arguments are already filled in by Access
+                    with their default values and can remain.</cmd>
+            </step>
+            <stepsection>To ensure that the value of the first list box also changes to the right
+                value when choosing a name, you had to create an action for this. The value for
+                searchcode must be equal to the value of CustomerCode of the found
+                record.</stepsection>
+            <step>
+                <cmd>Add an action with the name <option>Setvalue</option>. This action considers
+                    Access as a dangerous action which is not shown by default. It should be made
+                    visible in the list by using the setting <menucascade>
+                        <uicontrol>Show All Actions (group Show/Hide)</uicontrol>
+                    </menucascade>. This action has two parameters, <varname>Item</varname> and
+                        <varname>Expression</varname>, which should get the following values:</cmd>
+                <itemgroup>
+                    <ul>
+                        <li>Item: <userinput>[Form]![Search customer by
+                                name]![searchcode]</userinput></li>
+                        <li>Expression: <userinput>[Form]![Search customer by
+                                name]![CustomerCode]</userinput></li>
+                    </ul>
+                </itemgroup>
+                <stepresult>
+                    <fig>
+                        <title>Macro customer by name</title>
+                        <image keyref="macro_customer_by_name">
+                            <alt>Macro customer by name</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Close the macro window and save it with name <userinput>Search customer by
+                        name</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Open form <uicontrol>Search customer by name</uicontrol> and test the operation
+                    of both combo boxes.</cmd>
+                <info>
+                    <note type="attention">When the first list box is used, its name does not appear
+                        in the second list box. To achieve this, you also need to add an action
+                            <option>SetValue</option> to this macro. But that has consequences for
+                        the operation of the combo box on form <uicontrol>Search customer by
+                            code</uicontrol>.</note>
+                </info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

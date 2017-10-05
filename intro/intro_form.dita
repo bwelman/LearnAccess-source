@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="intro_form" xml:lang="en-US">
+	<title>Forms</title>
+	<shortdesc>A short introduction in forms.</shortdesc>
+	<prolog>
+		<critdates>
+		    <created date="2017-10-05"/>
+		    <revised modified="2017-10-05"/>
+		</critdates>
+		<metadata>
+			<keywords>
+				<indexterm>Forms</indexterm>
+			</keywords>
+		</metadata>
+	</prolog>
+	<conbody>
+		<p>If you want to view multiple records, a table view is easy and comfortable. If you want to view
+			individual records or present information with a custom format, then you better use a
+			form.</p>
+		<p>A form often offers the most convenient way for entering, modifying and viewing records in a
+			database. In the form design you specify how the data should displayed. When you open a
+			form, the required data is retrieved from tables and formatted ​​according to the design
+			of the form. You can also use data from multiple tables and automating tasks with help
+			of macros or modules</p>
+		<fig>
+			<title>Form example</title>
+			<image keyref="example_form">
+				<alt>Form example</alt>
+			</image>
+		</fig>
+		<p>In forms you can add pick lists of values ​​to choose from, you can highlight important
+			information with color and you can display a message if you enter an incorrect value.
+			Furthermore, forms allows you to fill in data automatically and you can show calculation
+			results. And with one mouse click you can switch from form view to datasheet view, a
+			table like view of the same set of records.</p>
+	</conbody>
+</concept>

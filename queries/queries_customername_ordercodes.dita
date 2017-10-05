@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="queries_customername_ordercodes" xml:lang="en-US">
+    <title>Task: Customers and orders</title>
+    <shortdesc>Creating a simple select query using the wizard and then a manual
+        adjustment.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Query<indexterm>select query</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>INFORMATION NEEDS</p>
+            <p>Create a sorted list of all customers with their last name, first name and their
+                order codes.</p>
+            <p>ANALYSIS</p>
+            <p>The last name and first name of a customer are in table Customers. The order codes of
+                a customer are in table Orders. Because this is a simple straightforward select
+                query, you can use the Query Wizard.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step id="wizard_customers_start">
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Create</uicontrol>
+                        <uicontrol>Query Wizard (group Queries)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>The dialog box <wintitle>New Query</wintitle> is displayed. Here you can
+                    select the query type.</stepresult>
+            </step>
+            <step>
+                <cmd>Select <uicontrol>Simple Query Wizard</uicontrol> and click
+                        <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>
+                    <p>In the following screen you can select the fields you want in your query.</p>
+                </stepresult>
+            </step>
+            <step id="wizard_customers_end">
+                <cmd>Select in <wintitle>Tables/Queries</wintitle> through the list box
+                        <option>Table: Customers</option>.</cmd>
+                <stepresult>The fields of table <varname>Customers</varname> are displayed in the
+                    box <wintitle>Available Fields</wintitle>. <fig>
+                        <title>Simple Query Wizard with table Customers</title>
+                        <image keyref="q_wizard_t_customers">
+                            <alt>Simple Query Wizard with table Customers</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Select field <varname>LastName</varname> and click <uicontrol><image
+                            keyref="button_add_field"/></uicontrol>.</cmd>
+                <stepresult>Field<varname>LastName</varname> has been moved to box
+                        <wintitle>Selected Fields</wintitle>.</stepresult>
+            </step>
+            <step>
+                <cmd>Add in the same way, the field <varname>FirstName</varname>.</cmd>
+            </step>
+            <step>
+                <cmd>Select <option>Table: Orders</option> in box
+                        <wintitle>Tables/Queries</wintitle> .</cmd>
+                <stepresult>The fields of table <varname>Orders</varname> are displayed in box
+                        <wintitle>Available Fields</wintitle>.</stepresult>
+            </step>
+            <step>
+                <cmd>Add field <varname>OrderCode</varname>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Simple Query Wizard with selected fields</title>
+                        <image keyref="q_customername_ordercodes_fields">
+                            <alt>Simple Query Wizard with selected fields</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Next</uicontrol>.</cmd>
+                <stepresult>In the displayed screen you can specify if you like a detail or summary
+                    query.</stepresult>
+            </step>
+            <step>
+                <cmd>Select <uicontrol>Detail (shows every field of every record)</uicontrol> and
+                    click <uicontrol>Next</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Name the query <userinput>Customername+Ordercodes</userinput>, select
+                        <uicontrol>Modify the query design</uicontrol> and click
+                        <uicontrol>Finish</uicontrol>.</cmd>
+                <stepresult>
+                    <p>The design of the query is displayed.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click in box <uicontrol>Sort</uicontrol> of column
+                        <uicontrol>LastName</uicontrol> and choose <option>Ascending</option>. </cmd>
+                <stepresult>
+                    <fig>
+                        <title>Design query <wintitle>Customername+Ordercodes</wintitle></title>
+                        <image keyref="q_customername_ordercodes_design">
+                            <alt>Design query Customername+Ordercodes</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Switch to <uicontrol>Datasheet View</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Result query <wintitle>Customername+Ordercodes</wintitle></title>
+                        <image keyref="q_customername_ordercodes_result">
+                            <alt>Resultaat query customername+ordercodes</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Close the query and answer the question to save the changes with
+                        <uicontrol>Yes</uicontrol>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

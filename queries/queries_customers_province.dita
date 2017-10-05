@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="queries_customers_province" xml:lang="en-US">
+    <title>Task: Customers per province</title>
+    <shortdesc>Use of a select query with grouping and a calculation with function
+        COUNT.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Query<indexterm>grouping</indexterm><indexterm>count</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>INFORMATION NEEDS</p>
+            <p>Make a list of the number of customers per province.</p>
+            <p>ANALYSIS</p>
+            <p>All necessary data is in table Customers. Of course you need the field Province. A
+                customer is uniquely identified by the CustomerCode, so that you need to count the
+                number of CustomerCodes in each province. For this, there must be grouped by
+                Province.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Create</uicontrol>
+                        <uicontrol>Query Design (group Queries)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>Access creates a new blank query window and displays the dialog box
+                        <wintitle>Show Table</wintitle>.<fig>
+                        <title>Dialog box <wintitle>Show Table</wintitle></title>
+                        <image keyref="q_show_table">
+                            <alt>Dialog box show table</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+            <step>
+                <cmd>Select table <varname>Customers</varname>, click <uicontrol>Add</uicontrol> and
+                    then <uicontrol>Close</uicontrol>.</cmd>
+                <stepresult>The customers table has now been added to the query window.</stepresult>
+            </step>
+            <step>
+                <cmd>Add successively the fields Province and CustomerCode to the design grid by
+                    double-clicking on the field.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Design query customers per province</title>
+                        <image keyref="q_customers_province_design">
+                            <alt>Design query customers per province</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click op <menucascade>
+                        <uicontrol>tab Design</uicontrol>
+                        <uicontrol>Totals (group Show/Hide)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Design expanded with row for total</title>
+                        <image keyref="q_customers_province_design_total">
+                            <alt>Design expanded with row for total</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click in the box <varname>Total</varname> under column
+                        <varname>CustomerCode</varname> and select
+                    <option>Count</option>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Grouping with count</title>
+                        <image keyref="q_customers_province_design_count">
+                            <alt>Grouping with count</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Switch to <uicontrol>Datasheet View</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Result query customers per province</title>
+                        <image keyref="q_customers_province_result">
+                            <alt>Result query customers per province</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Close the query and answer the question to save the changes with
+                        <uicontrol>Yes</uicontrol>.</cmd>
+                <stepresult>The dialog box <wintitle>Save as</wintitle> is displayed.</stepresult>
+            </step>
+            <step>
+                <cmd>Name the query <userinput>Number of customers per province</userinput> and
+                    click <uicontrol>OK</uicontrol>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tools_about" xml:lang="en-US">
+	<title>About tools</title>
+	<shortdesc>Available tools for maintaining and improving databases.</shortdesc>
+	<prolog>
+		<critdates>
+		    <created date="2017-10-05"/>
+		    <revised modified="2017-10-05"/>
+		</critdates>
+		<metadata>
+			<keywords>
+				<indexterm>Tools<indexterm>analyse table</indexterm><indexterm>compressing
+                    database</indexterm></indexterm>
+			</keywords>
+		</metadata>
+	</prolog>
+	<conbody>
+		<p>Access has a number of tools to perform additional work on databases. This chapter deals with
+            the following:<ul>
+                <li>Analysis of a table</li>
+                <li>Compressing database</li>
+            </ul></p>
+		<p>Other tools in Access are:<ul>
+                <li>Analyze performance</li>
+                <li>Documenting database</li>
+                <li>Encrypt with a password</li>
+                <li>Creating a switchboard</li>
+            </ul></p>
+	</conbody>
+</concept>

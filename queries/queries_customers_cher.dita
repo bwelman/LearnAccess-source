@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="queries_customers_cher" xml:lang="en-US">
+    <title>Task: Customers with box CHER</title>
+    <shortdesc>A select query with 3 tables.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Query<indexterm>select query</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>INFORMATION NEEDS</p>
+            <p>In the last month of the calendar year, it is found that the of the boxes CHER are
+                nearly to the sell-by date. Therefore the sales department wants to organize a
+                direct mail campaign to the customers who once bought CHER boxes. Make a list of all
+                customers with their last name, first name and full address who ever bought at least
+                one box CHER.</p>
+            <p>Create a list of all customers with their last name, first name and full address who
+                bought at least one box CHER.</p>
+            <p>ANALYSIS</p>
+            <p>All customer information (first name, last name, address, postcode, city ) is in the
+                Customers table. The ordered boxes can be found in the field BoxCode in table
+                OrderDetails. In order to link an order to a customer you also need the table
+                Orders. The table Orders forms the link between the Customers table and the
+                OrderDetails table. And as condition you need to specify the value CHER for field
+                BoxCode.</p>
+            <p>When using the Wizard to create the query, it is sufficient to add only the needed
+                fields from the Customers and Order Details tables. The Wizard then automatically
+                ensures that the Orders table is added because it is the link between the tables
+                Customers and Order Details. When you create the query manually from scratch, you
+                should be self-aware to add the Orders table. That is why preference is given to the
+                use the Wizard in this task.</p>
+            <note type="attention">It is not necessary to include as a criterion that there is at
+                least one box ordered, because this condition is automatically met for linked
+                tables.</note>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step
+                conref="queries_customername_ordercodes.dita#queries_customername_ordercodes/wizard_customers_start"
+                conrefend="queries_customername_ordercodes.dita#queries_customername_ordercodes/wizard_customers_end">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Add the fields: FirstName, LastName, Address, ZipCode, City.</cmd>
+                <info>
+                    <note type="tip"> Select the field and click <uicontrol><image
+                                keyref="button_add_field"/></uicontrol>. You can also double click
+                        on a field to add or remove it.</note>
+                </info>
+            </step>
+            <step>
+                <cmd>Select table <option>Table: OrderDetails</option> in box
+                        <uicontrol>Tables/Queries</uicontrol> .</cmd>
+                <stepresult>The fields of table <varname>OrderDetails</varname> are displayed in box
+                        <uicontrol>Available Fields</uicontrol>.</stepresult>
+            </step>
+            <step>
+                <cmd>Add field <varname>BoxCode</varname>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Simple Query Wizard with selected fields</title>
+                        <image keyref="q_customers_cher_fields">
+                            <alt>Simple Query Wizard with selected fields</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Next</uicontrol>.</cmd>
+                <stepresult>Now you can specify if you like a detail or summary query.</stepresult>
+            </step>
+            <step>
+                <cmd>Select <uicontrol>Detail (shows every field of every record)</uicontrol> and
+                    click <uicontrol>Next</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Name the query <userinput>Customers and CHER</userinput>, select
+                        <uicontrol>Modify the query design</uicontrol> and click
+                        <uicontrol>Finish</uicontrol>.</cmd>
+                <stepresult>The query is saved and then appears in design view.<fig>
+                        <title>Design query <wintitle>Customers and CHER</wintitle></title>
+                        <image keyref="q_customers_cher_design">
+                            <alt>Design query Customers and CHER</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+            <step>
+                <cmd>Enter <userinput>CHER</userinput> in column <varname>BoxCode</varname> and row
+                        <varname>Criteria</varname> and don't let this field show.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Selection of CHER boxes</title>
+                        <image keyref="q_customers_cher_criteria">
+                            <alt>Selection of CHER boxes</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Switch to <uicontrol>Datasheet View</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Close the query and answer the question to save the changes with
+                        <uicontrol>Yes</uicontrol>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

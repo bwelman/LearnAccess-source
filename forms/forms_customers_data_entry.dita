@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="forms_customers_data_entry" xml:lang="en-US">
+    <title>Task: Data entry form Customers</title>
+    <shortdesc>Creation of a generated form based on one table with several manual
+        adjustments.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2016-11-08"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Form<indexterm>layout</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>In this task you are going to create a form for entering data of new customers and
+                editing data of existing customers. And you will practice some skills in moving and
+                aligning controls to get the following desired format.</p>
+            <fig>
+                <title>Data entry form customers</title>
+                <image keyref="f_customer_entry">
+                    <alt>Data entry form customers</alt>
+                </image>
+            </fig>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Select table <uicontrol>Customers</uicontrol>. It's not necessary to open the
+                    table.</cmd>
+            </step>
+            <step>
+                <cmd>Click <menucascade>
+                        <uicontrol>tab Create</uicontrol>
+                        <uicontrol>Form (group Forms)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>The form is created and displayed in <uicontrol>Layout
+                    View</uicontrol>.</stepresult>
+            </step>
+            <stepsection>
+                <p>Because the form is based on table Customers, and there is a one-to-many
+                    relationship between table Customers and table Orders, a subdatasheet based on
+                    Orders is added to the form. The subdatasheet displays all the records in the
+                    Orders table that pertain to the current Customers record.</p>
+            </stepsection>
+            <step>
+                <cmd>Select the subdatasheet and press <uicontrol>Delete</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Switch to <uicontrol>Design View</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Remove the form logo in the form header by selecting them first and then press
+                    the <uicontrol>Delete</uicontrol> key.</cmd>
+            </step>
+            <step>
+                <cmd>Save the form with as name <userinput>Customer entry and
+                        modification</userinput> with the button <uicontrol>Save <image
+                            keyref="button_save"/></uicontrol> in the <uicontrol>Quick Access
+                        Toolbar</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Make the vertical dimension (the height) of the <uicontrol>Form
+                        Header</uicontrol> somewhat larger by dragging the top of the
+                        <uicontrol>Detail</uicontrol> section somewhat downwards.</cmd>
+            </step>
+            <step>
+                <cmd>Select the text <uicontrol>Customers</uicontrol> in the form header label and
+                    change it in <userinput>Chocolate Connoisseur</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Change some properties of the header font: name = MS Sans Serif, size = 14,
+                    italic and bold.</cmd>
+            </step>
+            <step>
+                <cmd>Select control <uicontrol>Label</uicontrol> on the ribbon through
+                        <uicontrol>tab Design</uicontrol><uicontrol><image keyref="control_label"/>
+                        Label (group Controls)</uicontrol> and draw in the header under the first
+                    label a frame for the second label. Type the text <userinput>Customer entry and
+                        modification</userinput> and format it as follows: MS Sans Serif, 14 pt,
+                    bold, color black.</cmd>
+            </step>
+            <stepsection>To be able to move the controls freely on the form, the (stacked) layout
+                must be removed.</stepsection>
+            <step>
+                <cmd>Select all <term>controls</term> in the section <uicontrol>Detail</uicontrol>
+                    by drawing a rectangle from the top left corner while holding down the left
+                    mouse button to the lower right corner. Then release the mouse button.</cmd>
+                <stepresult>All controls in section Detail are selected now.</stepresult>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Arrange</uicontrol>
+                        <uicontrol>Remove Layout (group Table)</uicontrol>
+                    </menucascade>.</cmd>
+            </step>
+            <step>
+                <cmd>Deselect the controls.</cmd>
+            </step>
+            <step>
+                <cmd>Drag the <term>controls</term> on the form to create a design that looks as
+                    good as possible on the desired format.</cmd>
+                <tutorialinfo>
+                    <p>Some tips:<ul id="ul_zvl_z4t_1t">
+                            <li>You can align selected controls with <menucascade>
+                                    <uicontrol>tab Arrange</uicontrol>
+                                    <uicontrol>Align (group Sizing &amp; Ordering</uicontrol>
+                                </menucascade></li>
+                            <li>You nee a new label with the text Name: in front of the text boxes
+                                first and last name.</li>
+                            <li>You can set the dimensions of controls with the properties
+                                    <varname>Width</varname> and <varname>Height</varname></li>
+                            <li>You can set the upper left location of a control with the properties
+                                    <varname>Top</varname> and <varname>Left</varname>.</li>
+                            <li>You can set the background color with the property <varname>Back
+                                    Color</varname>.</li>
+                        </ul></p>
+                </tutorialinfo>
+            </step>
+            <step>
+                <cmd>Switch to <uicontrol>Form View</uicontrol> and test the form.</cmd>
+            </step>
+            <step>
+                <cmd>Close the form and save the changes.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

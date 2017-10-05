@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="tables_relationship_boxes_boxdetails" xml:lang="en-US">
+    <title>Task: Create Relationship Boxes-BoxDetails</title>
+    <shortdesc>How to create a relationship between the tables Boxes and BoxDetails.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Relationships<indexterm>create</indexterm><indexterm>primary
+                        table</indexterm><indexterm>related table</indexterm></indexterm>
+                <indexterm>Table<indexterm>primary</indexterm><indexterm>related</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>A relationship connects two fields in different tables together. Before you start
+                creating the relation, you must first determine which table is the primary table,
+                which the related table and which fields are the linking fields.</p>
+            <p>Until now there is no relationship between the tables <wintitle>Boxes</wintitle> and
+                    <wintitle>BoxDetails</wintitle>. This is necessary because otherwise it is not
+                possible to determine which pralines and the amount of them are in a particular
+                box.</p>
+            <dl>
+                <dlentry>
+                    <dt>Primary table</dt>
+                    <dd>Boxes (link field: BoxCode)</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Related table</dt>
+                    <dd>BoxDetails (link field: BoxCode)</dd>
+                </dlentry>
+            </dl>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Click <menucascade>
+                        <uicontrol>tab Database Tools</uicontrol>
+                        <uicontrol>Relationships (group Relationships)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>The window <wintitle>Relationships</wintitle> will be displayed. It
+                    shows the existing relations. It is also visible that currently no relationships
+                    exists between the tables BoxDetails Boxes.<fig>
+                        <title>Window relationships</title>
+                        <image keyref="relationships_window_boxes_boxdetails">
+                            <alt>Window relationships</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+            <step>
+                <cmd>Select in table <wintitle>Boxes</wintitle> the field <varname>BoxCode</varname>
+                    and drag it to the field <varname>BoxCode</varname> in table
+                        <wintitle>BoxDetails</wintitle>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Dialog box <wintitle>Edit Relationships</wintitle></title>
+                        <image keyref="relationship_edit_boxes_boxdetails">
+                            <alt>Dialog box Edit Relationships</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Check box <uicontrol>Enforce Referential Integrity</uicontrol> and click
+                        <uicontrol>Create</uicontrol>.</cmd>
+                <stepresult>The relationship is now visible in the window.</stepresult>
+            </step>
+            <step>
+                <cmd>Close window <wintitle>Relationships</wintitle> and answer the question to save
+                    the changes with <uicontrol>Yes</uicontrol>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

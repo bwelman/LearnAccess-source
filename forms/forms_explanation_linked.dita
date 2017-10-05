@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="forms_explanation_linked" xml:lang="en-US">
+    <title>Linked forms</title>
+    <shortdesc>Explanation of linked forms.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Form<indexterm>linking</indexterm></indexterm>
+                <indexterm>Linked form</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Linked forms are separate forms that are related to each other. One of the forms, also
+            called main form, has a command button that opens another form when clicking on it. The
+            records between the two forms are synchronized. Behind the button is program code (VBA)
+            which causes that the subform is opened. This VBA code is automatically created by the
+            Wizard. You don't need to program to work with it.</p>
+        <p>Whether you with linked forms or with subforms depends usually on the method of work of
+            the user. If you only need the primary data of a customer, you don't have to see
+            simultaneously all order information from the customer. It is often convenient to have a
+            button on the form with which you can pick out the corresponding order information.</p>
+        <fig>
+            <title>Two linked forms with synchronized data</title>
+            <image keyref="f_customerorders_linked">
+                <alt>Two linked forms with synchronized data</alt>
+            </image>
+        </fig>
+    </conbody>
+</concept>

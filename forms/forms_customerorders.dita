@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="forms_customerorders" xml:lang="en-US">
+    <title>Task: Linking forms</title>
+    <shortdesc>Create linked forms with the Form Wizard.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Form<indexterm>main
+                        form</indexterm><indexterm>subform</indexterm><indexterm>linked
+                        form</indexterm></indexterm>
+                <indexterm>Linked form</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>The easiest way to create linked forms is with the Form Wizard. This wizard creates
+                the necessary forms, ensures the linking and provides in a command button on the
+                main form to open the linked form.</p>
+            <p>The goal is to create a form in which the data of a customer are displayed and with a
+                command button to display the order information from the customer in a new form. See
+                the following figure.</p>
+            <fig>
+                <title>Two linked forms with synchronized data</title>
+                <image keyref="f_customerorders_linked">
+                    <alt>Two linked forms with synchronized data</alt>
+                </image>
+            </fig>
+            <p>On the main form is the customer data, all necessary fields are available in table
+                Customers. The linked form contains the order code and date and these fields are in
+                table Orders. On this form is also a subform containing the details of the order and
+                this data comes from table OrderDetails.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Create</uicontrol>
+                        <uicontrol>Form Wizard (group Forms)</uicontrol>
+                    </menucascade>.</cmd>
+            </step>
+            <step>
+                <cmd>Select in box <varname>Tables/Queries</varname>
+                    <uicontrol>Table: Customers</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Dialog box <wintitle>Form Wizard</wintitle></title>
+                        <image keyref="f_wizard_t_customers">
+                            <alt>Dialog box Form Wizard</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Add the following fields:</cmd>
+                <substeps>
+                    <substep>
+                        <cmd>From table Customers: CustomerCode, LastName, FirstName, Address,
+                            ZipCode, City.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>From table Orders: OrderCode, OrderDate.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>From table OrderDetails: BoxCode, Quantity</cmd>
+                    </substep>
+                </substeps>
+            </step>
+            <step>
+                <cmd>Click op <uicontrol>Next</uicontrol>. Choose to view the data <option>by
+                        Customers</option> and choose <option>Linked forms</option>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Wizard linked forms</title>
+                        <image keyref="f_wizard_customerorders_dataview">
+                            <alt>Wizard linked forms</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Next</uicontrol>.</cmd>
+                <stepresult>
+                    <p>Now you can name the forms.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Name the forms as follows. First form = <userinput>CustomerOrders</userinput>,
+                    Second form = <userinput>CustomerOrdersSub1</userinput> and Subform =
+                        <userinput>CustomerOrdersSub2</userinput></cmd>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Finish</uicontrol>.</cmd>
+                <stepresult>
+                    <p>The main form CustomerOrders is displayed. The design still needs to be
+                        tweaked because the command button <uicontrol>CustomerOrdersSub1</uicontrol>
+                        is located under the label <uicontrol>CustomerOrders</uicontrol> and
+                        therefore can't be used.</p>
+                    <fig>
+                        <title>Title main form and command button</title>
+                        <image keyref="f_customerorders_titles">
+                            <alt>Title main form and command button</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Open form <uicontrol>CustomerOrders</uicontrol> in <uicontrol>Design
+                        View</uicontrol>.</cmd>
+                <substeps>
+                    <substep>
+                        <cmd>Select label <uicontrol>CustomerOrders</uicontrol> and press the
+                                <uicontrol>Delete</uicontrol> key to remove the label.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Select the command button and use the <wintitle>Property
+                                Sheet</wintitle> to change the caption from
+                                <userinput>CustomerOrdersSub1</userinput> in <userinput>Order
+                                data</userinput>.</cmd>
+                    </substep>
+                </substeps>
+            </step>
+            <step>
+                <cmd>If desired, adjust the layout of the three forms.</cmd>
+            </step>
+            <step>
+                <cmd>Switch to <uicontrol>Form View</uicontrol> and test the operation of the
+                    command button.</cmd>
+                <info>
+                    <note type="notice">
+                        <p>In a default installation of Access each document (table, query, form,
+                            report ) opens in a separate tab. With linked forms that isn't always
+                            convenient. When you click the command button, the linked subform then
+                            opens in a new tab and you don't see the information in both forms
+                            together. If you want to do so you have to change the database settings
+                            that documents appear in overlapping windows instead of tabs.
+                            Method:</p>
+                        <p>Choose <menucascade>
+                                <uicontrol>File</uicontrol>
+                                <uicontrol>Options</uicontrol>
+                                <uicontrol>Current Database</uicontrol>
+                            </menucascade>. Select <option>Overlapping Windows</option> at
+                                <uicontrol>Document Window Options</uicontrol>. </p>
+                    </note>
+                </info>
+            </step>
+            <step>
+                <cmd>Close the form and save changes.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

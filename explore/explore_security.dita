@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="explore_security" xml:lang="en-US">
+    <title>Security and macros</title>
+    <shortdesc>How to deal with security warnings when opening a database.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Macros<indexterm>security</indexterm></indexterm>
+                <indexterm>Security<indexterm>warning</indexterm><indexterm>trust
+                    center</indexterm></indexterm>
+                <indexterm>Trusted location</indexterm>
+                <indexterm>Trust Center</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Some databases such as <filepath><keyword keyref="example_db_title"/></filepath> contain
+            macros. In the most cases these macros are made to carry out certain tasks in the
+            database. However, virus writers can use these opportunities to spread a virus. When
+            such a database is not on a trusted location or signed by a trusted publisher, then
+            Access displays when opening the database a security warning on opening of the database.
+            The macros in the database are disabled.</p>
+        <fig>
+            <title>Security warning on opening of a database with macros</title>
+            <image keyref="security_warning">
+                <alt>Security warning on opening of a database with macros</alt>
+            </image>
+        </fig>
+        <p>You can enable the macros in one of the following ways.</p>
+        <table frame="none" rowsep="1" colsep="1">
+            <tgroup cols="1">
+                <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+                <thead>
+                    <row>
+                        <entry>Enable macros temporarily</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry><p>Click in the area with the security alert on the button
+                                    <uicontrol>Enable Content</uicontrol>.</p>
+                            <p>This method is not recommended because every time you open the
+                                database this warning appears you to enable macros.</p></entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <table frame="none" rowsep="1" colsep="1">
+            <tgroup cols="1">
+                <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+                <thead>
+                    <row>
+                        <entry>Ad publisher to list with trusted publishers</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>If the database creator that has provided a digital certificate, you
+                            can add the creator to the list <term>Trusted Publishers</term>. Access
+                            automatically enables all macros that are created by this maker in all
+                            databases. This is a very secure method, but usually only the larger
+                            companies use a digital certificate. The database <keyword
+                                keyref="example_db_title"/> doesn't have a digital certificate.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <table frame="none" rowsep="1" colsep="1">
+            <tgroup cols="1">
+                <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+                <thead>
+                    <row>
+                        <entry>Move database to a trusted location</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry><p>Access provides trusted locations (folders). Macros in databases
+                                on a trusted location are automatically enabled. This is the most
+                                convenient way to work safely without interruptions by security
+                                alerts and this method is also recommended for the database <keyword
+                                    keyref="example_db_title"/>. Perform this action as follows.</p>
+                            <p>Choose <menucascade>
+                                    <uicontrol>File</uicontrol>
+                                    <uicontrol>Options</uicontrol>
+                                    <uicontrol>Trust Center</uicontrol>
+                                    <uicontrol>Trust Center Settings...</uicontrol>
+                                    <uicontrol>Trusted Locations</uicontrol>
+                                    <uicontrol>Add new location...</uicontrol>
+                                </menucascade>.</p>
+                            <fig>
+                                <title>Dialog box <wintitle>Microsoft Office Trusted
+                                        Location</wintitle></title>
+                                <image keyref="security_trusted_location">
+                                    <alt>Dialog box trusted location</alt>
+                                </image>
+                            </fig>
+                            <p>In the example the folder <filepath>C:\Temp</filepath> is added as a
+                                trusted location.</p></entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <table frame="none" rowsep="1" colsep="1">
+            <tgroup cols="1">
+                <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+                <thead>
+                    <row>
+                        <entry>Security settings for all macros</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry><p>Optionally you can change the way Access handles all macros in all
+                                databases. Perform this action as follows.</p>
+                            <p>Choose <menucascade>
+                                    <uicontrol>File</uicontrol>
+                                    <uicontrol>Options</uicontrol>
+                                    <uicontrol>Trust Center</uicontrol>
+                                    <uicontrol>Trust Center Settings...</uicontrol>
+                                    <uicontrol>Macro Settings</uicontrol>
+                                </menucascade>.</p>
+                            <fig>
+                                <title>Dialog box <wintitle>Trust Center</wintitle></title>
+                                <image keyref="security_trust_center">
+                                    <alt>Dialog box trust center</alt>
+                                </image>
+                            </fig>
+                            <p>It is not recommended to enable all macros, then you will loose the
+                                security control.</p></entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </conbody>
+</concept>

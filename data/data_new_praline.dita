@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="data_new_praline" xml:lang="en-US">
+    <title>Task: Add new praline</title>
+    <shortdesc>Adding a new record with a form which can be used for browsing and adding
+        data.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Record<indexterm>add</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>Via the form Pralines you can browse existing records and adding new records.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Open form <varname>Pralines</varname>.</cmd>
+            </step>
+            <step>
+                <cmd>Click in the status bar on the button <uicontrol>New (blank) record <image
+                            keyref="button_record_new"/></uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the following data:</cmd>
+                <tutorialinfo>
+                    <simpletable frame="all">
+                        <strow>
+                            <stentry>PralineName</stentry>
+                            <stentry>Pecan Mocha Toffee</stentry>
+                        </strow>
+                        <strow>
+                            <stentry>PralineCode</stentry>
+                            <stentry>F03</stentry>
+                        </strow>
+                        <strow>
+                            <stentry>PralineDescription</stentry>
+                            <stentry>Sweat creamy mocha and pecan, surrounded with toffee</stentry>
+                        </strow>
+                        <strow>
+                            <stentry>ChocolateType</stentry>
+                            <stentry>Toffee</stentry>
+                        </strow>
+                        <strow>
+                            <stentry>FillingType</stentry>
+                            <stentry>Mocha cream</stentry>
+                        </strow>
+                        <strow>
+                            <stentry>NutType</stentry>
+                            <stentry>Pecan</stentry>
+                        </strow>
+                        <strow>
+                            <stentry>PralineCosts</stentry>
+                            <stentry>0.25</stentry>
+                        </strow>
+                    </simpletable>
+                </tutorialinfo>
+            </step>
+            <step>
+                <cmd>Close form <varname>Pralines</varname> via the close button
+                        <uicontrol>X</uicontrol> in the upper right corner of the document
+                    window.</cmd>
+                <tutorialinfo>The records added through the form <varname>Pralines</varname> are
+                    stored in the table <varname>Pralines</varname>. You will check this in the
+                    following step.</tutorialinfo>
+            </step>
+            <step>
+                <cmd>Open table <varname>Pralines</varname> and make sure the record is added.</cmd>
+            </step>
+            <step>
+                <cmd>Close table <varname>Pralines</varname>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

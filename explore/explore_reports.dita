@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="explore_reports" xml:lang="en-US">
+    <title>Task: Exploring Reports</title>
+    <shortdesc>The main views of reports: report, print and design.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Report<indexterm>report view</indexterm><indexterm>design
+                        view</indexterm><indexterm>print preview</indexterm>Print
+                        Preview<indexterm>report</indexterm></indexterm>
+                <indexterm>Design View<indexterm>report</indexterm></indexterm>
+                <indexterm>Report View</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>With reports you can print the information from the tables nicely laid out on screen
+                display or on paper. The displayed data may be derived from multiple tables and / or
+                queries. Also calculated values ​​are possible. Furthermore, you can provide a
+                report with titles, headings, headers and footers.</p>
+            <p>The most important views of a report are:<ul>
+                    <li><uicontrol>Report View</uicontrol>. In this view you can see the contents of
+                        the report.</li>
+                    <li><uicontrol>Print Preview</uicontrol>. The display of the report when it will
+                        be printed.</li>
+                    <li><uicontrol>Design View</uicontrol>. In this view you can see the report of
+                        the design and customize it.</li>
+                </ul></p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Open the report <wintitle>Pralines per box</wintitle>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Report view <wintitle>Pralines per box</wintitle></title>
+                        <image keyref="report_pralines_box_report">
+                            <alt>Report pralines per box in report view</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Put the report <varname>Pralines per box</varname> in <uicontrol>Print
+                        Preview</uicontrol> on one of the following ways:</cmd>
+                <choices>
+                    <choice>Click the button <uicontrol>Print Preview</uicontrol> on bottom right of
+                        the program window <image keyref="button_print_preview"/></choice>
+                    <choice><menucascade>
+                            <uicontrol>tab Home</uicontrol>
+                            <uicontrol>View (group Views)</uicontrol>
+                            <uicontrol>Print Preview</uicontrol>
+                        </menucascade>.</choice>
+                </choices>
+                <info>
+                    <note type="tip">You can open a form directly in the Print Preview by right
+                        clicking on the report name in the navigation pane and then choose
+                            <uicontrol>Print Preview</uicontrol> from the shortcut menu.</note>
+                </info>
+                <stepresult>The same report will be displayed in a larger display with zoom
+                    capabilities.</stepresult>
+            </step>
+            <step>
+                <cmd>Put the report <varname>Pralines per box</varname> in <uicontrol>Design
+                        View</uicontrol> on one of the following ways:</cmd>
+                <choices>
+                    <choice>Click the button <uicontrol>Design View</uicontrol> on bottom right of
+                        the program window <image keyref="button_design_view"/></choice>
+                    <choice><menucascade>
+                            <uicontrol>tab Home</uicontrol>
+                            <uicontrol>View (group Views)</uicontrol>
+                            <uicontrol>Design View</uicontrol>
+                        </menucascade>.</choice>
+                </choices>
+                <info>
+                    <note type="tip">You can open a form directly in the Design View by right
+                        clicking on the report name in the navigation pane and then choose
+                            <uicontrol>Design View</uicontrol> from the shortcut menu.</note>
+                </info>
+                <stepresult>
+                    <fig>
+                        <title>Design of report <wintitle>Pralines per box</wintitle></title>
+                        <image keyref="report_pralines_box_design">
+                            <alt>Report pralines per box in design view.</alt>
+                        </image>
+                    </fig>
+                    <p>In the design view you can change the layout of the report and add controls
+                        like text boxes, labels, list boxes, check boxes, etc..</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Put the report in <uicontrol>Report View</uicontrol> <image keyref="button_report_view"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Close the report</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

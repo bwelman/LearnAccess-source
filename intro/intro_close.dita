@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="intro_close" xml:lang="en-US">
+    <title>Task: Close Access</title>
+    <shortdesc>How to close Access.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Access<indexterm>closing</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context><p>To close a database choose <menucascade>
+                    <uicontrol>File</uicontrol>
+                    <uicontrol>Close</uicontrol>
+                </menucascade>.</p>
+            <p>To close Access itself click on the <term>close button</term> of the program window.
+                This is a button marked with <uicontrol>X</uicontrol> in the upper right corner of
+                the window.</p>
+            <note type="attention">Unlike most other programs you don't need to save a database in
+                Access. All changes made are automatically saved.</note></context>
+        <steps>
+            <step>
+                <cmd>Close Access.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="forms_orders_data_entry" xml:lang="en-US">
+    <title>Task: Data entry Orders</title>
+    <shortdesc>Creation of a main form and subform based on a query.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Form<indexterm>main
+                    form</indexterm><indexterm>subform</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>In this task you are going to create a form for viewing order data and entering new
+                orders. The desired layout for the form is displayed in the following figure.</p>
+            <fig>
+                <title>Data entry form orders</title>
+                <image keyref="f_orderdata_entry">
+                    <alt>Data entry form orders</alt>
+                </image>
+            </fig>
+            <p>The data on the main form are from the tables <wintitle>Customers</wintitle> and
+                    <wintitle>Orders</wintitle>. So there must be created a query (Orders -
+                Customers) based on these two tables, which provide the required data.</p>
+            <p>The data on the subform are from the tables <wintitle>OrderDetails</wintitle> and
+                    <wintitle>Boxes</wintitle>. So there must be created a query
+                (OrderDetails-Boxes) based on these two tables, which provide the required data. The
+                column <varname>Total</varname> is a calculated field.</p>
+            <p>Then, create a main form with subform based on successively the queries
+                Orders-Customers and OrderDetails-Boxes. Add the desired fields for both the main
+                form and the subform.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <stepsection>Create query Orders-Customers</stepsection>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Create</uicontrol>
+                        <uicontrol>Query Design (group Queries)</uicontrol>
+                    </menucascade>. Add tables <uicontrol>Orders</uicontrol> en
+                        <uicontrol>Customers</uicontrol> and all fields of these tables.</cmd>
+                <info><note type="tip">With the choice <option>*</option> you can add all fields of
+                        a table.</note></info>
+                <stepresult>
+                    <fig>
+                        <title>Design query Orders-Customers</title>
+                        <image keyref="q_orders-customers_design">
+                            <alt>Design query orders customers</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Close the query and save it with the name
+                        <userinput>Orders-Customers</userinput>.</cmd>
+            </step>
+            <stepsection>Create query OrderDetails-Boxes</stepsection>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Create</uicontrol>
+                        <uicontrol>Query Design (group Queries)</uicontrol>
+                    </menucascade>. Add tables <uicontrol>OrderDetails</uicontrol> and
+                        <uicontrol>Boxes</uicontrol> and all fields of these tables. Make in
+                    addition a column with the name <varname>Total</varname> which performs the
+                    calculation <codeph>Quantity*BoxPrice</codeph>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Design query OrderDetails-Boxes</title>
+                        <image keyref="q_orderdetails_boxes_design">
+                            <alt>Design query OrderDetails-Boxes</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Close the query and save it with the name
+                        <userinput>OrderDetails-Boxes</userinput>.</cmd>
+            </step>
+            <stepsection>Create Form</stepsection>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Create</uicontrol>
+                        <uicontrol>Form Wizard</uicontrol>
+                    </menucascade>.</cmd>
+            </step>
+            <step>
+                <cmd>Select query <uicontrol>Orders-Customers</uicontrol> and add all fields except
+                        <varname>Orders.CustomerCode</varname>.</cmd>
+            </step>
+            <step>
+                <cmd>Select query <uicontrol>OrderDetails-Boxes</uicontrol> and add the following
+                    fields: <varname>Boxes.BoxCode</varname>, <varname>BoxName</varname>,
+                        <varname>Quantity</varname>, <varname>BoxPrice</varname> and
+                        <varname>Total</varname>.</cmd>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Next</uicontrol> and let the data view <option>by
+                        Orders-Customers</option>.</cmd>
+                <stepresult>With this choice the main form will be based on query Orders-Customers
+                    and the subform on query OrderDetails-Boxes.</stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Next</uicontrol> and choose <uicontrol>Tabular</uicontrol> for
+                    the subform.</cmd>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Next</uicontrol> and provide the titles <userinput>Orderdata
+                        main</userinput> and <userinput>Orderdata sub</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Finish</uicontrol>.</cmd>
+                <stepresult>The form is opened.</stepresult>
+            </step>
+            <step>
+                <cmd>Modify the layout of the two forms to make it look to the desired form for
+                    order data.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

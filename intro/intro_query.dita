@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="intro_query" xml:lang="en-US">
+	<title>Queries</title>
+	<shortdesc>A short introduction in <term>queries</term>.</shortdesc>
+	<prolog>
+		<critdates>
+		    <created date="2017-10-05"/>
+		    <revised modified="2017-10-05"/>
+		</critdates>
+		<metadata>
+			<keywords>
+				<indexterm>Queries</indexterm>
+				<indexterm>Dynaset</indexterm>
+			</keywords>
+		</metadata>
+	</prolog>
+	<conbody>
+		<p>Through a query, you can give a command to select specific data and display it. It is like you
+			ask a question to the database, e.g. <q>Which products have a supplier in Australia</q>.
+			The necessary data to answer the question can come from  multiple tables. The query
+			collects the desired information. The result of a query is a set of records, also called
+			a <term>dynaset</term>.</p>
+		<p>When designing a query, you indicate the data you want. Here you have many options to select
+			only certain data. For example you can define a query to view order details for a
+			certain period. The query retrieves the data from the various tables. You can also
+			perform calculations in a query, for example calculating totals.</p>
+		<fig>
+			<title>Query example</title>
+			<image keyref="example_query">
+				<alt>Query example</alt>
+			</image>
+			<!-- Source: candy2010solution, query Orders with subtotals -->
+		</fig>
+		<p>Another type of query is the <term>action query</term> performing an operation on the selected
+			records.</p>
+	</conbody>
+</concept>

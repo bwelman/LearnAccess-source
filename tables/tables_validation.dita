@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tables_validation" xml:lang="en-US">
+    <title>Validation</title>
+    <shortdesc>Validation of the input data.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Field<indexterm>validation</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>To ensure that a user enters data in a particular way, you can make use of a <term>input
+                mask</term>. Additionally, you can also use a <term>validation rule</term> to
+            control if the value entered meets certain requirements and if not indicating the user
+            on it through a <term>validation text</term>.</p>
+    </conbody>
+</concept>

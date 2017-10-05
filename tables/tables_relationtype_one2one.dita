@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tables_relationtype_one2one" xml:lang="en-US">
+    <title>One-to-one relationship</title>
+    <shortdesc>Explanation of the one-to-one relationship.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Relationship<indexterm>one-to-one</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>In a one-to-one relationship, a row in table A can have no more than one matching row in
+            table B, and vice versa. This kind of relationship is not common, because most
+            information that is related in this manner would be in one table. This will sometimes be
+            done to divide a table with many fields in two tables, each with fewer fields. In
+            general, one should try to avoid this situation.</p>
+    </conbody>
+</concept>

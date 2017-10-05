@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="queries_crosstab" xml:lang="en-US">
+    <title>Task: Crosstab query</title>
+    <shortdesc>How to create a crosstab.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Query<indexterm>crosstab query</indexterm></indexterm>
+                <indexterm>Crosstab query</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>A crosstab query calculates a sum, average, or other aggregate function, and then
+                groups the results in rows and columns. A cross table is similar to an Excel
+                PivotTable report. A crosstab query is often easier to read than a regular select
+                query with the same data.  The overview is more compact by the horizontal and
+                vertical alignment.</p>
+            <p>When you create a crosstab query, you specify which fields contain row headings,
+                which field contains column headings, and which field contains values to summarize.
+                For the row headings you can use multiple fields (maximum 3), but for the column
+                heading values  and the values to summarize you can use only one field. It's also
+                possible to use an expression for the row heading(s), column heading and summarize
+                values.</p>
+            <p>The easiest and fastest way to create a crosstab query is using the Crosstab Query
+                Wizard. For more complex queries, you can often start with this Wizard, and then do
+                the fine-tuning in the Design View.</p>
+            <p>INFORMATION NEEDS</p>
+            <p>Calculate the number of customers by province and by region and show the result in a
+                cross table.</p>
+            <p>ANALYSIS</p>
+            <p>All the necessary data can be found in the table <varname>Customers</varname>.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Create</uicontrol>
+                        <uicontrol>Query Wizard (group Queries)</uicontrol>
+                        <uicontrol>Crosstab Query Wizard</uicontrol>
+                        <uicontrol>OK</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <p>In the screen that is displayed now you can select the table or query that
+                        contains the fields for the crosstab.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Select table <option>Customers</option> and click
+                    <uicontrol>Next</uicontrol>.</cmd>
+                <stepresult>
+                    <p>Now you can select the field(s) for the row heading values.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Add field <varname>Province</varname> .</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Selection of field for row heading</title>
+                        <image keyref="q_crosstab_rowhead">
+                            <alt>Selection of field for row heading</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Next</uicontrol>.</cmd>
+                <stepresult>
+                    <p>Now you have to select the field for the column heading values.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Select field <varname>Region</varname>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Selection of field for column heading</title>
+                        <image keyref="q_crosstab_columnhead">
+                            <alt>Selection of field for column heading</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Next</uicontrol>.</cmd>
+                <stepresult>
+                    <p>Now you can select the field whose values you want to aggregate and the
+                        aggregate function.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Select field <varname>CustomerCode</varname> and function
+                        <varname>Count</varname>. Also deselect the option to include row
+                    sums.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Selection of field and function for summarizing</title>
+                        <image keyref="q_crosstab_values">
+                            <alt>Selection of field and function for summarizing</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Next</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Name the query <userinput>Number of customers by province by
+                    region</userinput>, select <option>View the query</option> and click
+                        <uicontrol>Finish</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Crosstab result</title>
+                        <image keyref="q_crosstab_result">
+                            <alt>Crosstabb result</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>

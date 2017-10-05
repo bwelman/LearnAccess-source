@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="queries_column_heading" xml:lang="en-US">
+    <title>Task: Column heading modification</title>
+    <shortdesc>How to change the column heading in a query.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Query<indexterm>column heading</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <prereq>To perform this task, it is necessary that you have performed <xref
+                href="queries_customers_province.dita#queries_customers_province"/>.</prereq>
+        <context>By default, Access uses the field names as column heading in the datasheet view.
+            And for summarized data a name is generated. It is recommended to use more clearer
+            names.</context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Open query <varname>Number of customers per province</varname> in
+                        <uicontrol>Design View</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Put the cursor in the field box <varname>CustomerCode</varname>, at the
+                    beginning of the field name and type <userinput>Total
+                    customers:</userinput>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Column heading modified</title>
+                        <image keyref="q_customers_province_columnhead_design">
+                            <alt>Column heading modified</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Switch to <uicontrol>Datasheet View</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Result with new column heading</title>
+                        <image keyref="q_customers_province_columnhead_result">
+                            <alt>Result with new column heading</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Close the query and answer the question to save the changes with <uicontrol>Yes</uicontrol>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="mailmerge" xml:lang="en-US">
+    <title>Task: Mailmerge</title>
+    <shortdesc>From Access, the Word mail Merge Wizard is started to create a standard letter in
+        Word with adresses in Access.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Access<indexterm>integration word</indexterm></indexterm>
+                <indexterm>Word<indexterm>integration access</indexterm></indexterm>
+                <indexterm>Mailmerge</indexterm>
+                <indexterm>Standard letter</indexterm>
+                <indexterm>Integration<indexterm>access - word</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>In this task you will send customers a standard letter containing the announcement of
+                a new voucher box with the name <q>Snow White</q>. The source for the addresses will
+                be table Customers.</p>
+            <note type="tip">It is also possible to use a query as data source.</note>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Select table <wintitle>Customers</wintitle>.</cmd>
+            </step>
+            <step>
+                <cmd>Right click on the table name and choose <menucascade>
+                        <uicontrol>Export</uicontrol>
+                        <uicontrol>Word Merge</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Microsoft Word Mail Merge Wizard</title>
+                        <image keyref="word_mailmerge_wizard">
+                            <alt>Microsoft Word mail merge wizard</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Select <uicontrol>Link your data to an existing Microsoft Word
+                        document</uicontrol> and click <uicontrol>OK</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Select practice file <filepath>snow-white.docx</filepath> in the dialog box and
+                    click <uicontrol>Open</uicontrol>.</cmd>
+                <stepresult>Microsoft Word is started with the practice file in it. On the ribbon
+                        <uicontrol>tab Mailings</uicontrol> is selected and at the right side the
+                    panel <wintitle>Mail Merge</wintitle> is displayed. On the bottom of this panel
+                    you can see that the wizard is in step 3 of 6.<fig>
+                        <title>Progress wizard mail merge: step 3 of 6</title>
+                        <image keyref="mailmerge_wizard_step3" placement="break">
+                            <alt>Progress wizard mail merge: step 3 of 6</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click on the link <uicontrol>Next: Write your letter</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Put the cursor in the first line and choose <menucascade>
+                        <uicontrol>tab Mailings</uicontrol>
+                        <uicontrol>Insert Merge Field (group Write &amp; Insert Fields)</uicontrol>
+                        <uicontrol>FirstName</uicontrol>
+                    </menucascade>.</cmd>
+            </step>
+            <step>
+                <cmd>After that, add the fields LastName, Address, ZipCode and City accoring to the
+                    following model.</cmd>
+                <stepresult>
+                    <codeblock>&lt;&lt;FirstName>> &lt;&lt;LastName>>
+&lt;&lt;Address>>
+&lt;&lt;ZipCode>>  &lt;&lt;City>></codeblock>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click in panel <wintitle>Mail Merge</wintitle> below <systemoutput>Step 4 of
+                        6</systemoutput> on the link <uicontrol>Next: Preview your
+                        letters</uicontrol>.</cmd>
+                <stepresult>
+                    <p>An example letter for the first customer is shown.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click in panel <wintitle>Mail Merge</wintitle> below <systemoutput>Step 5 of
+                        6</systemoutput> on the link <uicontrol>Next: Complete the
+                    merge</uicontrol>.</cmd>
+                <stepresult>
+                    <p>You can now complete the merge in panel <wintitle>Mail Merge</wintitle>:</p>
+                    <fig>
+                        <title>Finishing mail merge</title>
+                        <image keyref="mailmerge_wizard_finishing">
+                            <alt>Finishing mail merge</alt>
+                        </image>
+                    </fig>
+                    <p>You now have two choices:<ul>
+                            <li>With <option>Print</option> you can send the letters to the
+                                printer.</li>
+                            <li>With <option>Edit individual letters</option>, one document is
+                                created with the letters.</li>
+                        </ul></p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click on the link <uicontrol>Edit individual letters...</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Selection of records</title>
+                        <image keyref="mailmerge_wizard_records">
+                            <alt>Selection of records</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Specify that you want create letters for the first 10 customers. Then click
+                        <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>A new Word document will be created containing 10 letters.</stepresult>
+            </step>
+            <step>
+                <cmd>Save the document with name <userinput>Invitation new box</userinput> and close
+                    Word.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

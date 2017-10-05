@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="queries_first_order_dates" xml:lang="en-US">
+    <title>Task: First order per customer</title>
+    <shortdesc>Use of a select query with grouping and a calculation with function MIN.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Query<indexterm>grouping</indexterm><indexterm>min</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>INFORMATION NEEDS</p>
+            <p>Create a list of the first order per customer. Show for each customer who have placed
+                one or more orders: customer code, customer name (last and first name) and date of
+                first order.</p>
+            <p>ANALYSIS</p>
+            <p>The required data is in the tables Customers en Orders. There you need to create a
+                query ​​showing the customer data and order data. Finding the first order can be
+                realized by changing <option>Group By</option> with <option>Min</option> in row
+                Total.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Create</uicontrol>
+                        <uicontrol>Query Design (group Queries)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>Access creates a new blank query window and displays the dialog box
+                        <wintitle>Show Table</wintitle>.<fig>
+                        <title>Dialog box <wintitle>Show Table</wintitle></title>
+                        <image keyref="q_show_table">
+                            <alt>Dialog box show table</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+            <step>
+                <cmd>Add successively the tables <varname>Customers</varname> and
+                        <varname>Orders</varname> and then click <uicontrol>Close</uicontrol>.</cmd>
+                <stepresult>The tables have been added to the query window.</stepresult>
+            </step>
+            <step>
+                <cmd>Add successively the fields <varname>CustomerCode</varname>,
+                        <varname>LastName</varname> and <varname>FirstName</varname> (from
+                    Customers) and <varname>OrderDate</varname> (from Orders) to the grid by double
+                    clicking on the field.</cmd>
+            </step>
+            <step>
+                <cmd>Click <menucascade>
+                        <uicontrol>tab Design</uicontrol>
+                        <uicontrol>Totals (group Show/Hide)</uicontrol>
+                    </menucascade>.</cmd>
+            </step>
+            <step>
+                <cmd>Change column title for <varname>OrderDate</varname> by entering in front of
+                    the field name <userinput>First order date:</userinput>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Tables and fields for query First order date</title>
+                        <image keyref="q_first_order_dates_design1">
+                            <alt>Tables and fields for query First order date</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click in the box <varname>Total</varname> under column
+                        <varname>OrderDate</varname> and select <option>Min</option>.</cmd>
+            </step>
+            <step>
+                <cmd>Set the sort order for <varname>LastName</varname> and
+                        <varname>FirstName</varname> on <uicontrol>Ascending</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Design query first order per customer</title>
+                        <image keyref="q_first_order_dates_design2">
+                            <alt>Design query first order per customer</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Switch to <uicontrol>Datasheet View</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Result query first order date</title>
+                        <image keyref="q_first_order_dates_result">
+                            <alt>Result query first order date</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Close the query and answer the question to save the changes with
+                        <uicontrol>Yes</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Name the query <userinput>First order dates</userinput> and click
+                        <uicontrol>OK</uicontrol>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

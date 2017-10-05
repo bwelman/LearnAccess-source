@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="explore_database" xml:lang="en-US">
+    <title>Exploring database</title>
+    <shortdesc>Windows and navigation inside Access.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Navigation pane</indexterm>
+                <indexterm>Document window</indexterm>
+                <indexterm>Tabs</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Start Access and then open the file <filepath><keyword keyref="example_db_file"
+            /></filepath>.</p>
+        <note>When a security warning displayed you should you take action. Refer to the part
+            Security and macros.</note>
+        <fig>
+            <title>Access with the Snoopy database</title>
+            <image keyref="access_window">
+                <alt>Access with the Snoopy database</alt>
+            </image>
+        </fig>
+        <p>The <term>Navigation Pane</term> is on the left side and in it are all
+                <term>objects</term> of the database. The objects are divided into groups: Tables,
+            Queries, Forms, Reports, Macros. The pane of the group Tables is unfolded in the
+            example. The navigation pane itself and the panes of the groups can be folded and
+            unfolded.</p>
+        <dl>
+            <dlentry>
+                <dt><image keyref="button_object_selection"/></dt>
+                <dd>selection of showed objects</dd>
+            </dlentry>
+            <dlentry>
+                <dt><image keyref="button_group_open"/></dt>
+                <dd>unfolding group pane</dd>
+            </dlentry>
+            <dlentry>
+                <dt><image keyref="button_group_close"/></dt>
+                <dd>folding group pane</dd>
+            </dlentry>
+            <dlentry>
+                <dt><image keyref="button_navigation_close"/></dt>
+                <dd>folding navigation pane</dd>
+            </dlentry>
+            <dlentry>
+                <dt><image keyref="button_navigation_open"/></dt>
+                <dd>unfolding navigation pane</dd>
+            </dlentry>
+        </dl>
+        <p>Double-clicking on an object in the <term>Navigation Pane</term> will open the object and
+            displays the content in a document window. When you have opened several objects then
+            these are displayed as tabbed documents.<fig>
+                <title>Tabbed documents</title>
+                <image keyref="document_tabs">
+                    <alt>Tabbed documents</alt>
+                </image>
+            </fig></p>
+        <p>You can change this setting through: <menucascade>
+                <uicontrol>File</uicontrol>
+                <uicontrol>Options</uicontrol>
+                <uicontrol>Current Database</uicontrol>
+            </menucascade>
+            <fig>
+                <title>Document Window Options</title>
+                <image keyref="document_window_options">
+                    <alt>Document Window Options</alt>
+                </image>
+            </fig></p>
+        <p>When you select <uicontrol>Overlapping Windows</uicontrol>, then the objects are
+            displayed in separate windows, above each other.</p>
+        <note type="tip">If you need more space in width you can fold up the navigation pane. Do you
+            need more space in height, then you can hide the ribbon by double-clicking on a ribbon
+            tab. Double-clicking again on a tab unhide the ribbon.</note>
+    </conbody>
+</concept>

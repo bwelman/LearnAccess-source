@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="queries_utrecht_dec2009" xml:lang="en-US">
+    <title>Task: Orders from Utrecht customers</title>
+    <shortdesc>Add manually fields and criteria to an existing and save the query under a new
+        name.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Query<indexterm>criteria</indexterm><indexterm>wild
+                        cards</indexterm><indexterm>like</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <prereq>To perform this task, it is necessary that you have performed <xref
+                href="queries_customername_ordercodes.dita#queries_customername_ordercodes"/>.</prereq>
+        <context>
+            <p>INFORMATION NEEDS</p>
+            <p>Make a sorted list by last name, first name and order codes of all customers who live
+                in the province Utrecht and with an order date in December 2009.</p>
+            <p>ANALYSIS</p>
+            <p>All the required information will be provided by the query you created in <xref
+                    href="queries_customername_ordercodes.dita#queries_customername_ordercodes"/>.
+                However, there are two additional conditions (criteria):<ul>
+                    <li>The field Province (in table Customers) should have the value UT.</li>
+                    <li>The field OrderDate (in table Orders) should have a value in the
+                        range12-1-2009 until 12-31-2009.</li>
+                </ul></p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Open query <varname>Customername+Ordercodes</varname> in <uicontrol>Design
+                        View</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Design query <wintitle>Customername+Ordercodes</wintitle></title>
+                        <image keyref="q_customername_ordercodes_design">
+                            <alt>Design query Customername+Ordercodes</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Drag field <varname>Province</varname> from table <varname>Customers</varname>
+                    to the column next to OrderCode). Drag field <varname>OrderDate</varname> from
+                    table <varname>Orders</varname> to the next column.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Fields in the design grid</title>
+                        <image keyref="q_utrecht_dec2009_fields">
+                            <alt>Fields in the design grid</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Enter <userinput>"UT"</userinput> under <varname>Province</varname> in box
+                        <varname>Criteria</varname>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter <userinput>Like "12*2009"</userinput> under <varname>OrderDate</varname>
+                    in box <varname>Criteria</varname>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>OrderDate with Like operator</title>
+                        <image keyref="q_utrecht_dec2009_criteria">
+                            <alt>OrderDate with Like operator</alt>
+                        </image>
+                    </fig>
+                    <note type="attention">
+                        <ul>
+                            <li>The asterisk * is called a <term>wild card</term> and means that in
+                                this place may be arbitrary text. So the string <q>12*2009</q>
+                                should start with 12 (= month December) end with 2009.</li>
+                            <li>On computers where a Dutch date format (day-month-year) is set, you
+                                should change this in the American date format
+                                (month-day-year).</li>
+                        </ul>
+                    </note>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Switch to <uicontrol>Datasheet View</uicontrol> and check that all customers
+                    are from the province of Utrecht and that are all order data in December
+                    2009.</cmd>
+            </step>
+            <step>
+                <cmd>Switch to <uicontrol>Design View</uicontrol> and uncheck
+                        <uicontrol>Show</uicontrol> for the columns <varname>Province</varname> and
+                        <varname>OrderDate</varname>.</cmd>
+            </step>
+            <step>
+                <cmd>Switch to <uicontrol>Datasheet View</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Save the query under a different name through <menucascade>
+                        <uicontrol>File</uicontrol>
+                        <uicontrol>Save Object as</uicontrol>
+                    </menucascade> and specify as name <userinput>Utrecht and orderdate dec
+                        2009</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>OK</uicontrol> and close the query.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

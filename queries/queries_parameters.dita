@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="queries_parameters" xml:lang="en-US">
+	<title>Task: Parameter query</title>
+	<shortdesc>A query that asks you for entering a value during execution.</shortdesc>
+	<prolog>
+		<critdates>
+			<created date="2017-10-05"/>
+			<revised modified="2017-10-05"/>
+		</critdates>
+		<metadata>
+			<keywords>
+				<indexterm>Query<indexterm>parameter query</indexterm></indexterm>
+				<indexterm>Parameter query</indexterm>
+			</keywords>
+		</metadata>
+	</prolog>
+	<taskbody>
+		<context>
+			<p>A parameter query is a query that displays a dialog box that prompts the user to provide
+				additional information during the execution, such as criteria for retrieving records
+				or a value that you want to insert into a field. You can design the query so that
+				multiple data is requested, for example a start and end date. Then all the records
+				can be retrieved with dates between them.</p>
+			<p>Parameter queries are also easy as a basis for forms and reports. Based on a parameter query,
+				you can for example create a monthly revenue report. When printing the report you
+				are prompted by a dialog box which month you want to print, you enter the month and
+				then the correct report will be printed.</p>
+			<p>INFORMATION NEEDS</p>
+			<p>In the company Snoopy one gets regular customer questions over the phone about a particular
+				order. You want to quickly be able to answer such a question. The goal now is to get
+				the data from a particular order quickly on the screen. That is possible with a
+				parameter query, asking for the order code during the execution of the query.</p>
+			<p>ANALYSIS</p>
+			<p>The necessary information about a particular order are in the tables Orders and OrderDetails.
+				Questions about the order code can be controlled via a criterion.</p>
+		</context>
+		<steps>
+			<step>
+				<cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+			</step>
+			<step>
+				<cmd>Choose <menucascade>
+						<uicontrol>tab Create</uicontrol>
+						<uicontrol>Query Design (group Queries)</uicontrol>
+					</menucascade>.</cmd>
+				<stepresult>Access creates a new blank query window and displays the dialog box <wintitle>Show
+                        Table</wintitle>.<fig id="fig_xyl_j5h_zs">
+                        <title>Dialog box <wintitle>Show Table</wintitle></title>
+                        <image keyref="q_show_table" id="image_yyl_j5h_zs">
+                            <alt>Dialog box show table</alt>
+                        </image>
+                    </fig></stepresult>
+			</step>
+			<step>
+				<cmd>Add tables <varname>Orders</varname> and <varname>OrderDetails</varname> and
+					then click <uicontrol>Close</uicontrol>.</cmd>
+				<stepresult>The tables have been added to the query window.</stepresult>
+			</step>
+			<step>
+                <cmd>Add successively the fields <varname>OrderCode</varname>,
+                        <varname>CustomerCode</varname>, <varname>OrderDate</varname> (from Orders)
+                    and <varname>BoxCode</varname> en <varname>Quantity</varname> (from
+                    OrderDetails) to grid by double clicking on the field.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Tables and fields for query</title>
+                        <image keyref="q_information_order_design1">
+                            <alt>Tables and fields for query</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+			<step>
+				<cmd>Click in the box <varname>Criteria</varname> under column
+						<varname>OrderCode</varname> and type <userinput>[Enter order
+						code]</userinput>.</cmd>
+				<stepresult>
+					<fig>
+                        <title>Criterion added to the query</title>
+                        <image keyref="q_information_order_design2">
+                            <alt>Criterion added to the query</alt>
+                        </image>
+                    </fig>
+				</stepresult>
+			</step>
+			<step>
+				<cmd>Switch to <uicontrol>Datasheet View</uicontrol>.</cmd>
+				<stepresult>The dialog box <wintitle>Enter Parameter Value</wintitle> appears and ask you to
+					enter the order code..</stepresult>
+			</step>
+			<step>
+				<cmd>Enter a value, e.g. <userinput>30</userinput> and click
+						<uicontrol>OK</uicontrol>.</cmd>
+				<stepresult>
+					<fig>
+                        <title>Results for order code 30</title>
+                        <image keyref="q_information_order_result">
+                            <alt>Results for order code 30</alt>
+                        </image>
+                    </fig>
+				</stepresult>
+			</step>
+			<step>
+				<cmd>Close the query and answer the question to save the changes with <uicontrol>Yes</uicontrol>.</cmd>
+			</step>
+			<step>
+				<cmd>Name the query <userinput>Information specific order</userinput> and click
+						<uicontrol>OK</uicontrol>.</cmd>
+			</step>
+		</steps>
+	</taskbody>
+</task>

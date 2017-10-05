@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="macros_boxcode" xml:lang="en-US">
+    <title>Task: Choice list boxcode</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Macro<indexterm>search record</indexterm></indexterm>
+                <indexterm>Form<indexterm>combo box</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>This task is a variant on the task in which the customer is searched by customer
+                code. Now you should create a form with the data of a box and on that form a combo
+                box for searching the BoxCode.</p>
+            <p>ANALYSIS</p>
+            <p>The base of the form can be made with a default form. The choice list is a Combo Box.
+                You need to create a macro for performing two tasks. First go to the combo box and
+                get the box code from ther. Then find the corresponding record..</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Create a new form with combo box and name it <userinput>Search box by
+                        code</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Create the macro and name it <userinput>Search box by code</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Open form <uicontrol>Search box by code</uicontrol> and test the working of the
+                    combo box.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

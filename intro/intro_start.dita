@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="intro_start" xml:lang="en-US">
+    <title>Task: Start Access</title>
+    <shortdesc>Instructions on how to start Access.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Access<indexterm>starting</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>The possibilities to start Access depend on the way the system is installed. This
+            course assumes a default installation of Microsoft <keyword keyref="officeversion"/>
+            English on a system with Windows 7 English. On almost all computers Access can be
+            started through the start button of Windows and this method is described here.<note
+                type="tip"> The most convenient start is through a shortcut on the desktop or
+                through a button on the task bar.</note></context>
+        <steps>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>Start</uicontrol>
+                        <uicontrol>Access 2016</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <p>The initial screen of Access is displayed. In the left part (under Recent)
+                        are the last opened files and the right part contains some available
+                        templates for creating new databases.</p>
+                </stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>

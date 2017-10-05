@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tables_relationtype_one2many" xml:lang="en-US">
+    <title>One-to-many relationship</title>
+    <shortdesc>Explaining the one -to-many relation.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Table<indexterm>primary table</indexterm><indexterm>related
+                        table</indexterm><indexterm>primary key</indexterm><indexterm>foreign
+                        key</indexterm></indexterm>
+                <indexterm>Relationship<indexterm>one-to-many</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>A one-to-many relationship is the most common kind of relationship. In this kind of
+            relationship, a row in table A can have many matching rows in table B. But a row in
+            table B can have only one matching row in table A. This is sometimes called a
+            parent-child relation. </p>
+        <p>An example is the relation between the tables <varname>Customers</varname> and
+                <varname>Orders</varname>. Between these two tables is a link on the basis of the
+            field <varname>CustomerCode</varname>. A customer from the Customers table can have
+            several orders in the Orders table. But every order belongs to only one customer. The
+            table Customers is on the one-side of the relation and the table Orders on the
+            many-side. In the relation the table <varname>Customers</varname> is called the
+                <term>primary table</term> and the table <varname>Orders</varname> is called the
+                <term>related table</term>. Through this link, all orders can be collected for a
+            customer.</p>
+        <fig>
+            <title>One-to-many relation between the tables Customers and Orders</title>
+            <image keyref="relationship_customers_orders">
+                <alt>One-to-many relation between the tables customers and orders</alt>
+            </image>
+        </fig>
+        <p>For this type of relationship the field with which the link is realized at one side of
+            the relation should be unique. In almost all cases the <term xml:lang="en-US">primary
+                key</term> of the table is used. The field at the many-side of the relation is
+            called the<term xml:lang="en-US">foreign key</term>.</p>
+        <p>In Access, a one-to-many relationship is displayed by a line between the primary key and
+            foreign key, with the number 1 at the one-side and the infinity symbol &#8734; at the
+            may-side.</p>
+        <fig>
+            <title>Example of a one-to-many relationship</title>
+            <image keyref="relationship_one2many">
+                <alt>Example of a one-to-many relationship</alt>
+            </image>
+        </fig>
+    </conbody>
+</concept>

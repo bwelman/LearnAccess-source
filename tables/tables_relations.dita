@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tables_relations" xml:lang="en-US">
+    <title>Relations between tables</title>
+    <shortdesc>Why relations between tables are important.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Table<indexterm>relations</indexterm></indexterm>
+                <indexterm>Relations</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Between two tables exists a relation when a key field from one table is linked to a key
+            field in the other table. The linked fields in both tables have mostly the same name and
+            the same data type. What relations should be established is the result from the
+            normalization process which removes the redundant information and put this in multiple
+            tables.</p>
+        <p>When tables are related, you can create queries, forms and reports where the information
+            can combined from multiple tables and is displayed as an entity.</p>
+    </conbody>
+</concept>

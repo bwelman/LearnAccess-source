@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="macros_customercode" xml:lang="en-US">
+    <title>Task: Customer search by code</title>
+    <shortdesc>On a form is a choice list and through an assigned macro the corresponding record is
+        looked up.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Form<indexterm>combo box</indexterm></indexterm>
+                <indexterm>macro<indexterm>search record</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>First a form with the data of a customer should be created. To make it easier to find
+                a particular customer with knowed customer code, the form should contain a list box
+                where which you can enter the customer code and afterthat the data of the
+                corresponding customer should be displayed in the form.</p>
+            <p>ANALYSIS</p>
+            <p>The base of the form can be made with a default form. The drop-down list box is the
+                control <uicontrol>Combo Box</uicontrol>. Furthermore you have to create a macro
+                that performs two actions. First go to the drop-down list box to get the entered
+                customer code and then find the corresponding record.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Select table <uicontrol>Customers</uicontrol>. It's not necessary to to open
+                    the table.</cmd>
+            </step>
+            <step>
+                <cmd>Click <menucascade>
+                        <uicontrol>tab Create</uicontrol>
+                        <uicontrol>Form (group Forms)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <p>The form is created and opened in <uicontrol>Layout View</uicontrol>.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Save the form with the name <userinput>Search customer by code</userinput>. The
+                    easiest way to do that is through button <uicontrol>Save <image
+                            keyref="button_save"/></uicontrol> in the <uicontrol>Quick Access
+                        toolbar</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Switch to <uicontrol>Design View</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Select <menucascade>
+                        <uicontrol>Design</uicontrol>
+                        <uicontrol>Combo Box <image keyref="combobox"/> (group Controls)</uicontrol>
+                    </menucascade> and then draw in the right part of the form header a rectangular
+                    framework for the list box.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Form with combo box</title>
+                        <image keyref="customercode_combobox_framework">
+                            <alt>Form with combo box</alt>
+                        </image>
+                    </fig>After drawing the framework, the <wintitle>Combo Box Wizard</wintitle> is
+                    automatically started.</stepresult>
+            </step>
+            <step>
+                <cmd>Answer the consecutive questions of the Wizard as follows:</cmd>
+                <info><ul>
+                        <li>The combo box should get the values from a table or a query.</li>
+                        <li>Table: Customers should provide the values for the combo box.</li>
+                        <li>Only field CustomerCode should be added.</li>
+                        <li>Sort records ascending on CustomerCode.</li>
+                        <li>Accept the default width of the column.</li>
+                        <li>Remember the selected value for later use.</li>
+                        <li>Label text: <userinput>Search on customer code:</userinput></li>
+                    </ul></info>
+                <stepresult><p>After completing the wizard you are back in the Design
+                    View.</p></stepresult>
+            </step>
+            <step>
+                <cmd>When the label and the combobox are partly overlap each other, you have to move
+                    one or both of them. You do this by dragging the upper-left corner of the object
+                    with a pressed left mouse button.</cmd>
+            </step>
+            <step>
+                <cmd>Close form <uicontrol>Search customer by code</uicontrol> and save the
+                    changes.</cmd>
+            </step>
+            <step id="macro_create">
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Create</uicontrol>
+                        <uicontrol>Macro (group Macros &amp; Code)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Macro window</title>
+                        <image keyref="macro_window">
+                            <alt>Macro window</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click on the selection arrow in the box <uicontrol>Add New Action</uicontrol>
+                    and select action <option>GoToControl</option> from the list.</cmd>
+            </step>
+            <step>
+                <cmd>Enter <userinput>CustomerCode</userinput> in box <varname>Control
+                        Name</varname>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Action GoToControl CustomerCode</title>
+                        <image keyref="macro_customercode_gotocontrol">
+                            <alt>Action GoToControl CustomerCode</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click on the selection arrow in the box <uicontrol>Add New Action</uicontrol>
+                    and select action <option>FindRecord</option>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter value <userinput>=[searchcode]</userinput> in box <uicontrol>Find
+                        What</uicontrol> in . The other arguments are already filled in by Access
+                    with their default values and can remain.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Macro Search customer by code</title>
+                        <image keyref="macro_customer_by_code">
+                            <alt>Macro Search customer by code</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Close the macro window and save the macro with name <userinput>Search customer
+                        by code</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Open form <uicontrol>Search customer by code</uicontrol> in <uicontrol>Design
+                        View</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Select the <uicontrol>Combo Box</uicontrol> and change in the
+                        <wintitle>Property Sheet (tab Other)</wintitle> the name in
+                        <userinput>searchcode</userinput>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Combo Box property Name</title>
+                        <image keyref="customercode_combobox_name">
+                            <alt>Combo Box property Name</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>With still the combo box selected, click in <uicontrol>Property Sheet (tab
+                        Event)</uicontrol> on the selection arrow in box <varname>After
+                        Update</varname> and select macro <option>Search customer by
+                    code</option>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Combo Box property After Update</title>
+                        <image keyref="customercode_combobox_afterupdate">
+                            <alt>Combo Box property After Update</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Close the form and save the changes.</cmd>
+            </step>
+            <step>
+                <cmd>Open form <uicontrol>Search customer by code</uicontrol> and test if the combo
+                    box works properly.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

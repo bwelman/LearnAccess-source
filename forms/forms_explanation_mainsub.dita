@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="forms_explanation_mainsub" xml:lang="en-US">
+    <title>Main and subforms</title>
+    <shortdesc>Explanation and examples.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Form<indexterm>main
+                    form</indexterm><indexterm>subform</indexterm></indexterm>
+                <indexterm>Main form</indexterm>
+                <indexterm>subform</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>A subform is a form that is included in another form, called the main form. subforms are
+            often used when you need to display data from tables and queries with a
+                <term>one-to-many</term> relationship. The data from the <term>one-side</term> are
+            in the main form and the data from the <term>many-side</term> in the subform. With a
+            main-subform you can show the data of a customer and the corresponding orders. The data
+            in the table <varname>Customers</varname> compose the <term>one-side</term> and are
+            present in the main form. The data in the table <varname>Orders</varname> compose the
+                <term>many-side</term> and are present in the subform.</p>
+        <p>The main form and subform are linked, so that the subform only shows records that are
+            related to the current record in the main form.</p>
+        <fig>
+            <title>Main form Customers with subform Orders</title>
+            <image keyref="f_customers_orders">
+                <alt>Main form Customers with subform Orders</alt>
+            </image>
+        </fig>
+    </conbody>
+</concept>

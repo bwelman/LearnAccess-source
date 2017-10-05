@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map id="map_queries" xml:lang="en-US">
+    <title>Queries</title>
+    <topicmeta>
+        <author>Ben Welman</author>
+        <publisher>Softwijs</publisher>
+        <copyright>
+            <copyryear year="2017"/>
+            <copyrholder>Softwijs Neede</copyrholder>
+        </copyright>
+        <keywords/>
+        <prodinfo>
+            <prodname>Access</prodname>
+            <vrmlist>
+                <vrm version="" release=""/>
+            </vrmlist>
+        </prodinfo>
+    </topicmeta>
+    <!-- Keys -->
+    <mapref href="../common/keys_common.ditamap" processing-role="resource-only"/>
+    <mapref href="keys_queries.ditamap" processing-role="resource-only"/>
+    <!-- Content -->
+    <topicref href="queries.dita" scope="local" type="concept">
+        <topicref href="queries_about.dita" scope="local" type="concept" audience="level1"/>
+        <topicref href="queries_customername_ordercodes.dita" scope="local" type="task"
+            audience="level1"/>
+        <topicref href="queries_criteria.dita" scope="local" type="concept" audience="level1"/>
+        <topicref href="queries_utrecht_dec2009.dita" scope="local" type="task"
+            audience="level1"/>
+        <topicref href="queries_customers_cher.dita" scope="local" type="task" audience="level1"/>
+        <topicref href="queries_summarizing.dita" scope="local" type="concept"
+            audience="level1"/>
+        <topicref href="queries_customers_province.dita" scope="local" type="task" audience="level1"/>
+        <topicref href="queries_column_heading.dita" scope="local" type="task" audience="level1"/>
+        <topicref href="queries_calculated_field.dita" scope="local" type="task" audience="level1"/>
+        <topicref href="queries_first_order_dates.dita" scope="local" type="task" audience="level2"/>
+        <topicref href="queries_parameters.dita" scope="local" type="task" audience="level2"/>
+        <topicref href="queries_actions.dita" scope="local" type="concept" audience="level2"/>
+        <topicref href="queries_action_update.dita" scope="local" type="task" audience="level2"/>
+        <topicref href="queries_action_maketable.dita" scope="local" type="task" audience="level2"/>
+        <topicref href="queries_crosstab.dita" scope="local" type="task" audience="level2"/>
+    </topicref>
+    <reltable>
+        <relheader>
+            <relcolspec linking="sourceonly"/>
+            <relcolspec linking="targetonly"/>
+        </relheader>
+        <relrow>
+            <relcell>
+                <topicref href="queries_criteria.dita"/>
+            </relcell>
+            <relcell>
+                <topicref
+                    href="https://support.office.com/en-us/article/Examples-of-query-criteria-3197228c-8684-4552-ac03-aba746fb29d8"
+                    scope="external" format="html">
+                    <topicmeta>
+                        <linktext>External article: Examples of query criteria</linktext>
+                    </topicmeta>
+                </topicref>
+            </relcell>
+        </relrow>
+        <relrow>
+            <relcell>
+                <topicref href="queries_utrecht_dec2009.dita"/>
+            </relcell>
+            <relcell>
+                <topicref href="queries_customername_ordercodes.dita"/>
+            </relcell>
+        </relrow>
+        <relrow>
+            <relcell>
+                <topicref href="queries_column_heading.dita"/>
+            </relcell>
+            <relcell>
+                <topicref href="queries_customers_province.dita"/>
+            </relcell>
+        </relrow>
+    </reltable>
+</map>

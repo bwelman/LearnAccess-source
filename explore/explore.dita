@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="explore" xml:lang="en-US">
+    <title>Exploring Candy database</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>The course is built around the sample file <filepath><keyword keyref="example_db_file"
+                /></filepath>. This chapter explains the design and use of the tables in the
+            database. You are going to experiment with this sample database, you go some
+            experimenting to discover different aspects about working with Access. Some of the
+            features are further explored in other chapters.</p>
+    </conbody>
+</concept>

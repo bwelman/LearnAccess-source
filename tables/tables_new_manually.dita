@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="tables_new_manually" xml:lang="en-US">
+    <title>Task: Create new table manually</title>
+    <shortdesc>Creating a new table from scratch and assign a key.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Table<indexterm>template</indexterm></indexterm>
+                <indexterm>Template</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>You had to create a new table with the name Transport Companies to store the contact
+                details of the transport company.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Create</uicontrol>
+                        <uicontrol>Table (group Tables)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>A new table has been created. There is automatically one field with the
+                    name <varname>ID</varname> which can be removed if you don't need the
+                    field.</stepresult>
+            </step>
+            <step>
+                <cmd>Switch to <uicontrol>Design View</uicontrol>.</cmd>
+                <stepresult> Because the table is not named yet, the dialog box <wintitle>Save
+                        As</wintitle> appears. <fig>
+                        <title>Dialog box <wintitle>Save As</wintitle></title>
+                        <image keyref="t_saveas">
+                            <alt>Dialog box table save as</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+            <step>
+                <cmd>Enter the name <userinput>Transport Companies</userinput> and click
+                        <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>The table Transport Companies appears in design view.</stepresult>
+            </step>
+            <step>
+                <cmd>Right-click somewhere in the field <varname>ID</varname> and choose
+                        <uicontrol>Delete Rows</uicontrol> and confirm the removal.</cmd>
+            </step>
+            <step>
+                <cmd>Add the following fields:</cmd>
+                <tutorialinfo>
+                    <fig>
+                        <title>Fields table Transport Companies</title>
+                        <image keyref="t_transport_companies_design">
+                            <alt>Fields table Transport Companies</alt>
+                        </image>
+                    </fig>
+                    <p>The company name will be unique so w can use this field as primary key.</p>
+                </tutorialinfo>
+            </step>
+            <step>
+                <cmd>Select the first row and choose <menucascade>
+                        <uicontrol>tab Design</uicontrol>
+                        <uicontrol>Primary Key (group Tools)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>At the beginning of the first row you can see now a key <image
+                        keyref="icon_key"/></stepresult>
+            </step>
+            <step>
+                <cmd>Switch to <uicontrol>Datasheet View</uicontrol>. Answer the question to save
+                    the table with <uicontrol>Yes</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Add the following records:</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Records table Transport Companies</title>
+                        <image keyref="t_transport_companies_records">
+                            <alt>Records table transport companies.</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Close table Transport Companies.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

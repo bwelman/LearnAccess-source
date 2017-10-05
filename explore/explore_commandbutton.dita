@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="explore_commandbutton" xml:lang="en-US">
+    <title>Task: Using command button</title>
+    <shortdesc>The operation of a command button on a form.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Form<indexterm>command button</indexterm></indexterm>
+                <indexterm>Command button</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>The form <varname>Boxes</varname> can be used for the data entry, but also viewing
+                data. On the form <varname>Boxes</varname> is a command button with the caption
+                    <uicontrol>Sales</uicontrol>.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Open the form <varname>Boxes</varname>.</cmd>
+            </step>
+            <step>
+                <cmd>Click the button <uicontrol>Sales</uicontrol> on the form.</cmd>
+                <stepresult>The form <wintitle>Box sales</wintitle> is displayed. You will see all
+                    orders related to the selected box in the form <varname>Boxes</varname> and even
+                    the total sales of this box.</stepresult>
+            </step>
+            <step>
+                <cmd>Close all forms.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

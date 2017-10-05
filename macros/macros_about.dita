@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="macros_about" xml:lang="en-US">
+    <title>About creating macros</title>
+    <shortdesc>Why creating macros and how to do that?</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Macro<indexterm>macrovenster</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>A macro is a little program that can perform certain actions. For example you can give a
+            macro the command to open a form or to search a record. A macro is often assigned to a
+            control such as a command button. When clicking on the button, then the commands in the
+            macro are run. This way you can assign additional functions to forms and reports.</p>
+        <p>Basically, a macro in Access is a list of actions to be carried out consecutively. For
+            most actions one or more arguments are needed.</p>
+        <fig>
+            <title>Macro window with action catalog</title>
+            <image keyref="macro_window">
+                <alt>Macro window with action catalog</alt>
+            </image>
+        </fig>
+        <p>No programming knowledge is required for creating macros. A macro is stored as an object
+            in the database.</p>
+        <p>A point of concern with macros is the aspect of safety. Access divides the possible macro
+            actions into two types:<ul>
+                <li>harmless actions always, regardless of how they are used</li>
+                <li>dangerous actions</li>
+            </ul></p>
+        <p>Even an action as <option>printing</option> is considered hazardous, because these
+            unwanted can send commands to the printer.</p>
+        <p>When you add actions in the macro window, by default, Access shows only the actions that
+            are absolutely safe. To get a complete list of actions, including the dangerous actions,
+            you need to change a setting. Then choose in the macro window <menucascade>
+                <uicontrol>tab Design</uicontrol>
+                <uicontrol>Show All Actions (group Show/Hide</uicontrol>
+            </menucascade>.</p>
+    </conbody>
+</concept>

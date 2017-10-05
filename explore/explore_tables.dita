@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="explore_tables" xml:lang="en-US">
+    <title>Task: Exploring Tables</title>
+    <shortdesc>The two main views of tables: datasheet and design.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Table<indexterm>datasheet view</indexterm><indexterm>design
+                        view</indexterm></indexterm>
+                <indexterm>Datasheet View<indexterm>table</indexterm></indexterm>
+                <indexterm>Design View<indexterm>table</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context><p>Tables are the key components of a database, since all data is stored
+            here.</p>The two most important views of a table are<p>
+                <ul>
+                    <li><uicontrol>Datasheet View</uicontrol>. In this view you can see the contents
+                        of the records, change it and also allows you to add new records.</li>
+                    <li><uicontrol>Design View</uicontrol>. In this view you can see the design of
+                        the table and customize it.</li>
+                </ul>
+            </p></context>
+        <steps>
+            <step>
+                <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Open the table <wintitle>Customers</wintitle>.</cmd>
+                <stepresult>The Customers table opens in Datasheet View.</stepresult>
+            </step>
+            <step>
+                <cmd>Put the table <varname>Customers</varname> in the <uicontrol>Design
+                        View</uicontrol> on one of the following ways:</cmd>
+                <choices>
+                    <choice>Click the button <uicontrol>Design View</uicontrol> on bottom right of
+                        the program window <image keyref="button_design_view"/></choice>
+                    <choice><menucascade>
+                            <uicontrol>tab Home</uicontrol>
+                            <uicontrol>View (group Views)</uicontrol>
+                            <uicontrol>Design View</uicontrol>
+                        </menucascade>.</choice>
+                </choices>
+                <info>
+                    <note type="tip">You can open a table directly in the Design View by right
+                        clicking on the table name in the navigation pane and then choose
+                            <uicontrol>Design View</uicontrol> from the shortcut menu.</note>
+                </info>
+            </step>
+            <step>
+                <cmd>Put the table <varname>Customers</varname> in the <uicontrol>Datasheet
+                        View</uicontrol> again on one of the following ways:</cmd>
+                <choices>
+                    <choice>Click the button <uicontrol>Datasheet View</uicontrol> on the bottom
+                        right of the program window <image keyref="button_datasheet_view"/></choice>
+                    <choice>Choose <menucascade>
+                            <uicontrol>tab Home</uicontrol>
+                            <uicontrol>View (group Views)</uicontrol>
+                            <uicontrol>Datasheet View</uicontrol>
+                        </menucascade>.</choice>
+                </choices>
+            </step>
+            <step>
+                <cmd>Close the table <varname>Customers</varname> via the Close button X (top right
+                    of the document window).</cmd>
+            </step>
+            <step>
+                <cmd>Open the table <varname>Orders</varname> in the Datasheet View.</cmd>
+                <tutorialinfo>In the table Orders is a unfold button <uicontrol>+</uicontrol> in
+                    front of the records. By clicking on it you see the details of the order. These
+                    data come from the table <varname>OrderDetails</varname>. That the associated
+                    details of a particular order can be found is possible because in both tables
+                    the field <varname>OrderCode</varname> is present.</tutorialinfo>
+            </step>
+            <step>
+                <cmd>Click the unfold button at a few records to see which boxes and how much of
+                    them are ordered.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Order details of order 3</title>
+                        <image keyref="table_orders_details3">
+                            <alt>Orders details of order 3</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Close the table <varname>Orders</varname>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>
