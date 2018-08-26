@@ -172,7 +172,7 @@
             </fig>
 			<p>Because the column for the averages didn't get a new name, Access generates as name
 					<systemoutput>AvgOfPralineCosts</systemoutput></p>
-			<note conref="../common/reusable_topic_parts.dita#reusable_topic_parts/reservation"/>
+		    <note conkeyref="note/reservation"/>
 		</example>
 		<example>
 			<title>Example 2: Box price statistics</title>
@@ -191,7 +191,7 @@
                     <alt>Result query box price statistics</alt>
                 </image>
             </fig>
-			<note conref="../common/reusable_topic_parts.dita#reusable_topic_parts/reservation"/>
+		    <note conkeyref="note/reservation"/>
 		</example>
 		<example>
 			<title>Example 3: Average box price for boxes of more than 200 grams</title>
@@ -209,7 +209,7 @@
                     <alt>Result query average box price</alt>
                 </image>
             </fig>
-			<note conref="../common/reusable_topic_parts.dita#reusable_topic_parts/reservation"/>
+		    <note conkeyref="note/reservation"/>
 		</example>
 	</conbody>
 </concept>

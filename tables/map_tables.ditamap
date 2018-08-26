@@ -11,11 +11,8 @@
         </copyright>
         <keywords/>
         <prodinfo>
-            <prodname>Access</prodname>
-            <vrmlist>
-                <vrm version="" release=""/>
-            </vrmlist>
-        </prodinfo>
+            <prodname>Access 2016</prodname>
+         </prodinfo>
     </topicmeta>
     <!-- Keys -->
     <mapref href="../common/keys_common.ditamap" processing-role="resource-only"/>
