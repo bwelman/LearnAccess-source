@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_quer021" xml:lang="en-US">
+    <title>Exercise: quer021 - Customers with zip code 22 and total sales less then $50</title>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>Create a list of customers whose zip code is starting with 22 and with a total
+            sales of at most $50. Name the query <userinput>quer021</userinput>.</section>
+        <section otherprops="answer">
+            <title>Answer</title>
+            <image keyref="ex_quer021_result"/>
+            <note conkeyref="note/reservation"/>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <image keyref="ex_quer021_design"/>
+        </section>
+    </body>
+</topic>

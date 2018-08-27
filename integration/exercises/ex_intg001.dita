@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_intg001" xml:lang="en-US">
+    <title>Exercise: intg001 - Standard letter</title>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section><p>The marketing department wants to promote the new box among the customers who have ever bought a
+                box of pralines with white chocolate. Create the required query and then a standard
+                letter with this query.</p>
+            <p>If a box contains at least 1 praline with white chocolate and this box has been
+                purchased by a particular customer, we would like to send this customer a letter.
+                Make sure that a customer receives no more than one letter.</p>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <p>First create the query. Choose <menucascade>
+                    <uicontrol>tab Create</uicontrol>
+                    <uicontrol>Query Design (group Queries)</uicontrol>
+                </menucascade>. Add tables <wintitle>Customers</wintitle>,
+                    <wintitle>Orders</wintitle>, <wintitle>OrderDetails</wintitle>,
+                    <wintitle>Boxes</wintitle>, <wintitle>BoxDetails</wintitle> and
+                    <wintitle>Pralines</wintitle>. Add from table <wintitle>Customers</wintitle> the
+                fields <varname>LastName</varname>, <varname>FirstName</varname>,
+                    <varname>Address</varname>, <varname>ZipCode</varname> and
+                    <varname>City</varname>. Add field <varname>ChocolateType</varname> from table
+                    <wintitle>Pralines</wintitle> with criteria <userinput>White</userinput>. Set in
+                the <wintitle>Property Sheet</wintitle> at <uicontrol>Query Properties</uicontrol>
+                the value of property <varname>Unique Values</varname> on
+                <userinput>Yes</userinput>. Name the query <userinput>intg001</userinput> and close
+                it.</p>
+            <p>Right-click on the name of the just created query and choose <menucascade>
+                    <uicontrol>Export</uicontrol>
+                    <uicontrol>Word Merge</uicontrol>
+                </menucascade>. Select the option to create a new document with linking data.</p>
+            <p>Insert the required fields and type  de gewenste samenvoegvelden in en type the
+                additional text, for example:</p>
+            <codeblock>&lt;&lt;FirstName>> &lt;&lt;LastName>>
+&lt;&lt;Address>>
+&lt;&lt;ZipCode>>  &lt;&lt;City>>
+
+Dear &lt;&lt;FirstName>>,
+We would like to offer you an offer for our newest box ...</codeblock>
+            <p>Finish the merge on the known manner.</p>
+        </section>
+    </body>
+</topic>

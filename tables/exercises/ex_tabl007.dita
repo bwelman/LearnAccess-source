@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_tabl007" xml:lang="en-US">
+    <title>Exercise: tabl007 - Relationship BoxDetails-Pralines</title>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>Create a relationship between the tables <wintitle>BoxDetails</wintitle> and
+                    <wintitle>Pralines</wintitle> and enforce referential integrity.</p>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <p>The tables <wintitle>BoxDetails</wintitle> and <wintitle>Pralines</wintitle> have
+                field <varname>PralineCode</varname> as a common field.
+                    <varname>PralineCode</varname> is the key in table Pralines; so Pralines is the
+                primary table (the one-side). A PralineCode can occur more then once in table
+                BoxDetails, so BoxDetails is the many-side. Choose <menucascade>
+                    <uicontrol>tab Database Tools</uicontrol>
+                    <uicontrol>Relationships (group Relationships)</uicontrol>
+                </menucascade>. Select field <varname>PralineCode</varname> in table
+                    <wintitle>Pralines</wintitle> and drag it to field
+                    <varname>PralineCode</varname> in table <wintitle>BoxDetails</wintitle>. Check
+                box <uicontrol>Enforce Referential Integrity</uicontrol>.</p>
+        </section>
+    </body>
+</topic>

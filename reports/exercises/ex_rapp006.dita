@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_rapp006" xml:lang="en-US">
+    <title>Exercise: rapp006 - Box data on separated pages</title>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p> Create a copy of report <wintitle>rapp005</wintitle> and name the copy
+                    <wintitle>rapp006</wintitle>.Change the design of report
+                    <wintitle>rapp006</wintitle> so that each box starts on a new page.</p>
+            <note type="tip">
+                <p>Set property <varname>Force New Page</varname> of the groupheader (BoxName
+                    Header) on <userinput>Before Section</userinput></p>
+            </note>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <ol>
+                <li>Copy and paste report <wintitle>rapp005</wintitle> and name it
+                        <userinput>rapp006</userinput>.</li>
+                <li>Open report <wintitle>rapp006</wintitle> in <wintitle>Design
+                    View</wintitle></li>
+                <li>Change property <varname>Force New Page</varname> for <wintitle>BoxName
+                        Header</wintitle>.</li>
+            </ol>
+        </section>
+    </body>
+</topic>

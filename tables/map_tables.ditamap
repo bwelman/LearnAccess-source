@@ -44,6 +44,7 @@
             <topicref href="tables_referential_integrity.dita" scope="local" type="concept"/>
             <topicref href="tables_relationship_boxes_boxdetails.dita" scope="local" type="task"/>
         </topicref>
+        <mapref href="exercises/map_ex_tabl.ditamap" format="ditamap"/>
     </topicref>
     <reltable>
         <relheader>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_tabl004" xml:lang="en-US">
+    <title>Exercise: tabl004 - Currency format</title>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>In this exercise you need the table <wintitle>Transport</wintitle> that had to be
+                made ​​earlier in the course. When this table is not present in your database, you
+                have two possibilities:<ul>
+                    <li>You still perform the task with creating this table.</li>
+                    <li>You use the database <filepath>transport.accdb</filepath> where the table
+                        Transport already was made for you.</li>
+                </ul></p>
+            <p>Open table <wintitle>Transport</wintitle> and note that the transport costs do not
+                appear in a currency format. Change the value of the property
+                    <varname>Format</varname> of field <varname>TransportationCosts</varname> in a
+                currency format with your local currency symbol. Then switch to datasheet view and
+                observe the result of the change.</p>
+            <note type="attention">The showed currency symbol depends on the local Windows
+                settings.</note>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <p>Open table <wintitle>Transport</wintitle> in Design View, select field
+                    <varname>TransportationCosts</varname> and change the value of property Format
+                in a currency format with your local currency symbol.</p>
+        </section>
+    </body>
+</topic>

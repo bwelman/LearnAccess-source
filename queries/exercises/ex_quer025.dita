@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_quer025" xml:lang="en-US">
+    <title>Exercise: quer025 - Parameter chocolate type pralines</title>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>There are several types of chocolate types for the pralines: Butterscotch, Milk,
+                Dark, Toffee and White. Create a parameter query to show the pralines whose type is
+                requested during the execution of the query. Show ChocolateType, PralineName,
+                PralineCosts and PralineDescription. Name the query
+                <userinput>quer025</userinput>.</p>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <p>Create a new query with <uicontrol>Query Design</uicontrol>. Add table Pralines. Add
+                the fields ChocolateType, PralineName, PralineCosts and PralineDescription. Type in
+                row <varname>Criteria</varname> in column <varname>ChocolateType</varname> in:
+                    <userinput>[Enter chocolate type]</userinput>.</p>
+            <image keyref="ex_quer025_design"/>
+        </section>
+    </body>
+</topic>

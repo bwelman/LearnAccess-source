@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_rapp007" xml:lang="en-US">
+    <title>Exercise: rapp007 - Box Labels</title>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>Create a report with labels for all boxes according to the following picture. Name
+                the report <userinput>rapp007</userinput>.</p>
+            <p>label type <option>Avery J8163 1 1/2" x 3 9/10"</option>, Font Consolas 12pt normal
+                black.</p>
+            <codeblock>All Seasons
+
+Code  : ALLS
+Weight: 150 gram</codeblock>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <ol>
+                <li>Select table <varname>Boxes</varname>.</li>
+                <li>Choose <menucascade>
+                        <uicontrol>tab Create</uicontrol>
+                        <uicontrol>Labels (group reports)</uicontrol>
+                    </menucascade>.</li>
+                <li>Select the correct label type.</li>
+                <li>Set font type, size, weight and color.</li>
+                <li>Add fields and text, see
+                    prototype:<codeblock>{BoxName}
+
+Code  : {BoxCode}
+Weight: {Weight} gram</codeblock></li>
+                <li>Sort ascending on <varname>BoxCode</varname>.</li>
+            </ol>
+        </section>
+    </body>
+</topic>

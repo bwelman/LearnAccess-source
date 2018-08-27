@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_tabl006" xml:lang="en-US">
+    <title>Exercise: tabl006 - Field target group with list box</title>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>There is a need to classify each customer in one of the following target groups:
+            top customer, good customer, small customer. To do this the design of the Customers
+            table needs to be modified. Make a new field in this table with the name TargetGroup
+            with a list box with the values ​​mentioned before.</section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <p>Open table <wintitle>Customers</wintitle> in design view. Add field
+                    <varname>TargetGroup</varname>. Set Data Type on Lookup Wizard…. Specify in the
+                next dialog that the values ​​are typed. Only one column is necessary. In this
+                column enter the values: top customer, good customer, small customer. Use as caption
+                text Target Group.</p>
+        </section>
+    </body>
+</topic>

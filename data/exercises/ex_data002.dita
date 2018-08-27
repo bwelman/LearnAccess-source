@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_data002" xml:lang="en-US">
+    <title>Exercise: data002 - Add new order</title>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>A customer places a new order according to data below. First consider the best way
+                for entering the order. Then create this order. The OrderCode should be the next
+                available order code.</p>
+            <codeblock>Order on 23 April 2010, 10 o'clock. Customer Rebecca Smit orders by phone 3 boxes CHER and 2 boxes Marz.</codeblock>
+            <p>A few hours later the following change to this order is made by phone. First consider
+                again the best way to handle the change. Then apply the change.</p>
+            <codeblock>Order change 23 April 2010, 16 o'clock. The two boxes Marz should be deleted.</codeblock>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <p>First search in table <wintitle>Customers</wintitle> for the CustomerCode of Rebecca
+                Smit. This is 11. Then open form <wintitle>Orders</wintitle>. Navigate to the last
+                order. This order has OrderCode 967. The OrderCode for the new order will therefore
+                be 968. Click button <uicontrol>New Record</uicontrol>. Enter OrderCode 968, the
+                OrderDate and CustomerCode 11. In the subform at the bottom enter the data for the
+                boxes CHER and MARZ.</p>
+            <p>To delete the boxes MARZ you open table OrderDetails, navigate to the last order with
+                OrderCode 968. Select the row with MARZ, right mouse click and select
+                    <uicontrol>Delete Record</uicontrol>.</p>
+        </section>
+    </body>
+</topic>

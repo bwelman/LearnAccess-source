@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_expl003" xml:lang="en-US">
+  <title>Exercise: expl003 - Selection Customers on zip code</title>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+  <body>
+<section>
+  <p>Make a selection of customers whose zip code begins with 20 and are living in Amsterdam.</p>
+  <note type="tip"><varname>ZipCode</varname> is a text field, so you can use text filters:<fig>
+                    <image keyref="ex_expl003_filter_text">
+                        <alt>Text filter</alt>
+                    </image>
+                </fig></note></section>
+    <section otherprops="answer"><title>Answer</title>The result is 3 records.</section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <p>Open the table <wintitle>Customers</wintitle>. Click in column <varname>City</varname> in a
+        field with value <userinput>Amsterdam</userinput>. Choose <menucascade>
+          <uicontrol>tab Home</uicontrol>
+          <uicontrol>Selection (group Sort &amp; Filter)</uicontrol>
+          <uicontrol>Equals "Amsterdam"</uicontrol>
+        </menucascade>. Click on the filter arrow at the end of column head
+          <varname>ZipCode</varname> and choose <menucascade>
+          <uicontrol>Text Filters</uicontrol>
+          <uicontrol>Begins with ...</uicontrol>
+        </menucascade>. Enter <userinput>20</userinput> and click OK.</p>
+    </section>
+  </body>
+</topic>

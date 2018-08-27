@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_quer002" xml:lang="en-US">
+    <title>Exercise: quer002 - Direct mail campaign box MARZ</title>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>Suppose it is end of December 2010. The expiration date of the box MARZ is in sight
+                and there is still plenty in stock. That's why do you want to start a direct mail
+                campaign to the customers who have ordered at least one box MARZ in the period
+                August-November 2010. Show the name and address of the customers. Name the query
+                    <userinput>quer002</userinput>.</p>
+        </section>
+        <section otherprops="answer">
+            <title>Answer</title>
+            <p>Result query: 4 customers</p>
+            <note conkeyref="note/reservation"/>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <image keyref="ex_quer002_design"/><p>As condition for OrderDate you can also use
+                    <userinput>Between #8/1/2010# And #11/30/2010#</userinput></p>
+        </section>
+    </body>
+</topic>

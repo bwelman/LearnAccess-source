@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_form003" xml:lang="en-US">
+    <title>Exercise: form003 - Boxes per customer</title>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>Create a main form with subform in which the main form displays the box data and the
+                subform displays the total sales per customer for this box. For this, first create a
+                query that calculates the total number of ordered boxes per customer. Name the query
+                    <userinput>Boxes per customer</userinput> and the forms <userinput>form003
+                    main</userinput> and <userinput>form003 sub</userinput>.</p>
+            <fig>
+                <image keyref="ex_form003"/>
+            </fig>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <ol>
+                <li>Choose <menucascade>
+                        <uicontrol>tab Create</uicontrol>
+                        <uicontrol>Query Design</uicontrol>
+                    </menucascade>. Add tables <wintitle>Customers</wintitle>,
+                        <wintitle>Orders</wintitle> and <wintitle>OrderDetails</wintitle>. Add from
+                    table <wintitle>Customers</wintitle> the fields <varname>CustomerCode</varname>
+                    and <varname>LastName</varname> toe. Add from table
+                        <wintitle>OrderDetails</wintitle> the fields <varname>BoxCode</varname> and
+                        <varname>Quantity</varname>. Name the query <userinput>Boxes per
+                        customer</userinput>.</li>
+                <li>Choose <menucascade>
+                        <uicontrol>tab Create</uicontrol>
+                        <uicontrol>Form Wizard</uicontrol>
+                    </menucascade>.</li>
+                <li>Select table <wintitle>Boxes</wintitle> and add all fields.</li>
+                <li>Select query <wintitle>Boxes per customer</wintitle> and add fields
+                        <varname>CustomerCode</varname>, <varname>LastName</varname> and
+                        <varname>Quantity</varname>.</li>
+                <li>Form with subform and view the data <option>by Boxes</option>.</li>
+            </ol>
+        </section>
+    </body>
+</topic>

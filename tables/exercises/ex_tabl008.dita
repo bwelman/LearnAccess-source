@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_tabl008" xml:lang="en-US">
+    <title>Exercise: tabl008 - Table Employees</title>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>Late 2010 was decided to track which employee has entered an order. There is already
+                an Excel file containing the data of all employees. Perform the following
+                actions:</p>
+            <ul>
+                <li>Import the Excel file <filepath>employees.xlsx</filepath> and give the table the
+                    name <userinput>Employees</userinput>. Provide an appropriate primary key for
+                    this table.</li>
+                <li>Add a field <varname>EmployeeCode</varname>.</li>
+                <li>Create a relationship between the tables <wintitle>Orders</wintitle> and
+                        <wintitle>Employees</wintitle> and enforce referential integrity.</li>
+            </ul>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <p>Import of the Excel file.<ol>
+                    <li>Choose <menucascade>
+                            <uicontrol>tab External Data</uicontrol>
+                            <uicontrol>New Data Source (group Import &amp; Link)</uicontrol>
+                            <uicontrol>From File</uicontrol>
+                            <uicontrol>Excel</uicontrol>
+                        </menucascade>.</li>
+                    <li>Select file <filepath>employees.xlsx</filepath> and choose <uicontrol>Import
+                            the source data into a new table in the current
+                        database</uicontrol>.</li>
+                    <li>Select option <uicontrol>First Row Contains Column
+                        Headings</uicontrol>.</li>
+                    <li>Change the <uicontrol>Data Type</uicontrol> of field
+                            <varname>EmployeeCode</varname> in <userinput>Long
+                        Integer</userinput>.</li>
+                    <li>Make field <varname>EmployeeCode</varname> the primary key.</li>
+                    <li>Name the new table <userinput>Employees</userinput>.</li>
+                </ol></p>
+            <p>Adding field.<ol>
+                    <li>Open table <wintitle>Orders</wintitle> in <uicontrol>Design
+                        View</uicontrol>.</li>
+                    <li>Add a field with the name <varname>EmployeeCode</varname> and with
+                            <varname>Data Type</varname>
+                        <userinput>Number</userinput> and the <varname>Field Size</varname> should
+                        be <userinput>Long Integer</userinput>.</li>
+                </ol></p>
+            <p>Create relationship.<ol>
+                    <li>Choose <menucascade>
+                            <uicontrol>tab Database Tools</uicontrol>
+                            <uicontrol>Relationships (group Relationships)</uicontrol>
+                        </menucascade>.</li>
+                    <li>Choose <menucascade>
+                            <uicontrol>tab Design</uicontrol>
+                            <uicontrol>Show Table (group Relationships</uicontrol>
+                        </menucascade> and add table <wintitle>Employees</wintitle>.</li>
+                    <li>Select field <varname>EmployeeCode</varname> in table
+                            <wintitle>Employees</wintitle> and drag it to field
+                            <varname>EmployeeCode</varname> in table <wintitle>Orders</wintitle>.
+                        Check box <uicontrol>Enforce Referential Integrity</uicontrol>.</li>
+                </ol></p>
+        </section>
+    </body>
+</topic>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_form002" xml:lang="en-US">
+    <title>Exercise: form002 - Pralines in boxes</title>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section><p>Create a main form with subform that shows you in which boxes a particular
+                bonbon is present and in what quantity. Name the forms <userinput>form002
+                    main</userinput> and <userinput>form002 sub</userinput>.</p>
+            <image keyref="ex_form002"/>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <ol>
+                <li>Choose <menucascade>
+                        <uicontrol>tab Create</uicontrol>
+                        <uicontrol>Form Wizard</uicontrol>
+                    </menucascade>.</li>
+                <li>Select table <wintitle>Pralines</wintitle> and add all fields.</li>
+                <li>Select table <wintitle>BoxDetails</wintitle> and add fields
+                        <varname>BoxCode</varname> and <varname>Quantity</varname>.</li>
+                <li>Form with subform and view the data <option>by Pralines</option>.</li>
+                <li>Choose Datasheet layout form002-main</li>
+                <li>Modify layout.</li>
+            </ol>
+        </section>
+    </body>
+</topic>

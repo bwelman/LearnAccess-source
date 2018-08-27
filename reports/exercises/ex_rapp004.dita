@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_rapp004" xml:lang="en-US">
+    <title>Exercise: rapp004 - Box and Praline costs grouped</title>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>Create a copy of report <wintitle>rapp003</wintitle> and name the copy
+                    <wintitle>rapp004</wintitle>. Make the report more legible to print all data of
+                a box on a separate page. This can be done by inserting a page break before the
+                header of each group. You need to set the property <varname>Force New Page</varname>
+                of the <wintitle>groupheader</wintitle> with the value <option>Before
+                    Section</option>.</p>
+            <p>Furthermore make some small changes to the layout. The text box Sum should be moved
+                to the right with only a small horizontal line above the sum.</p>
+            <note type="tip">Every box is a group, so the groupheader in this report is named Box
+                Header.</note>
+            <fig>
+                <image keyref="ex_rapp004_report"/>
+            </fig>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <ol>
+                <li>Copy and paste <wintitle>rapp003</wintitle> and name the copy
+                        <userinput>rapp004</userinput>.</li>
+                <li>Open report <wintitle>rapp004</wintitle> in <wintitle>Design
+                    View</wintitle>.</li>
+                <li>Click on an empty spot in the section <uicontrol>Page Header</uicontrol> and
+                    change in <wintitle>Property Sheet (tab Format)</wintitle> the value of property
+                        <varname>Force New Page</varname> in <userinput>Before
+                    Section</userinput>.</li>
+                <li>Adjust the layout.</li>
+            </ol>
+        </section>
+    </body>
+</topic>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_rapp008" xml:lang="en-US">
+    <title>Exercise: rapp008 - Yearly sales per region</title>
+    <shortdesc>A report based on a parameter query and grouping.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>Create a report showing the number of boxes sold in a given year per region. Upon
+                opening the report you should be asked for which year you want to see the report.
+                Name the report <uicontrol>rapp008</uicontrol>.</p>
+            <p>In the following picture you see the beginning of the output for the year 2009.</p>
+            <note type="tip">Create first a parameter query <userinput>Yearly sales per
+                    region</userinput> which provide the necessary data for the report and asks for
+                the sales year.</note>
+            <fig>
+                <image keyref="ex_rapp008_report"/>
+            </fig>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <p>Create the following query:</p>
+            <fig>
+                <image keyref="ex_rapp008_query"/>
+            </fig>
+            <p>Create a report with <menucascade>
+                    <uicontrol>tab Create</uicontrol>
+                    <uicontrol>Report Wizard (group (Reports)</uicontrol>
+                </menucascade>. Base the report on query <varname>Yearly sales per region</varname>.
+                Add all fields and use Region as grouping level. Customize the layout.</p>
+        </section>
+    </body>
+</topic>

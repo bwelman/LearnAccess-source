@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_quer012" xml:lang="en-US">
+    <title>Exercise: quer012 - Total sales per customer</title>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>Create a list with the total sales per customer. Show customer code, customer name
+                and the total sales. The column with sales should have an appropriate title and
+                formatting. Sort on descending sales. Name the query
+                <userinput>quer012</userinput>.</p>
+        </section>
+        <section otherprops="answer">
+            <title>Answer</title>
+            <image keyref="ex_quer012_result"/>
+            <note conkeyref="note/reservation"/>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <image keyref="ex_quer012_design"/>
+        </section>
+    </body>
+</topic>

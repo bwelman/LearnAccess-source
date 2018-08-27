@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_rapp001" xml:lang="en-US">
+    <title>Exercise: rapp001 - Sales per region per box</title>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>Create a report with the sales per region per box. The report should also show the
+                total sales for each region and the percentage across all regions. Name the report
+                    <userinput>rapp001</userinput>.</p>
+            <fig>
+                <image keyref="ex_rapp001_report"/>
+            </fig>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <ol>
+                <li>Choose <menucascade>
+                        <uicontrol>tab Create</uicontrol>
+                        <uicontrol>Report Wizard (group (Reports)</uicontrol>
+                    </menucascade>.</li>
+                <li>Choose as data source the query <wintitle>Sales per region per box</wintitle>
+                    and add all fields. Set grouping level on field <varname>Region</varname>. Sort
+                    ascending on field <varname>BoxName</varname>. Choose at <uicontrol>Summary
+                        Options</uicontrol> for <uicontrol>Sum</uicontrol>, show <uicontrol>Detail
+                        and Summary</uicontrol> and <uicontrol>Calculate percent of total for
+                        sums</uicontrol>.</li>
+                <li>If necessary adjust column widths and formatting of the sales values. </li>
+            </ol>
+        </section>
+    </body>
+</topic>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_quer028" xml:lang="en-US">
+    <title>Opgave: quer028 - Bijwerkquery prijsverhoging</title>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>Due to an increase in the chocolate price on the world market, prices of all boxes
+                must be increased by 10%.</p>
+            <ol>
+                <li>Start by making a backup or copy of the table or of the entire database.</li>
+                <li>Design an update query to implement the price increase. Name the query
+                        <userinput>quer028</userinput> and execute it.<note type="attention">Be
+                        aware that each time you execute the query, the prices are further increased
+                        by 10%.</note></li>
+                <li>Restore the original situation.</li>
+            </ol>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <p>Create through Query Design a new query, add table Boxes and add field BoxPrice.
+                Change Query Type in Update. Enter in field Update To the value
+                    <userinput>[BoxPrice]*1.1</userinput>.</p>
+            <image keyref="ex_quer028_design"/>
+        </section>
+    </body>
+</topic>

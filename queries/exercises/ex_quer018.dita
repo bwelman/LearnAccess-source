@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_quer018" xml:lang="en-US">
+    <title>Exercise: quer018 - Total sales per province</title>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>Create a list of the total sales per province. The column with sales should have an
+                appropriate title and formatting. Sort descending on sales. Name the query
+                    <userinput>quer018</userinput>.</p>
+        </section>
+        <section otherprops="answer">
+            <title>Answer</title>
+            <image keyref="ex_quer018_result"/>
+            <note conkeyref="note/reservation"/>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <image keyref="ex_quer018_design"/>
+        </section>
+    </body>
+</topic>

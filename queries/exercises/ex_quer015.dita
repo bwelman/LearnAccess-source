@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_quer015" xml:lang="en-US">
+    <title>Exercise: quer015 - Pralines with filling and without nut</title>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>Create a list of pralines with filling and without nut. Name the query
+                    <userinput>quer015</userinput>.</p>
+        </section>
+        <section otherprops="answer">
+            <title>Answer</title>
+            <p>Result query: 22 pralines</p>
+            <image keyref="ex_quer015_result"/>
+            <note conkeyref="note/reservation"/>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <image keyref="ex_quer015_design"/>
+        </section>
+    </body>
+</topic>

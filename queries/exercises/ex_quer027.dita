@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_quer027" xml:lang="en-US">
+    <title>Exercise: quer027 - Crosstab boxes per weight</title>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>Create a crosstab query with vertical the box names, horizontal the weight of the
+                boxes and in the table the stock. Name the <userinput>quer027</userinput>.</p>
+        </section>
+        <section otherprops="answer">
+            <title>Answer</title>
+            <image keyref="ex_quer027_result"/>
+            <note conkeyref="note/reservation"/>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <p>Choose <menucascade>
+                    <uicontrol>Create</uicontrol>
+                    <uicontrol>Query Wizard</uicontrol>
+                    <uicontrol>Crosstab Query Wizard</uicontrol>
+                </menucascade>.</p>
+            <image keyref="ex_quer027_design"/>
+        </section>
+    </body>
+</topic>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_tabl001" xml:lang="en-US">
+    <title>Exercise: tabl001 - Prevent duplicate names</title>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>The table <wintitle>Suppliers</wintitle> has a field <varname>Supplier</varname>.
+            This is the name of the supplier. It is now possible to use the same supplier name more
+            then once, which is undesirable. To prevent this, you can set the value of the property
+                <uicontrol>Indexed</uicontrol> of this field on <userinput>Yes (No
+                Duplicates)</userinput>. Apply this change.</section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <p>Open table <wintitle>Suppliers</wintitle> in Design View. At field
+                    <uicontrol>Supplier</uicontrol> set the property <varname>Indexed</varname> on
+                    <userinput>Yes (No Duplicates)</userinput>.</p>
+        </section>
+    </body>
+</topic>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_quer017" xml:lang="en-US">
+    <title>Exercise: quer017 - Boxes with a price between $17 and $25 and stock of at least
+        400</title>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>Create a list of boxes with a price between $ 17 and $ 25 and of which there are at
+                least 400 in stock. Show the code, name, price and stock of the boxes. Name the
+                query <userinput>quer017</userinput>.</p>
+        </section>
+        <section otherprops="answer">
+            <title>Answer</title>
+            <image keyref="ex_quer017_result"/>
+            <note conkeyref="note/reservation"/>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <image keyref="ex_quer017_design"/>
+        </section>
+    </body>
+</topic>

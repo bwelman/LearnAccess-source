@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_quer005" xml:lang="en-US">
+    <title>Exercise: quer005 - Customers from Enschede, Hengelo or Almelo</title>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>Create a list of all the customers (name and address) who live in Enschede, Hengelo
+                and Almelo. Name the query <userinput>quer005</userinput>.</p>
+        </section>
+        <section otherprops="answer">
+            <title>Answer</title>
+            <p>Result query: 12 customers</p>
+            <note conkeyref="note/reservation"/>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <image keyref="ex_quer005_design"/>
+            <p>As condition for City you can also use <userinput>"Enschede" Or "Hengelo" Or
+                    "Almelo"</userinput></p></section>
+    </body>
+</topic>

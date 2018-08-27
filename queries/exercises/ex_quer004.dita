@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_quer004" xml:lang="en-US">
+    <title>Exercise: quer004 - Pralines milk and dark with low price</title>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>Create a list of pralines with chocolate type milk or pure and whose costs is at most
+                30 cents. Show the fields PralineCode, PralineName, ChocolateType, and PralineCosts.
+                Name the query <userinput>quer004</userinput>.</p>
+        </section>
+        <section otherprops="answer">
+            <title>Answer</title>
+            <p>Result query: 18 pralines</p>
+            <note conkeyref="note/reservation"/>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <image keyref="ex_quer004_design"/>
+        </section>
+    </body>
+</topic>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_quer016" xml:lang="en-US">
+    <title>Exercise: quer016 - Boxes heavier than 150 grams with a maximum price of $35</title>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>Create a list of boxes heavier than 150 grams with a maximum price of $35. Show only
+                BoxCode, BoxName and BoxPrice. Sort the boxes by ascending price. Name the query
+                    <userinput>quer016</userinput>.</p>
+        </section>
+        <section otherprops="answer">
+            <title>Answer</title>
+            <image keyref="ex_quer016_result"/>
+            <note conkeyref="note/reservation"/>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <image keyref="ex_quer016_design"/>
+        </section>
+    </body>
+</topic>

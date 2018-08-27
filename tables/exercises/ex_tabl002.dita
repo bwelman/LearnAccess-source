@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_tabl002" xml:lang="en-US">
+    <title>Exercise: tabl002 - Insertion in names</title>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>The last name of the customer with CustomerCode 15 is <userinput>Molen, van
+                    de</userinput> and the first name is <userinput>Robert</userinput>. If you use
+                these names when creating labels, then you will see: <systemoutput>Robert Molen, van
+                    de</systemoutput>. This is not professional and you want the name to be listed
+                on the label <systemoutput>Robert van de Molen</systemoutput>. A possible solution
+                could be to change LastName in <userinput>van de Molen</userinput>. But this
+                solution has the drawback that the sort by name will produces an undesired sequence.
+                Think of a better solution, if necessary the design of the table may be changed. Do
+                not apply this change in the database.</p>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <p>A good solution is to add a new field named Insertion to table
+                    <wintitle>Customers</wintitle>. The value of field <varname>LastName</varname>
+                will be modified in <userinput>Molen</userinput> and the value of field
+                    <varname>Insertion</varname> will be <userinput>van de</userinput>. Sorting on
+                    <varname>LastName</varname> then gives the desired sequence. On the label you
+                put in one line the fields <varname>FirstName</varname>
+                <varname>Insertion</varname> and <varname>LastName</varname>.</p>
+        </section>
+    </body>
+</topic>

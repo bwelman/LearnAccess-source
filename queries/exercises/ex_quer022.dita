@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="acc_opg_quer020"  xml:lang="en-US">
+  <title>Exercise: quer022 - Referentiële integriteit</title>
+  <prolog>
+    <critdates>
+      <created date="2011-06-20"/>
+      <revised modified="2012-04-04"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+      
+      
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>Controleer of bij de tables Customers, Orders, OrderDetails, Boxes, BoxDetails en Pralines
+        de referentiële integriteit bij de relations is aangebracht. Zo niet, breng deze dan aan.</p>
+    </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <ol>
+        <li>Choose <menucascade>
+            <uicontrol>tab Hulpmiddelen voor database</uicontrol>
+            <uicontrol>Relations (group Show/Hide)</uicontrol>
+          </menucascade>.</li>
+        <li>Geef een dubbelklik op de relatiepijl tussen twee tables</li>
+        <li>Indien nodig aanvinken <uicontrol>Enforce Referential Integrity</uicontrol>.</li>
+      </ol>
+    </section>
+  </body>
+</topic>

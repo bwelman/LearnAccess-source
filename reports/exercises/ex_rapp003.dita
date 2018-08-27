@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_rapp003" xml:lang="en-US">
+    <title>Exercise: rapp003 - Box and PralineCosts</title>
+    <prolog>
+        <critdates>
+            <created date="2017-10-05"/>
+            <revised modified="2017-10-05"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>Create a report that shows all pralines in each box, together with the costs of these
+                pralines. Also display the sum all the praline costs. Name the report
+                    <userinput>rapp003</userinput>.</p>
+            <fig>
+                <image keyref="ex_rapp003_report"/>
+            </fig>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <ol>
+                <li>Choose <menucascade>
+                        <uicontrol>tab Create</uicontrol>
+                        <uicontrol>Report Wizard (group (Reports)</uicontrol>
+                    </menucascade>.</li>
+                <li>Choose as data source the query <wintitle>Pralines per box</wintitle> and add
+                    all fields. Set grouping level on field <varname>Box</varname>. Sort ascending
+                    on field <varname>Praline</varname>. Choose at <uicontrol>Summary
+                        Options</uicontrol> for <uicontrol>Sum</uicontrol>, show <uicontrol>Detail
+                        and Summary</uicontrol>. Choose layout <uicontrol>Blocked</uicontrol> and
+                    adjust the title.</li>
+                <li>Adjust the layout.</li>
+            </ol>
+        </section>
+    </body>
+</topic>
