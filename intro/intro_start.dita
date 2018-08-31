@@ -16,7 +16,7 @@
     </prolog>
     <taskbody>
         <context>The possibilities to start Access depend on the way the system is installed. This
-            course assumes a default installation of Microsoft <keyword keyref="officeversion"/>
+            course assumes a default installation of Microsoft <keyword keyref="productversion"/>
             English on a system with Windows 7 English. On almost all computers Access can be
             started through the start button of Windows and this method is described here.<note
                 type="tip"> The most convenient start is through a shortcut on the desktop or
