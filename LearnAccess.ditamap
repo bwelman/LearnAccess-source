@@ -1,30 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
-<bookmap id="Access2016EN-online" xml:lang="en-US">
+<bookmap id="Access2016EN" xml:lang="en-US">
     <booktitle>
-        <mainbooktitle>Learn Access 2016</mainbooktitle>
+        <mainbooktitle>Access 2016</mainbooktitle>
         <booktitlealt>A task oriented textbook</booktitlealt>
     </booktitle>
     <bookmeta>
         <author>Ben Welman</author>
-        <authorinformation>
-            <organizationinfo>
-                <namedetails>
-                    <organizationnamedetails>
-                        <organizationname>Softwijs</organizationname>
-                    </organizationnamedetails>
-                </namedetails>
-                <emailaddresses>
-                    <emailaddress>info@softwijs.nl</emailaddress>
-                </emailaddresses>
-                <urls>
-                    <url>http://www.softwijs.nl</url>
-                </urls>
-            </organizationinfo>
-        </authorinformation>
-        <publisherinformation>
-            <organization>Softwijs</organization>
-        </publisherinformation>
         <keywords>
             <keyword>Access</keyword>
             <keyword>Textbook</keyword>
@@ -39,7 +21,7 @@
                 <person>Ben Welman</person>
             </bookowner>
         </bookrights>
-        <data name="covergraphic" value="common/images/cover_access.png"/>
+        <data name="covergraphic" value="common/images/cover_access_en.png"/>
     </bookmeta>
     <frontmatter>      
         <booklists>
@@ -47,7 +29,7 @@
         </booklists>
         <mapref href="common/keys_common.ditamap" processing-role="resource-only"/>
         <keydef keys="note" href="common/conref_source_access.dita"/>
-        <topicref href="common/preface-online.dita" type="topic" format="dita" scope="local"/>
+        <topicref href="common/preface.dita" type="topic" format="dita" scope="local"/>
     </frontmatter>
     <part href="part_basic.dita">
         <chapter href="intro/map_intro.ditamap" format="ditamap"/>
