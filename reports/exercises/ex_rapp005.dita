@@ -17,7 +17,10 @@
                 name the copy <userinput>rapp005</userinput>. Change the design of the report so
                 that the total amount per box is printed next to the name box.</p>
             <fig>
-                <image keyref="ex_rapp005_report"/>
+                <title>Report November 2009</title>
+                <image keyref="ex_rapp005_report">
+                    <alt> Report November 2009</alt>
+                </image>
             </fig>
         </section>
         <section otherprops="solution">
