@@ -12,8 +12,8 @@
         </metadata>
     </prolog>
   <body>
-    <section>Make a selection of the customers who live in Enschede, Hengelo and
-      Almelo<p>.</p></section>
+    <section>Make a selection of the customers who live in Enschede, Hengelo, and
+            Almelo<p>.</p></section>
     <section otherprops="answer">
       <title>Answer</title>
       <p>The result is 12 records.</p>

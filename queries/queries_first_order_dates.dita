@@ -17,9 +17,9 @@
     <taskbody>
         <context>
             <p>INFORMATION NEEDS</p>
-            <p>Create a list of the first order per customer. Show for each customer who have placed
-                one or more orders: customer code, customer name (last and first name) and date of
-                first order.</p>
+            <p>Create a list of the first order per customer. Show for each customer who has placed
+                one or more orders: customer code, customer name (last and first name), and the date
+                of the first order.</p>
             <p>ANALYSIS</p>
             <p>The required data is in the tables Customers en Orders. There you need to create a
                 query ​​showing the customer data and order data. Finding the first order can be
@@ -51,8 +51,8 @@
             <step>
                 <cmd>Add successively the fields <varname>CustomerCode</varname>,
                         <varname>LastName</varname> and <varname>FirstName</varname> (from
-                    Customers) and <varname>OrderDate</varname> (from Orders) to the grid by double
-                    clicking on the field.</cmd>
+                    Customers), and <varname>OrderDate</varname> (from Orders) to the grid by
+                    double-clicking on the field.</cmd>
             </step>
             <step>
                 <cmd>Click <menucascade>

@@ -20,10 +20,10 @@
     </prolog>
     <conbody>
         <p>Some databases such as <filepath><keyword keyref="example_db_title"/></filepath> contain
-            macros. In the most cases these macros are made to carry out certain tasks in the
-            database. However, virus writers can use these opportunities to spread a virus. When
-            such a database is not on a trusted location or signed by a trusted publisher, then
-            Access displays when opening the database a security warning on opening of the database.
+            macros. In most cases, these macros are made to carry out certain tasks in the database.
+            However, virus writers can use these opportunities to spread a virus. When such a
+            database is not on a trusted location or signed by a trusted publisher, then Access
+            displays when opening the database a security warning on the opening of the database.
             The macros in the database are disabled.</p>
         <fig>
             <title>Security warning on opening of a database with macros</title>
@@ -63,9 +63,10 @@
                         <entry>If the database creator that has provided a digital certificate, you
                             can add the creator to the list <term>Trusted Publishers</term>. Access
                             automatically enables all macros that are created by this maker in all
-                            databases. This is a very secure method, but usually only the larger
+                            databases. This is a very secure method, but usually, only the larger
                             companies use a digital certificate. The database <keyword
-                                keyref="example_db_title"/> doesn't have a digital certificate.</entry>
+                                keyref="example_db_title"/> doesn't have a digital
+                            certificate.</entry>
                     </row>
                 </tbody>
             </tgroup>
@@ -131,7 +132,7 @@
                                     <alt>Dialog box trust center</alt>
                                 </image>
                             </fig>
-                            <p>It is not recommended to enable all macros, then you will loose the
+                            <p>It is not recommended to enable all macros, then you will lose the
                                 security control.</p></entry>
                     </row>
                 </tbody>

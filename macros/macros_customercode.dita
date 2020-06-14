@@ -18,14 +18,14 @@
     </prolog>
     <taskbody>
         <context>
-            <p>First a form with the data of a customer should be created. To make it easier to find
-                a particular customer with knowed customer code, the form should contain a list box
-                where which you can enter the customer code and afterthat the data of the
+            <p>First, a form with the data of a customer should be created. To make it easier to
+                find a particular customer with known customer code, the form should contain a list
+                box where you can enter the customer code and after that, the data of the
                 corresponding customer should be displayed in the form.</p>
             <p>ANALYSIS</p>
             <p>The base of the form can be made with a default form. The drop-down list box is the
-                control <uicontrol>Combo Box</uicontrol>. Furthermore you have to create a macro
-                that performs two actions. First go to the drop-down list box to get the entered
+                control <uicontrol>Combo Box</uicontrol>. Furthermore, you have to create a macro
+                that performs two actions. First, go to the drop-down list box to get the entered
                 customer code and then find the corresponding record.</p>
         </context>
         <steps>
@@ -33,8 +33,8 @@
                 <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
             </step>
             <step>
-                <cmd>Select table <uicontrol>Customers</uicontrol>. It's not necessary to to open
-                    the table.</cmd>
+                <cmd>Select table <uicontrol>Customers</uicontrol>. It's not necessary to open the
+                    table.</cmd>
             </step>
             <step>
                 <cmd>Click <menucascade>
@@ -72,7 +72,7 @@
             <step>
                 <cmd>Answer the consecutive questions of the Wizard as follows:</cmd>
                 <info><ul>
-                        <li>The combo box should get the values from a table or a query.</li>
+                        <li>The Combo Box should get the values from a table or a query.</li>
                         <li>Table: Customers should provide the values for the combo box.</li>
                         <li>Only field CustomerCode should be added.</li>
                         <li>Sort records ascending on CustomerCode.</li>
@@ -84,9 +84,9 @@
                     View.</p></stepresult>
             </step>
             <step>
-                <cmd>When the label and the combobox are partly overlap each other, you have to move
-                    one or both of them. You do this by dragging the upper-left corner of the object
-                    with a pressed left mouse button.</cmd>
+                <cmd>When the label and the Combo Box are partly overlapping each other, you have to
+                    move one or both of them. You do this by dragging the upper-left corner of the
+                    object with a pressed left mouse button.</cmd>
             </step>
             <step>
                 <cmd>Close form <uicontrol>Search customer by code</uicontrol> and save the
@@ -111,7 +111,7 @@
                     and select action <option>GoToControl</option> from the list.</cmd>
             </step>
             <step>
-                <cmd>Enter <userinput>CustomerCode</userinput> in box <varname>Control
+                <cmd>Enter <userinput>CustomerCode</userinput> in the box <varname>Control
                         Name</varname>.</cmd>
                 <stepresult>
                     <fig>
@@ -161,7 +161,7 @@
                 </stepresult>
             </step>
             <step>
-                <cmd>With still the combo box selected, click in <uicontrol>Property Sheet (tab
+                <cmd>With still the Combo Box selected, click in <uicontrol>Property Sheet (tab
                         Event)</uicontrol> on the selection arrow in box <varname>After
                         Update</varname> and select macro <option>Search customer by
                     code</option>.</cmd>
@@ -178,8 +178,8 @@
                 <cmd>Close the form and save the changes.</cmd>
             </step>
             <step>
-                <cmd>Open form <uicontrol>Search customer by code</uicontrol> and test if the combo
-                    box works properly.</cmd>
+                <cmd>Open form <uicontrol>Search customer by code</uicontrol> and test if the Combo
+                    Box works properly.</cmd>
             </step>
         </steps>
     </taskbody>

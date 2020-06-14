@@ -29,7 +29,7 @@
                 <cmd>Select table <wintitle>Boxes</wintitle>.</cmd>
             </step>
             <step>
-                <cmd>Right click on the table name and choose <menucascade>
+                <cmd>Right-click on the table name and choose <menucascade>
                         <uicontrol>Export</uicontrol>
                         <uicontrol>Word RTF File</uicontrol>
                     </menucascade>.</cmd>

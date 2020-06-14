@@ -33,7 +33,7 @@
             </step>
             <step>
                 <cmd>Open the table <wintitle>Customers</wintitle>.</cmd>
-                <stepresult>The table Customers is displayed in the Datasheet View.</stepresult>
+                <stepresult>Table Customers is displayed in the Datasheet View.</stepresult>
             </step>
             <step>
                 <cmd>Select the column <varname>City</varname> by clicking on the column
@@ -55,17 +55,17 @@
                         Z</uicontrol>.</cmd>
                 <stepresult>Access reorganizes the records in alphabetical order by city and shows a
                     small upward pointing arrow (<image keyref="button_arrow_down_sortedup"/>) at
-                    the right side of the column head to indicate the sort order.</stepresult>
+                    the right side of the column header to indicate the sort order.</stepresult>
             </step>
             <step>
                 <cmd>Cancel the sorting through <menucascade>
                         <uicontrol>tab Home</uicontrol>
                         <uicontrol>Remove Sort (group Sort &amp; Filter)</uicontrol>
-                    </menucascade> . </cmd>
+                    </menucascade>. </cmd>
             </step>
-            <stepsection>Sort on multiple fields</stepsection>
+            <stepsection>Sort on multiple field</stepsection>
             <step>
-                <cmd>Select the columns <varname>City</varname>, <varname>LastName</varname> and
+                <cmd>Select the columns <varname>City</varname>, <varname>LastName</varname>, and
                         <varname>FirstName</varname>.</cmd>
             </step>
             <step>
@@ -75,13 +75,13 @@
                             &amp; Filter)</uicontrol>
                     </menucascade>.</cmd>
                 <stepresult>Access reorganizes the records in ascending alphabetical order, first by
-                    city, then by last name and then by first name. At the right side of each of
-                    heads of these three columns you can see the small upward pointing
-                    arrow.</stepresult>
+                    city, then by the last name and then by the first name. At the right side of
+                    each of the headers of these three columns, you can see the small upward
+                    pointing arrow.</stepresult>
             </step>
             <step>
-                <cmd>Close the table <wintitle>Customers</wintitle> and
-                        choose<uicontrol>No</uicontrol> on the question to save the changes.</cmd>
+                <cmd>Close the table <wintitle>Customers</wintitle> and choose
+                        <uicontrol>No</uicontrol> on the question to save the changes.</cmd>
             </step>
         </steps>
     </taskbody>

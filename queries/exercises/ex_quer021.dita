@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="ex_quer021" xml:lang="en-US">
-    <title>Exercise: quer021 - Customers with zip code 22 and total sales less then $50</title>
+    <title>Exercise: quer021 - Customers with zip code 22 and total sales less than $50</title>
     <prolog>
         <critdates>
             <created date="2017-10-05"/>

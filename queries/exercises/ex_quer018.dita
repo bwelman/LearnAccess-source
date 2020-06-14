@@ -13,7 +13,7 @@
     </prolog>
     <body>
         <section>
-            <p>Create a list of the total sales per province. The column with sales should have an
+            <p>Create a list of  total sales per province. The column with sales should have an
                 appropriate title and formatting. Sort descending on sales. Name the query
                     <userinput>quer018</userinput>.</p>
         </section>

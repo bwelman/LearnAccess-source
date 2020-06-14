@@ -15,7 +15,7 @@
         <section>
             <p>Create a list of all box names with their number of pralines per box. The column with
                 numbers should have an appropriate title. The list should be sorted in ascending
-                order on box name. Name the query <userinput>quer009</userinput>. box.</p>
+                order of box name. Name the query <userinput>quer009</userinput>. box.</p>
         </section>
         <section otherprops="answer">
             <title>Answer</title>

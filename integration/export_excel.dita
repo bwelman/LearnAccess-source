@@ -26,7 +26,7 @@
                 <cmd>Select table <wintitle>Boxes</wintitle>.</cmd>
             </step>
             <step>
-                <cmd>Right click on the table name and choose <menucascade>
+                <cmd>Right-click on the table name and choose <menucascade>
                         <uicontrol>Export</uicontrol>
                         <uicontrol>Excel</uicontrol>
                     </menucascade>.</cmd>
@@ -35,7 +35,8 @@
             </step>
             <step>
                 <cmd>Specify file name and path, select option <uicontrol>Export data with
-                        formatting and layout</uicontrol> and click <uicontrol>OK</uicontrol>.</cmd>
+                        formatting and layout</uicontrol>, and click
+                    <uicontrol>OK</uicontrol>.</cmd>
                 <stepresult>The dialog box <wintitle>Save Export Steps</wintitle> is
                     displayed.</stepresult>
             </step>

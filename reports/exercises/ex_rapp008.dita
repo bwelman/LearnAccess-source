@@ -17,9 +17,9 @@
             <p>Create a report showing the number of boxes sold in a given year per region. Upon
                 opening the report you should be asked for which year you want to see the report.
                 Name the report <uicontrol>rapp008</uicontrol>.</p>
-            <p>In the following picture you see the beginning of the output for the year 2009.</p>
+            <p>In the following picture, you see the beginning of the output for the year 2009.</p>
             <note type="tip">Create first a parameter query <userinput>Yearly sales per
-                    region</userinput> which provide the necessary data for the report and asks for
+                    region</userinput> which provides the necessary data for the report and asks for
                 the sales year.</note>
             <fig>
                 <image keyref="ex_rapp008_report"/>

@@ -13,9 +13,9 @@
     </prolog>
     <body>
         <section>
-            <p>Create a list of box names an their number of praline types per box. The column with
+            <p>Create a list of box names and their number of praline types per box. The column with
                 numbers should have an appropriate title. The list should be sorted in ascending
-                order on box name. Name the query <userinput>quer010</userinput>.</p>
+                order of box name. Name the query <userinput>quer010</userinput>.</p>
         </section>
         <section otherprops="answer">
             <title>Answer</title>

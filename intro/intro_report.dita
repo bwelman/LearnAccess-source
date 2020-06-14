@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="intro_report" xml:lang="en-US">
     <title>Reports</title>
-    <shortdesc>A short introduction in Reports.</shortdesc>
+    <shortdesc>A short introduction to Reports.</shortdesc>
     <prolog>
         <critdates>
             <created date="2017-10-05"/>
@@ -15,10 +15,10 @@
         </metadata>
     </prolog>
     <conbody>
-        <p>With a report you can present data on paper or screen, together with totals and grand
+        <p>With a report, you can present data on paper or screen, together with totals and grand
             totals of a whole set of records.</p>
         <p>The elements of a form or report with which you display data are called
-                <term>controls</term>. With controls you can show field data, calculation results,
+                <term>controls</term>. With controls, you can show field data, calculation results,
             text, charts, ... You can also create labels with reports.</p>
         <fig>
             <title>Report example</title>

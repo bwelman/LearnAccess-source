@@ -14,7 +14,7 @@
     <body>
         <section>
             <p>Create a main form with subform in which the main form displays the box data and the
-                subform displays the total sales per customer for this box. For this, first create a
+                subform displays the total sales per customer for this box. For this, create first a
                 query that calculates the total number of ordered boxes per customer. Name the query
                     <userinput>Boxes per customer</userinput> and the forms <userinput>form003
                     main</userinput> and <userinput>form003 sub</userinput>.</p>
@@ -41,7 +41,7 @@
                     </menucascade>.</li>
                 <li>Select table <wintitle>Boxes</wintitle> and add all fields.</li>
                 <li>Select query <wintitle>Boxes per customer</wintitle> and add fields
-                        <varname>CustomerCode</varname>, <varname>LastName</varname> and
+                        <varname>CustomerCode</varname>, <varname>LastName</varname>, and
                         <varname>Quantity</varname>.</li>
                 <li>Form with subform and view the data <option>by Boxes</option>.</li>
             </ol>

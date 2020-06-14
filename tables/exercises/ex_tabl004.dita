@@ -13,11 +13,11 @@
     </prolog>
     <body>
         <section>
-            <p>In this exercise you need the table <wintitle>Transport</wintitle> that had to be
+            <p>In this exercise, you need the table <wintitle>Transport</wintitle> that had to be
                 made ​​earlier in the course. When this table is not present in your database, you
                 have two possibilities:<ul>
-                    <li>You still perform the task with creating this table.</li>
-                    <li>You use the database <filepath>transport.accdb</filepath> where the table
+                    <li>You still perform the task by creating this table.</li>
+                    <li>You use database <filepath>transport.accdb</filepath> where the table
                         Transport already was made for you.</li>
                 </ul></p>
             <p>Open table <wintitle>Transport</wintitle> and note that the transport costs do not
@@ -31,7 +31,7 @@
         <section otherprops="solution">
             <title>Solution</title>
             <p>Open table <wintitle>Transport</wintitle> in Design View, select field
-                    <varname>TransportationCosts</varname> and change the value of property Format
+                    <varname>TransportationCosts</varname>, and change the value of property Format
                 in a currency format with your local currency symbol.</p>
         </section>
     </body>

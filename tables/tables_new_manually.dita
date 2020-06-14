@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
 <task id="tables_new_manually" xml:lang="en-US">
-    <title>Task: Create new table manually</title>
+    <title>Task: Create a new table manually</title>
     <shortdesc>Creating a new table from scratch and assign a key.</shortdesc>
     <prolog>
         <critdates>
@@ -46,7 +46,7 @@
             <step>
                 <cmd>Enter the name <userinput>Transport Companies</userinput> and click
                         <uicontrol>OK</uicontrol>.</cmd>
-                <stepresult>The table Transport Companies appears in design view.</stepresult>
+                <stepresult>The table Transport Companies appears in the design view.</stepresult>
             </step>
             <step>
                 <cmd>Right-click somewhere in the field <varname>ID</varname> and choose
@@ -61,7 +61,8 @@
                             <alt>Fields table Transport Companies</alt>
                         </image>
                     </fig>
-                    <p>The company name will be unique so w can use this field as primary key.</p>
+                    <p>The company name will be unique so you can use this field as a primary
+                        key.</p>
                 </tutorialinfo>
             </step>
             <step>
@@ -69,7 +70,7 @@
                         <uicontrol>tab Design</uicontrol>
                         <uicontrol>Primary Key (group Tools)</uicontrol>
                     </menucascade>.</cmd>
-                <stepresult>At the beginning of the first row you can see now a key <image
+                <stepresult>At the beginning of the first row, you now see now the key <image
                         keyref="icon_key"/></stepresult>
             </step>
             <step>

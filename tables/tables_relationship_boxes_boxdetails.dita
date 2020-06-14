@@ -22,7 +22,7 @@
                 creating the relation, you must first determine which table is the primary table,
                 which the related table and which fields are the linking fields.</p>
             <p>Until now there is no relationship between the tables <wintitle>Boxes</wintitle> and
-                    <wintitle>BoxDetails</wintitle>. This is necessary because otherwise it is not
+                    <wintitle>BoxDetails</wintitle>. This is necessary because otherwise, it is not
                 possible to determine which pralines and the amount of them are in a particular
                 box.</p>
             <dl>
@@ -45,9 +45,9 @@
                         <uicontrol>tab Database Tools</uicontrol>
                         <uicontrol>Relationships (group Relationships)</uicontrol>
                     </menucascade>.</cmd>
-                <stepresult>The window <wintitle>Relationships</wintitle> will be displayed. It
-                    shows the existing relations. It is also visible that currently no relationships
-                    exists between the tables BoxDetails Boxes.<fig>
+                <stepresult>Window <wintitle>Relationships</wintitle> will be displayed. It shows
+                    the existing relations. You can also see that currently no relationships exists
+                    between the tables BoxDetails Boxes.<fig>
                         <title>Window relationships</title>
                         <image keyref="relationships_window_boxes_boxdetails">
                             <alt>Window relationships</alt>
@@ -68,7 +68,7 @@
                 </stepresult>
             </step>
             <step>
-                <cmd>Check box <uicontrol>Enforce Referential Integrity</uicontrol> and click
+                <cmd>Check the box <uicontrol>Enforce Referential Integrity</uicontrol> and click
                         <uicontrol>Create</uicontrol>.</cmd>
                 <stepresult>The relationship is now visible in the window.</stepresult>
             </step>

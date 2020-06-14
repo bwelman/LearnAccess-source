@@ -20,7 +20,7 @@
             <p>INFORMATION NEEDS</p>
             <p>Make a list of the number of customers per province.</p>
             <p>ANALYSIS</p>
-            <p>All necessary data is in table Customers. Of course you need the field Province. A
+            <p>All necessary data is in table Customers. Of course, you need the field Province. A
                 customer is uniquely identified by the CustomerCode, so that you need to count the
                 number of CustomerCodes in each province. For this, there must be grouped by
                 Province.</p>
@@ -45,7 +45,8 @@
             <step>
                 <cmd>Select table <varname>Customers</varname>, click <uicontrol>Add</uicontrol> and
                     then <uicontrol>Close</uicontrol>.</cmd>
-                <stepresult>The customers table has now been added to the query window.</stepresult>
+                <stepresult>The table <varname>Customers</varname> has now been added to the query
+                    window.</stepresult>
             </step>
             <step>
                 <cmd>Add successively the fields Province and CustomerCode to the design grid by

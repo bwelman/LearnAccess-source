@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
 <task id="data_new_customer" xml:lang="en-US">
-    <title>Task: Add new customer</title>
+    <title>Task: Add a new customer</title>
     <shortdesc>Adding a new record with a form that can only be used for data entry.</shortdesc>
     <prolog>
         <critdates>
@@ -15,7 +15,7 @@
         </metadata>
     </prolog>
     <taskbody>
-        <context>With the form Registration only new records can be added to the table
+        <context>With the form Registration, only new records can be added to the table
                 <varname>Customers</varname>. Browsing existing records has been disabled.</context>
         <steps>
             <step>
@@ -47,7 +47,7 @@
                     following step.</tutorialinfo>
             </step>
             <step>
-                <cmd>Open table <varname>Customers</varname>, go to the last record and check
+                <cmd>Open table <varname>Customers</varname>, go to the last record, and check
                     whether this is the previously added record.</cmd>
             </step>
             <step>

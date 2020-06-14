@@ -16,8 +16,8 @@
         </metadata>
     </prolog>
     <conbody>
-        <p>Access has a built-in programming language,Visual Basic for Applications (VBA). A module
-            is a collection of VBA procedures which allows you to automate complex database tasks.
-            To create a VBA module you need some programming experience.</p>
+        <p>Access has a built-in programming language, Visual Basic for Applications (VBA). A module
+            is a collection of VBA procedures that allows you to automate complex database tasks. To
+            create a VBA module you need some programming experience.</p>
     </conbody>
 </concept>

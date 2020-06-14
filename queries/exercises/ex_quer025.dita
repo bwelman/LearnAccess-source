@@ -14,7 +14,7 @@
     <body>
         <section>
             <p>There are several types of chocolate types for the pralines: Butterscotch, Milk,
-                Dark, Toffee and White. Create a parameter query to show the pralines whose type is
+                Dark, Toffee, and White. Create a parameter query to show the pralines whose type is
                 requested during the execution of the query. Show ChocolateType, PralineName,
                 PralineCosts and PralineDescription. Name the query
                 <userinput>quer025</userinput>.</p>

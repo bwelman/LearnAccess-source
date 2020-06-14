@@ -61,12 +61,12 @@
                     table.</stepresult>
             </step>
             <step>
-                <cmd>Select<uicontrol>No primary key</uicontrol> and click
+                <cmd>Select <uicontrol>No primary key</uicontrol> and click
                         <uicontrol>Next</uicontrol>.</cmd>
                 <stepresult>The wizard then asks for the name of the table.</stepresult>
             </step>
             <step>
-                <cmd>Specify as name for the table <userinput>Transport</userinput> and click
+                <cmd>Specify the name <userinput>Transport</userinput> for the table and click
                         <uicontrol>Finish</uicontrol>.</cmd>
                 <stepresult>The wizard now shows that the data is imported from Excel.</stepresult>
             </step>
@@ -74,7 +74,7 @@
                 <cmd>Click <uicontrol>Close</uicontrol>.</cmd>
             </step>
             <step>
-                <cmd>Open the table, look at the result and close the table.</cmd>
+                <cmd>Open the table, look at the result, and close the table.</cmd>
             </step>
         </steps>
     </taskbody>

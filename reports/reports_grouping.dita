@@ -18,9 +18,9 @@
     <taskbody>
         <context>
             <p>INFORMATION NEEDS</p>
-            <p>Create a report which shows over a specified period of time the sales per box, as
-                well as the details of each order.As an example look at the figure where you see
-                part of the report of November 2009.</p>
+            <p>Create a report which shows over a specified period the sales per box, as well as the
+                details of each order. As an example look at the figure where you see part of the
+                report of November 2009.</p>
             <fig>
                 <title>Report November 2009</title>
                 <image keyref="group_report_result">
@@ -29,8 +29,8 @@
             </fig>
             <p>ANALYSIS</p>
             <p>The required data are <varname>BoxName</varname>, <varname>OrderCode</varname>,
-                    <varname>OrderDate</varname>, <varname>Quantity</varname> and a calculated field
-                    <varname>Sales</varname> from the expression
+                    <varname>OrderDate</varname>, <varname>Quantity</varname>, and a calculated
+                field <varname>Sales</varname> from the expression
                     <codeph>[Quantity]*[BoxPrice]</codeph>. A query for this data is already
                 available with the name <uicontrol>Sales per box per order per
                 period</uicontrol>.</p>
@@ -59,7 +59,7 @@
             <step>
                 <cmd>Add all fields of the query. Click <uicontrol>Next</uicontrol>.</cmd>
                 <stepresult>
-                    <p>In the screen that is displayed now you can specify if you want to add
+                    <p>In the screen that is displayed now, you can specify if you want to add
                         grouping levels.</p>
                 </stepresult>
             </step>
@@ -78,7 +78,7 @@
             <step>
                 <cmd>Click <uicontrol>Next</uicontrol>.</cmd>
                 <stepresult>
-                    <p>In the screen that is displayed now you can specify the sort order.</p>
+                    <p>In the screen that is displayed now, you can specify the sort order.</p>
                 </stepresult>
             </step>
             <step>
@@ -109,7 +109,7 @@
                 <cmd>Click <uicontrol>OK</uicontrol> and after that
                     <uicontrol>Next</uicontrol>.</cmd>
                 <stepresult>
-                    <p>Now you can specify the lay out of the report.</p>
+                    <p>Now you can specify the layout of the report.</p>
                 </stepresult>
             </step>
             <step>

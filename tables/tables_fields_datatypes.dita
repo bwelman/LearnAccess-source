@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="tables_fields_datatypes" xml:lang="en-US">
     <title>Data types</title>
-    <shortdesc>The different data types, the possible values ​​and use. </shortdesc>
+    <shortdesc>The different data types, their possible values, ​​and use. </shortdesc>
     <prolog>
         <critdates>
             <created date="2017-10-05"/>
@@ -16,7 +16,7 @@
         </metadata>
     </prolog>
     <conbody>
-        <p>The main characteristic of a field is the data type, because it determines what type of
+        <p>The main characteristic of a field is the data type because it determines what type of
             data can be in the field. Data types can sometimes be confusing. For example, a field 's
             data type <term>Text</term> can contain both text and numbers (numeric data ), but a
             field of data type <term>Number</term> can contain only numeric data. If you don't know
@@ -39,7 +39,7 @@
             <strow>
                 <stentry>Long Text</stentry>
                 <stentry>Alphanumeric</stentry>
-                <stentry>Long amounts of text, up to 1GB. In eralier versions named memo.</stentry>
+                <stentry>Long amounts of text, up to 1GB. In earlier versions named memo.</stentry>
             </strow>
             <strow>
                 <stentry>Number</stentry>
@@ -73,14 +73,14 @@
                 <stentry>Yes/No</stentry>
                 <stentry>Yes or No</stentry>
                 <stentry>Boolean values, only two values possible <userinput>Yes</userinput> or
-                        <userinput>No</userinput>. In the background Access uses the value -1 for
+                        <userinput>No</userinput>. In the background, Access uses the value -1 for
                     all Yes-values and the value 0 for all No-values. You also use this field for
                     values as TRUE / FALSE, or ON / OFF.</stentry>
             </strow>
             <strow>
                 <stentry>OLE Object</stentry>
                 <stentry>Objects from other Windows applications</stentry>
-                <stentry>Photo's, graphs, Excel worksheet, Word document, ...</stentry>
+                <stentry>Photos, graphs, Excel worksheet, Word document, ...</stentry>
             </strow>
             <strow>
                 <stentry>Hyperlink</stentry>
@@ -96,12 +96,13 @@
             <strow>
                 <stentry>Calculated</stentry>
                 <stentry>different</stentry>
-                <stentry>Expression that uses data from one or more fields.</stentry>
+                <stentry>An expression that uses data from one or more fields.</stentry>
             </strow>
         </simpletable>
-        <note type="notice">In Access you can set a field's data type to <term>Lookup Wizard</term>.
-            Doing this starts the Lookup Wizard, which helps you create a Lookup field. A Lookup
-            field displays either a list of values that is retrieved from a table or query, or it
-            displays a static set of values that you specified when you created the field.</note>
+        <note type="notice">In Access, you can set a field's data type to <term>Lookup
+            Wizard</term>. Doing this starts the Lookup Wizard, which helps you create a Lookup
+            field. A Lookup field displays either a list of values that is retrieved from a table or
+            query, or it displays a static set of values that you specified when you created the
+            field.</note>
     </conbody>
 </concept>

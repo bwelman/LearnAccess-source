@@ -31,20 +31,20 @@
         </fig>
         <p>The customer data are in the table <wintitle>Customers</wintitle>. The orders of the
             customers are stored in the tables <wintitle>Orders</wintitle> and
-                <wintitle>OrderDetails</wintitle>. The data of a box pralines, for example name and
+                <wintitle>OrderDetails</wintitle>. The data of a box pralines, for example, name and
             price, are stored in the table <wintitle>Boxes</wintitle>. In the table
                 <wintitle>BoxDetails</wintitle> you can find which pralines and how much of them are
             in each box. The table <wintitle>Pralines</wintitle> contains information about the name
-            of the pralines, chocolate type, filling and even includes a picture.</p>
+            of the pralines, chocolate type, filling, and even includes a picture.</p>
         <note type="notice"> Each table should include a column or set of columns that uniquely
             identifies each row stored in the table. This is often a unique identification number,
             such as an article number or an employee number. In database terminology, this
             information is called the <b>primary key</b> of the table. The value of the primary key
             can occur only once in the table. Duplicate values ​​for the primary key are prohibited.
             Most of the tables have a primary key consisting of one field, but sometimes it is
-            necessary to combine fields in order to achieve a unique combination. In the tables
-            Customers, Orders, Boxes and Pralines the key is one field. In the tables OrderDetails
-            and BoxDetails two fields are required for the key. See figure. </note>
+            necessary to combine fields to achieve a unique combination. In the tables Customers,
+            Orders, Boxes, and Pralines the key is one field. In the tables OrderDetails and
+            BoxDetails two fields are required for the key. See figure. </note>
         <p>The six tables are shortly discussed below.</p>
         <fig>
             <title>Table Customers</title>
@@ -56,8 +56,8 @@
             Every customer has a unique <varname>CustomerCode</varname>. The field
                 <varname>CustomerCode</varname> is the <term>primary key</term> of the table. Each
             row of a table is called a <term>record</term>. Customers are sorted by the values ​of
-            the primary key (= CustomerCode). In the status bar you can see that the table Customers
-            has 325 records (customers).</p>
+            the primary key (= CustomerCode). In the status bar, you can see that table Customers
+            have 325 records (customers).</p>
         <fig>
             <title>Table Orders</title>
             <image keyref="table_orders">
@@ -65,8 +65,8 @@
             </image>
         </fig>
         <p>In the table <wintitle>Orders</wintitle> is <varname>OrderCode</varname> the primary key,
-            the value of OrderCode is unique. A certain value of CustomerCode can appear more then
-            once in this table, because a customer can have multiple orders. An order is always
+            the value of OrderCode is unique. A certain value of CustomerCode can appear more than
+            once in this table because a customer can have multiple orders. An order is always
             associated with one customer. The table Orders has 784 records (orders).</p>
         <fig>
             <title>Table OrderDetails</title>
@@ -77,9 +77,9 @@
         <p>An order can contain multiple boxes, but each <varname>BoxCode</varname> can only occur
             once in an order. However, a certain box can be ordered in multiple orders, so that a
                 <varname>BoxCode</varname> can belong to multiple values of
-                <varname>OrderCode</varname>. In the table you can see that two different boxes have
-            been ordered on the order with <varname>OrderCode</varname> 3, because the table has two
-            rows with <varname>OrderCode</varname> 3. A total of three boxes are ordered in this
+                <varname>OrderCode</varname>. In the table, you can see that two different boxes
+            have been ordered on the order with <varname>OrderCode</varname> 3 because the table has
+            two rows with <varname>OrderCode</varname> 3. A total of three boxes are ordered in this
             order, two boxes with <varname>BoxCode</varname> CHER and one box with
                 <varname>BoxCode</varname> NOWI. You can also see that two boxes NOWI are ordered in
             the order with <varname>OrderCode</varname> 6. This table has 1537 records (order
@@ -88,8 +88,8 @@
             unique. Therefore, the key in the table is a combination of the fields OrderCode and
             BoxCode.</p>
         <note>The total number of ordered boxes on all orders is the sum of all the numbers in the
-            column <varname>Quantity</varname>. This number is not present in the table. In a
-            different part in this course will be explained how you can calculate it. </note>
+            column <varname>Quantity</varname>. This number is not present in the table. In another
+            chapter of this course will be explained how you can calculate it. </note>
         <fig>
             <title>Table Boxes</title>
             <image keyref="table_boxes">
@@ -97,30 +97,30 @@
             </image>
         </fig>
         <p>In the table <wintitle>Boxes</wintitle> is <varname>BoxCode</varname> the key. There are
-            18 different boxes, each with a unique <varname>BoxCode</varname>. The table Boxes is
-            the table with all the articles of the company.</p>
+            18 different boxes, each with a unique <varname>BoxCode</varname>. Table Boxes is the
+            table with all the articles of the company.</p>
         <fig>
             <title>Table BoxDetails</title>
             <image keyref="table_boxdetails">
                 <alt>Table BoxDetails</alt>
             </image>
         </fig>
-        <p>In the table <wintitle>BoxDetails</wintitle> is stores what kinds of pralines and how
-            many of them are in a certain box. So you can read that there are six kind of pralines
-            in the box ALLS, two of each, a total of twelve pralines. In this table the key is a
-            combination of the fields <varname>BoxCode</varname> and <varname>PralineCode</varname>.
-            The table has 84 records.</p>
+        <p>In table <wintitle>BoxDetails</wintitle> is stored what kinds of pralines and how many of
+            them are in a certain box. So you can read that there are six kinds of pralines in box
+            ALLS, two of each, a total of twelve pralines. In this table, the key is a combination
+            of the fields <varname>BoxCode</varname> and <varname>PralineCode</varname>. The table
+            has 84 records.</p>
         <fig>
             <title>Table Pralines</title>
             <image keyref="table_pralines">
                 <alt>Table Pralines</alt>
             </image>
         </fig>
-        <p>In the table <wintitle>Pralines</wintitle> some properties of each kind of praline are
+        <p>In table <wintitle>Pralines</wintitle>, some properties of each kind of praline are
             stored. The key is the field <varname>PralineCode</varname>. The table has 41 records
             (praline types).</p>
         <example>
-            <p>You can easily make a some calculations on the basis of the data in the text.</p>
+            <p>You can easily make some calculations based on the data in the text.</p>
             <ol>
                 <li>The average number of praline types per box. This can be calculated from the
                     total number of records in the table BoxDetails divided by the total number of
@@ -129,9 +129,9 @@
                     number of order rows divided by the total number of orders: 1537 / 784 =
                     2,0</li>
             </ol>
-            <p>You can't calculate easily the average number of pralines in a box. For this you need
-                the total number of pralines in all boxes. This is the sum of all numbers in the
-                column Quantity in the table BoxDetails.</p>
+            <p>You can't easily calculate the average number of pralines in a box. To do that, you
+                need the total number of pralines in all boxes. This is the sum of all numbers in
+                the column Quantity in the table BoxDetails.</p>
         </example>
     </conbody>
 </concept>

@@ -16,7 +16,7 @@
  </prolog>
  <conbody>
   <p>The screen of Access exists from top to bottom from a part to control the program, the
-   documents area and the status bar.</p>
+            documents area, and the status bar.</p>
   <fig>
             <title>Program window Access</title>
             <image keyref="access_window">
@@ -27,45 +27,49 @@
    <dlentry>
     <dt>File</dt>
     <dd>This button is in the upper left corner of the program window. Under this button are some
-      <term>basic commands</term> that are found in all Office programs such as opening, saving and
-     printing files. Also included is the important command <uicontrol>Options</uicontrol>, with
-     which you can set some settings for Access.</dd>
+                        <term>basic commands</term> that are found in all Office programs such as
+                    opening, saving, and printing files. Also included is the important command
+                        <uicontrol>Options</uicontrol>, with which you can set some settings for
+                    Access.</dd>
    </dlentry>
    <dlentry>
     <dt>Quick Access Toolbar</dt>
      <dd>The Quick Access Toolbar is a customizable toolbar for shortcuts to frequently used
-          features and commands. It is also where you can add the shortcuts to Access features that
-          are not available on the ribbon. The default installation has three shortcuts: <ul>
-            <li><image keyref="button_save"/> Save</li>
-            <li><image keyref="button_undo"/> Undo </li>
-            <li><image keyref="button_redo"/> Redo</li>
-          </ul> You can customize the Quick Access Toolbar by adding your own command buttons.</dd>
+                    features and commands. It is also where you can add the shortcuts to Access
+                    features that are not available on the ribbon. The default installation has
+                    three shortcuts: <ul>
+                        <li><image keyref="button_save"/> Save</li>
+                        <li><image keyref="button_undo"/> Undo </li>
+                        <li><image keyref="button_redo"/> Redo</li>
+                    </ul> You can customize the Quick Access Toolbar by adding your command
+                    buttons.</dd>
    </dlentry>
    <dlentry>
     <dt>Ribbon</dt>
      <dd>The ribbon is a panel, a wide toolbar at the upper side of the program window. The commands
-          on the ribbon are organized in logical groups and collected together under tabs like
-            <wintitle>Start</wintitle>, <wintitle>Create</wintitle> ... Each tab has a specific task
-          that it performs. Some tabs, so called <term>contextual tabs</term>, are only displayed
-          when they are needed. An example is the tab <wintitle>Table</wintitle>, that only appears
-          when a table is opened. Furthermore, the commands you will need often are on the left and
-          the most specialized commands are on the right.<note type="tip">There is no way to delete
-            the ribbon, but you can minimize it through the keyboard shortcut
-                <uicontrol><shortcut>CTRL + F1</shortcut></uicontrol>. Then you see only the tabs.
-            Pressing this shortcut again restores the ribbon.</note></dd>
+                    on the ribbon are organized in logical groups and collected together under tabs
+                    like <wintitle>Start</wintitle>, <wintitle>Create</wintitle> ... Each tab has a
+                    specific task that it performs. Some tabs, so-called <term>contextual
+                        tabs</term>, are only displayed when they are needed. An example is the tab
+                        <wintitle>Table</wintitle>, that only appears when a table is opened.
+                    Furthermore, the commands you will need often are on the left and the most
+                    specialized commands are on the right.<note type="tip">There is no way to delete
+                        the ribbon, but you can minimize it through the keyboard shortcut
+                                <uicontrol><shortcut>CTRL + F1</shortcut></uicontrol>. Then you see
+                        only the tabs. Pressing this shortcut again restores the ribbon.</note></dd>
    </dlentry>
    <dlentry>
     <dt>Tabs</dt>
-    <dd>At the upper side of the ribbon are tabs. On each tab there are groups of commands. Some
-          tabs are only displayed when they are needed.</dd>
+    <dd>At the upper side of the ribbon are tabs. On each tab, there are groups of commands. Some
+                    tabs are only displayed when they are needed.</dd>
    </dlentry>
    <dlentry>
     <dt>Groups</dt>
-     <dd>On each tab there are <term>groups</term> of related commands. A group contains all the
-       necessary commands for a particular task. Not all the commands of a group are mostly
-       visible. When you want to see more options for the group you should click on the arrow
-       <image keyref="button_dialogwindow"/> in the bottom right corner of the
-       group.</dd>
+     <dd>On each tab, there are <term>groups</term> of related commands. A group contains all the
+                    necessary commands for a particular task. Not all the commands of a group are
+                    mostly visible. When you want to see more options for the group you should click
+                    on the arrow <image keyref="button_dialogwindow"/> in the bottom right corner of
+                    the group.</dd>
    </dlentry>
    <dlentry>
     <dt>Command button</dt>

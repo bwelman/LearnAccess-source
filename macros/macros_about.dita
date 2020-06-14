@@ -15,12 +15,12 @@
         </metadata>
     </prolog>
     <conbody>
-        <p>A macro is a little program that can perform certain actions. For example you can give a
+        <p>A macro is a little program that can perform certain actions. For example, you can give a
             macro the command to open a form or to search a record. A macro is often assigned to a
             control such as a command button. When clicking on the button, then the commands in the
             macro are run. This way you can assign additional functions to forms and reports.</p>
-        <p>Basically, a macro in Access is a list of actions to be carried out consecutively. For
-            most actions one or more arguments are needed.</p>
+        <p>A macro in Access is a list of actions to be carried out consecutively. For most actions,
+            one or more arguments are needed.</p>
         <fig>
             <title>Macro window with action catalog</title>
             <image keyref="macro_window">
@@ -34,11 +34,11 @@
                 <li>harmless actions always, regardless of how they are used</li>
                 <li>dangerous actions</li>
             </ul></p>
-        <p>Even an action as <option>printing</option> is considered hazardous, because these
+        <p>Even an action as <option>printing</option> is considered hazardous because these
             unwanted can send commands to the printer.</p>
-        <p>When you add actions in the macro window, by default, Access shows only the actions that
-            are absolutely safe. To get a complete list of actions, including the dangerous actions,
-            you need to change a setting. Then choose in the macro window <menucascade>
+        <p>When you add actions in the macro window, by default, Access shows only the  safe
+            actions. To get a complete list of actions, including dangerous actions, you need to
+            change a setting. Then choose in the macro window <menucascade>
                 <uicontrol>tab Design</uicontrol>
                 <uicontrol>Show All Actions (group Show/Hide</uicontrol>
             </menucascade>.</p>

@@ -13,7 +13,7 @@
     </prolog>
     <body>
         <section>
-            <p>Create a list of all the customers (name and address) who live in Enschede, Hengelo
+            <p>Create a list of all the customers (name and address) who live in Enschede, Hengelo,
                 and Almelo. Name the query <userinput>quer005</userinput>.</p>
         </section>
         <section otherprops="answer">
@@ -24,7 +24,7 @@
         <section otherprops="solution">
             <title>Solution</title>
             <image keyref="ex_quer005_design"/>
-            <p>As condition for City you can also use <userinput>"Enschede" Or "Hengelo" Or
+            <p>As a condition for City you can also use <userinput>"Enschede" Or "Hengelo" Or
                     "Almelo"</userinput></p></section>
     </body>
 </topic>

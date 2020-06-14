@@ -14,7 +14,7 @@
     <body>
         <section>
             <p>Create a query to select customers in the provinces of Friesland and Groningen. Show
-                LastName, FirstName and City. Name the query <userinput>quer001</userinput>.</p>
+                LastName, FirstName, and City. Name the query <userinput>quer001</userinput>.</p>
             <note type="tip">The field <varname>Province</varname> may have two values ​​here
                     <q>FR</q> or <q>GR</q>. You can get done this by entering one value in the row
                     <uicontrol>Criteria</uicontrol> and the other value in the row

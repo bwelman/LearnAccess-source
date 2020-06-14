@@ -22,15 +22,15 @@
                 box for searching the BoxCode.</p>
             <p>ANALYSIS</p>
             <p>The base of the form can be made with a default form. The choice list is a Combo Box.
-                You need to create a macro for performing two tasks. First go to the combo box and
-                get the box code from ther. Then find the corresponding record..</p>
+                You need to create a macro for performing two tasks. First, go to the Combo Box and
+                get the box code from there. Then find the corresponding record..</p>
         </context>
         <steps>
             <step>
                 <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
             </step>
             <step>
-                <cmd>Create a new form with combo box and name it <userinput>Search box by
+                <cmd>Create a new form with Combo Box and name it <userinput>Search box by
                         code</userinput>.</cmd>
             </step>
             <step>
@@ -38,7 +38,7 @@
             </step>
             <step>
                 <cmd>Open form <uicontrol>Search box by code</uicontrol> and test the working of the
-                    combo box.</cmd>
+                    Combo Box.</cmd>
             </step>
         </steps>
     </taskbody>

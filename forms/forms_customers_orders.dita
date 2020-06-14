@@ -20,17 +20,17 @@
     </prolog>
     <taskbody>
         <context>
-            <p>The easiest way to make a main form having a subform is with the aid of the
+            <p>The easiest way to make a main form with a subform is with the aid of the
                     <uicontrol>Form Wizard</uicontrol>. This wizard makes the two forms and provides
                 the linking.</p>
-            <p>The goal is to create a form that displays customer code, name and address, and
-                further shows the corresponding orders with order code, order date and order
+            <p>The goal is to create a form that displays customer code, name, and address, and
+                further shows the corresponding orders with order code, order date, and order
                 subtotal.</p>
             <p>The customer data is going to the main form and all necessary fields are available in
-                table Customers. The subform will display the order data: OrderCode, OrderDate and a
-                calculated subtotal. The subtotal can be calculated from the fields Quantity and
+                table Customers. The subform will display the order data: OrderCode, OrderDate, and
+                a calculated subtotal. The subtotal can be calculated from the fields Quantity and
                 BoxPrice (table Boxes).</p>
-            <p>To display the subtotal on a form, you need a query which can offer all these data as
+            <p>To display the subtotal on a form, you need a query that can offer all these data as
                 a source to the subform. Such a query is already available and is named
                     <varname>Orders with subtotals</varname>. This query contains also the field
                 CustomerCode, so that a link between the main and subform can be established.</p>
@@ -46,7 +46,7 @@
                     </menucascade>.</cmd>
             </step>
             <step>
-                <cmd>Select in box <varname>Tables/Queries</varname>
+                <cmd>Select <varname>Tables/Queries</varname>
                     <uicontrol>Table: Customers</uicontrol>.</cmd>
                 <stepresult>
                     <fig>
@@ -62,14 +62,14 @@
                     Address, ZipCode, City, Telephone.</cmd>
             </step>
             <step>
-                <cmd>Select in box <varname>Tables/Queries</varname>
+                <cmd>Select<varname>Tables/Queries</varname>
                     <uicontrol>Query: Orders with subtotals</uicontrol>.</cmd>
                 <stepresult>The fields of the query are displayed in the box <wintitle>Available
                         Fields</wintitle>.</stepresult>
             </step>
             <step>
-                <cmd>Add successively the following fields: OrderCode, OrderDate and Subtotal. Click
-                        <uicontrol>Next</uicontrol>.</cmd>
+                <cmd>Add successively the following fields: OrderCode, OrderDate, and Subtotal.
+                    Click <uicontrol>Next</uicontrol>.</cmd>
                 <stepresult>
                     <fig>
                         <title>Form Wizard view choice</title>

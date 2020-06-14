@@ -18,11 +18,11 @@
         <context>
             <p>INFORMATION NEEDS</p>
             <p>Create a sorted list of order rows, showing per order: order code, box code, number
-                of boxes, box price and the amount for each row ( = each box).</p>
+                of boxes, box price, and the amount for each row ( = each box).</p>
             <p>ANALYSIS</p>
-            <p>For each order you can find the OrderCode, BoxCode and the number of boxes (Quantity)
-                in table OrderDetails. The BoxPrice is in the table Boxes. The row amount is not
-                present in any table, because this amount can be calculated from other data:
+            <p>For each order, you can find the OrderCode, BoxCode, and the number of boxes
+                (Quantity) in table OrderDetails. The BoxPrice is in the table Boxes. The row amount
+                is not present in any table, because this amount can be calculated from other data:
                     <codeph>Amount = Quantity * BoxPrice</codeph>.</p>
         </context>
         <steps>
@@ -51,8 +51,9 @@
             <step>
                 <cmd>Add successively the fields <varname>OrderCode</varname>,
                         <varname>BoxCode</varname>, <varname>Quantity</varname> (from table
-                        <varname>OrderDetails</varname>) and <varname>BoxPrice</varname> (from table
-                        <varname>Boxes</varname>) to the grid by double clicking on the field.</cmd>
+                        <varname>OrderDetails</varname>), and <varname>BoxPrice</varname> (from
+                    table <varname>Boxes</varname>) to the grid by double-clicking on the
+                    field.</cmd>
                 <stepresult>
                     <fig>
                         <title>Design with tables and fields</title>
@@ -91,8 +92,8 @@
                 <tutorialinfo>
                     <p>All objects in Access have <term>properties</term>. These
                             <term>properties</term> determine, among other things, the appearance of
-                        the object. The settings of the properties is possible in the
-                            <wintitle>Property Sheet</wintitle>. You can switching the visibility of
+                        the object. The setting of the properties is possible in the
+                            <wintitle>Property Sheet</wintitle>. You can switch the visibility of
                         the Property Sheet on and off with <menucascade>
                             <uicontrol>tab Design</uicontrol>
                             <uicontrol>Property Sheet (group Show/Hide)</uicontrol>

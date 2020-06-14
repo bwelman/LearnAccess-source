@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="queries_criteria" xml:lang="en-US" >
 	<title>Criteria in queries</title>
-	<shortdesc>Explanation of conditions in a query, Like operator and wild cards.</shortdesc>
+	<shortdesc>Explanation of conditions in a query, the Like operator, and wild cards.</shortdesc>
 	<prolog>
 		<critdates>
 			<created date="2017-10-05"/>
@@ -15,13 +15,13 @@
 		</metadata>
 	</prolog>
 	<conbody>
-		<p>In a query you can define conditions, so that only those records which meet these conditions
-			are displayed. In the design grid the row <varname>Criteria</varname> is available for
-			this purpose.</p>
+		<p>In a query, you can define conditions, so that only those records which meet these conditions
+            are displayed. In the design grid, the row <varname>Criteria</varname> is available for
+            this purpose.</p>
 		<p>A criterion is similar to a formula. It is a string that may consist of field references,
-			operators, and constants (values that are always the same). Query criteria are also
-			called expressions. What may be formulated in a criterion depends on the data type of
-			the field (text, numeric, date / time, yes / no).</p>
+            operators, and constants (values that are always the same). Query criteria are also
+            called expressions. What may be formulated in a criterion depends on the data type of
+            the field (text, numeric, date/time, yes/no).</p>
 		<simpletable frame="all" relcolwidth="1.0* 1.0*">
 			<sthead>
 				<stentry>Category</stentry>

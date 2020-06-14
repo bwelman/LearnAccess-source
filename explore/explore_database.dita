@@ -19,7 +19,7 @@
     <conbody>
         <p>Start Access and then open the file <filepath><keyword keyref="example_db_file"
             /></filepath>.</p>
-        <note>When a security warning displayed you should you take action. Refer to the part
+        <note>When a security warning is displayed, you should you take action. Refer to the part
             Security and macros.</note>
         <fig>
             <title>Access with the Snoopy database</title>
@@ -62,7 +62,7 @@
                     <alt>Tabbed documents</alt>
                 </image>
             </fig></p>
-        <p>You can change this setting through: <menucascade>
+        <p>You can change this setting through <menucascade>
                 <uicontrol>File</uicontrol>
                 <uicontrol>Options</uicontrol>
                 <uicontrol>Current Database</uicontrol>

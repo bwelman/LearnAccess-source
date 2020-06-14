@@ -13,19 +13,19 @@
     </prolog>
     <body>
         <section>
-            <p>In this exercise you need the table <wintitle>Transport</wintitle> that had to be
+            <p>In this exercise, you need the table <wintitle>Transport</wintitle> that had to be
                 made ​​earlier in the course. When this table is not present in your database, you
                 have two possibilities:<ul>
-                    <li>You still perform the task with creating this table.</li>
-                    <li>You use the database <filepath>transport.accdb</filepath> where the table
+                    <li>You still perform the task by creating this table.</li>
+                    <li>You use database <filepath>transport.accdb</filepath> where the table
                         Transport already was made for you.</li>
                 </ul></p>
-            <p>In table <wintitle>Transport</wintitle> the field <varname>ID
-                    TransportCompany</varname> has regularly same value. So you can see 13 times the
-                value 1. Therefore, this field can not serve as primary key. The value of
-                    <varname>DeliveryProvince</varname> appears three times because each carrier has
+            <p>In the <wintitle>Transport</wintitle> table, the <varname>ID
+                    TransportCompany</varname> field regularly has the same value. So you can see 13
+                times the value 1. Therefore, this field can not serve as a primary key. The value
+                of <varname>DeliveryProvince</varname> appears three times because each carrier has
                 a rate per province. The field <varname>DeliveryProvince</varname> therefore can not
-                serve as primary key. The combination of the fields <varname>ID
+                serve as a primary key. The combination of the fields <varname>ID
                     TransportCompany</varname> and <varname>DeliveryProvince</varname> is unique and
                 can therefore be used as a primary key. Set this as primary key table
                     <wintitle>Transport</wintitle>.</p>

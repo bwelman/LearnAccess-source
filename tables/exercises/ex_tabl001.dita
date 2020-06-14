@@ -12,15 +12,15 @@
         </metadata>
     </prolog>
     <body>
-        <section>The table <wintitle>Suppliers</wintitle> has a field <varname>Supplier</varname>.
+        <section>The <wintitle>Suppliers</wintitle> table has a field <varname>Supplier</varname>.
             This is the name of the supplier. It is now possible to use the same supplier name more
-            then once, which is undesirable. To prevent this, you can set the value of the property
+            than once, which is undesirable. To prevent this, you can set the value of the property
                 <uicontrol>Indexed</uicontrol> of this field on <userinput>Yes (No
                 Duplicates)</userinput>. Apply this change.</section>
         <section otherprops="solution">
             <title>Solution</title>
             <p>Open table <wintitle>Suppliers</wintitle> in Design View. At field
-                    <uicontrol>Supplier</uicontrol> set the property <varname>Indexed</varname> on
+                    <uicontrol>Supplier</uicontrol>, set the property <varname>Indexed</varname> on
                     <userinput>Yes (No Duplicates)</userinput>.</p>
         </section>
     </body>

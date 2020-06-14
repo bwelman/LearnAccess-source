@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="tables_fields_properties" xml:lang="en-US">
     <title>Field Properties</title>
-    <shortdesc>Additional properties of a field such as field length.</shortdesc>
+    <shortdesc>Additional properties of a field such as a field length.</shortdesc>
     <prolog>
         <critdates>
             <created date="2017-10-05"/>
@@ -20,17 +20,17 @@
             properties are:<dl>
                 <dlentry>
                     <dt>Field Size</dt>
-                    <dd>Important at <varname>Text</varname>, <varname>Number</varname> and
+                    <dd>Important at <varname>Text</varname>, <varname>Number</varname>, and
                             sometimes<varname>AutoNumber</varname>. For a text field, you can
-                        specify the maximum length of the text. In For a number field you can
-                        specify what kind of numbers can be entered, like: Byte, Integer, Long
-                        Integer, Decimal, Single and Double.</dd>
+                        specify the maximum length of the text. For a number field, you can specify
+                        what kind of numbers can be entered, like Byte, Integer, Long Integer,
+                        Decimal, Single, and Double.</dd>
                 </dlentry>
                 <dlentry>
                     <dt>Format</dt>
-                    <dd>Can be used with most of the data types. Allows you to control how the
+                    <dd>It can be used with most of the data types. It allows you to control how the
                         content of the field will look when it is displayed in tables, queries,
-                        forms and reports. You can use all valid number formats, and often there is
+                        forms, and reports. You can use all valid number formats, and often there is
                         also a list of predefined formats available.</dd>
                 </dlentry>
                 <dlentry>
@@ -40,19 +40,19 @@
                 </dlentry>
                 <dlentry>
                     <dt>Default Value</dt>
-                    <dd>Can be used with most of the data types. Automatically enters a value for
+                    <dd>It can be used with most of the data types. Automatically enters a value for
                         the field when a new record is created. Very useful when the value is often
                         the same. The value can be changed afterward.</dd>
                 </dlentry>
                 <dlentry>
                     <dt>Required</dt>
-                    <dd>Can be used with most of the data types. The possible values ​​are
+                    <dd>It can be used with most of the data types. The possible values ​​are
                             <option>No</option> (default) and <option>Yes</option>.</dd>
                 </dlentry>
             </dl></p>
         <p>A special role is there for the properties <varname>Input mask</varname>,
-                <varname>Validation Rule</varname> and <varname>Validation Text</varname>. These can
-            be used in the <term>validation</term> of data, that let you control the conditions for
-            the entered data.</p>
+                <varname>Validation Rule</varname>, and <varname>Validation Text</varname>. These
+            can be used in the <term>validation</term> of data, that let you control the conditions
+            for the entered data.</p>
     </conbody>
 </concept>

@@ -15,7 +15,7 @@
         <section>
             <p>Create a list of all pralines without filling. Name the query
                     <userinput>quer007</userinput>.</p>
-            <note type="tip">First find out what value theType field has for pralines without
+            <note type="tip">Try to find first what value the field Type has for pralines without
                 filling.</note>
         </section>
         <section otherprops="answer">

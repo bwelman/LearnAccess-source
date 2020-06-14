@@ -15,8 +15,8 @@
         </metadata>
     </prolog>
     <taskbody>
-        <context>Access can automatically generate a report on the basis of a table or a query.
-            Sometimes the generated report is sufficient, but mostly you nee to made manual
+        <context>Access can automatically generate a report based on a table or a query. Sometimes
+            the generated report is sufficient, but mostly you need to make manual
             adjustments.</context>
         <steps>
             <step>
@@ -33,7 +33,7 @@
                 <stepresult>The report is generated and opened in <uicontrol>Layout
                     View</uicontrol>. Not beautiful is that the value of Region is repeated for each
                     record and that the Sales values are not properly formatted. In the following
-                    steps this will be changed.</stepresult>
+                    steps, this will be changed.</stepresult>
             </step>
             <step>
                 <cmd>Close the report and answer the question to save the changes with

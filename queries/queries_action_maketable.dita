@@ -18,12 +18,12 @@
     <taskbody>
         <context>
             <p>INFORMATION NEEDS</p>
-            <p>The marketing department has a special offer for all customers in Friesland. For this
-                they need a table with only the customer data for customers in the province
+            <p>The marketing department has a special offer for all customers in Friesland. For
+                this, they need a table with only the customer data for customers in the province
                 Friesland.</p>
             <p>ANALYSIS</p>
             <p>All necessary data is in table Customers. Selecting for Friesland can be done with a
-                criterion in the query. First you need to create this select query and then change
+                criterion in the query. First, you need to create this select query and then change
                 the query type to Make Table.</p>
         </context>
         <steps>
@@ -70,12 +70,12 @@
                     View</uicontrol>.</cmd>
             </step>
             <step>
-                <cmd>Save the query with name <userinput>Customers Friesland</userinput>.</cmd>
+                <cmd>Save the query with the name <userinput>Customers Friesland</userinput>.</cmd>
             </step>
-            <stepsection>Change query type</stepsection>
+            <stepsection>Change the query type</stepsection>
             <step>
-                <cmd>Open query in Design View and click <uicontrol>Make Table (group Query
-                        Type)</uicontrol> .</cmd>
+                <cmd>Open the query in Design View and click <uicontrol>Make Table (group Query
+                        Type)</uicontrol>.</cmd>
                 <stepresult>The dialog box <wintitle>Make Table</wintitle> is
                     displayed.</stepresult>
             </step>

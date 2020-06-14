@@ -26,10 +26,10 @@
         <p>You can apply these simple methods of validation and restriction by setting properties
             for fields in tables or properties for controls on forms.</p>
         <p>It is recommended to define validation and restriction of data in the design of the table
-            by setting field properties. This saves time, because every time you use the field in a
+            by setting field properties. This saves time because every time you use the field in a
             form, the rules for field validation and other properties are also used on the form.</p>
-        <p>If the data entered through a control on a form is not dependent of a table field, then
-            you need to define properties on the form for validating and restriction of data.</p>
+        <p>If the data entered through a form control, is not dependent of a table field, then you
+            need to define properties on the form for validating and restriction of data.</p>
         <example>
             <title>Example</title>
             <p>A memo from the marketing department of Snoopy reports that the price of the box

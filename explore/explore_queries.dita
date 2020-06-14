@@ -20,12 +20,11 @@
     <taskbody>
         <context>
             <p>Queries are important if you want to select or summarize data from tables. A query is
-                actually a specified question to the database in order to provide certain
-                information.</p>
+                a specified question to the database to provide certain information.</p>
             <p>The two most important views of a query are:<ul>
-                    <li><uicontrol>Datasheet View</uicontrol>. In this view you can see the result
+                    <li><uicontrol>Datasheet View</uicontrol>. In this view, you can see the result
                         (data) of the query.</li>
-                    <li><uicontrol>Design View</uicontrol>. In this view you can see the design of
+                    <li><uicontrol>Design View</uicontrol>. In this view, you can see the design of
                         the query and customize it.</li>
                 </ul></p>
         </context>
@@ -49,8 +48,8 @@
                 <cmd>Put the query <varname>Pralines per box</varname> in the <uicontrol>Design
                         View</uicontrol> on one of the following ways:</cmd>
                 <choices>
-                    <choice>Click the button <uicontrol>Design View</uicontrol> on bottom right of
-                        the program window <image keyref="button_design_view"/></choice>
+                    <choice>Click the button <uicontrol>Design View</uicontrol> on the bottom right
+                        of the program window <image keyref="button_design_view"/></choice>
                     <choice><menucascade>
                             <uicontrol>tab Home</uicontrol>
                             <uicontrol>View (group Views)</uicontrol>
@@ -58,8 +57,8 @@
                         </menucascade>.</choice>
                 </choices>
                 <info>
-                    <note type="tip">You can open a query directly in the Design View by right
-                        clicking on the query name in the navigation pane and then choose
+                    <note type="tip">You can open a query directly in the Design View by
+                        right-clicking on the query name in the navigation pane and then choose
                             <uicontrol>Design View</uicontrol> from the shortcut menu.</note>
                 </info>
                 <stepresult><fig>
@@ -69,14 +68,14 @@
                         </image>
                     </fig><p>The upper three rectangles represent the tables that are used for this
                         query. The line with arrows connects the field names by which two tables are
-                        related to each other.</p>In the lower part of the window you will find in
+                        related to each other.</p>In the lower part of this window, you will find in
                     the first row the names of the used fields. In the third column is an
                     expression, a kind of formula with operations on the fields. The expression
                     formulated here is
                         <codeph>Sum([Pralines].[PralineCosts]*[BoxDetails].[Quantity])</codeph>.
-                    Between the brackets you see the names of the tables and fields.<note type="tip"
-                        >To see the whole expression the column must be widened by dragging the
-                        column to the right edge.</note></stepresult>
+                    Between the brackets, you see the names of the tables and fields.<note
+                        type="tip">To see the whole expression the column must be widened by
+                        dragging the column to the right edge.</note></stepresult>
             </step>
             <step>
                 <cmd>Put the query <uicontrol>Datasheet View</uicontrol>.</cmd>

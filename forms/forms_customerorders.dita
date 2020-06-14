@@ -20,7 +20,7 @@
     <taskbody>
         <context>
             <p>The easiest way to create linked forms is with the Form Wizard. This wizard creates
-                the necessary forms, ensures the linking and provides in a command button on the
+                the necessary forms, ensures the linking, and provides in a command button on the
                 main form to open the linked form.</p>
             <p>The goal is to create a form in which the data of a customer are displayed and with a
                 command button to display the order information from the customer in a new form. See
@@ -33,7 +33,7 @@
             </fig>
             <p>On the main form is the customer data, all necessary fields are available in table
                 Customers. The linked form contains the order code and date and these fields are in
-                table Orders. On this form is also a subform containing the details of the order and
+                table Orders. This form also has a subform containing the details of the order and
                 this data comes from table OrderDetails.</p>
         </context>
         <steps>
@@ -47,7 +47,7 @@
                     </menucascade>.</cmd>
             </step>
             <step>
-                <cmd>Select in box <varname>Tables/Queries</varname>
+                <cmd>Select <varname>Tables/Queries</varname>
                     <uicontrol>Table: Customers</uicontrol>.</cmd>
                 <stepresult>
                     <fig>
@@ -136,7 +136,7 @@
                 <info>
                     <note type="notice">
                         <p>In a default installation of Access each document (table, query, form,
-                            report ) opens in a separate tab. With linked forms that isn't always
+                            report ) opens in a separate tab. With linked forms, this is not always
                             convenient. When you click the command button, the linked subform then
                             opens in a new tab and you don't see the information in both forms
                             together. If you want to do so you have to change the database settings

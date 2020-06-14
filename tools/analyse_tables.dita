@@ -19,20 +19,20 @@
 	<taskbody>
 		<context>
 			<p>When the same information is stored more than once in different tables, this is called
-                    <term>redundancy</term>. That is undesirable, because when the information
+                    <term>redundancy</term>. That is undesirable because when the information
                 changes, you need to change this on all those places. If you don't then the database
                 is inconsistent, the information on these sites is contradictory.</p>
-			<p>Access has a tool<wintitle>Analyze Table</wintitle> to detect redundant data and to split a
-                table with redundant data in multiple, related tables, so that the information is
+			<p>Access has a tool <wintitle>Analyze Table</wintitle> to detect redundant data and to split a
+                table with redundant data in multiple, related tables so that the information is
                 stored more efficiently. This process is called <term>normalization</term>. </p>
-			<p>You can specify which tables you want to the wizard creates for yoy or you can let the wizard
-                normalize your table. After this the wizard helps to sanitize the data in the
+			<p>You can specify which tables you want to the wizard creates for you or you can let the wizard
+                normalize your table. After this, the wizard helps to sanitize the data in the
                 original table. In the last step, you can create a query that returns all
                 information in the splitted tables, displayed in a single datasheet that matches the
                 original table.</p>
 			<p>In the image below you can see an example of a table <wintitle>Contacts</wintitle> with many
-                duplicated data in it. So, this table is not normalized. Access this table split
-                into two tables so that duplicatedis stored as little as possible.</p>
+                duplicated data in it. So, this table is not normalized. Access can split this table
+                into two tables so that as little data as possible is stored multiple times.</p>
 			<fig>
                 <title>Table Contacts</title>
                 <image keyref="table_contacts">
@@ -60,7 +60,7 @@
 			<step>
                 <cmd>Click <uicontrol>Next</uicontrol>.</cmd>
                 <stepresult>
-                    <p>A new screen of the Table Analyzer wizard appears with general explanation
+                    <p>A new screen of the Table Analyzer wizard appears with a general explanation
                         about how this problem can be solved.</p>
                 </stepresult>
             </step>
@@ -74,7 +74,7 @@
                 <cmd>Select table <option>Contacts</option> and click
                     <uicontrol>Next</uicontrol>.</cmd>
                 <stepresult>
-                    <p>Now you can specify who decides about the choice for the fields, the wizard
+                    <p>Now you can specify who decides about the choice for the fields, the wizard,
                         or you.</p>
                 </stepresult>
             </step>
@@ -101,8 +101,8 @@
                 </stepresult>
             </step>
 			<step>
-                <cmd>Enter <userinput>Contactpersons</userinput> as name for the new table and click
-                        <uicontrol>OK</uicontrol>.</cmd>
+                <cmd>Enter <userinput>Contactpersons</userinput> as the name for the new table and
+                    click <uicontrol>OK</uicontrol>.</cmd>
                 <stepresult>
                     <fig>
                         <title>Generated table Contactpersons</title>
@@ -131,7 +131,7 @@
 			<step>
                 <cmd>Click <uicontrol>Next</uicontrol>.</cmd>
                 <stepresult>
-                    <p>The wizard asks now if you want to create query.</p>
+                    <p>The wizard asks now if you want to create a query.</p>
                 </stepresult>
             </step>
 			<step>

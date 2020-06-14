@@ -2,7 +2,7 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
 <task id="queries_customername_ordercodes" xml:lang="en-US">
     <title>Task: Customers and orders</title>
-    <shortdesc>Creating a simple select query using the wizard and then a manual
+    <shortdesc>Create a simple select query using the wizard and then a manual
         adjustment.</shortdesc>
     <prolog>
         <critdates>
@@ -18,7 +18,7 @@
     <taskbody>
         <context>
             <p>INFORMATION NEEDS</p>
-            <p>Create a sorted list of all customers with their last name, first name and their
+            <p>Create a sorted list of all customers with their last name, first name, and their
                 order codes.</p>
             <p>ANALYSIS</p>
             <p>The last name and first name of a customer are in table Customers. The order codes of
@@ -41,7 +41,8 @@
                 <cmd>Select <uicontrol>Simple Query Wizard</uicontrol> and click
                         <uicontrol>OK</uicontrol>.</cmd>
                 <stepresult>
-                    <p>In the following screen you can select the fields you want in your query.</p>
+                    <p>In the following screen, you can select the fields you want in your
+                        query.</p>
                 </stepresult>
             </step>
             <step id="wizard_customers_end">
@@ -67,7 +68,7 @@
             </step>
             <step>
                 <cmd>Select <option>Table: Orders</option> in box
-                        <wintitle>Tables/Queries</wintitle> .</cmd>
+                        <wintitle>Tables/Queries</wintitle>.</cmd>
                 <stepresult>The fields of table <varname>Orders</varname> are displayed in box
                         <wintitle>Available Fields</wintitle>.</stepresult>
             </step>
@@ -93,7 +94,7 @@
             </step>
             <step>
                 <cmd>Name the query <userinput>Customername+Ordercodes</userinput>, select
-                        <uicontrol>Modify the query design</uicontrol> and click
+                        <uicontrol>Modify the query design</uicontrol>, and click
                         <uicontrol>Finish</uicontrol>.</cmd>
                 <stepresult>
                     <p>The design of the query is displayed.</p>

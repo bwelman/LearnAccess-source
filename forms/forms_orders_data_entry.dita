@@ -17,7 +17,7 @@
     </prolog>
     <taskbody>
         <context>
-            <p>In this task you are going to create a form for viewing order data and entering new
+            <p>In this task, you are going to create a form for viewing order data and entering new
                 orders. The desired layout for the form is displayed in the following figure.</p>
             <fig>
                 <title>Data entry form orders</title>
@@ -68,9 +68,9 @@
                         <uicontrol>tab Create</uicontrol>
                         <uicontrol>Query Design (group Queries)</uicontrol>
                     </menucascade>. Add tables <uicontrol>OrderDetails</uicontrol> and
-                        <uicontrol>Boxes</uicontrol> and all fields of these tables. Make in
-                    addition a column with the name <varname>Total</varname> which performs the
-                    calculation <codeph>Quantity*BoxPrice</codeph>.</cmd>
+                        <uicontrol>Boxes</uicontrol> and all fields of these tables. Make also a
+                    column with the name <varname>Total</varname> which performs the calculation
+                        <codeph>Quantity*BoxPrice</codeph>.</cmd>
                 <stepresult>
                     <fig>
                         <title>Design query OrderDetails-Boxes</title>
@@ -98,13 +98,13 @@
             <step>
                 <cmd>Select query <uicontrol>OrderDetails-Boxes</uicontrol> and add the following
                     fields: <varname>Boxes.BoxCode</varname>, <varname>BoxName</varname>,
-                        <varname>Quantity</varname>, <varname>BoxPrice</varname> and
+                        <varname>Quantity</varname>, <varname>BoxPrice</varname>, and
                         <varname>Total</varname>.</cmd>
             </step>
             <step>
                 <cmd>Click <uicontrol>Next</uicontrol> and let the data view <option>by
                         Orders-Customers</option>.</cmd>
-                <stepresult>With this choice the main form will be based on query Orders-Customers
+                <stepresult>With this choice, the main form will be based on query Orders-Customers
                     and the subform on query OrderDetails-Boxes.</stepresult>
             </step>
             <step>

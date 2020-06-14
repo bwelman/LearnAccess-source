@@ -13,8 +13,8 @@
     </prolog>
     <body>
         <section>
-            <p>Create a copy of report <wintitle>Sales per box per order per period</wintitle> and
-                name the copy <userinput>rapp005</userinput>. Change the design of the report so
+            <p>Create a copy of the report <wintitle>Sales per box per order per period</wintitle>
+                and name the copy <userinput>rapp005</userinput>. Change the design of the report so
                 that the total amount per box is printed next to the name box.</p>
             <fig>
                 <title>Report November 2009</title>
@@ -30,8 +30,8 @@
                     and name it <userinput>rapp005</userinput>.</li>
                 <li>Open report <wintitle>rapp005</wintitle> in <wintitle>Design
                     View</wintitle>.</li>
-                <li>Move the boxes with sum for quantity and sales to the section groupheader, to
-                    the right of the BoxName .</li>
+                <li>Move the boxes with the sum for quantity and sales to the section group header,
+                    to the right of the BoxName .</li>
             </ol>
         </section>
     </body>

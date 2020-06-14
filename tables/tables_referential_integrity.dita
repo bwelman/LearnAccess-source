@@ -26,9 +26,9 @@
         <p>When referential integrity is set then the following rules apply:</p>
         <ul>
             <li>You can not specify a value for the foreign key in the related table if that value
-                is not in the primary key of the primary table. For example you can not enter orders
-                for a nonexistent client. When you want to enter an order for a new customer then
-                you must first create the client and then the order.</li>
+                is not in the primary key of the primary table. For example, you can not enter
+                orders for a nonexistent client. When you want to enter an order for a new customer
+                then you must first create the client and then the order.</li>
             <li>A record from a primary table can not be deleted if matching records exist in a
                 related table. So you can not delete a record from the Customers table if there are
                 still records for this customer in the Orders table.</li>
@@ -37,7 +37,7 @@
                 the Customers table if there are records for this customer in the Orders table.</li>
         </ul>
         <p>When the referential integrity is enforced and any of the foregoing rules is violated by
-            an action, then an appropriate error message is displayed. The following figure shows a
+            an action, then an appropriate error message is displayed. The following figure shows an
             example of this.<fig>
                 <title>Error message when entering an order for a non existing client</title>
                 <image keyref="warning_referential_integrity">

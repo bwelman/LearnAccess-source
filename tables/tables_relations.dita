@@ -18,10 +18,10 @@
     <conbody>
         <p>Between two tables exists a relation when a key field from one table is linked to a key
             field in the other table. The linked fields in both tables have mostly the same name and
-            the same data type. What relations should be established is the result from the
-            normalization process which removes the redundant information and put this in multiple
+            the same data type. What relations should be established is the result of the
+            normalization process which removes the redundant information and puts this in multiple
             tables.</p>
-        <p>When tables are related, you can create queries, forms and reports where the information
-            can combined from multiple tables and is displayed as an entity.</p>
+        <p>When tables are related, you can create queries, forms, and reports where the information
+            can be combined from multiple tables and is displayed as an entity.</p>
     </conbody>
 </concept>

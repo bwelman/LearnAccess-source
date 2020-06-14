@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="intro_macro" xml:lang="en-US">
     <title>Macros</title>
-    <shortdesc>What are macro's?</shortdesc>
+    <shortdesc>What are macros?</shortdesc>
     <prolog>
         <critdates>
             <created date="2017-10-05"/>
@@ -15,10 +15,9 @@
         </metadata>
     </prolog>
     <conbody>
-        <p>A macro is a collection of one or more actions, such as for example the opening of a Form
-            or the printing of a report. With macros, you can automate common tasks. You can use
-            macros in different places. For example, you can connect a macro with a form, report,
-            control, key or in a menu. You don't have to need programming knowledge for creating
-            macros.</p>
+        <p>A macro is a collection of one or more actions, such as the opening of a Form or the
+            printing of a report. With macros, you can automate common tasks. You can use macros in
+            different places. For example, you can connect a macro with a form, report, control,
+            key, or in a menu. You don't have to need programming knowledge for creating macros.</p>
     </conbody>
 </concept>

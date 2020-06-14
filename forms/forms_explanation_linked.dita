@@ -17,10 +17,10 @@
     </prolog>
     <conbody>
         <p>Linked forms are separate forms that are related to each other. One of the forms, also
-            called main form, has a command button that opens another form when clicking on it. The
-            records between the two forms are synchronized. Behind the button is program code (VBA)
-            which causes that the subform is opened. This VBA code is automatically created by the
-            Wizard. You don't need to program to work with it.</p>
+            called the main form, has a command button that opens another form when clicking on it.
+            The records between the two forms are synchronized. Behind the button is program code
+            (VBA) which causes that the subform is opened. This VBA code is automatically created by
+            the Wizard. You don't need to program to work with it.</p>
         <p>Whether you with linked forms or with subforms depends usually on the method of work of
             the user. If you only need the primary data of a customer, you don't have to see
             simultaneously all order information from the customer. It is often convenient to have a

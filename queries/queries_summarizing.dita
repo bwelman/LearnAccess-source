@@ -31,8 +31,8 @@
                     <alt>Button totals</alt>
                 </image>
             </fig></p>
-		<p>With this button you can show or hide a row Total in the design grid. Access adds a Total
-			box for each field, just under the table box.</p>
+		<p>With this button, you can show or hide a row Total in the design grid. Access adds a Total box
+            for each field, just under the table box.</p>
 		<fig>
 			<title>Example with Total in query design</title>
 		    <image keyref="q_pralines_box_design">
@@ -40,9 +40,9 @@
 			</image>
 		</fig>
         <draft-comment author="benw">query: Pralines per box</draft-comment>
-		<p>For each added box you can choose an option from the drop down list. This option
-			determines whether the field is used in a calculation or used for grouping or filtering.
-			The available options can be divided into three categories:</p>
+		<p>For each added box you can choose an option from the drop-down list. This option determines
+            whether the field is used in a calculation or used for grouping or filtering. The
+            available options can be divided into three categories:</p>
 		<dl>
 			<dlentry>
 				<dt>Grouping</dt>
@@ -52,9 +52,9 @@
 			</dlentry>
 			<dlentry>
 				<dt>Filtering</dt>
-				<dd>The choice is then: <userinput>Where</userinput>. The check mark in the Show box
-					is also cleared and should remain so. In the box Criteria you can specify the
-					value or expression for filtering.</dd>
+				<dd>The choice is then: <userinput>Where</userinput>. The checkmark in the Show box is also
+                    cleared and should remain so. In the box Criteria, you can specify the value or
+                    expression for filtering.</dd>
 			</dlentry>
 			<dlentry>
 				<dt>Calculations</dt>
@@ -120,8 +120,7 @@
 						</row>
 						<row>
 							<entry>Expression</entry>
-							<entry>Calculates a user defined expression for the values in this
-								field.</entry>
+							<entry>Calculates a user-defined expression for the values in this field.</entry>
 						</row>
 						<row>
 							<entry>Where</entry>
@@ -133,10 +132,10 @@
 		</p>
 		<section>
 			<title>Calculated Field</title>
-			<p>A calculated field takes data from one or more fields and performs some arithmetic to
-				produce new information. You can perform simple arithmetic, like addition and
-				multiplication, or use Access's built-in functions, such as Sum and Avg. You can
-				only use fields that are added tot the query. To create a calculated field</p>
+			<p>A calculated field takes data from one or more fields and performs some arithmetic to produce
+                new information. You can perform simple arithmetic, like addition and
+                multiplication, or use Access's built-in functions, such as Sum and Avg. You can
+                only use fields that are added to the query. To create a calculated field</p>
 			<ol id="ol_qrp_vfh_zs">
 				<li>Click in an empty column in the field row.</li>
 				<li>Enter a name for the calculation (result) followed by a colon (:).</li>
@@ -195,8 +194,8 @@
 		</example>
 		<example>
 			<title>Example 3: Average box price for boxes of more than 200 grams</title>
-			<p>Calculate the average price of boxes of more than 200 gram. The field Weight is used
-				for filtering on boxes of more than 200 gram.</p>
+			<p>Calculate the average price of boxes of more than 200 grams. The field Weight is used for
+                filtering on boxes of more than 200 grams.</p>
 			<fig>
                 <title>Design query average box price</title>
                 <image keyref="q_boxprice_200g_design">

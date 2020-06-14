@@ -19,8 +19,8 @@
     </prolog>
     <taskbody>
         <context>
-            <p>In this task you are going to create a form for entering data of new pralines and
-                editing data of existing pralines. Furthermore three text boxes should be replaced
+            <p>In this task, you are going to create a form for entering data of new pralines and
+                editing data of existing pralines. Furthermore, three text boxes should be replaced
                 by a combo box control. The desired layout for the form is displayed in the
                 following figure.</p>
             <fig>
@@ -59,11 +59,11 @@
             </step>
             <step>
                 <cmd>Save the form with as name <userinput>Praline information</userinput> with the
-                    button <uicontrol>Save <image keyref="button_save"/></uicontrol> in the
+                    button <uicontrol>Save <image keyref="button_save"/></uicontrol> on the
                         <uicontrol>Quick Access Toolbar</uicontrol>.</cmd>
             </step>
             <step>
-                <cmd>Change the format of the header text in: Calibri, 22 pt, bold, white color on a
+                <cmd>Change the format of the header text in Calibri, 22 pt, bold, white color on a
                     green background.</cmd>
             </step>
             <step>
@@ -108,21 +108,21 @@
                         <li>The values will be typed.</li>
                         <li>Number of columns 1. The values are: Butterscotch, Milk, Dark and
                             Toffee.</li>
-                        <li>The value should be stored in field
+                        <li>The value should be stored in the field
                             <varname>ChocolateType</varname>.</li>
                         <li>Label text: <userinput>Chocolate type:</userinput></li>
                     </ul>
                 </info>
-                <stepresult>After finishing of the Wizard you are returning to the Design
+                <stepresult>After finishing the Wizard you are returning to the Design
                     View.</stepresult>
             </step>
             <step>
-                <cmd>Create in an analogous manner a <varname>Combo Box</varname> for
+                <cmd>Create analogously a <varname>Combo Box</varname> for
                         <varname>FillingType</varname> with the values: Amaretto, Blueberry, Cherry
                     cream, Coconut, Marzipan, Mocha cream, None.</cmd>
             </step>
             <step>
-                <cmd>Create in an analogous manner a <varname>Combo Box</varname> for
+                <cmd>Create analogously a <varname>Combo Box</varname> for
                         <varname>NutType</varname> with the values: Almond, Cashew, Hazelnut,
                     Macadamia, Paranut, Pecan, Pistachio, Walnut, None.</cmd>
             </step>

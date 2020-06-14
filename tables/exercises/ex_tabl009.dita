@@ -14,18 +14,18 @@
     <body>
         <section><p>The marketing department wants to record all contacts ( telephone, mail, email,
                 visits) in order to calculate the costs incurred for a customer. For each contact,
-                the contact type, date, start time and end time, subject and any charges (e.g. to
-                send a gift ) are tracked. If for example an employee has spend half an hour with a
+                the contact type, date, start time and end time, subject, and any charges (e.g. to
+                send a gift ) are tracked. If for example an employee has spent half an hour with a
                 letter, then it must be possible to calculate later that the costs are 0.5 *
                 $60.</p>To do this, create a new table named <userinput>Contacts</userinput> and
             link this to table <wintitle>Customers</wintitle> and enforce referential
             integrity.</section>
         <section otherprops="solution">
             <title>Solution</title>
-            <p>Normally you should first do ​an information analysis. The result should be which
-                fields are necessary in table Contacts, what will be the key and which relationships
-                through which fields. Therefore multiple solutions are possible. One solution could
-                be as displayed in the next figure:<fig>
+            <p>Normally you should first make ​an information analysis. The result should be which
+                fields are necessary for table Contacts, what will be the key, and which
+                relationships through which fields. Therefore multiple solutions are possible. One
+                solution could be as displayed in the next figure:<fig>
                     <image keyref="ex_tabl009_contacts"/>
                 </fig></p>Considerations for this design and other designs:<ul>
                 <li>Several contacts of a customer should be recorded. Hence a key field
@@ -37,15 +37,15 @@
                         field<varname>EmployeeCode</varname> (data type: Number - Long Integer)
                     providing a link with table <varname>Employees</varname>.</li>
                 <li>Information analysis should give you the values for field
-                        <varname>ContactType</varname>. For this field you should create list box
+                        <varname>ContactType</varname>. For this field, you should create a list box
                     with these values.</li>
-                <li>For the three date / time fields a suitable format should be selected, possibly
+                <li>For the three date/time fields a suitable format should be selected, possibly
                     with an input mask.</li>
                 <li>Information analysis should tell you how the costs are calculated. The
                     processing time can be calculated from the start and end times, so it is process
                     data and should therefore not be included in the table. If the hourly rate is a
                     constant, then it can also be omitted from the table. In that case, there is
-                    nothing about the costs included in the table and the cost are calculated in a
+                    nothing about the costs included in the table and the cost is calculated in a
                     query or report. Varies the hourly rate or time, then the hourly rate should be
                     included in the table.</li>
             </ul>

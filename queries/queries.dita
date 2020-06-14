@@ -13,9 +13,9 @@
         </metadata>
     </prolog>
     <conbody>
-        <p>Retrieving information from a database is the most common action from end users. To
+        <p>Retrieving information from a database is the most common action from end-users. To
             deliver the required information queries are necessary. Simple queries can be created by
-            the end user themselves, for more complex queries help of a professional is usually
+            the end-user themselves, for more complex queries help of a professional is usually
             desired.</p>
     </conbody>
 </concept>

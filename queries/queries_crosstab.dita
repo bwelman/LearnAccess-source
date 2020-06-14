@@ -25,9 +25,9 @@
             <p>When you create a crosstab query, you specify which fields contain row headings,
                 which field contains column headings, and which field contains values to summarize.
                 For the row headings you can use multiple fields (maximum 3), but for the column
-                heading values  and the values to summarize you can use only one field. It's also
-                possible to use an expression for the row heading(s), column heading and summarize
-                values.</p>
+                heading values and the values to summarize you can use only one field. It's also
+                possible to use an expression for the row heading(s), the column heading(s), and to
+                summarize values.</p>
             <p>The easiest and fastest way to create a crosstab query is using the Crosstab Query
                 Wizard. For more complex queries, you can often start with this Wizard, and then do
                 the fine-tuning in the Design View.</p>
@@ -49,7 +49,7 @@
                         <uicontrol>OK</uicontrol>
                     </menucascade>.</cmd>
                 <stepresult>
-                    <p>In the screen that is displayed now you can select the table or query that
+                    <p>In the screen that is displayed now, you can select the table or query that
                         contains the fields for the crosstab.</p>
                 </stepresult>
             </step>
@@ -97,7 +97,7 @@
             </step>
             <step>
                 <cmd>Select field <varname>CustomerCode</varname> and function
-                        <varname>Count</varname>. Also deselect the option to include row
+                        <varname>Count</varname>. Also, deselect the option to include row
                     sums.</cmd>
                 <stepresult>
                     <fig>
@@ -113,7 +113,7 @@
             </step>
             <step>
                 <cmd>Name the query <userinput>Number of customers by province by
-                    region</userinput>, select <option>View the query</option> and click
+                    region</userinput>, select <option>View the query</option>, and click
                         <uicontrol>Finish</uicontrol>.</cmd>
                 <stepresult>
                     <fig>

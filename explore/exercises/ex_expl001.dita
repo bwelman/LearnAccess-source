@@ -15,7 +15,7 @@
     <section>
       <p>Create a filter to select Pralines with chocolate type Milk or Dark whose price is at most
         $0.30.</p>
-      <note type="tip">With numeric fields you have several options for number ranges:<fig>
+      <note type="tip">With numeric fields, you have several options for number ranges:<fig>
                     <image keyref="ex_expl001_filter_numbers">
                         <alt>Number filter</alt>
                     </image>

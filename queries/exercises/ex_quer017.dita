@@ -15,7 +15,7 @@
     <body>
         <section>
             <p>Create a list of boxes with a price between $ 17 and $ 25 and of which there are at
-                least 400 in stock. Show the code, name, price and stock of the boxes. Name the
+                least 400 in stock. Show the code, name, price, and stock of the boxes. Name the
                 query <userinput>quer017</userinput>.</p>
         </section>
         <section otherprops="answer">

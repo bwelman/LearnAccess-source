@@ -13,7 +13,7 @@
     </prolog>
     <body>
         <section>
-            <p>Create a list with the total sales per customer. Show customer code, customer name
+            <p>Create a list with the total sales per customer. Show customer code, customer name,
                 and the total sales. The column with sales should have an appropriate title and
                 formatting. Sort on descending sales. Name the query
                 <userinput>quer012</userinput>.</p>

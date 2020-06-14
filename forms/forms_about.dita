@@ -20,13 +20,13 @@
     </prolog>
     <conbody>
         <p>Data can be entered directly in the tables. In practice, this happens only in very simple
-            tables. Usually forms are used for data entry. Simple forms are often based on data from
-            one table or query. You also have advanced forms such as a <term>main-subform</term> or
-                <term>linking forms</term>, whose data come from related tables or queries.</p>
+            tables. Usually, forms are used for data entry. Simple forms are often based on data
+            from one table or query. You also have advanced forms such as <term>main-subforms</term>
+            or <term>linking forms</term>, whose data come from related tables or queries.</p>
         <p>Except that you can give your forms an attractive appearance, it is more important that
             you have the opportunity to apply all kinds of checks (validations ) on data entry. And
-            then you can place so called <term>controls</term> on forms. Examples of controls are:
-            list boxes, check boxes, buttons, ...</p>
+            then you can place <term>controls</term> on forms. Examples of controls are: list boxes,
+            checkboxes, buttons, ...</p>
         <p>You can build a form from scratch, but you can also let Access generate a form or use the
             Form Wizard and then adjusting the resulting form manually.</p>
     </conbody>

@@ -2,8 +2,8 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="intro_about" xml:lang="en-US">
 	<title>What are databases?</title>
-	<shortdesc>A short introduction in what <term>databases</term> are and how they are
-		structured.</shortdesc>
+	<shortdesc>A short introduction to what <term>databases</term> are and how they are
+        structured.</shortdesc>
 	<prolog>
 		<critdates>
 		    <created date="2017-10-05"/>
@@ -24,27 +24,27 @@
 	</prolog>
 	<conbody>
 		<p>A database is a collection of data relating to a particular subject or a particular purpose. In
-			a database you can store and track information from various sources, such as:</p>
+            a database, you can store and track information from various sources, such as:</p>
 		<ul>
-			<li>Addresses of Customers in a address list</li>
+			<li>Addresses of Customers in an address list</li>
 			<li>Telephone numbers of suppliers in a card catalog</li>
-			<li>Article data in a  in a file cabinet</li>
+			<li>Article data in an file cabinet</li>
 			<li>Orders of customers in a folder</li>
 		</ul>
 		<p>All this information is often stored in separate tables that make up the database. In its
-			simplest form a database table can be consist of only one table. Between the tables
-			there could be relations and if so you can link data from different tables together.
-			Such a database is called a <term>relational database</term>.</p>
+            simplest form, a database table can be consist of only one table. Between the tables,
+            there could be relations, and if so you can link data from different tables together.
+            Such a database is called a <term>relational database</term>.</p>
 		<fig>
 			<title>Database with three related tables</title>
 		    <image keyref="example_rel_db">
 				<alt>Example of a relational database with three tables.</alt>
 			</image>
 		</fig>
-		<p>In addition to creating and maintaining tables you can also create forms, queries and reports.
-			With forms, you can update information easily and efficiently. And with queries you can
-			get answers on questions. Reports ensure that the output will be neatly displayed on
-			screen or paper.</p>
+		<p>In addition to creating and maintaining tables, you can also create forms, queries, and
+            reports. With forms, you can update information easily and efficiently. And with
+            queries, you can get answers on questions. Reports ensure that the output will be neatly
+            displayed on screen or paper.</p>
 		<p>Access has the following components (objects) in a database:<ul>
 				<li>Tables</li>
 				<li>Queries</li>
@@ -53,17 +53,17 @@
 				<li>Macro's</li>
 				<li>Modules</li>
 			</ul></p>
-		<p>Access stores a database as a single file which contains all components of the database.</p>
+		<p>Access stores a database as a single file that contains all components of the database.</p>
 		<p>There are two different types of work carried out with databases:<dl>
 				<dlentry>
-					<dt>Designing of the database</dt>
-					<dd>This involves the creation of tables, queries, forms and reports. Once the
-						database is created, this task is done.</dd>
+					<dt>Designing the database</dt>
+					<dd>This involves the creation of tables, queries, forms, and reports. Once the database is
+                        created, this task is done.</dd>
 				</dlentry>
 				<dlentry>
 					<dt>Dealing with data</dt>
-					<dd>Entering data, updating data, creating reports, searching in the database,
-						etc.This work you are constantly doing.</dd>
+					<dd>Entering data, updating data, creating reports, searching in the database, etc. This work
+                        you are constantly doing.</dd>
 				</dlentry>
 			</dl></p>
 	</conbody>

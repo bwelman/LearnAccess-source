@@ -16,30 +16,30 @@
         </metadata>
     </prolog>
     <taskbody>
-        <prereq>To perform this task it is necessary that you have finished <xref
+        <prereq>To perform this task you must have finish <xref
                 href="macros_customercode.dita#macros_customercode"/> where you created the form
                 <wintitle>Search customer by code</wintitle> that you will need in this
             task.</prereq>
         <context>
-            <p>There should be a form created with the data of a customer and with two combo boxes.
-                Through the first list a customer should be searched by the customer code and
-                through the second list by name. The second combo box should displayed a sorted list
-                of last names followed by first names. After making a choice through either list the
-                data of the customer in the form should be shown.</p>
+            <p>There should be a form created with the data of a customer and with two Combo Boxes.
+                Through the first list, a customer should be searched by the customer code and
+                through the second list by name. The second Combo Box should display a sorted list
+                of last names followed by first names. After choosing via one of the two lists, the
+                customer's details must be shown in the form.</p>
             <p>ANALYSIS</p>
             <p>The basis of the new form is the previously created form <uicontrol>Search customer
-                    by code</uicontrol>. In Access you can create a copy of an object and save it
-                under a different name. On this you create the second combo box. And you need to
-                create a macro that will execute the actions. First go to the drop-down list box to
-                get the entered customer code and then find the corresponding record.</p>
+                    by code</uicontrol>. In Access, you can create a copy of an object and save it
+                under a different name. The second Combo Box must then be made on this. And you need
+                to create a macro that will execute the actions. First, go to the drop-down list box
+                to get the entered customer code and then find the corresponding record.</p>
         </context>
         <steps>
             <step>
                 <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
             </step>
             <step>
-                <cmd>Right click on form <uicontrol>Search customer by code</uicontrol>, choose
-                        <uicontrol>Copy</uicontrol>. Then right click again and choose
+                <cmd>Right-click on form <uicontrol>Search customer by code</uicontrol>, choose
+                        <uicontrol>Copy</uicontrol>. Then right-click again and choose
                         <uicontrol>Past</uicontrol>.</cmd>
             </step>
             <step>
@@ -48,9 +48,9 @@
             </step>
             <step>
                 <cmd>Create more space for the form header. Position the mouse pointer over the top
-                    edge of Detail until it change as shown in the following illustration. Then
+                    edge of Detail until it changes as shown in the following illustration. Then
                     press the left mouse button and drag the border down so that there is enough
-                    space for the second combo box.</cmd>
+                    space for the second Combo Box.</cmd>
                 <stepresult>
                     <fig>
                         <title>Enlarging form header</title>
@@ -66,7 +66,7 @@
             <step>
                 <cmd>Answer the consecutive questions of the Wizard as follows:</cmd>
                 <info><ul>
-                        <li>The combo box should get the values from a table or a query.</li>
+                        <li>The Combo Box should get the values from a table or a query.</li>
                         <li>Table: Customers should provide the values for the combo box.</li>
                         <li>Add in sequence the fields LastName, FirstName, CustomerCode.</li>
                         <li>Sort records ascending on LastName and then FirstName.</li>
@@ -79,7 +79,7 @@
                     <p>After completing the wizard you are back in the Design View.</p></stepresult>
             </step>
             <step>
-                <cmd>Take care that labels and combo boxes are properly aligned.</cmd>
+                <cmd>Take care that labels and Combo Boxes are properly aligned.</cmd>
                 <stepresult>
                     <fig>
                         <title>Form with 2 combo boxes</title>
@@ -90,9 +90,9 @@
                 </stepresult>
             </step>
             <step>
-                <cmd>Select second combo box and change in the <uicontrol>Property Sheet (tab
+                <cmd>Select the second Combo Box and change in the <uicontrol>Property Sheet (tab
                         Other)</uicontrol> the name in <userinput>searchname</userinput>. Click on
-                    the selection arrow in box <uicontrol>After Update</uicontrol> and type
+                    the selection arrow in the box <uicontrol>After Update</uicontrol> and type
                         <userinput>Search customer by name</userinput>.</cmd>
                 <info>
                     <note type="note">This macro does not exist yet and will be created in the next
@@ -110,7 +110,7 @@
                     and select action <option>GoToControl</option> from the list</cmd>
             </step>
             <step>
-                <cmd>Enter <userinput>CustomerCode</userinput> in box <uicontrol>Control
+                <cmd>Enter <userinput>CustomerCode</userinput> in the box <uicontrol>Control
                         Name</uicontrol>.</cmd>
                 <stepresult>
                     <fig>
@@ -136,7 +136,7 @@
                 record.</stepsection>
             <step>
                 <cmd>Add an action with the name <option>Setvalue</option>. This action considers
-                    Access as a dangerous action which is not shown by default. It should be made
+                    Access as a dangerous action that is not shown by default. It should be made
                     visible in the list by using the setting <menucascade>
                         <uicontrol>Show All Actions (group Show/Hide)</uicontrol>
                     </menucascade>. This action has two parameters, <varname>Item</varname> and
@@ -159,17 +159,17 @@
                 </stepresult>
             </step>
             <step>
-                <cmd>Close the macro window and save it with name <userinput>Search customer by
+                <cmd>Close the macro window and save it with the name <userinput>Search customer by
                         name</userinput>.</cmd>
             </step>
             <step>
                 <cmd>Open form <uicontrol>Search customer by name</uicontrol> and test the operation
-                    of both combo boxes.</cmd>
+                    of both Combo Boxes.</cmd>
                 <info>
                     <note type="attention">When the first list box is used, its name does not appear
                         in the second list box. To achieve this, you also need to add an action
                             <option>SetValue</option> to this macro. But that has consequences for
-                        the operation of the combo box on form <uicontrol>Search customer by
+                        the operation of the Combo Box on form <uicontrol>Search customer by
                             code</uicontrol>.</note>
                 </info>
             </step>

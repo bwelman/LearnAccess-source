@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
 <task id="data_new_box" xml:lang="en-US">
-    <title>Task: Add new box</title>
-    <shortdesc>Adding a new record with a main form and a subform.</shortdesc>
+    <title>Task: Add a new box</title>
+    <shortdesc>Adding a new record with a main and subform.</shortdesc>
     <prolog>
         <critdates>
             <created date="2017-10-05"/>
@@ -20,13 +20,13 @@
         <context/>
         <context>The form <varname>Boxes</varname> contains a subform. The main form with the name
                 <varname>Boxes</varname> provides the following information: BoxName, BoxCode,
-            BoxDescription, Weight, BoxPrice and Stock. These data are stored in the table
+            BoxDescription, Weight, BoxPrice, and Stock. These data are stored in the table
                 <varname>Boxes</varname>. Furthermore, this form has an additional field BoxCosts,
             by calculating the sum of (PralineCosts * Quantity) for all pralines in the box. The
             subform with the name <varname>Boxes subform</varname> has the following editable
             fields: PralineCode and Quantity. These data and the BoxCode are stored in the table
-                <varname>BoxDetails</varname>. In the following step a new box is added through the
-            form <varname>Boxes</varname>.</context>
+                <varname>BoxDetails</varname>. In the following steps, a new box is added through
+            the form <varname>Boxes</varname>.</context>
         <steps>
             <step>
                 <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
@@ -66,7 +66,7 @@
                 <cmd>Click below Content in field <varname>Code</varname> on the selection arrow and
                     select PralineCode <userinput>B02 Butterscotch Blueberry</userinput>.</cmd>
                 <stepresult>The remaining praline data as PralineName, ChocolateType, NutType,
-                    FillingType and PralineCosts are filled in automatically. You only need to fill
+                    FillingType, and PralineCosts are filled in automatically. You only need to fill
                     the data for Quantity (Nr.).</stepresult>
             </step>
             <step>
@@ -108,7 +108,7 @@
                         </strow>
                     </simpletable>
                 </tutorialinfo>
-                <stepresult>The BoxCosts of $4.53 is calculated automatically .</stepresult>
+                <stepresult>The BoxCosts of $4.53 is automatically calculated.</stepresult>
             </step>
             <step>
                 <cmd>Enter at <varname>BoxPrice</varname>

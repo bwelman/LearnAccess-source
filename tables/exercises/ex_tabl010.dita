@@ -14,16 +14,16 @@
     <body>
         <section>
             <p>There are complaints from customers. The complaints can be classified into the
-                following categories: Packaging damaged, Box not delivered on date, Best before date
-                has expired, Pralines don't taste.</p>
+                following categories: Packaging damaged, Box not delivered on the date, Best before
+                date has expired, Pralines don't taste.</p>
             <p>A complaint always refers to an order. Create new table
                     <userinput>Complaints</userinput> and link this to table
                     <wintitle>Orders</wintitle> and enforce referential integrity.</p>
         </section>
         <section otherprops="solution">
             <title>Solution</title>
-            <p>Normally you should first do ​an information analysis. The result should be which
-                fields are necessary in table Complaints, what will be the key and which
+            <p>Normally you should first make ​an information analysis. The result should be which
+                fields are necessary for table Complaints, what will be the key, and which
                 relationships through which fields. Therefore multiple solutions are possible. A
                 minimal solution could be as displayed in the next figure:<fig>
                     <image keyref="ex_tabl010_complaints"/>

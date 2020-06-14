@@ -14,7 +14,7 @@
     <body>
         <section>
             <p>Create a crosstab query with vertical the box names, horizontal the weight of the
-                boxes and in the table the stock. Name the <userinput>quer027</userinput>.</p>
+                boxes, and in the table the stock. Name the <userinput>quer027</userinput>.</p>
         </section>
         <section otherprops="answer">
             <title>Answer</title>

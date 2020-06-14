@@ -16,8 +16,7 @@
 		</metadata>
 	</prolog>
 	<conbody>
-		<p>Access has a number of tools to perform additional work on databases. This chapter deals with
-            the following:<ul>
+		<p>Access has several tools to perform additional work on databases. This chapter deals with the following:<ul>
                 <li>Analysis of a table</li>
                 <li>Compressing database</li>
             </ul></p>

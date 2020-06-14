@@ -19,13 +19,13 @@
     </prolog>
     <taskbody>
         <context>
-            <p>Forms are especially important in displaying, adding and editing data.</p>
+            <p>Forms are especially important in displaying, adding, and editing data.</p>
             <p>The most important views of a form are:<ul>
                     <li><uicontrol>Form View</uicontrol>. In this view, the information is
                         displayed, you can edit it and enter new data.</li>
                     <li><uicontrol>Datasheet View</uicontrol>. A view similar to that of the
                         table.</li>
-                    <li><uicontrol>Design View</uicontrol>. In this view you can see the design of
+                    <li><uicontrol>Design View</uicontrol>. In this view, you can see the design of
                         the form and customize it.</li>
                 </ul></p>
         </context>
@@ -49,7 +49,7 @@
                     on one of the following ways:</cmd>
                 <choices>
                     <choice>Click the button <uicontrol>Design View</uicontrol>
-                        <image keyref="button_design_view"/> on bottom right of the program
+                        <image keyref="button_design_view"/> on the bottom right of the program
                         window</choice>
                     <choice><menucascade>
                             <uicontrol>tab Home</uicontrol>
@@ -58,8 +58,8 @@
                         </menucascade>.</choice>
                 </choices>
                 <info>
-                    <note type="tip">You can open a form directly in the Design View by right
-                        clicking on the form name in the navigation pane and then choose
+                    <note type="tip">You can open a form directly in the Design View by
+                        right-clicking on the form name in the navigation pane and then choose
                             <uicontrol>Design View</uicontrol> from the shortcut menu.</note>
                 </info>
                 <stepresult>
@@ -69,8 +69,8 @@
                             <alt>Design view of form Pralines</alt>
                         </image>
                     </fig>
-                    <p>In the design view you can change the layout of the form and add controls
-                        like text boxes, labels, list boxes, check boxes, etc.</p>
+                    <p>In the design view, you can change the layout of the form and add controls
+                        like text boxes, labels, list boxes, checkboxes, etc.</p>
                 </stepresult>
             </step>
             <step>

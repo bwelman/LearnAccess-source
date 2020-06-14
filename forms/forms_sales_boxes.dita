@@ -2,7 +2,7 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
 <task id="forms_sales_boxes" xml:lang="en-US">
     <title>Task: Form with Chart</title>
-    <shortdesc>How to create a form with a chart..</shortdesc>
+    <shortdesc>How to create a form with a chart.</shortdesc>
     <prolog>
         <critdates>
             <created date="2017-10-05"/>
@@ -18,7 +18,7 @@
     </prolog>
     <taskbody>
         <context>
-            <p>In this task you are going to create a form with a column chart for 2010 showing the
+            <p>In this task, you are going to create a form with a column chart for 2010 showing the
                 sales per box per month.</p>
             <fig>
                 <title>Form with column chart</title>
@@ -31,11 +31,12 @@
                 expression <codeph>[Quantity]*[BoxPrice]</codeph>. The field BoxPrice is also in
                 table Boxes and the field Quantity is in table OrderDetails. The Month and Year can
                 respectively be calculated with the functions <term>Month([OrderDate])</term> and
-                    <term>Year([OrderDate])</term>.The field OrderDate is in table Orders.
-                Furthermore grouping on BoxName and then on Month and filtering on year 2010.</p>
-            <p>You need to create a query which provide the necessary data ( BoxName, Sales, Month
+                    <term>Year([OrderDate])</term>. The field OrderDate is in table Orders.
+                Furthermore grouping on BoxName and then on Month and filtering on the year
+                2010.</p>
+            <p>You need to create a query which provides the necessary data ( BoxName, Sales, Month,
                 and Year). Grouping and filtering via the <uicontrol>Total</uicontrol> row in the
-                design grid. For grouping you choose the option <option>Group By</option> and for
+                design grid. For grouping, you choose the option <option>Group By</option> and for
                 filtering the option <option>Where</option>, with <userinput>2010</userinput> as
                 value for <uicontrol>Criteria</uicontrol>.</p>
             <p>The work consists of two parts. First, the query must be made and then the form with
@@ -51,7 +52,7 @@
                         <uicontrol>tab Create</uicontrol>
                         <uicontrol>Query Design (group Queries)</uicontrol>
                     </menucascade>. Add the tables <wintitle>Boxes</wintitle>,
-                        <wintitle>OrderDetails</wintitle> and <wintitle>Orders</wintitle>.</cmd>
+                        <wintitle>OrderDetails</wintitle>, and <wintitle>Orders</wintitle>.</cmd>
             </step>
             <step>
                 <cmd>Add field BoxName (table Boxes) and create the following calculated fields
@@ -142,13 +143,13 @@
                 </stepresult>
             </step>
             <step>
-                <cmd>Drag the field <uicontrol>SumOfMonth</uicontrol> out of the box at the vertical
+                <cmd>Drag the field <uicontrol>SumOfMonth</uicontrol> out of the box to the vertical
                     axis to the box at the horizontal axis. It is now displayed at the horizontal
                     axis as <systemoutput>Month</systemoutput>.</cmd>
             </step>
             <step>
-                <cmd>Drag the field <uicontrol>Sales</uicontrol> to the box at the vertical axis.
-                    The display along the horizontal axis, then changes in
+                <cmd>Drag the field <uicontrol>Sales</uicontrol> to the box to the vertical axis.
+                    The display along the horizontal axis then changes in
                         <systemoutput>SumOfSales</systemoutput>.</cmd>
                 <stepresult>
                     <fig>

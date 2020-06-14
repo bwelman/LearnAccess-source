@@ -19,8 +19,8 @@
         <context>When only a limited number of pre-defined values ​​should be entered in a field,
             then the use of a list box can be very useful. For example, the Customers table has a
             field Region in which only the values ​​North and South are allowed. In the following
-            steps the data type for this field will be changed in a list box.<note type="attention">
-                Unfortunately, the list box does not automatically update the forms that are based
+            steps, the data type for this field will be changed in a list box.<note type="attention"
+                > Unfortunately, the list box does not automatically update the forms that are based
                 on this table as the form Registration. To make the list box work in the form
                 Registration, you must in design view first remove the field Region and then added
                 again. That's not part of this task.</note>

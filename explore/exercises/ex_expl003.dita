@@ -13,7 +13,7 @@
     </prolog>
   <body>
 <section>
-  <p>Make a selection of customers whose zip code begins with 20 and are living in Amsterdam.</p>
+  <p>Make a selection of customers whose zip code begins with 20 and is living in Amsterdam.</p>
   <note type="tip"><varname>ZipCode</varname> is a text field, so you can use text filters:<fig>
                     <image keyref="ex_expl003_filter_text">
                         <alt>Text filter</alt>

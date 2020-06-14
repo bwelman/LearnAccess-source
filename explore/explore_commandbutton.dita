@@ -17,7 +17,7 @@
     </prolog>
     <taskbody>
         <context>
-            <p>The form <varname>Boxes</varname> can be used for the data entry, but also viewing
+            <p>The form <varname>Boxes</varname> can be used for data entry but also for viewing
                 data. On the form <varname>Boxes</varname> is a command button with the caption
                     <uicontrol>Sales</uicontrol>.</p>
         </context>

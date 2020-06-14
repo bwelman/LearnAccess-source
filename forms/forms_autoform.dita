@@ -27,9 +27,9 @@
                 quickest way to create such a form is by first selecting the table and then through
                 the command <uicontrol>Form</uicontrol> automatically generate a form containing all
                 fields. After that, you can manually adjust the form.</p>
-            <p>In this task you create a form for a warehouse employee to modify the warehouse stock
-                of a box and eventual to indicate if a box is out of production. It shouldn’t be
-                possible for the emplyee to change the other box data with this form. The form
+            <p>In this task, you create a form for a warehouse employee to modify the warehouse
+                stock of a box and eventual to indicate if a box is out of production. It shouldn’t
+                be possible for the employee to change the other box data with this form. The form
                 should look something like this:</p>
             <fig>
                 <title>Form Stock-in-trade</title>
@@ -57,19 +57,19 @@
             </step>
             <stepsection>
                 <p>If Access finds a table that has a one-to-many relationship with the table or
-                    query that you used to create the form, Access adds a subdatasheet to the form
-                    that is based on the related table or query. In this case the form is based on
+                    query that you used to create the form, Access adds a sub-datasheet to the form
+                    that is based on the related table or query. In this case, the form is based on
                     the table Boxes, and there is a one-to-many relationship defined between the
-                    table Boxes and the table OrderDetails. The subdatasheet displays all the
+                    table Boxes and the table OrderDetails. The sub-datasheet displays all the
                     records in the OrderDetails table that pertain to the current Boxes record. If
-                    you decide that you do not want the subdatasheet on the form, you can delete the
-                    subdatasheet in the Layout view by selecting the datasheet, and then pressing
-                    Delete. If there is more than one table with a one-to-many relationship to the
-                    table that you used to create the form, Access does not add any datasheets to
-                    the form.</p>
+                    you decide that you do not want the sub-datasheet on the form, you can delete
+                    the subdatasheet in the Layout view by selecting the datasheet, and then
+                    pressing Delete. If there is more than one table with a one-to-many relationship
+                    to the table that you used to create the form, Access does not add any
+                    datasheets to the form.</p>
             </stepsection>
             <step>
-                <cmd>Select the subdatasheet and press <uicontrol>Delete</uicontrol>.</cmd>
+                <cmd>Select the sub-datasheet and press <uicontrol>Delete</uicontrol>.</cmd>
             </step>
             <step>
                 <cmd>Switch to <uicontrol>Design View</uicontrol>.</cmd>
@@ -83,7 +83,7 @@
                 </stepresult>
             </step>
             <stepsection>
-                <p>In a form which has been created through this method, two <term>controls</term>
+                <p>In a form that has been created through this method, two <term>controls</term>
                     are created for each field: a <uicontrol>Text Box</uicontrol> and a linked
                         <uicontrol>Label</uicontrol>.</p>
                 <p>
@@ -150,7 +150,7 @@
                     grey. You can do this in one of the following ways:</cmd>
                 <choices>
                     <choice>Change property <uicontrol>Back Color</uicontrol>.</choice>
-                    <choice>Right click on one of the selected fields and choose from the shortcut
+                    <choice>Right-click on one of the selected fields and choose from the shortcut
                         menu <option>Fill/Back Color</option>.</choice>
                 </choices>
             </step>
@@ -158,7 +158,7 @@
                 <cmd>Switch to <uicontrol>Form View</uicontrol> to check the result.</cmd>
             </step>
             <step>
-                <cmd>Close the form the form, answer the question to save the changes with
+                <cmd>Close the form, answer the question to save the changes with
                         <uicontrol>Yes</uicontrol>.</cmd>
             </step>
             <step>

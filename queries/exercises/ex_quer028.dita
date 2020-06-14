@@ -26,7 +26,7 @@
         </section>
         <section otherprops="solution">
             <title>Solution</title>
-            <p>Create through Query Design a new query, add table Boxes and add field BoxPrice.
+            <p>Create through Query Design a new query, add table Boxes, and add field BoxPrice.
                 Change Query Type in Update. Enter in field Update To the value
                     <userinput>[BoxPrice]*1.1</userinput>.</p>
             <image keyref="ex_quer028_design"/>

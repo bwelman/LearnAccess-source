@@ -3,7 +3,7 @@
 <task id="mailmerge" xml:lang="en-US">
     <title>Task: Mailmerge</title>
     <shortdesc>From Access, the Word mail Merge Wizard is started to create a standard letter in
-        Word with adresses in Access.</shortdesc>
+        Word with addresses in Access.</shortdesc>
     <prolog>
         <critdates>
             <created date="2017-10-05"/>
@@ -21,10 +21,10 @@
     </prolog>
     <taskbody>
         <context>
-            <p>In this task you will send customers a standard letter containing the announcement of
-                a new voucher box with the name <q>Snow White</q>. The source for the addresses will
-                be table Customers.</p>
-            <note type="tip">It is also possible to use a query as data source.</note>
+            <p>In this task, you will send customers a standard letter containing the announcement
+                of a new voucher box with the name <q>Snow White</q>. The source for the addresses
+                will be table Customers.</p>
+            <note type="tip">It is also possible to use a query as a data source.</note>
         </context>
         <steps>
             <step>
@@ -34,7 +34,7 @@
                 <cmd>Select table <wintitle>Customers</wintitle>.</cmd>
             </step>
             <step>
-                <cmd>Right click on the table name and choose <menucascade>
+                <cmd>Right-click on the table name and choose <menucascade>
                         <uicontrol>Export</uicontrol>
                         <uicontrol>Word Merge</uicontrol>
                     </menucascade>.</cmd>
@@ -54,9 +54,9 @@
             <step>
                 <cmd>Select practice file <filepath>snow-white.docx</filepath> in the dialog box and
                     click <uicontrol>Open</uicontrol>.</cmd>
-                <stepresult>Microsoft Word is started with the practice file in it. On the ribbon
-                        <uicontrol>tab Mailings</uicontrol> is selected and at the right side the
-                    panel <wintitle>Mail Merge</wintitle> is displayed. On the bottom of this panel
+                <stepresult>Microsoft Word is started with the practice file in it. On the ribbon,
+                        <uicontrol>tab Mailings</uicontrol> is selected and at the right side, the
+                    panel <wintitle>Mail Merge</wintitle> is displayed. On the bottom of this panel,
                     you can see that the wizard is in step 3 of 6.<fig>
                         <title>Progress wizard mail merge: step 3 of 6</title>
                         <image keyref="mailmerge_wizard_step3" placement="break">
@@ -76,7 +76,7 @@
                     </menucascade>.</cmd>
             </step>
             <step>
-                <cmd>After that, add the fields LastName, Address, ZipCode and City accoring to the
+                <cmd>After that, add the fields LastName, Address, ZipCode and City according to the
                     following model.</cmd>
                 <stepresult>
                     <codeblock>&lt;&lt;FirstName>> &lt;&lt;LastName>>
@@ -105,7 +105,7 @@
                         </image>
                     </fig>
                     <p>You now have two choices:<ul>
-                            <li>With <option>Print</option> you can send the letters to the
+                            <li>With <option>Print</option>, you can send the letters to the
                                 printer.</li>
                             <li>With <option>Edit individual letters</option>, one document is
                                 created with the letters.</li>
@@ -124,7 +124,7 @@
                 </stepresult>
             </step>
             <step>
-                <cmd>Specify that you want create letters for the first 10 customers. Then click
+                <cmd>Specify that you want to create letters for the first 10 customers. Then click
                         <uicontrol>OK</uicontrol>.</cmd>
                 <stepresult>A new Word document will be created containing 10 letters.</stepresult>
             </step>

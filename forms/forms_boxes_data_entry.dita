@@ -2,7 +2,7 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
 <task id="forms_boxes_data_entry" xml:lang="en-US">
     <title>Task: Data entry form Boxes</title>
-    <shortdesc>In an existing subform text box is replaced by a combo box with a query as data
+    <shortdesc>An existing subform text box is replaced by a Combo Box with a query as data
         source.</shortdesc>
     <prolog>
         <critdates>
@@ -20,7 +20,7 @@
         <context>
             <p>In the existing form Boxes, you can only select pralines with the PralineCode. The
                 goal is to make it possible that you can also choose by the name of the praline.</p>
-            <p>Form <wintitle>Boxes</wintitle> consists of the main form <wintitle>Boxes</wintitle>
+            <p>Form <wintitle>Boxes</wintitle> consist of the main form <wintitle>Boxes</wintitle>
                 and the subform <wintitle>Boxes subform</wintitle>. The praline choice occurs in the
                 subform. So only the subform should be changed, the text box
                     <uicontrol>PralineName</uicontrol> must be replaced by a <uicontrol>Combo
@@ -53,7 +53,7 @@
                 </stepresult>
             </step>
             <step>
-                <cmd>Close the query and save it with name <userinput>Choose
+                <cmd>Close the query and save it with the name <userinput>Choose
                     praline</userinput>.</cmd>
             </step>
             <step>
@@ -81,9 +81,9 @@
                         <li>The selected fields are PralineName and PralineCode.</li>
                         <li>Sort order is Ascending on PralineName.</li>
                         <li>Adjust column widths by a double-click on the right edge of the column
-                            head.</li>
+                            header.</li>
                         <li>The value in column PralineCode should be stored.</li>
-                        <li>The value should be stored in field Code.</li>
+                        <li>The value should be stored in the field Code.</li>
                         <li>Accept the default text for the label. This label will be removed in the
                             next step because the label text already exists in the form header.</li>
                     </ul></info>
@@ -113,7 +113,7 @@
                 <cmd>Close form <wintitle>Boxes subform</wintitle> and save the changes.</cmd>
             </step>
             <step>
-                <cmd>Test the combo box with form Boxes.</cmd>
+                <cmd>Test the Combo Box with form Boxes.</cmd>
             </step>
         </steps>
     </taskbody>

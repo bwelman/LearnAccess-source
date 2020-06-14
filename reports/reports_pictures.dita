@@ -16,8 +16,9 @@
         </metadata>
     </prolog>
     <taskbody>
-        <context>In this you create a report with pictures of the pralines and the code and name
-            above it. For that, labels are used and on each label the data of the praline.</context>
+        <context>In this task, you create a report with pictures of the pralines and the code and
+            name above it. For that, labels are used, and on each label the data of the
+            praline.</context>
         <steps>
             <step>
                 <cmd>Open database <keyword keyref="example_db_file"/>.</cmd>
@@ -47,7 +48,7 @@
             <step>
                 <cmd>Click <uicontrol>Next</uicontrol>.</cmd>
                 <stepresult>
-                    <p>In the screen that is displayed now you can change font and color for the
+                    <p>In the screen that is displayed now, you can change font and color for the
                         text.</p>
                 </stepresult>
             </step>
@@ -104,8 +105,8 @@
                                 <image keyref="label_praline_dimensions" placement="break">
                                     <alt>Frame dimensions</alt>
                                 </image>
-                            </fig><note type="attention">It is possible that Access adjusts the
-                                dimensions a little bit. That's no problem.</note></li>
+                            </fig><note type="attention">Access may adjusts the dimensions a little
+                                bit. That's no problem.</note></li>
                         <li>In <wintitle>tab Data</wintitle>: select for property <varname>Control
                                 Source</varname> field <option>Picture</option>: <fig>
                                 <title>Control Source</title>

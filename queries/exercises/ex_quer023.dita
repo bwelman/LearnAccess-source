@@ -16,7 +16,7 @@
             <p>Create an alphabetic list of customers who bought in 2009 at least 1 box <q>Sweet and
                     Bitter</q>. Avoid double records in the result. Name the query
                     <userinput>quer023</userinput>.</p>
-            <note type="tip">The same customer may exist in the list more than one time. To avoid
+            <note type="tip">The same customer may exist on the list more than one time. To avoid
                 this, the value of the query property <varname>Unique Values</varname> should be
                     <userinput>Yes</userinput>.</note>
         </section>

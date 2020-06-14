@@ -21,8 +21,8 @@
                 href="queries_customername_ordercodes.dita#queries_customername_ordercodes"/>.</prereq>
         <context>
             <p>INFORMATION NEEDS</p>
-            <p>Make a sorted list by last name, first name and order codes of all customers who live
-                in the province Utrecht and with an order date in December 2009.</p>
+            <p>Make a sorted list by last name, first name, and order codes of all customers who
+                live in the province Utrecht and with an order date in December 2009.</p>
             <p>ANALYSIS</p>
             <p>All the required information will be provided by the query you created in <xref
                     href="queries_customername_ordercodes.dita#queries_customername_ordercodes"/>.

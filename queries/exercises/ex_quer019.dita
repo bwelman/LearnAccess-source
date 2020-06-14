@@ -13,9 +13,9 @@
     </prolog>
     <body>
         <section>Create a list of customers who ordered the last week before Christmas 2010
-            (12/20/2010 until 12/24/2010). Show code, name and address of these customers. Each
+            (12/20/2010 until 12/24/2010). Show code, name, and address of these customers. Each
             customer may occur only one time in the overview. Name the query
-                <userinput>quer019</userinput>.<note type="tip">The same customer may exist in the
+                <userinput>quer019</userinput>.<note type="tip">The same customer may exist on the
                 list more than one time. To avoid this, the value of the query property
                     <varname>Unique Values</varname> should be
             <userinput>Yes</userinput>.</note></section>

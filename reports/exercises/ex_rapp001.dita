@@ -31,7 +31,7 @@
                     and add all fields. Set grouping level on field <varname>Region</varname>. Sort
                     ascending on field <varname>BoxName</varname>. Choose at <uicontrol>Summary
                         Options</uicontrol> for <uicontrol>Sum</uicontrol>, show <uicontrol>Detail
-                        and Summary</uicontrol> and <uicontrol>Calculate percent of total for
+                        and Summary</uicontrol>, and <uicontrol>Calculate percent of total for
                         sums</uicontrol>.</li>
                 <li>If necessary adjust column widths and formatting of the sales values. </li>
             </ol>

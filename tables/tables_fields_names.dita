@@ -16,14 +16,14 @@
     </prolog>
     <conbody>
         <p>The design of the database determines what kind of data has to be stored in the field.
-            Usually the fields in the design have already been given a name and you are using that
-            name. Always use meaningful names. Of course you can give the field a description, but a
-            clear name still works best.</p>
+            Usually, the fields in the design have already been given a name and you are using that
+            name. Always use meaningful names. Of course, you can give the field a description, but
+            a clear name still works best.</p>
         <p>Field names must meet the following requirements: <ul>
-                <li>name must be unique within the table</li>
-                <li>name may not start with a space</li>
-                <li>name may not contain the following characters: point, exclamation mark and
-                    brackets [ and ]</li>
+                <li>The name must be unique within the table.</li>
+                <li>The name may not start with a space.</li>
+                <li>The name may not contain the following characters: point, exclamation mark, and
+                    brackets [ and ].</li>
             </ul></p>
     </conbody>
 </concept>

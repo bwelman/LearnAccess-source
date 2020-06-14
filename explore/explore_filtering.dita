@@ -18,11 +18,11 @@
     </prolog>
     <taskbody>
         <context>
-            <p>Filtering is a useful way to see only the data that you want displayed. You can use
-                filters to display specific records in a form, report, query or table. For example
-                you can easily create a filter to show all of pralines with the chocolate type Milk
-                and filling type Marzipan. There are several ways to filter a table. A few methods
-                come in the next steps.</p>
+            <p>Filtering is a useful way to see only the data that you want to be displayed. You can
+                use filters to display specific records in a form, report, query, or table. For
+                example, you can easily create a filter to show all of the pralines with chocolate
+                type Milk and filling type Marzipan. There are several ways to filter a table. A few
+                methods will be discussed in the following exercise.</p>
         </context>
         <steps>
             <step>
@@ -46,11 +46,11 @@
                     <p>Access shows now the records (4 records ) whose chocolate type is white.</p>
                     <p>Further to the right of the column heading ChocolateType there is now a small
                         symbol of a filter (<image keyref="button_arrow_down_filter"/>) to indicate
-                        that the table is filtered. Also on the status bar you can see that the
+                        that the table is filtered. Also on the status bar, you can see that the
                         table is filtered. <image keyref="statusbar_filtered"/></p>
                 </stepresult>
             </step>
-            <stepsection>In the next steps the selection of chocolate type will be changed from
+            <stepsection>In the next steps, the selection of chocolate type will be changed from
                     <varname>White</varname> in <varname>Milk</varname>.</stepsection>
             <step>
                 <cmd>Click on the filter symbol at the right of the column head
@@ -62,10 +62,10 @@
                             <alt>Dialog box filter</alt>
                         </image>
                     </fig>
-                    <note type="important">The options shown here depend on the type of field. With
-                        a text field, there is a submenu <uicontrol>Text Filters</uicontrol> and
-                        with a numeric field there is a submenu <uicontrol>Number
-                            Filters</uicontrol>.</note>
+                    <note type="important">The showed options shown depend on the field type. With a
+                        text field, there is a submenu <uicontrol>Text Filters</uicontrol> and with
+                        a numeric field, there is a submenu <uicontrol>Number
+                        Filters</uicontrol>.</note>
                 </stepresult>
             </step>
             <step>
@@ -119,15 +119,15 @@
                 </stepresult>
             </step>
             <step>
-                <cmd>Enter at <varname>Smallest</varname>
-                    <userinput>0.25</userinput> and at <varname>Largest</varname>
-                    <userinput>0.35</userinput> and click <uicontrol>OK</uicontrol>. </cmd>
+                <cmd>Enter <userinput>0.25</userinput> at <varname>Smallest</varname>,
+                        <userinput>0.35</userinput> at <varname>Largest</varname>, then click
+                        <uicontrol>OK</uicontrol>. </cmd>
                 <stepresult>There are now 22 records shown with bonbon costs from $0.25 to
                     $0.35.</stepresult>
             </step>
             <step>
-                <cmd>Close the table <wintitle>Pralines</wintitle> and
-                        choose<uicontrol>No</uicontrol> on the question to save the changes.</cmd>
+                <cmd>Close the table <wintitle>Pralines</wintitle> and choose
+                        <uicontrol>No</uicontrol> on the question to save the changes.</cmd>
             </step>
         </steps>
     </taskbody>

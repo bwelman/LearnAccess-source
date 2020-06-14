@@ -13,15 +13,15 @@
     </prolog>
     <body>
         <section>
-            <p>Create a copy of report <wintitle>rapp003</wintitle> and name the copy
+            <p>Create a copy of the report <wintitle>rapp003</wintitle> and name the copy
                     <wintitle>rapp004</wintitle>. Make the report more legible to print all data of
                 a box on a separate page. This can be done by inserting a page break before the
                 header of each group. You need to set the property <varname>Force New Page</varname>
                 of the <wintitle>groupheader</wintitle> with the value <option>Before
                     Section</option>.</p>
-            <p>Furthermore make some small changes to the layout. The text box Sum should be moved
+            <p>Furthermore, make some small changes to the layout. The text box Sum should be moved
                 to the right with only a small horizontal line above the sum.</p>
-            <note type="tip">Every box is a group, so the groupheader in this report is named Box
+            <note type="tip">Every box is a group, so the group header in this report is named Box
                 Header.</note>
             <fig>
                 <image keyref="ex_rapp004_report"/>

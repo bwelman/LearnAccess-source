@@ -25,10 +25,10 @@
         </metadata>
     </prolog>
     <conbody>
-        <p><term>Controls</term> are parts of a form or a report that you use to enter, edit or
+        <p><term>Controls</term> are parts of a form or a report that you use to enter, edit, or
             display data. So is the Text Box is the most used control for displaying data. Other
-            commonly used controls are command buttons, check boxes and combo boxes.</p>
-        <p>Controls can be bound, unbound or calculated: <dl>
+            commonly used controls are command buttons, checkboxes, and combo boxes.</p>
+        <p>Controls can be bound, unbound, or calculated: <dl>
                 <dlentry>
                     <dt>Bound control</dt>
                     <dd>A control whose source of data is a field in a table or query. You use bound
@@ -70,8 +70,8 @@
             </dlentry>
         </dl>
         <p>Because you often need to reorganize controls on forms, it is important to know how you
-            can change location and layout of these controls. Many operations you can perform on
-            multiple controls. To edit controls, you must always select them first. Also make sure
+            can change the location and layout of these controls. Many operations you can perform on
+            multiple controls. To edit controls, you must always select them first. Also, make sure
             that the <wintitle>Property Sheet</wintitle> is visible.</p>
         <dl>
             <dlentry>
@@ -96,7 +96,7 @@
             </dlentry>
             <dlentry>
                 <dt>dimensions</dt>
-                <dd>Drag one of the handles (in the middle or in the corner points of the selection
+                <dd>Drag one of the handles (in the middle or the corner points of the selection
                     rectangle). Exact dimensions can be set with the properties
                         <varname>Width</varname> and <varname>Height</varname> in the
                         <wintitle>Property Sheet</wintitle>.</dd>

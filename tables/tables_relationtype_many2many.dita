@@ -19,11 +19,11 @@
         <p>In a many-to-many relationship, a row in table A can have many matching rows in table B,
             and vice versa. A many-to-many relationship can not be defined directly in Access. You
             create such a relationship by defining a third table that is called a <term
-                xml:lang="en-US">junction table</term>. This junction table is related at each of
+                xml:lang="en-US">junction table</term>. This junction table is related to each of
             both tables through a one-to-many relationship.</p>
         <p>An example is the table <varname>Orders</varname> and the table <varname>Boxes</varname>.
             Each order is likely to contain several boxes and each box is probably on multiple
-            orders. The table <varname>OrderDetails</varname> here forms the junction table. The
+            orders. The table <varname>OrderDetails</varname> can act as the junction table. The
             table <varname>OrderDetails</varname> is related to the table <varname>Orders</varname>
             in a one-to-many relationship via the field <varname>OrderCode</varname>. And the table
                 <varname>OrderDetails</varname> is also related to the table

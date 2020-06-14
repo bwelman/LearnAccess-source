@@ -14,7 +14,7 @@
     <body>
         <section>
             <p>Create with a crosstab query an overview of the total sales per customer per month in
-                2010. To do that, first create an selection query <varname>Sales per customer per
+                2010. To do that, create first a selection query <varname>Sales per customer per
                     month in 2010</varname> and use this query as source for the crosstab query.
                 Display customers with the customer number and the months with the month numbers.
                 Display also the total sales for the customer in 2010. Name the crosstab query
@@ -30,7 +30,7 @@
             <p>You can create the selection query from scratch, but also create a copy of quer012
                 and change it then. Month number and year can be extracted from field
                     <varname>OrderDate</varname> with the functions<codeph>Month()</codeph> and
-                    <codeph>Year()</codeph>. Use value 2010 as criteria for year.<fig>
+                    <codeph>Year()</codeph>. Use value 2010 as criteria for the year.<fig>
                     <title>Design query Sales per customer per month in 2010</title>
                     <image keyref="ex_quer029_design_selection">
                         <alt>Design query Sales per customer per month in 2010</alt>
@@ -42,7 +42,7 @@
                     <uicontrol>Crosstab QueryWizard</uicontrol>
                 </menucascade>. Use query Sales per customer per month in 2010 as source. Use field
                     <varname>CustomerCode</varname> for the row heading, field
-                    <varname>Month</varname> for the column heading and
+                    <varname>Month</varname> for the column heading, and
                     <varname>Sum(Sales)</varname> for the values.<fig>
                     <title>Design crosstab query</title>
                     <image keyref="ex_quer029_design_crosstab">

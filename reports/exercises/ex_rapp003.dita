@@ -14,7 +14,7 @@
     <body>
         <section>
             <p>Create a report that shows all pralines in each box, together with the costs of these
-                pralines. Also display the sum all the praline costs. Name the report
+                pralines. Also, display the sum of all praline costs. Name the report
                     <userinput>rapp003</userinput>.</p>
             <fig>
                 <image keyref="ex_rapp003_report"/>

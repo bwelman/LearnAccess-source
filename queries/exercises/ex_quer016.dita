@@ -14,7 +14,7 @@
     <body>
         <section>
             <p>Create a list of boxes heavier than 150 grams with a maximum price of $35. Show only
-                BoxCode, BoxName and BoxPrice. Sort the boxes by ascending price. Name the query
+                BoxCode, BoxName, and BoxPrice. Sort the boxes by ascending price. Name the query
                     <userinput>quer016</userinput>.</p>
         </section>
         <section otherprops="answer">

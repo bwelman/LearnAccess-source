@@ -15,7 +15,7 @@
         </metadata>
     </prolog>
     <conbody>
-        <p>To ensure that a user enters data in a particular way, you can make use of a <term>input
+        <p>To ensure that a user enters data in a particular way, you can make use of an <term>input
                 mask</term>. Additionally, you can also use a <term>validation rule</term> to
             control if the value entered meets certain requirements and if not indicating the user
             on it through a <term>validation text</term>.</p>

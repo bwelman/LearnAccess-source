@@ -24,45 +24,45 @@
 		</metadata>
 	</prolog>
 	<conbody>
-		<p>The majority of queries are select queries, which are used to search, collect and display
-			data, but not to change this data. But Access has also another category of queries with
-			which you can change deleting, updating or adding records, known as action queries. The
-			big advantage of an action query is that it can change a large amount of records without
-			having programming knowledge. The way you make these queries and the way of working is
-			almost the same: first create a select query and then change the query type.</p>
+		<p>The majority of queries are select queries, which are used to search, collect, and display
+            data, but not to change this data. But Access has also another category of queries with
+            which you can change deleting, updating, or adding records, known as action queries. The
+            big advantage of an action query is that it can change a large number of records without
+            having programming knowledge. The way you make these queries and the way of working is
+            almost the same: first, create a select query and then change the query type.</p>
 		<p>Access has four types of action queries: <dl>
 				<dlentry>
 					<dt>Make Table</dt>
-					<dd>Selects one or more records and then creates a new table for them. This new table can be
-						placed in the opened database, but can also as a new table to be made in a
-						different database. You can use a Make Table query for example to copy
-						outdated data to an archive database.</dd>
+					<dd>Selects one or more records and then create a new table for them. This new table can be
+                        placed in the opened database, but can also as a new table to be made in a
+                        different database. You can use a Make Table query for example to copy
+                        outdated data to an archive database.</dd>
 				</dlentry>
 				<dlentry>
 					<dt>Append</dt>
 					<dd>Selects one or more records and then adds them to another existing table. For example,
-						suppose that you acquire some new customers and the information has been
-						stored in a separate table. With an append query you can move the records to
-						your customers table.</dd>
+                        suppose that you acquire some new customers and the information has been
+                        stored in a separate table. With an append query, you can move the records
+                        to your customers table.</dd>
 				</dlentry>
 				<dlentry>
 					<dt>Delete</dt>
-					<dd>Deletes one or more records. You specify a set of filter conditions, and then deletes the
-						matching records. For example you can remove products that are
-						discontinued.</dd>
+					<dd>Deletes one or more records. You specify a set of filter conditions and then deletes the
+                        matching records. For example, you can remove products that are
+                        discontinued.</dd>
 				</dlentry>
 				<dlentry>
 					<dt>Update</dt>
-					<dd>Changes values in one or more records. The existing values in a field ​​are replaced by a
-						new values, a type of search and replace. You can't undo the changes and
-						therefore it is advisable to first backup (copy) of the database or the
-						table before you run the update query.</dd>
+					<dd>Change values in one or more records. The existing values in a field ​​are replaced by new
+                        values, a type of search and replace. You can't undo the changes and
+                        therefore it is advisable to first backup (copy) of the database or the
+                        table before you run the update query.</dd>
 				</dlentry>
 			</dl></p>
-		<p>Because these queries change data in the database, these queries could be a security
-			risk. To provide protection, a number of checks are carried out in Access and the Trust
-			Center. The trust center can disable content. When opening such a database, Access
-			displays a message with a security warning.</p>
+		<p>Because these queries change data in the database, these queries could be a security risk. To
+            provide protection, a number of checks are carried out in Access and the Trust Center.
+            The trust center can disable the content. When opening such a database, Access displays
+            a message with a security warning.</p>
 		<fig>
 			<title>Message with security warning</title>
 			<image keyref="security_warning">
@@ -79,8 +79,8 @@
 		<ol>
 			<li>In the navigation pane, right-click on the name of the table and select from the
 				shortcut menu <uicontrol>Copy</uicontrol>.</li>
-			<li>Right click again and choose now <uicontrol>Paste</uicontrol> and give the new table
-				a different name.</li>
+			<li>Right-click again and choose now <uicontrol>Paste</uicontrol> and give the new table a
+                different name.</li>
 		</ol>
 		<p>To recover a table after a change, proceed as follows:</p>
 		<ol>
@@ -89,8 +89,8 @@
 			<li>Right-click on the name op the copy and choose <uicontrol>Rename</uicontrol> and
 				give the table the original name.</li>
 		</ol>
-		<note type="notice">A nice but laborious way to make a backup of a table through a
-				<term>Table Make query</term>. And with a <term>Update query</term> you can restore
-			the contents of the changed fields.</note>
+		<note type="notice">A nice but laborious way to make a backup of a table is through a <term>Table
+                Make query</term>. And with an <term>Update query</term> you can restore the
+            contents of the changed fields.</note>
 	</conbody>
 </concept>

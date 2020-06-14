@@ -18,12 +18,13 @@
         </metadata>
     </prolog>
     <taskbody>
-        <context><p>Tables are the key components of a database, since all data is stored
+        <context><p>Tables are the key components of a database since all data is stored
             here.</p>The two most important views of a table are<p>
                 <ul>
-                    <li><uicontrol>Datasheet View</uicontrol>. In this view you can see the contents
-                        of the records, change it and also allows you to add new records.</li>
-                    <li><uicontrol>Design View</uicontrol>. In this view you can see the design of
+                    <li><uicontrol>Datasheet View</uicontrol>. In this view, you can see the
+                        contents of the records, change it, and also allows you to add new
+                        records.</li>
+                    <li><uicontrol>Design View</uicontrol>. In this view, you can see the design of
                         the table and customize it.</li>
                 </ul>
             </p></context>
@@ -39,8 +40,8 @@
                 <cmd>Put the table <varname>Customers</varname> in the <uicontrol>Design
                         View</uicontrol> on one of the following ways:</cmd>
                 <choices>
-                    <choice>Click the button <uicontrol>Design View</uicontrol> on bottom right of
-                        the program window <image keyref="button_design_view"/></choice>
+                    <choice>Click the button <uicontrol>Design View</uicontrol> on the bottom right
+                        of the program window <image keyref="button_design_view"/></choice>
                     <choice><menucascade>
                             <uicontrol>tab Home</uicontrol>
                             <uicontrol>View (group Views)</uicontrol>
@@ -48,8 +49,8 @@
                         </menucascade>.</choice>
                 </choices>
                 <info>
-                    <note type="tip">You can open a table directly in the Design View by right
-                        clicking on the table name in the navigation pane and then choose
+                    <note type="tip">You can open a table directly in the Design View by
+                        right-clicking on the table name in the navigation pane and then choose
                             <uicontrol>Design View</uicontrol> from the shortcut menu.</note>
                 </info>
             </step>
@@ -74,7 +75,7 @@
                 <cmd>Open the table <varname>Orders</varname> in the Datasheet View.</cmd>
                 <tutorialinfo>In the table Orders is a unfold button <uicontrol>+</uicontrol> in
                     front of the records. By clicking on it you see the details of the order. These
-                    data come from the table <varname>OrderDetails</varname>. That the associated
+                    data come from table <varname>OrderDetails</varname>. That the associated
                     details of a particular order can be found is possible because in both tables
                     the field <varname>OrderCode</varname> is present.</tutorialinfo>
             </step>

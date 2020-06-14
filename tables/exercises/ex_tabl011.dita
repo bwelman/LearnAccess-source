@@ -15,7 +15,7 @@
     <body>
         <section>
             <p>Check if the referential integrity is enforced at the relationships of tables
-                Customers, Orders, OrderDetails, Boxes, BoxDetails and Pralines. If not, do it.</p>
+                Customers, Orders, OrderDetails, Boxes, BoxDetails, and Pralines. If not, do it.</p>
         </section>
         <section otherprops="solution">
             <title>Solution</title>

@@ -21,15 +21,15 @@
         </section>
         <section otherprops="solution">
             <title>Solution</title>
-            <p>First create the query. Choose <menucascade>
+            <p>First, create the query. Choose <menucascade>
                     <uicontrol>tab Create</uicontrol>
                     <uicontrol>Query Design (group Queries)</uicontrol>
                 </menucascade>. Add tables <wintitle>Customers</wintitle>,
                     <wintitle>Orders</wintitle>, <wintitle>OrderDetails</wintitle>,
-                    <wintitle>Boxes</wintitle>, <wintitle>BoxDetails</wintitle> and
+                    <wintitle>Boxes</wintitle>, <wintitle>BoxDetails</wintitle>, and
                     <wintitle>Pralines</wintitle>. Add from table <wintitle>Customers</wintitle> the
                 fields <varname>LastName</varname>, <varname>FirstName</varname>,
-                    <varname>Address</varname>, <varname>ZipCode</varname> and
+                    <varname>Address</varname>, <varname>ZipCode</varname>, and
                     <varname>City</varname>. Add field <varname>ChocolateType</varname> from table
                     <wintitle>Pralines</wintitle> with criteria <userinput>White</userinput>. Set in
                 the <wintitle>Property Sheet</wintitle> at <uicontrol>Query Properties</uicontrol>
@@ -48,7 +48,7 @@
 
 Dear &lt;&lt;FirstName>>,
 We would like to offer you an offer for our newest box ...</codeblock>
-            <p>Finish the merge on the known manner.</p>
+            <p>Finish the merge in the usual way.</p>
         </section>
     </body>
 </topic>

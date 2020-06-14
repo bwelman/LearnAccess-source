@@ -31,7 +31,7 @@ Weight: 150 gram</codeblock>
                         <uicontrol>Labels (group reports)</uicontrol>
                     </menucascade>.</li>
                 <li>Select the correct label type.</li>
-                <li>Set font type, size, weight and color.</li>
+                <li>Set font type, size, weight, and color.</li>
                 <li>Add fields and text, see
                     prototype:<codeblock>{BoxName}
 

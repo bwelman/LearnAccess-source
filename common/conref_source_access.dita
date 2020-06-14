@@ -3,6 +3,7 @@
 <topic id="reusable_topic_parts" xml:lang="en-US">
     <title>Reusable objects</title>
     <body>
-        <note type="attention" id="reservation">The resulting response may differ by depency on earlier tasks or exercises.</note>
+        <note type="attention" id="reservation">The resulting response may differ by dependency on
+            earlier tasks or exercises.</note>
     </body>
 </topic>

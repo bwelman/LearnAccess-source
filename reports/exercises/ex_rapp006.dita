@@ -13,11 +13,11 @@
     </prolog>
     <body>
         <section>
-            <p> Create a copy of report <wintitle>rapp005</wintitle> and name the copy
-                    <wintitle>rapp006</wintitle>.Change the design of report
+            <p> Create a copy of report the <wintitle>rapp005</wintitle> and name the copy
+                    <wintitle>rapp006</wintitle>. Change the design of report
                     <wintitle>rapp006</wintitle> so that each box starts on a new page.</p>
             <note type="tip">
-                <p>Set property <varname>Force New Page</varname> of the groupheader (BoxName
+                <p>Set property <varname>Force New Page</varname> of the group header (BoxName
                     Header) on <userinput>Before Section</userinput></p>
             </note>
         </section>

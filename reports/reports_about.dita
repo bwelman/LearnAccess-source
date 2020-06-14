@@ -16,9 +16,9 @@
     </prolog>
     <conbody>
         <p>Reports are usually overviews and summaries of large amounts of information.</p>
-        <p>If you want to print a sales report in a clear way on paper, then you use a report. In a
-            report, you can also calculate subtotals and grand totals. You can create reports by
-            hand, but it's easier to use the Wizard.</p>
+        <p>If you want to print a sales report clearly on paper, then you use a report. In a report,
+            you can also calculate subtotals and grand totals. You can create reports by hand, but
+            it's easier to use the Wizard.</p>
         <p>Reports can be dynamically by using parameters. When generating the report you will be
             prompted for additional information. As an example see report <uicontrol>Sales per
                 box</uicontrol>. When opening this report you are asked to enter a start date and

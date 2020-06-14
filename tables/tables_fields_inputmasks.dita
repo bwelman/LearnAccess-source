@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="tables_fields_inputmasks" xml:lang="en-US">
     <title>Input masks</title>
-    <shortdesc>On how to enforce a desired data input via input masks.</shortdesc>
+    <shortdesc>On how to enforce the desired data input via input masks.</shortdesc>
     <prolog>
         <critdates>
             <created date="2017-10-05"/>
@@ -17,14 +17,14 @@
     <conbody>
         <p>An input mask ensures a solid, mandatory format for data entry in a field. An input mask
             consists of a series of characters and symbols. The data entered must conform to the
-            pattern of the mask. For example, with an input mask you can ensure that a telephone
-            number consists of exactly 10 digits. Input masks are possible for the data types Text,
-            Numeric, Currency and Date/Time. </p>
+            pattern of the mask. For example, with an input mask, you can ensure that a telephone
+            number consists of exactly 10 digits. Input masks are possible for the data type Text,
+            Numeric, Currency, and Date/Time. </p>
         <p>The input mask also determines the number of characters that can be entered. Input masks
-            are made up one mandatory part and two optional parts, and each part is separated by a
-            semicolon. The purpose of each part is as follows:<ul>
+            are made up of one mandatory part and two optional parts, and each part is separated by
+            a semicolon. The purpose of each part is as follows:<ul>
                 <li>The first part is mandatory. It includes the mask characters along with
-                    placeholders and literal data such as, parentheses, periods, and hyphens.</li>
+                    placeholders and literal data such as parentheses, periods, and hyphens.</li>
                 <li>The second part is optional and refers to the embedded mask characters and how
                     they are stored within the field. If the second part is set to
                         <userinput>0</userinput>, the characters are stored with the data, and if it
@@ -60,8 +60,8 @@
                     </row>
                     <row>
                         <entry>#</entry>
-                        <entry>User can enter a digit, space, plus or minus sign. If skipped, Access
-                            enters a blank space.</entry>
+                        <entry>User can enter a digit, space, plus, or minus sign. If skipped,
+                            Access enters a blank space.</entry>
                     </row>
                     <row>
                         <entry>L</entry>
@@ -81,7 +81,7 @@
                     </row>
                     <row>
                         <entry>&amp;</entry>
-                        <entry>User must enter either a character or a space.</entry>
+                        <entry>User must enter either a character or space.</entry>
                     </row>
                     <row>
                         <entry>C</entry>
@@ -119,7 +119,7 @@
                 </tbody>
             </tgroup>
         </table>
-        <p>You can either quickly add input masks by using the Input Mask Wizard, or specify masks
+        <p>You can either quickly add input masks by using the Input Mask Wizard or specify masks
             manually by typing custom masks to the Input Mask field property setting.</p>
         <example>
             <title>Example: US telephone number</title>

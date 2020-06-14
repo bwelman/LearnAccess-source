@@ -18,7 +18,7 @@
         <section otherprops="solution">
             <title>Solution</title>
             <ol>
-                <li>Right click on table Customers and choose <menucascade>
+                <li>Right-click on table Customers and choose <menucascade>
                         <uicontrol>Export</uicontrol>
                         <uicontrol>Excel</uicontrol>
                     </menucascade>.</li>

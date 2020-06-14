@@ -19,11 +19,11 @@
         </metadata>
     </prolog>
     <conbody>
-        <p>Multiple problems can occur in a frequently used database where you add, modify and
+        <p>Multiple problems can occur in a frequently used database where you add, modify, and
             delete records. Deleting records or objects in a database can cause defragmentation of
-            the database, making the database inefficient. When you open an database, Access
-            examines its condition and tries to fix problems. But not always the problems are
-            discovered and in then the user had to start a compact and repair action.</p>
+            the database, making the database inefficient. When you open a database, Access examines
+            its condition and tries to fix problems. But not always the problems are discovered and
+            in then the user had to start a compact and repair action.</p>
         <p>Compact also affects autonumbering in an Access database. If you have deleted records at
             the end of a table with an Autonumber field, the AutoNumber value for that field is
             reset. It will then start at the next higher number when you add new records.</p>

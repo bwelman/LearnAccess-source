@@ -17,8 +17,8 @@
     <taskbody>
         <prereq>To perform this task, it is necessary that you have performed <xref
                 href="queries_customers_province.dita#queries_customers_province"/>.</prereq>
-        <context>By default, Access uses the field names as column heading in the datasheet view.
-            And for summarized data a name is generated. It is recommended to use more clearer
+        <context>By default, Access uses the field names as column headings in the datasheet view.
+            And for summarized data, a name is generated. It is recommended to use clearer
             names.</context>
         <steps>
             <step>

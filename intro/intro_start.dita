@@ -19,8 +19,8 @@
             course assumes a default installation of Microsoft <keyword keyref="productversion"/>
             English on a system with Windows 7 English. On almost all computers Access can be
             started through the start button of Windows and this method is described here.<note
-                type="tip"> The most convenient start is through a shortcut on the desktop or
-                through a button on the task bar.</note></context>
+                type="tip"> The most convenient start is through a shortcut on the desktop or a
+                button on the taskbar.</note></context>
         <steps>
             <step>
                 <cmd>Choose <menucascade>

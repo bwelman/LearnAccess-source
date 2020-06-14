@@ -40,7 +40,7 @@
                     <li>Select option <uicontrol>First Row Contains Column
                         Headings</uicontrol>.</li>
                     <li>Change the <uicontrol>Data Type</uicontrol> of field
-                            <varname>EmployeeCode</varname> in <userinput>Long
+                            <varname>EmployeeCode</varname> to <userinput>Long
                         Integer</userinput>.</li>
                     <li>Make field <varname>EmployeeCode</varname> the primary key.</li>
                     <li>Name the new table <userinput>Employees</userinput>.</li>
@@ -53,7 +53,7 @@
                         <userinput>Number</userinput> and the <varname>Field Size</varname> should
                         be <userinput>Long Integer</userinput>.</li>
                 </ol></p>
-            <p>Create relationship.<ol>
+            <p>Create a relationship.<ol>
                     <li>Choose <menucascade>
                             <uicontrol>tab Database Tools</uicontrol>
                             <uicontrol>Relationships (group Relationships)</uicontrol>
@@ -65,7 +65,7 @@
                     <li>Select field <varname>EmployeeCode</varname> in table
                             <wintitle>Employees</wintitle> and drag it to field
                             <varname>EmployeeCode</varname> in table <wintitle>Orders</wintitle>.
-                        Check box <uicontrol>Enforce Referential Integrity</uicontrol>.</li>
+                        Check the box <uicontrol>Enforce Referential Integrity</uicontrol>.</li>
                 </ol></p>
         </section>
     </body>

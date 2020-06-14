@@ -23,7 +23,7 @@
         <propdesc>This is the default format for files created with Access 2007, 2010, 2013 and
                         2016.<note type="attention">Because the file formats are the same, you can
                         for example open a database in Access 2007 that was created with Access
-                        2016. However, new features which are not available in the older versions
+                        2016. However, new features that are not available in the older versions
                         will not work. This can cause problems.</note></propdesc>
       </property>
       <property>

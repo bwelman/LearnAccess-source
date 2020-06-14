@@ -13,8 +13,8 @@
     </prolog>
     <body>
         <section>
-            <p>Create a list of boxes with the low sales, less than $2000. Show box code and sales.
-                Sort ascending on sales. The column with sales should have an appropriate title and
+            <p>Create a list of boxes with low sales, less than $2000. Show box code and sales. Sort
+                ascending on sales. The column with sales should have an appropriate title and
                 formatting. Name the query <userinput>quer020</userinput>.</p>
         </section>
         <section otherprops="answer">

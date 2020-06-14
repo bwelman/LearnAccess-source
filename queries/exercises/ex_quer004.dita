@@ -13,9 +13,9 @@
     </prolog>
     <body>
         <section>
-            <p>Create a list of pralines with chocolate type milk or pure and whose costs is at most
-                30 cents. Show the fields PralineCode, PralineName, ChocolateType, and PralineCosts.
-                Name the query <userinput>quer004</userinput>.</p>
+            <p>Create a list of pralines with chocolate type milk or pure and whose costs are at
+                most 30 cents. Show the fields PralineCode, PralineName, ChocolateType, and
+                PralineCosts. Name the query <userinput>quer004</userinput>.</p>
         </section>
         <section otherprops="answer">
             <title>Answer</title>

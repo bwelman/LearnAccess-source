@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
 <task id="data_new_praline" xml:lang="en-US">
-    <title>Task: Add new praline</title>
-    <shortdesc>Adding a new record with a form which can be used for browsing and adding
+    <title>Task: Add a new praline</title>
+    <shortdesc>Adding a new record with a form that can be used for browsing and adding
         data.</shortdesc>
     <prolog>
         <critdates>
@@ -17,7 +17,7 @@
     </prolog>
     <taskbody>
         <context>
-            <p>Via the form Pralines you can browse existing records and adding new records.</p>
+            <p>Via the form Pralines, you can browse existing records and adding new records.</p>
         </context>
         <steps>
             <step>
@@ -69,9 +69,9 @@
                 <cmd>Close form <varname>Pralines</varname> via the close button
                         <uicontrol>X</uicontrol> in the upper right corner of the document
                     window.</cmd>
-                <tutorialinfo>The records added through the form <varname>Pralines</varname> are
-                    stored in the table <varname>Pralines</varname>. You will check this in the
-                    following step.</tutorialinfo>
+                <tutorialinfo>The records added through form <varname>Pralines</varname> are stored
+                    in the table <varname>Pralines</varname>. You will check this in the following
+                    step.</tutorialinfo>
             </step>
             <step>
                 <cmd>Open table <varname>Pralines</varname> and make sure the record is added.</cmd>

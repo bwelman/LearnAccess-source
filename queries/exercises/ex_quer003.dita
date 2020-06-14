@@ -14,7 +14,7 @@
     <body>
         <section>
             <p>Create a list of boxes whose price is at most $ 17.50. Show the fields BoxCode,
-                BoxName and BoxPrice. Name the query <userinput>quer003</userinput>.</p>
+                BoxName, and BoxPrice. Name the query <userinput>quer003</userinput>.</p>
         </section>
         <section otherprops="answer">
             <title>Answer</title>

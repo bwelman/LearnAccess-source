@@ -52,7 +52,7 @@
             </step>
             <step>
                 <cmd>Add successively the fields <varname>ChocolateType</varname> and
-                        <varname>PralineCosts</varname> to the grid toe by double clicking on the
+                        <varname>PralineCosts</varname> to the grid by double-clicking on the
                     field.</cmd>
             </step>
             <step>
@@ -84,8 +84,8 @@
                         <image keyref="q_increase_costs_design2">
                             <alt>Design update query</alt>
                         </image>
-                    </fig><note type="attention">Access surrounds text with double quotes. Field
-                        names must be surrounded by square brackets.</note>
+                    </fig><note type="attention">Access surrounds the text with double-quotes. Field names must be surrounded
+                        by square brackets.</note>
                 </stepresult>
             </step>
             <step>

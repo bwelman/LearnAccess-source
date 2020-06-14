@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="explore_printing" xml:lang="en-US">
     <title>Printing in Access</title>
-    <shortdesc>How you can print the content of tables, queries, forms and reports.</shortdesc>
+    <shortdesc>How you can print the content of tables, queries, forms, and reports.</shortdesc>
     <prolog>
         <critdates>
             <created date="2017-10-05"/>
@@ -17,9 +17,9 @@
     </prolog>
     <conbody>
         <p>Access allows for printing using the printers that are available in Windows.</p>
-        <p>Depending on the view in an Access object, the result can be printed. For example you can
-            print datasheet views at Tables and Queries, report views at reports and form views at
-            forms.</p>
+        <p>Depending on the view in an Access object, the result can be printed. For example, you
+            can print datasheet views at Tables and Queries, report views at reports, and form views
+            at forms.</p>
         <note type="attention">There is no option for printing the design view, but Access has a
             tool named <wintitle>Database Documenter</wintitle> with which you can print the design
             characteristics of database objects.</note>
@@ -32,7 +32,7 @@
                     <alt>Print options in Access</alt>
                 </image>
             </fig></p>
-        <p>With he choice <uicontrol>Print Preview</uicontrol> you can customize the print, such as
-            page size, , portrait or landscape, margins, ....</p>
+        <p>With the choice <uicontrol>Print Preview</uicontrol>, you can customize the print, such
+            as page size, portrait or landscape, margins, ....</p>
     </conbody>
 </concept>
